@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="fixed top-0 w-full z-40 border-b border-brand-sand/30 bg-brand-light/90 backdrop-blur-md px-6 md:px-12 py-5 flex justify-between items-center">
           
           <Link href="/" className="text-xl md:text-2xl font-serif tracking-[0.2em] uppercase text-brand-dark hover:text-brand-terra transition duration-300">
-            Dra. Trinidad
+            VENENCIA
           </Link>
           
           <div className="flex items-center space-x-6 md:space-x-8">

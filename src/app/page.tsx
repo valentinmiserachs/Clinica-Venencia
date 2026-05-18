@@ -37,7 +37,7 @@ export default function Home() {
       
       {/* HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center px-6 overflow-hidden">
-        <Image src="/portada.jpg" alt="Clínica Dra. Trinidad Venencia" fill priority sizes="100vw" className="object-cover object-center z-0 opacity-40" />
+        <Image src="/portada.jpg" alt="Venencia" fill priority sizes="100vw" className="object-cover object-center z-0 opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-transparent to-brand-light z-0"></div>
         
         <div className="max-w-5xl text-center space-y-8 mt-20 z-10 relative">
@@ -113,9 +113,9 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-12 border-t border-brand-sand/30 text-center bg-white">
         <p className="text-[10px] uppercase tracking-[0.4em] text-brand-dark/50">
-          C/ Baldrich 74, Terrassa — Dra. Trinidad Venencia © 2026
+          C/ Baldrich 74, Terrassa — Venencia © 2026
         </p>
       </footer>
     </main>
   );
-}
+} 
