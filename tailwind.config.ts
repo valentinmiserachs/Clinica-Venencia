@@ -2,17 +2,25 @@
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        beige: { 50: '#FAFAF5', 100: '#F5F5E6', 500: '#D4C3A3' },
-        gold: { 500: '#B89762', 600: '#9A7B48' },
-        dark: '#1A1A1A'
+        // PALETA OFICIAL - CLÍNICA VENENCIA
+        brand: {
+          dark: '#2B2622',   // Autoridad / Profundidad (Textos principales)
+          terra: '#8B7B6B',  // Equilibrio / Madurez (Detalles y acentos)
+          sand: '#D6C6B8',   // Naturalidad (Líneas y separadores)
+          soft: '#EAE3DB',   // Suavidad (Fondos secundarios)
+          light: '#F7F4F1',  // Limpieza / Calma (Fondo principal de la web)
+        }
       },
       fontFamily: {
-        serif: ['var(--font-playfair)', 'serif'],
-        sans: ['var(--font-lato)', 'sans-serif'],
+        // TIPOGRAFÍAS OFICIALES
+        serif: ['Optima', 'Optima Nova', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['"DM Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        logo: ['Cherston', 'serif'],
       },
     },
   },

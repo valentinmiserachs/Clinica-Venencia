@@ -1,59 +1,195 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { DM_Sans } from 'next/font/google';
 import "./globals.css";
 
-// 1. ÍNDICE DEL BUSCADOR (El motor inteligente)
+const dmSans = DM_Sans({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-dmsans'
+});
+
+// 1. ÍNDICE DEL BUSCADOR (Actualizado sin las patologías que pidió borrar)
 const indiceBusquedaGlobal = [
-  { nombre: 'Armonización con Ácido Hialurónico', slug: 'acido-hialuronico', categoria: 'Faciales', palabrasClave: 'labios, ojeras, pomulos, volumen' },
-  { nombre: 'Neuromoduladores (Tercio Superior)', slug: 'neuromoduladores', categoria: 'Faciales', palabrasClave: 'botox, frente, entrecejo, arrugas' },
-  { nombre: 'Estimuladores de Colágeno', slug: 'estimuladores-colageno', categoria: 'Faciales', palabrasClave: 'sculptra, flacidez, tensado' },
-  { nombre: 'Morpheus 8', slug: 'morpheus-8', categoria: 'Faciales', palabrasClave: 'radiofrecuencia microagujas, papada' },
-  { nombre: 'Hilos Tensores PDO', slug: 'hilos-tensores', categoria: 'Faciales', palabrasClave: 'hilos espiculados, lifting' },
-  { nombre: 'Peeling Químico Médico', slug: 'peeling-quimico', categoria: 'Faciales', palabrasClave: 'manchas, melasma, glow' },
-  { nombre: 'Láser Fraccionado CO2', slug: 'laser-co2', categoria: 'Láser', palabrasClave: 'resurfacing, cicatrices acne' },
-  { nombre: 'Eliminación de Varices (Nd:YAG)', slug: 'varices-ndyag', categoria: 'Láser', palabrasClave: 'arañas vasculares, venitas' },
-  { nombre: 'Láser Q-Switched (Manchas)', slug: 'manchas-qswitched', categoria: 'Láser', palabrasClave: 'quitar manchas, sol, tatuajes' },
-  { nombre: 'Luz Pulsada Intensa (IPL)', slug: 'ipl-facial', categoria: 'Láser', palabrasClave: 'rojeces, unificar tono, cuperosis' },
-  { nombre: 'Depilación Láser Médica', slug: 'depilacion-laser', categoria: 'Láser', palabrasClave: 'quitar pelo definitivo, diodo' },
-  { nombre: 'Remodelación Corporal (HIFU)', slug: 'hifu-corporal', categoria: 'Corporal', palabrasClave: 'ultrasonidos, quemar grasa' },
-  { nombre: 'Tratamiento del Acné', slug: 'tratamiento-acne', categoria: 'Patologías', palabrasClave: 'granitos, espinillas, piel grasa' },
-  { nombre: 'Rosácea y Cuperosis', slug: 'rosacea', categoria: 'Patologías', palabrasClave: 'piel roja, sofocos, sensibilidad' },
-  { nombre: 'Medicina Capilar', slug: 'medicina-capilar', categoria: 'Capilar', palabrasClave: 'caida pelo, alopecia, prp' }
+  { nombre: 'Voluminización y perfilado de labios', slug: 'voluminizacion-labios', categoria: 'Faciales', palabrasClave: 'labios, boca, aumento' },
+  { nombre: 'Hidratación labial profunda', slug: 'hidratacion-labial', categoria: 'Faciales', palabrasClave: 'labios secos, hidratacion' },
+  { nombre: 'Rinonasogeniano', slug: 'rinonasogeniano', categoria: 'Faciales', palabrasClave: 'nariz, perfil, rinomodelacion' },
+  { nombre: 'Proyección y relleno de pómulos', slug: 'relleno-pomulos', categoria: 'Faciales', palabrasClave: 'pomulos, mejillas' },
+  { nombre: 'Marcaje mandibular', slug: 'marcaje-mandibular', categoria: 'Faciales', palabrasClave: 'mandibula, ovalo' },
+  { nombre: 'Proyección y corrección de mentón', slug: 'correccion-menton', categoria: 'Faciales', palabrasClave: 'menton, barbilla' },
+  { nombre: 'Relleno de ojeras', slug: 'relleno-ojeras', categoria: 'Faciales', palabrasClave: 'ojeras, mirada' },
+  { nombre: 'Relleno de fosa temporal', slug: 'fosa-temporal', categoria: 'Faciales', palabrasClave: 'sienes' },
+  { nombre: 'Tratamiento de surco nasogeniano', slug: 'surco-nasogeniano', categoria: 'Faciales', palabrasClave: 'surco, rictus' },
+  { nombre: 'Tratamiento de arrugas de expresión', slug: 'arrugas-expresion', categoria: 'Faciales', palabrasClave: 'botox, frente, entrecejo' },
+  { nombre: 'Código de barras', slug: 'codigo-barras', categoria: 'Faciales', palabrasClave: 'arrugas boca, periorales' },
+  { nombre: 'Bandas platismales (Cuello)', slug: 'bandas-platismales', categoria: 'Faciales', palabrasClave: 'cuello, anillos venus' },
+  { nombre: 'Mesoterapia facial', slug: 'mesoterapia-facial', categoria: 'Faciales', palabrasClave: 'vitaminas, brillo' },
+  { nombre: 'Mesoterapia periocular', slug: 'mesoterapia-periocular', categoria: 'Faciales', palabrasClave: 'ojos, contorno' },
+  { nombre: 'Bioestimulación Polinucleótidos', slug: 'polinucleotidos', categoria: 'Faciales', palabrasClave: 'regeneracion' },
+  { nombre: 'PRP Facial', slug: 'prp-facial', categoria: 'Faciales', palabrasClave: 'plasma, sangre' },
+  { nombre: 'Exosomas faciales', slug: 'exosomas-facial', categoria: 'Faciales', palabrasClave: 'exosomas, celulas' },
+  { nombre: 'Radiesse', slug: 'radiesse', categoria: 'Faciales', palabrasClave: 'colageno, flacidez' },
+  { nombre: 'Sculptra', slug: 'sculptra', categoria: 'Faciales', palabrasClave: 'colageno, acido polilactico' },
+  { nombre: 'Peelings químicos médicos', slug: 'peelings-quimicos', categoria: 'Faciales', palabrasClave: 'peeling, renovacion' },
+  { nombre: 'Microneedling médico', slug: 'microneedling', categoria: 'Faciales', palabrasClave: 'dermapen, marcas' },
+  { nombre: 'Limpieza Facial Personalizada', slug: 'limpieza-facial', categoria: 'Faciales', palabrasClave: 'limpieza, higiene' },
+  { nombre: 'Mesoterapia Lipolítica', slug: 'mesoterapia-lipolitica', categoria: 'Corporales', palabrasClave: 'grasa, celulitis' },
+  { nombre: 'Esclerosis Vascular', slug: 'esclerosis-vascular', categoria: 'Corporales', palabrasClave: 'varices, arañas' },
+  { nombre: 'Inductores corporales', slug: 'inductores-corporales', categoria: 'Corporales', palabrasClave: 'flacidez corporal' },
+  { nombre: 'Aumento de glúteos', slug: 'aumento-gluteos', categoria: 'Corporales', palabrasClave: 'gluteos, culo' },
+  { nombre: 'Mesoterapia capilar', slug: 'mesoterapia-capilar', categoria: 'Capilares', palabrasClave: 'pelo, vitaminas pelo' },
+  { nombre: 'Láser LED capilar', slug: 'laser-led-capilar', categoria: 'Capilares', palabrasClave: 'led, fotobiologica' },
+  { nombre: 'PRP Capilar', slug: 'prp-capilar', categoria: 'Capilares', palabrasClave: 'plasma pelo' },
+  { nombre: 'Exosomas Capilares', slug: 'exosomas-capilar', categoria: 'Capilares', palabrasClave: 'exosomas pelo' },
+  { nombre: 'Tratamiento Acné', slug: 'tratamiento-acne', categoria: 'Patologías', palabrasClave: 'acne, granos' },
+  { nombre: 'Manchas y Melasma', slug: 'manchas-melasma', categoria: 'Patologías', palabrasClave: 'manchas, melasma' },
+  { nombre: 'Control Rosácea', slug: 'rosacea-cuperosis', categoria: 'Patologías', palabrasClave: 'rosacea, rojeces' },
+  { nombre: 'Cicatrices de acné', slug: 'cicatrices-acne', categoria: 'Patologías', palabrasClave: 'marcas acne, cicatrices' },
+  { nombre: 'Cicatrices queloides', slug: 'cicatrices-queloides', categoria: 'Patologías', palabrasClave: 'queloides, abultadas' },
+  { nombre: 'Light & Bright', slug: 'light-bright', categoria: 'Láser', palabrasClave: 'luz, rejuvenecimiento laser, brillo' },
+  { nombre: 'Resurfacing Facial', slug: 'resurfacing-facial', categoria: 'Láser', palabrasClave: 'resurfacing, laser co2, renovacion' },
+  { nombre: 'Fotorrejuvenecimiento', slug: 'fotorrejuvenecimiento', categoria: 'Láser', palabrasClave: 'ipl, rejuvenecimiento luz' },
+  { nombre: 'Láser Manchas y Léntigos', slug: 'laser-manchas', categoria: 'Láser', palabrasClave: 'quitar manchas laser, sol' },
+  { nombre: 'Láser Vascular (Rojeces)', slug: 'laser-vascular', categoria: 'Láser', palabrasClave: 'venitas, rojeces laser, arañas' },
+  { nombre: 'Láser Cicatrices', slug: 'laser-cicatrices', categoria: 'Láser', palabrasClave: 'borrar cicatriz laser' },
+  { nombre: 'Láser Estrías', slug: 'laser-estrias', categoria: 'Láser', palabrasClave: 'estrias, borrar estrias' },
+  { nombre: 'Depilación Láser Alta Precisión', slug: 'depilacion-alta-precision', categoria: 'Láser', palabrasClave: 'depilacion, vello, pelo' },
+  { nombre: 'Rejuvenecimiento manos', slug: 'rejuvenecimiento-manos', categoria: 'Avanzados', palabrasClave: 'manos' },
+  { nombre: 'Hiperhidrosis', slug: 'hiperhidrosis', categoria: 'Avanzados', palabrasClave: 'sudor, axilas' },
+  { nombre: 'Sonrisa Gingival', slug: 'sonrisa-gingival', categoria: 'Avanzados', palabrasClave: 'encias, sonrisa' },
+  { nombre: 'Bruxismo', slug: 'bruxismo', categoria: 'Avanzados', palabrasClave: 'dientes, mandibula' }
 ];
 
-// 2. ESTRUCTURA DEL MENÚ LATERAL
-const estructuraMenu = {
-  'Faciales Inyectables': [
-    { nombre: 'Ácido Hialurónico', slug: 'acido-hialuronico' },
-    { nombre: 'Neuromoduladores', slug: 'neuromoduladores' },
-    { nombre: 'Estimuladores de Colágeno', slug: 'estimuladores-colageno' },
-    { nombre: 'Hilos Tensores', slug: 'hilos-tensores' }
-  ],
-  'Plataforma Láser': [
-    { nombre: 'Láser CO2 Fraccionado', slug: 'laser-co2' },
-    { nombre: 'Luz Pulsada (IPL)', slug: 'ipl-facial' },
-    { nombre: 'Q-Switched (Manchas)', slug: 'manchas-qswitched' },
-    { nombre: 'Nd:YAG (Varices)', slug: 'varices-ndyag' },
-    { nombre: 'Depilación Médica', slug: 'depilacion-laser' }
-  ],
-  'Cuidado de la Piel & Acné': [
-    { nombre: 'Morpheus 8', slug: 'morpheus-8' },
-    { nombre: 'Peeling Químico', slug: 'peeling-quimico' },
-    { nombre: 'Tratamiento Acné', slug: 'tratamiento-acne' },
-    { nombre: 'Rosácea', slug: 'rosacea' }
-  ],
-  'Moldeado Corporal': [
-    { nombre: 'HIFU Corporal', slug: 'hifu-corporal' }
-  ],
-  'Medicina Capilar': [
-    { nombre: 'Mesoterapia y Exosomas', slug: 'medicina-capilar' }
-  ]
-};
+type MenuItem = { nombre: string; slug?: string; items?: MenuItem[] };
 
-// ==========================================
-// FUNCIÓN PARA QUITAR ACENTOS (NORMALIZACIÓN)
-// ==========================================
+const estructuraMenu: MenuItem[] = [
+  {
+    nombre: '1. Tratamientos Faciales',
+    items: [
+      {
+        nombre: '1.1. Armonización y Volúmenes',
+        items: [
+          { nombre: 'Voluminización y perfilado de labios.', slug: 'voluminizacion-labios' },
+          { nombre: 'Hidratación labial profunda.', slug: 'hidratacion-labial' },
+          { nombre: 'Rinonasogeniano.', slug: 'rinonasogeniano' },
+          { nombre: 'Proyección y relleno de pómulos.', slug: 'relleno-pomulos' },
+          { nombre: 'Marcaje mandibular.', slug: 'marcaje-mandibular' },
+          { nombre: 'Proyección y corrección de mentón.', slug: 'correccion-menton' },
+          { nombre: 'Relleno de ojeras.', slug: 'relleno-ojeras' },
+          { nombre: 'Relleno de fosa temporal.', slug: 'fosa-temporal' },
+          { nombre: 'Tratamiento de surco nasogeniano.', slug: 'surco-nasogeniano' }
+        ]
+      },
+      {
+        nombre: '1.2. Tratamiento de Arrugas y Líneas de Expresión:',
+        items: [
+          { nombre: 'Tratamiento de arrugas de expresión.', slug: 'arrugas-expresion' },
+          { nombre: 'Corrección del "código de barras" (Arrugas periorales).', slug: 'codigo-barras' },
+          { nombre: 'Tratamiento de bandas platismales (Anillos de Venus / Cuello).', slug: 'bandas-platismales' }
+        ]
+      },
+      {
+        nombre: '1.3. Calidad de Piel y Regeneración Celular:',
+        items: [
+          { nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico.', slug: 'mesoterapia-facial' },
+          { nombre: 'Mesoterapia periocular.', slug: 'mesoterapia-periocular' },
+          { nombre: 'Bioestimulación con Polinucleótidos.', slug: 'polinucleotidos' },
+          { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', slug: 'prp-facial' },
+          { nombre: 'Terapia avanzada con Exosomas.', slug: 'exosomas-facial' }
+        ]
+      },
+      {
+        nombre: '1.4. Inductores de Colágeno (Lifting sin Cirugía):',
+        items: [
+          { nombre: 'Hidroxiapatita de Calcio (Radiesse).', slug: 'radiesse' },
+          { nombre: 'Ácido Poli-L-Láctico. (Sculptra).', slug: 'sculptra' }
+        ]
+      },
+      {
+        nombre: '1.5. Renovación Cutánea:',
+        items: [
+          { nombre: 'Peelings químicos médicos.', slug: 'peelings-quimicos' },
+          { nombre: 'Microneedling médico.', slug: 'microneedling' },
+          { nombre: 'Limpieza Facial Personalizada.', slug: 'limpieza-facial' }
+        ]
+      }
+    ]
+  },
+  {
+    nombre: '2. Tratamientos Corporales',
+    items: [
+      { nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis).', slug: 'mesoterapia-lipolitica' },
+      { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', slug: 'esclerosis-vascular' },
+      { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', slug: 'inductores-corporales' },
+      { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', slug: 'aumento-gluteos' },
+      { nombre: 'Depilación Láser Médica.', slug: 'depilacion-laser' }
+    ]
+  },
+  {
+    nombre: '3. Tratamientos Capilares',
+    items: [
+      { nombre: 'Mesoterapia capilar avanzada.', slug: 'mesoterapia-capilar' },
+      { nombre: 'Terapia fotobiológica (Láser LED capilar).', slug: 'laser-led-capilar' },
+      { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', slug: 'prp-capilar' },
+      { nombre: 'Tratamiento capilar con Exosomas.', slug: 'exosomas-capilar' },
+      { nombre: 'Abordaje médico de la Alopecia y caída capilar.', slug: 'alopecia' }
+    ]
+  },
+  {
+    nombre: '4. Patologías de la Piel',
+    items: [
+      { nombre: 'Tratamiento integral del Acné (Fase activa).', slug: 'tratamiento-acne' },
+      { nombre: 'Eliminación de manchas y Melasma.', slug: 'manchas-melasma' },
+      { nombre: 'Control de Rosácea / Cuperosis.', slug: 'rosacea-cuperosis' },
+      { nombre: 'Tratamiento de cicatrices de acné y atróficas.', slug: 'cicatrices-acne' },
+      { nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas.', slug: 'cicatrices-queloides' }
+    ]
+  },
+  {
+    nombre: '5. Láser y Plataforma Lumínica',
+    items: [
+      {
+        nombre: '5.1. Rejuvenecimiento y Calidad de Piel',
+        items: [
+          { nombre: 'Light & Bright.', slug: 'light-bright' },
+          { nombre: 'Resurfacing Facial.', slug: 'resurfacing-facial' },
+          { nombre: 'Fotorrejuvenecimiento de Alta Precisión.', slug: 'fotorrejuvenecimiento' }
+        ]
+      },
+      {
+        nombre: '5.2. Láser Vascular y Pigmentario',
+        items: [
+          { nombre: 'Tratamiento de Manchas Solares y Léntigos.', slug: 'laser-manchas' },
+          { nombre: 'Eliminación de Rojeces, Cuperosis y Arañas Vasculares.', slug: 'laser-vascular' }
+        ]
+      },
+      {
+        nombre: '5.3. Cicatrices y Estrías',
+        items: [
+          { nombre: 'Remodelación de Cicatrices.', slug: 'laser-cicatrices' },
+          { nombre: 'Tratamiento de Estrías Corporales.', slug: 'laser-estrias' }
+        ]
+      },
+      {
+        nombre: '5.4. Fotodepilación Médica',
+        items: [
+          { nombre: 'Depilación Láser de Alta Precisión: Corporal y Facial.', slug: 'depilacion-alta-precision' }
+        ]
+      }
+    ]
+  },
+  {
+    nombre: '6. Tratamientos Avanzados',
+    items: [
+      { nombre: 'Rejuvenecimiento de manos.', slug: 'rejuvenecimiento-manos' },
+      { nombre: 'Tratamiento de la Hiperhidrosis.', slug: 'hiperhidrosis' },
+      { nombre: 'Corrección de la Sonrisa Gingival.', slug: 'sonrisa-gingival' },
+      { nombre: 'Tratamiento médico del Bruxismo.', slug: 'bruxismo' }
+    ]
+  }
+];
+
 const quitarAcentos = (texto: string) => {
   return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 };
@@ -63,7 +199,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [categoriaExpandida, setCategoriaExpandida] = useState<string | null>(null);
 
-  // Lógica de filtrado a prueba de errores ortográficos y acentos
   const busquedaLimpia = quitarAcentos(busqueda.trim());
   const resultados = busquedaLimpia === '' ? [] : indiceBusquedaGlobal.filter(item => {
     const nombreLimpio = quitarAcentos(item.nombre);
@@ -73,18 +208,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="es" className="scroll-smooth">
-      <body className="bg-brand-light text-brand-dark antialiased">
+      <body className={`${dmSans.variable} bg-brand-light text-brand-dark font-sans antialiased`}>
         
-        {/* NAVBAR SUPERIOR FIJO */}
         <nav className="fixed top-0 w-full z-40 border-b border-brand-sand/30 bg-brand-light/90 backdrop-blur-md px-6 md:px-12 py-5 flex justify-between items-center">
-          
           <Link href="/" className="text-xl md:text-2xl font-serif tracking-[0.2em] uppercase text-brand-dark hover:text-brand-terra transition duration-300">
             VENENCIA
           </Link>
           
           <div className="flex items-center space-x-6 md:space-x-8">
-            
-            {/* BUSCADOR RÁPIDO */}
             <div className="relative hidden md:block">
               <div className="flex items-center border-b border-brand-dark/20 pb-1 focus-within:border-brand-terra transition-colors">
                 <span className="text-brand-dark/40 mr-2">⌕</span>
@@ -100,14 +231,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="absolute top-full right-0 mt-4 w-80 bg-white border border-brand-sand/30 shadow-2xl z-50 rounded-sm">
                   {resultados.length > 0 ? resultados.map((res) => (
                     <Link key={res.slug} href={`/tratamientos/${res.slug}`} onClick={() => setBusqueda('')} className="block px-5 py-4 hover:bg-brand-sand/10 border-b border-brand-sand/10">
-                      <span className="font-serif text-sm">{res.nombre}</span>
+                      <span className="font-serif text-sm text-brand-terra block mb-1">{res.categoria}</span>
+                      <span className="font-sans text-sm">{res.nombre}</span>
                     </Link>
                   )) : <div className="p-6 text-xs text-center">No hay resultados</div>}
                 </div>
               )}
             </div>
 
-            {/* BOTÓN DE MENÚ (HAMBURGUESA) */}
             <button 
               onClick={() => setMenuAbierto(true)}
               className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] font-bold hover:text-brand-terra transition-colors"
@@ -115,11 +246,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="hidden md:block">Menú</span>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
-            
           </div>
         </nav>
 
-        {/* OVERLAY OSCURO */}
         {menuAbierto && (
           <div 
             className="fixed inset-0 bg-brand-dark/40 backdrop-blur-sm z-50 transition-opacity"
@@ -127,8 +256,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ></div>
         )}
 
-        {/* PANEL LATERAL DEL MENÚ */}
-        <div className={`fixed top-0 right-0 h-full w-full md:w-[450px] bg-white shadow-2xl z-50 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col ${menuAbierto ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`fixed top-0 right-0 h-full w-full md:w-[500px] bg-white shadow-2xl z-50 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col ${menuAbierto ? 'translate-x-0' : 'translate-x-full'}`}>
           
           <div className="flex justify-between items-center px-8 py-6 border-b border-brand-sand/20">
             <span className="text-2xl font-serif tracking-widest text-brand-dark">MENU</span>
@@ -141,30 +269,52 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
 
           <div className="flex-1 overflow-y-auto px-8 py-6 space-y-2 no-scrollbar">
-            {Object.entries(estructuraMenu).map(([categoria, tratamientos]) => (
-              <div key={categoria} className="border-b border-brand-sand/20 last:border-0">
+            {estructuraMenu.map((categoria) => (
+              <div key={categoria.nombre} className="border-b border-brand-sand/20 last:border-0">
                 <button 
-                  onClick={() => setCategoriaExpandida(categoriaExpandida === categoria ? null : categoria)}
+                  onClick={() => setCategoriaExpandida(categoriaExpandida === categoria.nombre ? null : categoria.nombre)}
                   className="w-full py-5 flex justify-between items-center text-left hover:text-brand-terra transition-colors group"
                 >
-                  <span className="text-lg font-serif tracking-wide">{categoria}</span>
-                  <span className={`text-brand-sand transform transition-transform duration-300 ${categoriaExpandida === categoria ? 'rotate-180' : ''}`}>
+                  <span className="text-lg font-serif tracking-wide">{categoria.nombre}</span>
+                  <span className={`text-brand-sand transform transition-transform duration-300 ${categoriaExpandida === categoria.nombre ? 'rotate-180' : ''}`}>
                     ▼
                   </span>
                 </button>
                 
-                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${categoriaExpandida === categoria ? 'max-h-96 opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
-                  <div className="pl-4 border-l border-brand-sand/30 flex flex-col space-y-4 py-2">
-                    {tratamientos.map((trat) => (
-                      <Link 
-                        key={trat.slug} 
-                        href={`/tratamientos/${trat.slug}`}
-                        onClick={() => setMenuAbierto(false)}
-                        className="text-[13px] font-light text-brand-dark/70 hover:text-brand-terra transition-colors"
-                      >
-                        {trat.nombre}
-                      </Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${categoriaExpandida === categoria.nombre ? 'max-h-[2000px] opacity-100 mb-6' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-4 border-l border-brand-sand/30 flex flex-col space-y-6 py-2">
+                    
+                    {categoria.items?.map((subItem, index) => (
+                      subItem.items ? (
+                        <div key={index} className="flex flex-col space-y-3">
+                          <span className="text-[11px] font-bold uppercase tracking-widest text-brand-terra/80 leading-relaxed">
+                            {subItem.nombre}
+                          </span>
+                          <div className="flex flex-col space-y-3 pl-3">
+                            {subItem.items.map((trat) => (
+                              <Link 
+                                key={trat.slug} 
+                                href={`/tratamientos/${trat.slug}`}
+                                onClick={() => setMenuAbierto(false)}
+                                className="text-[13px] font-light text-brand-dark/80 hover:text-brand-terra transition-colors leading-snug"
+                              >
+                                {trat.nombre}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <Link 
+                          key={index} 
+                          href={`/tratamientos/${subItem.slug}`}
+                          onClick={() => setMenuAbierto(false)}
+                          className="text-[13px] font-light text-brand-dark/80 hover:text-brand-terra transition-colors leading-snug"
+                        >
+                          {subItem.nombre}
+                        </Link>
+                      )
                     ))}
+                    
                   </div>
                 </div>
               </div>
@@ -184,7 +334,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         </div>
 
-        {/* CONTENIDO DE LA WEB */}
         <div className="pt-0">
           {children}
         </div>
