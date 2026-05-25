@@ -32,7 +32,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
         tratamientos: [
           { nombre: 'Voluminización y perfilado de labios.', subtitulo: 'Armonización Facial', slug: 'voluminizacion-labios', imagen: imgProvisional },
           { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: imgProvisional },
-          { nombre: 'Rinonasogeniano.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinonasogeniano', imagen: imgProvisional },
+          { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: imgProvisional },
           { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: imgProvisional },
           { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: imgProvisional },
           { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: imgProvisional },
@@ -99,7 +99,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
   'Patologías de la Piel': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Tratamiento integral del Acné (Fase activa).', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: imgProvisional },
+      { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: imgProvisional },
       { nombre: 'Eliminación de manchas y Melasma.', subtitulo: 'Unificación del Tono', slug: 'manchas-melasma', imagen: imgProvisional },
       { nombre: 'Control de Rosácea / Cuperosis.', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: imgProvisional },
       { nombre: 'Tratamiento de cicatrices de acné y atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: imgProvisional },

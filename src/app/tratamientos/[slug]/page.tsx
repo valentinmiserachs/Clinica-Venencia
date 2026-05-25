@@ -44,8 +44,8 @@ const tratamientosData: Record<string, Tratamiento> = {
     },
     parametros: [{ titulo: 'Técnica', valor: 'Microinyección' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '6-9 meses' }]
   },
-  'rinonasogeniano': {
-    nombre: 'Rinonasogeniano',
+  'rinomodelacion': {
+    nombre: 'Rinomodelación',
     imagen: imgProvisional, descripcionBreve: 'Abordaje estructural profundo para elevar la base nasal y suavizar el rictus superior.', antesDespues: AD,
     detalles: {
       descripcion: 'Tratamiento médico avanzado enfocado en la fosa piriforme (base de la nariz). Al infiltrar ácido hialurónico de alta densidad en este plano óseo profundo, logramos proyectar la base nasal, lo que automáticamente levanta la punta de la nariz y suaviza el inicio del surco nasogeniano.',
@@ -389,7 +389,7 @@ const tratamientosData: Record<string, Tratamiento> = {
 
   // --- 4. PATOLOGÍAS DE LA PIEL ---
   'tratamiento-acne': {
-    nombre: 'Tratamiento integral del Acné (Fase activa)',
+    nombre: 'Tratamiento integral del Acné',
     imagen: imgProvisional, descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.', antesDespues: AD,
     detalles: {
       descripcion: 'El acné es una enfermedad, no un problema cosmético. Implementamos un protocolo clínico que suprime la secreción sebácea y destruye la bacteria (C. Acnes). Combinamos prescripción médica (retinoides orales o antibióticos), terapias lumínicas (IPL) y peelings profundos con ácido salicílico para secar y desinflamar la piel.',
