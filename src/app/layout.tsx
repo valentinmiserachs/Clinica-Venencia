@@ -285,9 +285,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/casos-reales" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 Casos Reales <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Resultados Antes y Después</span>
               </Link>
-              {/* NUEVO ENLACE AL BLOG */}
+              {/* ENLACE AL BLOG */}
               <Link href="/blog" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
-                Journal Médico <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Blog & Divulgación Científica</span>
+                Blog <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Divulgación Científica</span>
               </Link>
             </div>
 

@@ -45,11 +45,11 @@ export default function BlogPage() {
     <main className="min-h-screen bg-brand-light text-brand-dark font-sans pt-32 pb-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto space-y-20">
         
-        {/* HEADER DEL BLOG */}
+       {/* HEADER DEL BLOG */}
         <section className="text-center space-y-6 max-w-4xl mx-auto">
           <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Divulgación Científica</span>
           <h1 className="text-5xl md:text-7xl font-serif text-brand-dark leading-tight">
-            Journal Médico
+            Blog
           </h1>
           <p className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed pt-2">
             El espacio de la Dra. Trinidad Venencia dedicado a la ciencia, la belleza y la salud cutánea. Artículos clínicos explicados con elegancia.

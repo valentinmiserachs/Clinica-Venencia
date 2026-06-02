@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
 // ==========================================
@@ -628,16 +629,16 @@ export default function TratamientoPage() {
       
       {/* HERO SECTION */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 mt-10">
-        <div className="w-full md:w-1/2 space-y-8">
-          <h1 className="text-4xl md:text-6xl font-serif text-brand-dark leading-tight">
+       <div className="w-full md:w-1/2 flex flex-col items-start">
+          <h1 className="text-4xl md:text-6xl font-serif text-brand-dark leading-tight mb-10">
             {tratamiento.nombre}
           </h1>
-          <p className="text-lg text-brand-dark/80 font-light leading-relaxed">
-            {tratamiento.descripcionBreve}
-          </p>
-          <button className="bg-brand-dark text-brand-light px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-brand-terra transition-colors shadow-lg">
-            Reserva tu Cita
-          </button>
+          
+          <Link href="/reserva" className="inline-block mt-2">
+            <button className="bg-brand-dark text-brand-light px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-brand-terra transition-colors shadow-lg">
+              Reserva tu Cita
+            </button>
+          </Link>
         </div>
         <div className="w-full md:w-1/2 relative aspect-square md:aspect-[4/3]">
           <Image src={tratamiento.imagen} alt={tratamiento.nombre} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover rounded-sm shadow-xl bg-brand-sand/20" />
@@ -647,7 +648,7 @@ export default function TratamientoPage() {
       {/* PESTAÑAS (TABS) */}
       <section className="max-w-5xl mx-auto mt-24 px-6">
         <div className="flex justify-start md:justify-center border-b border-brand-sand/40 space-x-6 md:space-x-12 overflow-x-auto pb-2 scrollbar-hide">
-          {(['descripcion', 'ventajas', 'faqs', 'evidencia'] as TabType[]).map((tab) => (
+          {(['descripcion', 'faqs', 'evidencia'] as TabType[]).map((tab) => (
             (tab !== 'evidencia' || (tratamiento.detalles.evidencia && tratamiento.detalles.evidencia.length > 0)) && (
               <button
                 key={tab}
@@ -680,19 +681,6 @@ export default function TratamientoPage() {
                 ))}
               </div>
             </div>
-          )}
-
-          {tabActiva === 'ventajas' && (
-             <div className="animate-fade-in-up max-w-3xl mx-auto space-y-6">
-               <ul className="space-y-4">
-                 {tratamiento.detalles.ventajas.map((ventaja, i) => (
-                   <li key={i} className="flex items-start bg-white p-6 border border-brand-sand/20 shadow-sm">
-                     <span className="text-brand-terra text-xl mr-4 mt-1">✓</span>
-                     <span className="text-brand-dark/80 font-light">{ventaja}</span>
-                   </li>
-                 ))}
-               </ul>
-             </div>
           )}
 
           {tabActiva === 'faqs' && (
@@ -751,38 +739,6 @@ export default function TratamientoPage() {
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-2xl">
                 <span className="text-brand-dark text-lg font-bold tracking-tighter">◂▸</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* METODOLOGÍA / EXPERIENCIA */}
-      <section className="py-32 bg-brand-light relative">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-20 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-serif text-brand-dark">La experiencia Dra. Trinidad</h2>
-            <p className="text-brand-dark/60 font-light text-lg italic">&quot;No buscamos una piel perfecta, buscamos una piel sana.&quot;</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-brand-sand/30">
-            <div className="pt-8 md:pt-0 md:px-8 flex flex-col items-center md:items-start text-center md:text-left group">
-              <span className="text-7xl font-serif text-brand-sand/30 group-hover:text-brand-terra transition-colors duration-500 mb-4 block">1</span>
-              <h3 className="text-xl font-serif text-brand-dark mb-3">Diagnóstico 3D</h3>
-              <p className="text-brand-dark/70 font-light text-sm leading-relaxed">Estudio ecográfico de tu anatomía para planificar la intervención exacta.</p>
-            </div>
-            <div className="pt-8 md:pt-0 md:px-8 flex flex-col items-center md:items-start text-center md:text-left group">
-              <span className="text-7xl font-serif text-brand-sand/30 group-hover:text-brand-terra transition-colors duration-500 mb-4 block">2</span>
-              <h3 className="text-xl font-serif text-brand-dark mb-3">Sin Prisas</h3>
-              <p className="text-brand-dark/70 font-light text-sm leading-relaxed">Bloqueamos el tiempo necesario en agenda para atenderte con calma.</p>
-            </div>
-            <div className="pt-8 md:pt-0 md:px-8 flex flex-col items-center md:items-start text-center md:text-left group">
-              <span className="text-7xl font-serif text-brand-sand/30 group-hover:text-brand-terra transition-colors duration-500 mb-4 block">3</span>
-              <h3 className="text-xl font-serif text-brand-dark mb-3">Confort Máximo</h3>
-              <p className="text-brand-dark/70 font-light text-sm leading-relaxed">Protocolos anti-dolor estrictos y uso de anestesias magistrales.</p>
-            </div>
-            <div className="pt-8 md:pt-0 md:px-8 flex flex-col items-center md:items-start text-center md:text-left group">
-              <span className="text-7xl font-serif text-brand-sand/30 group-hover:text-brand-terra transition-colors duration-500 mb-4 block">4</span>
-              <h3 className="text-xl font-serif text-brand-dark mb-3">Seguimiento Real</h3>
-              <p className="text-brand-dark/70 font-light text-sm leading-relaxed">Agendamos revisiones exhaustivas post-tratamiento.</p>
             </div>
           </div>
         </div>
