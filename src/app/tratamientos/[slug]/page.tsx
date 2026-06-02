@@ -12,7 +12,7 @@ interface FAQ { pregunta: string; respuesta: string; }
 interface Parametro { titulo: string; valor: string; }
 interface AntesDespues { antes: string; despues: string; }
 interface DetallesTratamiento { descripcion: string; ventajas: string[]; faqs: FAQ[]; evidencia?: Evidencia[]; }
-interface Tratamiento { nombre: string; imagen: string; descripcionBreve: string; antesDespues: AntesDespues; detalles: DetallesTratamiento; parametros: Parametro[]; }
+interface Tratamiento { nombre: string; tituloDescripcion?: string; imagen: string; descripcionBreve: string; antesDespues: AntesDespues; detalles: DetallesTratamiento; parametros: Parametro[]; }
 
 const imgProvisional = '/textura-piel.webp';
 const AD: AntesDespues = { antes: imgProvisional, despues: imgProvisional };
@@ -23,16 +23,51 @@ const AD: AntesDespues = { antes: imgProvisional, despues: imgProvisional };
 const tratamientosData: Record<string, Tratamiento> = {
 
   // --- 1.1 ARMONIZACIÓN Y VOLÚMENES ---
-  'voluminizacion-labios': {
-    nombre: 'Voluminización y perfilado de labios',
-    imagen: imgProvisional, descripcionBreve: 'Restaura volúmenes, perfila contornos y proyecta tus rasgos con resultados absolutamente naturales.', antesDespues: AD,
+  "voluminizacion-labios": {
+    nombre: "Voluminización y perfilado de labios",
+    tituloDescripcion: "¿EN QUÉ CONSISTE EL TRATAMIENTO?",
+    imagen: "/textura-piel.webp",
+    descripcionBreve: "",
+    antesDespues: { antes: "/textura-piel.webp", despues: "/textura-piel.webp" },
+    parametros: [
+      { titulo: "TÉCNICA", valor: "Aguja / Cánula" },
+      { titulo: "TIEMPO", valor: "40 min" },
+      { titulo: "RESULTADOS", valor: "Inmediatos" },
+      { titulo: "DURACIÓN", valor: "9-12 meses" }
+    ],
     detalles: {
-      descripcion: 'Entendemos el ácido hialurónico como una herramienta de arquitectura facial. Infiltramos este gel biocompatible respetando la anatomía del labio (tubérculos, arco de cupido y bermellón), garantizando una perfecta integración tisular y aportando hidratación profunda que rejuvenece la sonrisa sin alterar tu esencia.',
-      ventajas: ['Armonización facial respetando tu naturalidad.', 'Proyección estructural y corrección de asimetrías.', 'Uso de hialurónico dinámico que acompaña tu gesticulación.'],
-      faqs: [{ pregunta: '¿Quedaré con un aspecto artificial?', respuesta: 'Bajo ningún concepto. Nuestro criterio médico huye de las sobrecorrecciones (labios de pato).' }],
-      evidencia: [{ titulo: "Efficacy and Safety of Hyaluronic Acid in Lip Augmentation", fuente: "Journal of Cosmetic Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Aguja / Cánula' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '9-12 meses' }]
+      descripcion: "Es un procedimiento clínico avanzado que permite modificar la estructura, el volumen y la hidratación de los labios sin necesidad de cirugía. Utilizando geles de ácido hialurónico de última generación y máxima pureza, realizamos un abordaje anatómico personalizado para restaurar la pérdida de volumen o potenciar la estética labial de forma segura.",
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: "¿Cuantas sesiones se necesitan para ver resultados?",
+          respuesta: "Los resultados son visibles desde el primer momento y habitualmente el objetivo se alcanza en una sola sesión clínica. El protocolo incluye una cita de seguimiento a los 14 días para valorar el resultado final una vez que el labio está completamente desinflamado. Cualquier ajuste necesario en esa revisión posterior se realiza sin ningún coste adicional."
+        },
+        {
+          pregunta: "¿Es doloroso el tratamiento?",
+          respuesta: "Es un procedimiento totalmente confortable gracias a nuestro protocolo de control del dolor. Para garantizar tu máxima comodidad, realizamos una anestesia infiltrada local (bloqueo). Este método adormece la sensibilidad del labio por completo, lo que nos permite trabajar con una precisión milimétrica y segura mientras tú disfrutas de una experiencia libre de molestias."
+        },
+        {
+          pregunta: "¿Qué debo tener en cuenta antes de la sesión?",
+          respuesta: "Para garantizar los mejores resultados y minimizar la aparición de hematomas, te recomendamos seguir estas sencillas pautas antes de tu cita:\n\n• Evita ciertos medicamentos: No tomes antiinflamatorios (como ibuprofeno o aspirina) ni suplementos que puedan diluir la sangre (Omega 3, vitamina E) durante los 3-5 días previos, a menos que sea por prescripción médica.\n• Si tienes tendencia a sufrir herpes labiales, avísanos con unos días de antelación para pautar un tratamiento preventivo (profilaxis antivírica).\n• No consumas bebidas alcohólicas ni fumes en las 24 horas previas al tratamiento.\n• Si es posible, ven a la clínica con la zona perioral desmaquillada."
+        },
+        {
+          pregunta: "¿Qué hacer después de la sesión?",
+          respuesta: "Tras la remodelación labial, es completamente normal experimentar inflamación, asimetría transitoria o algún pequeño hematoma. Para optimizar el resultado, sigue estas pautas:\n\n• Primeras 24 horas: Aplica frío local indirecto (con un paño limpio) en intervalos cortos para reducir la inflamación. Evita tocar, masajear o presionar los labios. No uses maquillaje labial.\n• Primeros 2 días: Evita realizar ejercicio físico intenso, acudir a saunas, piscinas o exponerte a fuentes de calor directo (como tomar el sol). No consumas bebidas o alimentos excesivamente calientes.\n• Durante la primera semana: Intenta dormir boca arriba con la cabeza ligeramente elevada. Evita el consumo de alcohol y tabaco, ya que favorecen la deshidratación y la inflamación.\n\nRecuerda: El resultado definitivo se aprecia a las dos semanas, una vez que el producto se ha integrado por completo y la inflamación ha desaparecido. ¡Nos vemos en tu cita de revisión!"
+        },
+        {
+          pregunta: "¿Es un tratamiento reversible?",
+          respuesta: "Sí, es 100% reversible. El ácido hialurónico es un material reabsorbible que el propio cuerpo va eliminando de forma natural con el tiempo. Sin embargo, si por cualquier motivo el paciente no se siente cómodo con el resultado o desea realizar una modificación inmediata, disponemos de una enzima médica llamada hialuronidasa. Al aplicarla, deshace el producto de forma segura y selectiva en cuestión de horas, devolviendo al labio su estado original."
+        },
+        {
+          pregunta: "¿Quiénes NO deben realizarse este tratamiento?",
+          respuesta: "La seguridad de nuestros pacientes es la prioridad absoluta. Por ello, el tratamiento se pospondrá en caso de embarazo, periodo de lactancia o si existe un brote activo de herpes labial en el momento de la sesión.\n\nAsimismo, está contraindicado en personas con enfermedades autoinmunes graves sin controlar, pacientes con historial de alergia grave a los componentes de la fórmula o aquellos que porten materiales de relleno permanentes en los labios. En la consulta médica inicial evaluaremos tu historial clínico completo para asegurarnos de que el procedimiento es 100% seguro para ti."
+        }
+      ],
+      evidencia: [
+        { titulo: "Eficacia y seguridad clínica", fuente: "Journal of Cosmetic Dermatology", link: "#" }
+      ]
+    }
   },
   'hidratacion-labial': {
     nombre: 'Hidratación labial profunda',
@@ -58,7 +93,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'relleno-pomulos': {
     nombre: 'Proyección y relleno de pómulos',
-    imagen: imgProvisional, descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".', antesDespues: AD,
+    imagen: "/vero-facial.jpeg", descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".', antesDespues: AD,
     detalles: {
       descripcion: 'Con el paso del tiempo, los compartimentos grasos de las mejillas descienden. Reponemos este volumen perdido a nivel supraperióstico profundo. Esto no solo realza el pómulo, sino que genera un efecto lifting indirecto que mejora el surco nasogeniano y reafirma el óvalo.',
       ventajas: ['Efecto lifting no quirúrgico inmediato.', 'Masculinización o feminización del rostro a medida.', 'Mejora la luz y el contorno facial central.'],
@@ -668,7 +703,9 @@ export default function TratamientoPage() {
           {tabActiva === 'descripcion' && (
             <div className="animate-fade-in-up space-y-16">
               <div className="max-w-3xl mx-auto text-center space-y-6">
-                <h2 className="text-3xl font-serif text-brand-dark">Protocolo Médico</h2>
+                <h3 className="text-2xl font-serif text-brand-dark mb-6">
+                {tratamiento.tituloDescripcion || "Protocolo Médico"}
+              </h3>
                 <p className="text-brand-dark/80 leading-relaxed text-lg text-left md:text-center">{tratamiento.detalles.descripcion}</p>
               </div>
               <div className="flex flex-wrap justify-center gap-8 border-t border-brand-sand/30 pt-12">
@@ -691,7 +728,7 @@ export default function TratamientoPage() {
                      <span className="font-serif text-lg text-brand-dark pr-4">{faq.pregunta}</span>
                      <span className="text-brand-terra text-2xl">{faqAbierta === i ? '−' : '+'}</span>
                    </button>
-                   {faqAbierta === i && <div className="p-6 pt-0 text-brand-dark/70 font-light">{faq.respuesta}</div>}
+                   {faqAbierta === i && <div className="p-6 pt-0 text-brand-dark/70 font-light whitespace-pre-line">{faq.respuesta}</div>}
                  </div>
                ))}
              </div>
