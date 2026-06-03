@@ -282,9 +282,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/metodo" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 El Método Venencia <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Filosofía & Rigor Tecnológico</span>
               </Link>
-              <Link href="/casos-reales" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
-                Casos Reales <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Resultados Antes y Después</span>
-              </Link>
+             {/* <Link href="/casos-reales" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
+                Casos Reales <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Resultados antes y después</span>
+              </Link> */}
               {/* ENLACE AL BLOG */}
               <Link href="/blog" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 Blog <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Divulgación Científica</span>

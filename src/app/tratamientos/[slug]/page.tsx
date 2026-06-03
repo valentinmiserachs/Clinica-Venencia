@@ -41,7 +41,7 @@ const tratamientosData: Record<string, Tratamiento> = {
       faqs: [
         {
           pregunta: "¿Cuantas sesiones se necesitan para ver resultados?",
-          respuesta: "Los resultados son visibles desde el primer momento y habitualmente el objetivo se alcanza en una sola sesión clínica. El protocolo incluye una cita de seguimiento a los 14 días para valorar el resultado final una vez que el labio está completamente desinflamado. Cualquier ajuste necesario en esa revisión posterior se realiza sin ningún coste adicional."
+          respuesta: "Los resultados son visibles desde el primer momento y habitualmente el objetivo se alcanza en una sola sesión clínica. El protocolo incluye una cita de seguimiento a los 14 días para valorar el resultado final una vez que el labio está completamente desinflamado."
         },
         {
           pregunta: "¿Es doloroso el tratamiento?",

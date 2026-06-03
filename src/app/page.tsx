@@ -44,6 +44,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       {
         nombre: '1.2. Tratamiento de Arrugas y Líneas de Expresión',
         tratamientos: [
+          
           { nombre: 'Tratamiento de arrugas de expresión.', subtitulo: 'Tercio Superior', slug: 'arrugas-expresion', imagen: imgProvisional },
           { nombre: 'Corrección del "código de barras" (Arrugas periorales).', subtitulo: 'Rejuvenecimiento Perioral', slug: 'codigo-barras', imagen: imgProvisional },
           { nombre: 'Tratamiento de bandas platismales (Anillos de Venus / Cuello).', subtitulo: 'Armonización de Cuello', slug: 'bandas-platismales', imagen: imgProvisional }
