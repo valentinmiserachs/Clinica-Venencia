@@ -71,14 +71,49 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'hidratacion-labial': {
     nombre: 'Hidratación labial profunda',
-    imagen: imgProvisional, descripcionBreve: 'Recupera la jugosidad y suavidad de tus labios sin añadir volumen extra.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la hidratación labial profunda?',
+    imagen: imgProvisional, 
+    descripcionBreve: 'Recupera la jugosidad y suavidad de tus labios sin añadir volumen extra.', 
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección' }, 
+      { titulo: 'Tiempo', valor: '20 min' }, 
+      { titulo: 'Resultados', valor: 'Inmediatos' }, 
+      { titulo: 'Duración', valor: '6-9 meses' }
+    ],
     detalles: {
-      descripcion: 'Utilizamos ácido hialurónico de baja reticulación (skinboosters) diseñado específicamente para captar agua. El objetivo no es agrandar el labio, sino redensificar la mucosa, eliminar el aspecto cuarteado y devolver el tono rosado y juvenil de unos labios sanos.',
-      ventajas: ['Elimina la sequedad crónica y el agrietamiento.', 'Aporta un brillo y jugosidad natural.', 'No modifica la forma ni el tamaño de la boca.'],
-      faqs: [{ pregunta: '¿Cambiará mi boca?', respuesta: 'No. Este tratamiento es puramente hidratante y regenerativo.' }],
-      evidencia: [{ titulo: "Hyaluronic Acid Skinboosters for Lip Hydration", fuente: "Aesthetic Surgery Journal", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '6-9 meses' }]
+      descripcion: 'Es un tratamiento médico-estético diseñado exclusivamente para restaurar la elasticidad, la jugosidad y la vitalidad de los labios sin aportar volumen. Mediante microinyecciones de ácido hialurónico de baja densidad y alta capacidad de captación de agua, logramos nutrir el tejido labial desde las capas más profundas. El resultado es un "efecto gloss" natural y duradero que suaviza las líneas de deshidratación, redefine sutilmente el aspecto saludable del labio y devuelve su color sonrosado original de forma inmediata.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Los resultados son visibles de forma inmediata desde una única sesión. Sin embargo, al tratarse de un protocolo de nutrición celular profunda, en labios muy agrietados o deshidratados podemos recomendar un protocolo inicial de 2 sesiones.\n\nAl igual que en todos nuestros tratamientos, incluimos una visita de control a las dos semanas para evaluar la perfecta integración del producto en el tejido y asegurar un acabado óptimo y homogéneo.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Es un procedimiento totalmente confortable gracias a nuestro protocolo de control del dolor. Para garantizar tu máxima comodidad, realizamos una anestesia infiltrada local (bloqueo). Este método adormece la sensibilidad del labio por completo, lo que nos permite trabajar con una precisión milimétrica y segura mientras tú disfrutas de una experiencia libre de molestias.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar los mejores resultados y una experiencia óptima, te aconsejamos seguir estas recomendaciones previas:\n\n• No tomes antiinflamatorios (como ibuprofeno o aspirina) ni suplementos de Omega 3 durante los 3-5 días anteriores para minimizar el riesgo de pequeñas rojeces o hematomas.\n• Si tienes tendencia a sufrir herpes labiales, indícanoslo al agendar tu cita para pautar un tratamiento preventivo (profilaxis antivírica) unos días antes.\n• Evita el consumo de bebidas alcohólicas y el tabaco las 24 horas previas.\n• El día de la cita acude con la zona limpia y desmaquillada. Recuerda que no es necesario que te apliques crema anestésica en casa, ya que realizaremos el bloqueo anestésico directamente en la clínica.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La recuperación es inmediata, pero al tratarse de una zona muy vascularizada, es normal notar una leve inflamación. Sigue estas pautas para optimizar el tratamiento:\n\n• Primeras 24 horas: Aplica frío local indirecto de forma intermitente. Evita tocar, presionar o masajear los labios y pospone el uso de maquillaje labial.\n• Primeros 2 días: Evita realizar ejercicio físico intenso, acudir a saunas, piscinas o exponerte a fuentes de calor directo (sol o rayos UVA). No consumas alimentos o bebidas excesivamente calientes.\n• Evita el alcohol y el tabaco durante los primeros días, ya que interfieren con el proceso de hidratación del ácido hialurónico.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico utilizado es una sustancia completamente biocompatible que tu organismo metabolizará de forma natural con los meses. Además, en la clínica contamos con la enzima médica hialuronidasa, un "antídoto" seguro capaz de disolver el producto de manera inmediata si en algún momento se deseara revertir el tratamiento, garantizando un control médico absoluto sobre el proceso.'
+        },
+        {
+          pregunta: 'Contraindicaciones principales',
+          respuesta: 'Este tratamiento no se realizará en los siguientes casos:\n\n• Mujeres en periodos de embarazo o lactancia.\n• Presencia de infecciones activas en la zona perioral (brote de herpes labial, infecciones bacterianas o heridas abiertas) el día de la cita.\n• Alergia o hipersensibilidad conocida al ácido hialurónico o a los anestésicos locales (lidocaína).\n• Enfermedades autoinmunes graves no controladas.\n• Presencia previa de materiales de relleno permanentes (como silicona), debido al riesgo de inducir reacciones inflamatorias.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Hyaluronic Acid Skinboosters for Lip Hydration", fuente: "Aesthetic Surgery Journal", link: "#" }
+      ]
+    }
   },
   'rinomodelacion': {
     nombre: 'Rinomodelación',
@@ -126,14 +161,49 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'relleno-ojeras': {
     nombre: 'Relleno de ojeras',
-    imagen: imgProvisional, descripcionBreve: 'Recupera la luz de tu mirada. Eliminamos el hundimiento y el aspecto de cansancio crónico.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el relleno de ojeras con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Recupera la luz de tu mirada. Eliminamos el hundimiento y el aspecto de cansancio crónico.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula atraumática' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'La ojera hundida genera sombras indeseadas. Infiltramos un ácido hialurónico específico (de baja hidrofilia) en el surco lagrimal profundo. Esto repone el volumen perdido y separa la piel de la vasculatura subyacente, borrando el aspecto de mirada cansada.',
-      ventajas: ['Eliminación del hundimiento (valle de lágrimas).', 'Atenuación de la coloración oscura o violácea.', 'Mirada fresca y descansada al instante.'],
-      faqs: [{ pregunta: '¿Me quedarán bolsas?', respuesta: 'Precisamente usamos un hialurónico que no retiene agua para evitar la formación de edemas o bolsas.' }],
-      evidencia: [{ titulo: "Treatment of Tear Trough Deformity", fuente: "Plastic and Reconstructive Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula atraumática' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético de alta precisión diseñado para recuperar el volumen perdido en la zona del surco lagrimal y rejuvenecer la mirada de forma inmediata. Mediante la infiltración de un ácido hialurónico específico de baja densidad y nula capacidad hidrofílica (que no retiene agua para evitar bolsas), logramos eliminar el aspecto de cansancio o "mirada triste".\n\nEste procedimiento suaviza la transición entre el párpado inferior y la mejilla, proyectando la zona de la ojera de forma natural. Al rellenar el surco, la luz vuelve a incidir correctamente sobre la piel, atenuando significativamente el tono oscuro o sombreado de la ojera.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'En la gran mayoría de los casos, una única sesión es suficiente para apreciar una mirada descansada de forma inmediata. Al tratarse de una zona anatómica especialmente compleja, aplicamos el principio médico de la prudencia: es preferible corregir de menos que de más.\n\nA las dos o tres semanas del tratamiento, realizamos una visita de control para evaluar la integración del producto una vez asentado. Si en esta revisión se requiere una pequeña optimización para perfeccionar el resultado, está completamente incluida en el tratamiento inicial.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy cómodo para el paciente. Para garantizar el máximo confort y, sobre todo, la máxima seguridad, realizamos el tratamiento utilizando una cánula de punta roma en lugar de agujas tradicionales.\n\nLa cánula avanza suavemente por los tejidos sin cortar los vasos sanguíneos, lo que reduce las molestias al mínimo y disminuye drásticamente el riesgo de hematomas. Además, el ácido hialurónico específico que empleamos incorpora lidocaína (anestésico) en su composición para que la sesión sea una experiencia confortable.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar una sesión óptima y minimizar la aparición de pequeñas rojeces, te recomendamos seguir estas pautas previas:\n\n• No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días anteriores a la cita.\n• No consumas bebidas alcohólicas las 24 horas previas al tratamiento.\n• Ven a la clínica preferiblemente sin maquillaje ni corrector de ojeras en la zona periocular.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La zona periocular es muy delicada, por lo que las primeras horas requieren un cuidado especial:\n\n• Primeras 24 horas: No frotes, presiones ni masajees la zona de las ojeras. Evita el uso de gafas pesadas que se apoyen directamente sobre el surco tratado.\n• Primeros 2 días: Evita el ejercicio físico intenso, las saunas, baños turcos o la exposición solar directa.\n• Es normal notar una ligera tirantez o edema muy leve los primeros días. Puedes aplicar frío local indirecto de forma muy suave si el médico lo indica.\n• Evita aplicar corrector de ojeras o cosméticos en la zona inmediatamente tratada hasta el día siguiente.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico periocular es un material reabsorbible que el cuerpo asimila con el tiempo. No obstante, al trabajar en una zona tan visible, contar con una garantía absoluta es clave: disponemos de la enzima hialuronidasa. Si por cualquier motivo anatómico el resultado no fuera el deseado o el producto generase una retención de líquido tardía, esta enzima disuelve el gel de forma segura y rápida en pocas horas.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Este tratamiento médico está contraindicado o deberá posponerse en los siguientes casos:\n\n• Bolsas palpebrales prominentes (grasas o retención de líquido importante): El ácido hialurónico está diseñado para tratar el hundimiento; si el paciente tiene bolsas grandes, el relleno podría empeorarlas.\n• Embarazo y lactancia.\n• Infecciones activas en la piel de la zona periocular o procesos inflamatorios oculares (como conjuntivitis).\n• Enfermedades autoinmunes graves o sistémicas no controladas.\n• Alergia conocida al ácido hialurónico o a la lidocaína.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Treatment of Tear Trough Deformity", fuente: "Plastic and Reconstructive Surgery", link: "#" }
+      ]
+    }
   },
   'fosa-temporal': {
     nombre: 'Relleno de fosa temporal',
