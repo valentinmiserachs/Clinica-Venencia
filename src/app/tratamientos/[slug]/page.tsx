@@ -117,47 +117,187 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'rinomodelacion': {
     nombre: 'Rinomodelación',
-    imagen: imgProvisional, descripcionBreve: 'Abordaje estructural profundo para elevar la base nasal y suavizar el rictus superior.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la rinomodelación con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Abordaje estructural profundo para elevar la base nasal y suavizar el rictus superior.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Inyección Profunda' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Tratamiento médico avanzado enfocado en la fosa piriforme (base de la nariz). Al infiltrar ácido hialurónico de alta densidad en este plano óseo profundo, logramos proyectar la base nasal, lo que automáticamente levanta la punta de la nariz y suaviza el inicio del surco nasogeniano.',
-      ventajas: ['Proyección sutil del tercio medio facial.', 'Suaviza el pliegue nasolabial desde su origen profundo.', 'Mejora el soporte estructural del rostro.'],
-      faqs: [{ pregunta: '¿Es un tratamiento doloroso?', respuesta: 'Se realiza en planos óseos profundos donde hay menos terminaciones nerviosas, siendo muy tolerable con anestesia local.' }],
-      evidencia: [{ titulo: "Piriform Fossa Augmentation with Hyaluronic Acid", fuente: "Plastic and Reconstructive Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Inyección Profunda' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado y no quirúrgico que permite estilizar, equilibrar y corregir la forma de la nariz de manera inmediata.\n\nMediante la infiltración precisa de ácido hialurónico de alta densidad y gran soporte estructural, logramos disimular la giba, rectificar desviaciones, suavizar ángulos y elevar o proyectar la punta nasal para armonizar el perfil del rostro. Es la alternativa ideal a la rinoplastia quirúrgica para aquellos pacientes que buscan modificar la estética nasal sin pasar por el quirófano, sin postoperatorio y con resultados naturales desde el primer momento.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Los resultados son completamente visibles desde una única sesión clínica. El procedimiento es rápido y el cambio en el perfil es instantáneo.\n\nAl igual que en el resto de nuestros tratamientos, programamos una visita de control obligatoria a las dos semanas. Esta cita de seguimiento es fundamental en la rinomodelación para evaluar la perfecta asentación del producto en una estructura tan rígida como la nasal, valorar la simetría final y realizar cualquier pequeño retoque de optimización si el caso lo requiere, el cual está completamente incluido dentro del tratamiento inicial.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Es un procedimiento muy tolerable. Para garantizar tu máximo confort, aplicamos una pomada anestésica tópica de alta eficacia en la zona minutos antes de comenzar el tratamiento. Además, los geles de ácido hialurónico de última generación que utilizamos ya incorporan lidocaína (anestésico) en su propia formulación, lo que hace que la zona se adormezca. La mayoría de los pacientes describen la sensación únicamente como una leve presión perfectamente soportable.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: '• No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos como el Omega 3 o la Vitamina E durante los 3-5 días anteriores para minimizar el riesgo de hematomas o inflamación.\n• No consumas bebidas alcohólicas ni realices ejercicio físico intenso las 24 horas previas al tratamiento.\n• Acude a la clínica con el rostro completamente limpio, prestando especial atención a que la zona de la nariz y el entrecejo esté desmaquillada.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La reincorporación a tu vida cotidiana es inmediata, pero el tejido nasal requiere ciertos cuidados específicos durante los primeros días para que el ácido hialurónico se asiente correctamente:\n\n• Es muy importante evitar el uso de gafas de sol o de vista que apoyen directamente sobre el puente nasal durante los primeros 5-7 días, para impedir que la presión desplace el producto.\n• Primeras 24-48 horas: Aplica frío local indirecto de forma suave si notas ligera inflamación. Evita tocar, presionar, masajear la nariz o dormir boca abajo.\n• Actividades prohibidas: Pospone el ejercicio físico de gran intensidad, las saunas, las piscinas y la exposición solar directa durante los primeros 3 días.\n• Lava el rostro de forma muy suave, sin ejercer presión sobre la estructura de la nariz.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico es un material reabsorbible que el cuerpo metaboliza con el tiempo. Sin embargo, ante cualquier asimetría, inconformidad del paciente o por criterios estrictos de seguridad médica, disponemos de la enzima hialuronidasa. Al ser aplicada, disuelve el producto de forma inmediata y selectiva, devolviendo a la nariz su anatomía original en pocas horas.'
+        },
+        {
+          pregunta: 'Contraindicaciones principales',
+          respuesta: '• Mujeres en periodo de embarazo o lactancia.\n• Cirugías nasales previas (Rinoplastia quirúrgica): La presencia de anatomía alterada o cicatrices quirúrgicas previas modifica la vascularización de la nariz, elevando el riesgo de complicaciones vasculares. Evaluaremos exhaustivamente cada caso.\n• Infecciones cutáneas activas en la zona de la nariz o perinasal el día de la cita.\n• Alergia diagnosticada al ácido hialurónico o a los anestésicos locales (lidocaína).\n• Enfermedades autoinmunes sistémicas o del colágeno en fase activa.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Piriform Fossa Augmentation with Hyaluronic Acid", fuente: "Plastic and Reconstructive Surgery", link: "#" }
+      ]
+    }
   },
   'relleno-pomulos': {
     nombre: 'Proyección y relleno de pómulos',
-    imagen: "/vero-facial.jpeg", descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la proyección y relleno de pómulos con ácido hialurónico?',
+    imagen: "/vero-facial.jpeg",
+    descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula profunda' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Con el paso del tiempo, los compartimentos grasos de las mejillas descienden. Reponemos este volumen perdido a nivel supraperióstico profundo. Esto no solo realza el pómulo, sino que genera un efecto lifting indirecto que mejora el surco nasogeniano y reafirma el óvalo.',
-      ventajas: ['Efecto lifting no quirúrgico inmediato.', 'Masculinización o feminización del rostro a medida.', 'Mejora la luz y el contorno facial central.'],
-      faqs: [{ pregunta: '¿Quedaré con las mejillas muy grandes?', respuesta: 'Estudiamos tu estructura ósea para reponer estrictamente el volumen perdido, manteniendo tu esencia.' }],
-      evidencia: [{ titulo: "Midface Rejuvenation with Volumizing Fillers", fuente: "Aesthetic Surgery Journal", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula profunda' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado diseñado para restaurar el soporte estructural del rostro, definir los contornos y rejuvenecer las facciones de forma armónica.\n\nCon el paso del tiempo, los compartimentos grasos del tercio medio facial disminuyen y descienden, provocando un aspecto cansado o flácido. Mediante la infiltración precisa de ácido hialurónico de alta densidad, devolvemos el volumen perdido al hueso malar, proyectamos los pómulos de manera elegante y logramos un efecto de elevación (lifting no quirúrgico) que suaviza indirectamente el surco nasogeniano y mejora el soporte de la zona de la ojera, todo sin perder la naturalidad de tu expresión.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Los resultados estructurales son visibles de forma inmediata en una única sesión. El paciente sale de la clínica apreciando una mayor definición y frescura en el rostro.\n\nComo parte de nuestro protocolo, programamos una visita de control a las dos semanas. En esta cita evaluamos la perfecta integración del producto con la estructura ósea y muscular del rostro, confirmamos la simetría y, si es necesario, realizamos cualquier pequeño ajuste de optimización para asegurar un acabado impecable, lo cual está completamente incluido en el tratamiento inicial.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Al realizarse habitualmente en planos profundos (cerca del hueso, donde apenas hay receptores de dolor), las molestias son mínimas. Además, los viales de ácido hialurónico que utilizamos incorporan lidocaína (anestésico) en su propia fórmula, adormeciendo la zona conforme se realiza el tratamiento.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para conseguir un resultado óptimo y minimizar los efectos secundarios comunes, te recomendamos seguir estas pautas previas:\n\n• Evita la toma de antiinflamatorios (como ibuprofeno o aspirina) y suplementos como el Omega 3 o la Vitamina E durante los 3-5 días anteriores, salvo indicación médica, para reducir el riesgo de hematomas.\n• No consumas bebidas alcohólicas.\n• Acude a la clínica con el rostro limpio.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La incorporación a tus actividades diarias es inmediata, pero al tratarse de un tratamiento de soporte profundo, debes seguir estos cuidados los primeros días:\n\n• Evita apoyar firmemente las mejillas al dormir (intenta dormir boca arriba) y no te realices masajes faciales ni uses tratamientos como el Gua Sha durante las primeras dos semanas.\n• Primeras 24-48 horas: Es normal notar una sensación de agujetas o ligera presión al gesticular o masticar debido al soporte del producto. Puedes aplicar frío local indirecto de manera suave si hay inflamación.\n• No acudas a saunas, baños turcos ni te expongas directamente al sol o rayos UVA durante los primeros 3 días. Pospone también el ejercicio físico de alta intensidad.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico utilizado es una sustancia totalmente biocompatible que el cuerpo reabsorbe de forma gradual con los meses. No obstante, si el paciente desea realizar alguna modificación o es necesario por criterios médicos, disponemos en clínica de la enzima hialuronidasa. Este compuesto deshace el producto de forma inmediata, segura y selectiva, devolviendo a las facciones su estado original.'
+        },
+        {
+          pregunta: 'Contraindicaciones principales',
+          respuesta: '• Mujeres en periodo de embarazo o lactancia.\n• Infecciones activas en la piel del rostro (como brotes de acné quístico severo, herpes o heridas) en la zona de la mejilla el día de la cita.\n• Alergia diagnosticada al ácido hialurónico o a la lidocaína.\n• Enfermedades autoinmunes o sistémicas en fase activa no controladas.\n• Presencia de materiales de relleno permanentes previos en el tercio medio facial.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Midface Rejuvenation with Volumizing Fillers", fuente: "Aesthetic Surgery Journal", link: "#" }
+      ]
+    }
   },
   'marcaje-mandibular': {
     nombre: 'Marcaje mandibular',
-    imagen: imgProvisional, descripcionBreve: 'Define tu contorno facial, tensa el cuello y proyecta seguridad con una mandíbula estructurada.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el marcaje mandibular con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Define tu contorno facial, tensa el cuello y proyecta seguridad con una mandíbula estructurada.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Infiltramos hidroxiapatita cálcica o ácido hialurónico de alta densidad a lo largo de la rama mandibular. Este soporte estructural define el límite exacto entre el rostro y el cuello, camuflando la flacidez leve y aportando fuerza al perfil.',
-      ventajas: ['Definición nítida del óvalo facial.', 'Efecto estilizador del cuello y reducción visual de la papada.', 'Tratamiento estrella en la armonización masculina y femenina.'],
-      faqs: [{ pregunta: '¿Es igual para hombres que para mujeres?', respuesta: 'No. En mujeres buscamos una V elegante, y en hombres ángulos rectos más ensanchados.' }],
-      evidencia: [{ titulo: "Jawline Contouring with Fillers", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético de alta precisión diseñado para definir, esculpir y estructurar el contorno inferior del rostro. Mediante la infiltración de ácido hialurónico de alta densidad, logramos proyectar el ángulo de la mandíbula y delimitar la línea que separa el rostro del cuello. Este procedimiento es ideal tanto para pacientes jóvenes que buscan potenciar sus facciones y ganar un perfil más estilizado o masculinizado, como para rostros maduros que desean disimular la flacidez inicial del tercio inferior y recuperar el soporte óseo perdido, consiguiendo un resultado nítido, elegante y natural.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La definición del contorno mandibular es visible de forma inmediata en una única sesión.\n\nDentro de nuestro protocolo clínico, programamos una visita de control a las dos semanas. En esta consulta evaluamos la correcta integración del gel de alta densidad con la estructura ósea del maxilar inferior, comprobamos la perfecta simetría bilateral y, si el caso lo requiere, realizamos cualquier pequeño ajuste de optimización.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Al trabajarse habitualmente en planos profundos sobre el tejido óseo, la sensibilidad al dolor es muy baja. Además, los viales de ácido hialurónico que empleamos incorporan lidocaína en su fórmula que adormecen la zona.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar un procedimiento seguro y minimizar la aparición de hematomas en el área del cuello y la mandíbula, te recomendamos seguir estas pautas previas:\n\n• Evita consumir antiinflamatorios (como ibuprofeno o aspirina) y suplementos como el Omega 3 o la Vitamina E durante los 3-5 días anteriores a tu cita, a menos que sea por indicación médica.\n• No consumas bebidas alcohólicas.\n• El día de la cita acude a la clínica con el rostro y la línea de la mandíbula limpios. En el caso de los hombres, se recomienda acudir afeitados de forma suave (evitando irritaciones severas en la piel el mismo día).'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Aunque puedes reincorporarte a tu rutina diaria de inmediato, el tercio inferior requiere cuidados específicos las primeras horas para que el soporte se asiente correctamente:\n\n• No te realices masajes faciales, tratamientos de estética en cabina ni utilices rodillos o Gua Sha durante las primeras dos semanas. Intenta dormir boca arriba.\n• Es completamente normal notar una sensación similar a las agujetas o cierta rigidez al masticar o abrir la boca de par en par durante los primeros 2-3 días.\n• Si experimentas una leve inflamación, puedes aplicar frío local de forma indirecta y suave. Evita el ejercicio físico intenso, las saunas, piscinas y la exposición solar directa.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. Al utilizar exclusivamente geles de ácido hialurónico de calidad premium, el material es totalmente biocompatible y reabsorbible por tu propio organismo. En caso de que se desee modificar el volumen o si es necesario por criterios médicos, disponemos en la clínica de la enzima hialuronidasa. Este componente médico disuelve el producto de forma inmediata y segura, devolviendo al contorno de tu rostro su anatomía original en pocas horas.'
+        },
+        {
+          pregunta: 'Contraindicaciones principales',
+          respuesta: '• Mujeres en periodos de embarazo o lactancia.\n• Infecciones cutáneas activas, heridas abiertas o brotes severos de acné en la línea de la mandíbula, mentón o zona superior del cuello el día de la cita.\n• Alergia documentada al ácido hialurónico o al anestésico local (lidocaína).\n• Enfermedades autoinmunes sistémicas o patologías del colágeno en fase de brote activo.\n• Antecedentes de materiales de relleno permanentes previos (como siliconas o biopolímeros) en el tercio inferior del rostro.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Jawline Contouring with Fillers", fuente: "Dermatologic Surgery", link: "#" }
+      ]
+    }
   },
   'correccion-menton': {
     nombre: 'Proyección y corrección de mentón',
-    imagen: imgProvisional, descripcionBreve: 'Equilibra tu perfil, reduce visualmente la papada y aporta fuerza a tu estructura facial.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la proyección y corrección de mentón con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Equilibra tu perfil, reduce visualmente la papada y aporta fuerza a tu estructura facial.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección ósea' }, 
+      { titulo: 'Tiempo', valor: '20 min' }, 
+      { titulo: 'Resultados', valor: 'Inmediatos' }, 
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Un mentón retraído (retrognatia leve) desequilibra todo el rostro y hace que la nariz parezca más prominente. Proyectamos el mentón hacia adelante o hacia abajo según la necesidad anatómica, mejorando la tensión de la piel del cuello y armonizando la perfiloplastia.',
-      ventajas: ['Armonización instantánea del perfil (Perfiloplastia).', 'Mejora la tensión de la papada.', 'Procedimiento rápido y de alto impacto visual.'],
-      faqs: [{ pregunta: '¿Es un implante?', respuesta: 'No, es ácido hialurónico denso que simula la dureza del hueso, siendo 100% reversible y reabsorbible.' }],
-      evidencia: [{ titulo: "Chin Augmentation with Hyaluronic Acid", fuente: "Journal of Craniofacial Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección ósea' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado y no quirúrgico diseñado para definir, proyectar y equilibrar la estructura del mentón, logrando una armonía perfecta en las facciones del rostro.\n\nUn mentón retraído o corto desequilibra la proporción facial, haciendo que la nariz parezca más prominente o acentuando la zona de la papada. Mediante la infiltración precisa de ácido hialurónico de alta densidad, conseguimos proyectar el mentón hacia adelante, alargar el rostro de forma sutil o suavizar la forma de la barbilla. Es la alternativa ideal a la mentoplastia quirúrgica para quienes buscan estilizar el perfil facial de manera inmediata, segura y sin postoperatorio.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La prevención y proyección del mentón es visible de forma inmediata en una única sesión.\n\nSiguiendo nuestro protocolo clínico, programamos una visita de control obligatoria a las dos semanas. En esta cita de seguimiento evaluamos la perfecta adaptación del producto sobre la estructura ósea, confirmamos la simetría y realizamos cualquier pequeño ajuste de optimización necesario para consolidar un acabado impecable, lo cual está completamente incluido en el tratamiento inicial.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Es un procedimiento muy tolerable. Al realizarse en un plano anatómico profundo sobre el hueso (donde apenas existen terminaciones nerviosas sensitivas), las molestias son mínimas. Además, el ácido hialurónico que utilizamos incorpora lidocaína en su fórmula, adormeciendo el tejido y permitiendo que la sesión sea cómoda.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: '• Evita consumir antiinflamatorios (como el ibuprofeno o la aspirina) y suplementos alimenticios (Omega 3, Vitamina E) durante los 3-5 días anteriores a tu cita, a menos que sea por prescripción médica.\n• No consumas bebidas alcohólicas.\n• El día de la cita acude a la clínica con la zona del mentón limpia y desmaquillada. En pacientes masculinos, se aconseja acudir con un afeitado suave del mismo día o el anterior para facilitar la evaluación anatómica exacta de la barbilla.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Puedes retomar tu actividad diaria de forma inmediata, pero debido a que el material empleado ejerce una función de soporte óseo, es fundamental que sigas estas recomendaciones los primeros días:\n\n• No te realices masajes fuertes, limpiezas faciales profundas ni utilices herramientas tipo Gua Sha o rodillos durante las primeras dos semanas. Intenta dormir boca arriba.\n• Es normal experimentar una sensación de molestia leve, presión o "agujetas" en la barbilla al gesticular, hablar o masticar durante las primeras 48-72 horas.\n• Primeros 3 días: Evita acudir a saunas, baños de vapor, piscinas o realizar ejercicio físico intenso. Tampoco te expongas de manera directa al sol o a radiación UVA para controlar el proceso de inflamación.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. Al trabajar exclusivamente con ácidos hialurónicos premium y biodegradables, el producto es reabsorbido de manera natural por tu propio organismo con el paso del tiempo. Sin embargo, si deseas realizar cualquier modificación o si fuera necesario bajo criterios de seguridad médica, disponemos en consulta de la enzima hialuronidasa. Este compuesto disuelve el gel de forma inmediata y segura, devolviendo al mentón su aspecto original en pocas horas.'
+        },
+        {
+          pregunta: 'Contraindicaciones principales',
+          respuesta: '• Mujeres en periodos de embarazo o de lactancia.\n• Presencia de infecciones activas en la piel (brotes de acné quístico severo, herpes labial activo o foliculitis) en la zona de la barbilla el día de la cita.\n• Alergia diagnosticada al ácido hialurónico o a los anestésicos locales (lidocaína).\n• Enfermedades autoinmunes sistémicas o patologías del tejido conectivo en fase activa.\n• Existencia previa de implantes rígidos de mentón (prótesis quirúrgicas) o materiales de relleno permanentes antiguos en el tercio inferior del rostro.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Chin Augmentation with Hyaluronic Acid", fuente: "Journal of Craniofacial Surgery", link: "#" }
+      ]
+    }
   },
   'relleno-ojeras': {
     nombre: 'Relleno de ojeras',
@@ -207,38 +347,147 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'fosa-temporal': {
     nombre: 'Relleno de fosa temporal',
-    imagen: imgProvisional, descripcionBreve: 'Rejuvenece el tercio superior y eleva la cola de la ceja restaurando el volumen de las sienes.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el relleno de la fosa temporal con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Rejuvenece el tercio superior y eleva la cola de la ceja restaurando el volumen de las sienes.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula / Aguja' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Con la edad o la pérdida de peso, las sienes se hunden dando un aspecto esqueletizado o cadavérico. Al reponer el volumen en la fosa temporal profunda, logramos un efecto "lifting" que abre la mirada y devuelve la suavidad ovalada al rostro.',
-      ventajas: ['Elevación indirecta y natural de la cola de la ceja.', 'Suaviza las transiciones óseas del contorno facial.', 'Aporta un aspecto saludable e hidratado.'],
-      faqs: [{ pregunta: '¿Duele?', respuesta: 'Es un área que puede generar cierta presión temporal durante la infiltración, pero utilizamos anestesia para asegurar tu confort.' }],
-      evidencia: [{ titulo: "Temporal Fossa Volumization Techniques", fuente: "Aesthetic Surgery Journal", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula / Aguja' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético diseñado para restaurar el volumen perdido en la zona de las sienes. Con el paso de los años, el envejecimiento provoca una reabsorción ósea y una pérdida de los compartimentos grasos en los laterales de la frente, lo que genera un hundimiento de las sienes que da al rostro un aspecto envejecido, demacrado o excesivamente delgado.\n\nMediante la infiltración precisa de ácido hialurónico de alta densidad, conseguimos proyectar suavemente la fosa temporal. Este procedimiento no solo suaviza los contornos laterales del rostro devolviéndole una forma ovalada y armoniosa, sino que además produce un efecto óptico de "lifting" indirecto, elevando la cola de la ceja y abriendo la mirada.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'En la gran mayoría de los casos, una sola sesión es suficiente para recuperar el volumen perdido y apreciar el resultado de forma inmediata. Al ser una zona que requiere un producto de alta cohesividad, el cambio estructural es muy evidente desde el primer momento.\n\nA las dos o tres semanas, realizamos una consulta de seguimiento para evaluar cómo se ha asentado el producto y comprobar la perfecta simetría entre ambos lados.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Además, los geles de ácido hialurónico que utilizamos incorporan lidocaína, lo que minimiza cualquier molestia durante la sesión.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: '• Suspende la toma de antiinflamatorios (como ibuprofeno o aspirina) y suplementos de Omega 3 o Vitamina E entre 3 y 5 días antes, salvo indicación médica.\n• Evita el alcohol y el tabaco en las 24 horas previas.\n• Ven a la consulta con el rostro y la línea de nacimiento del cabello limpios de maquillaje o productos capilares pesados.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La recuperación es inmediata, pero al tratarse de un músculo de la masticación (el músculo temporal), el post-tratamiento tiene ciertas particularidades:\n\n• Es completamente normal sentir una ligera molestia, agujetas o sensación de presión al abrir la boca o masticar alimentos duros durante los primeros 2-3 días. Se recomienda una dieta más blanda si es necesario.\n• Primeras 24-48 horas: Evita presionar la zona. Intenta dormir boca arriba y no uses cascos de música ajustados, diademas o gorras que ejerzan presión directa sobre las sienes.\n• Evita fuentes de calor y ejercicio: No realices deporte intenso, ni acudas a saunas o piscinas en los 2 días posteriores.\n• Control del dolor: Si notas sensibilidad, puedes tomar paracetamol. Evita el ibuprofeno las primeras horas.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. Al igual que en el resto de tratamientos con ácido hialurónico, el producto es reabsorbible y biocompatible. Contamos en clínica con la enzima hialuronidasa, nuestro protocolo de seguridad para disolver el producto de forma inmediata si el paciente lo requiere o si se deseara modificar el volumen asentado.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Este procedimiento médico no se realizará o se pospondrá bajo los siguientes criterios:\n\n• Embarazo y lactancia.\n• Infecciones activas en la piel de la zona (frente, sienes o cuero cabelludo cercano).\n• Patologías autoinmunes graves o sistémicas sin control médico.\n• Alergia conocida al ácido hialurónico o a los anestésicos locales.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Temporal Fossa Volumization Techniques", fuente: "Aesthetic Surgery Journal", link: "#" }
+      ]
+    }
   },
   'surco-nasogeniano': {
     nombre: 'Tratamiento de surco nasogeniano',
-    imagen: imgProvisional, descripcionBreve: 'Suaviza las líneas de tristeza y el rictus para un rostro más amable, fresco y descansado.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento del surco nasogeniano con ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Suaviza las líneas de tristeza y el rictus para un rostro más amable, fresco y descansado.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula subdérmica' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '9-12 meses' }
+    ],
     detalles: {
-      descripcion: 'El pliegue que va desde la nariz hasta la boca envejece severamente el rostro. Infiltramos ácido hialurónico dinámico a lo largo del surco para "planchar" la arruga desde el interior, devolviendo la tersura al tercio medio facial.',
-      ventajas: ['Eliminación del aspecto de cansancio crónico o tristeza.', 'Rejuvenecimiento instantáneo de la zona perioral.', 'Resultados que acompañan el movimiento natural de tu rostro.'],
-      faqs: [{ pregunta: '¿Se notará raro al sonreír?', respuesta: 'Usamos hialurónicos con tecnología resiliente (dinámicos) que se estiran y adaptan cuando gesticulas y sonríes.' }],
-      evidencia: [{ titulo: "Nasolabial Fold Correction with Dermal Fillers", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula subdérmica' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '9-12 meses' }]
+      descripcion: 'Es un procedimiento médico-estético diseñado para suavizar las líneas de expresión y pliegues que se forman entre la nariz y las comisuras de la boca, devolviendo al rostro un aspecto más descansado, fresco y rejuvenecido. Con el paso del tiempo, la pérdida de soporte óseo y el desplazamiento de los compartimentos grasos de las mejillas hacen que los tejidos caigan, acentuando este surco y aportando una apariencia de cansancio o tristeza.\n\nEl tratamiento se realiza mediante la infiltración de ácido hialurónico de densidad media-alta. Dependiendo de las necesidades anatómicas del paciente, podemos abordar el problema desde su origen (aportando soporte en el pómulo para realizar un efecto lifting que eleve el tejido) o tratando directamente el surco de forma superficial para recuperar la tersura de la piel, garantizando siempre la máxima naturalidad al gesticular y sonreír.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'En la gran mayoría de los casos, una sola sesión es suficiente para atenuar el surco y apreciar un cambio notable e inmediato. Al reponer el volumen perdido, el rostro recupera su equilibrio al momento.\n\nA las dos o tres semanas de la sesión inicial, programamos una consulta de seguimiento para valorar la integración del producto en una zona de alta gesticulación. Si en esta revisión se requiere algún pequeño toque de optimización para perfeccionar la simetría, se realiza de manera integrada.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un tratamiento tolerable. Habitualmente realizamos el procedimiento utilizando una cánula ultrafina de punta roma, la cual avanza de forma suave por los tejidos sin cortar los vasos sanguíneos, reduciendo al mínimo las molestias y el riesgo de hematomas. Además, los geles de ácido hialurónico que empleamos incorporan lidocaína (anestésico) en su propia fórmula, adormeciendo la zona durante la sesión.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar un procedimiento seguro y minimizar la aparición de pequeñas rojeces o hematomas, te recomendamos seguir estas pautas:\n\n• Evita medicamentos que afecten a la coagulación: No tomes antiinflamatorios (como ibuprofen o aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días previos, a menos que sea por indicación médica.\n• No consumas bebidas alcohólicas en las 24 horas anteriores a tu cita.\n• Si tienes propensión a sufrir brotes de acné severo o infecciones cutáneas en la zona perioral, coméntanoslo antes de acudir.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La recuperación es inmediata y te permite volver a tu rutina diaria, siguiendo unos cuidados básicos:\n\n• Primeras 24 horas: Evita tocar, presionar o masajear la zona tratada. Intenta no gesticular de forma excesivamente exagerada o reír de manera forzada justo después de la sesión para dejar que el producto se asiente adecuadamente.\n• No apliques maquillaje en la zona del surco hasta el día siguiente. Mantén el rostro limpio.\n• Pospone el ejercicio físico intenso, el uso de saunas, baños turcos o la exposición solar directa durante los primeros 2 días.\n• Posición al dormir: Intenta dormir boca arriba con la cabeza ligeramente elevada durante las primeras noches.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico empleado es un material completamente biocompatible y reabsorbible que tu organismo asimilará de forma gradual. Al igual que en el resto de nuestros tratamientos, contamos en clínica con la enzima médica hialuronidasa. Este protocolo de seguridad nos permite disolver el gel de manera rápida y segura en pocas horas si por cualquier criterio estético o médico se deseara revertir el resultado.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Este procedimiento médico no se realizará o se pospondrá bajo los siguientes criterios:\n\n• Embarazo y lactancia.\n• Infecciones activas en la zona a tratar: Presencia de brotes de acné inflamatorio, herpes labial, dermatitis o heridas abiertas en el área nasogeniana.\n• Enfermedades autoinmunes graves o sistémicas que no estén controladas por su especialista.\n• Alergia documentada al ácido hialurónico o a los anestésicos locales (lidocaína).\n• Rellenos permanentes previos: No infilbramos ácido hialurónico en zonas donde existan antecedentes de materiales no reabsorbibles antiguos (como siliconas o biopolímeros).'
+        }
+      ],
+      evidencia: [
+        { titulo: "Nasolabial Fold Correction with Dermal Fillers", fuente: "Dermatologic Surgery", link: "#" }
+      ]
+    }
   },
 
   // --- 1.2 ARRUGAS Y LÍNEAS ---
   'arrugas-expresion': {
     nombre: 'Tratamiento de arrugas de expresión',
-    imagen: imgProvisional, descripcionBreve: 'Relaja la musculatura facial para suavizar arrugas, despejar la mirada y prevenir el envejecimiento.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento de arrugas de expresión (Neuromodulación)?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Relaja la musculatura facial para suavizar arrugas, despejar la mirada y prevenir el envejecimiento.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección' },
+      { titulo: 'Tiempo', valor: '20 min' },
+      { titulo: 'Resultados', valor: 'A los 4-10 días' },
+      { titulo: 'Duración', valor: '4-6 meses' }
+    ],
     detalles: {
-      descripcion: 'El tratamiento preventivo antiaging por excelencia. Mediante la relajación selectiva y temporal de los músculos depresores (entrecejo, frente y patas de gallo), logramos difuminar las arrugas dinámicas antes de que rompan la piel. El resultado es una mirada abierta y un rostro sereno.',
-      ventajas: ['Prevención activa de las arrugas profundas.', 'Mirada iluminada, descansada y cejas sutilmente elevadas.', 'Piel visiblemente más lisa y brillante.'],
-      faqs: [{ pregunta: '¿Perderé la expresión?', respuesta: 'No. El objetivo moderno ("Baby Botox") es modular el músculo, no paralizarlo, conservando tu gestualidad intacta.' }],
-      evidencia: [{ titulo: "Long-term safety of neuromodulators", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'A los 4-10 días' }, { titulo: 'Duración', valor: '4-6 meses' }]
+      descripcion: 'Es el procedimiento médico-estético de elección para suavizar, prevenir y eliminar las arrugas dinámicas del tercio superior del rostro, logrando una apariencia visiblemente más descansada, fresca y rejuvenecida sin perder la naturalidad de la expresión. Las arrugas de la frente, el entrecejo y las "patas de gallo" aparecen debido a la contracción repetitiva de los músculos faciales al gesticular.\n\nSu función es relajar temporalmente y de forma selectiva los músculos hiperactivos responsables de los pliegues, permitiendo que la piel se alise, deteniendo el proceso de envejecimiento de la zona y evitando que las arrugas se vuelvan profundas y permanentes.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Para este tratamiento se requiere una única sesión inicial. A diferencia de los rellenos, el efecto no es inmediato: los músculos comienzan a relajarse de forma progresiva alcanzando el resultado óptimo a los 14 días.\n\nComo protocolo médico, programamos una visita de control obligatorio a las dos semanas. En esta revisión evaluamos la simetría facial en movimiento y, si la fuerza muscular del paciente lo requiere (especialmente frecuente en varones o musculaturas potentes), realizamos un pequeño retoque de optimización.'
+        },
+        {
+          pregunta: '¿Cuánto tiempo dura el efecto?',
+          respuesta: 'Los efectos tienen una duración media de entre 4 y 6 meses, dependiendo del metabolismo de cada paciente.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento prácticamente indoloro, rápido y muy cómodo.\n\nPara garantizar el máximo confort, utilizamos microagujas de calibre ultra fino. La mayoría de los pacientes describen la sensación como pequeños pinchazos superficiales perfectamente tolerables, por lo que no es necesario aplicar anestesia infiltrada ni tópica, permitiéndote retomar tus actividades diarias inmediatamente.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar un procedimiento seguro y evitar la aparición de pequeños puntos de hematoma, te recomendamos:\n\n• No consumas antiinflamatorios (como ibuprofeno o aspirina) ni suplementos que puedan fluidificar la sangre (como el Omega 3) durante los 3-5 días previos a la cita.\n• Acude a la clínica con el rostro limpio y desmaquillado si es posible.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Para asegurar que el producto actúe exactamente en el músculo seleccionado y no se difunda a zonas no deseadas, es fundamental seguir estas pautas estrictas durante las 4 horas posteriores al tratamiento:\n\n• Mantente erguido: No te tumbes, no te acuestes boca abajo ni vayas a dormir durante las primeras 4 horas.\n• Evita masajear, frotar o presionar la frente, el entrecejo o los ojos. Al lavarte el rostro o aplicar cremas, hazlo con toques extremadamente suaves.\n• Evita el ejercicio y el calor: No realices deporte intenso, ni acudas a saunas, piscinas o spas durante las primeras 24 horas. El calor excesivo puede inactivar o desplazar el producto.\n• Evita el uso de cascos o gorras: No utilices elementos que presionen la frente o las sienes inmediatamente después.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'El tratamiento no requiere un "antídoto" directo porque su efecto es completamente transitorio y reversible por sí mismo. El organismo metaboliza y elimina el producto de forma natural y gradual.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Enfermedades neuromusculares de base: Patologías como la Miastenia Gravis o el Síndrome de Lambert-Eaton.\n• Infecciones activas: Presencia de infecciones bacterianas, herpes o heridas abiertas en la piel de la zona de la frente o contorno de ojos.\n• Alergia documentada a los componentes del complejo molecular.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Long-term safety of neuromodulators", fuente: "Dermatologic Surgery", link: "#" }
+      ]
+    }
   },
   'codigo-barras': {
     nombre: 'Corrección del "código de barras"',
