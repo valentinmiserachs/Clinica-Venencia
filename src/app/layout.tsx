@@ -26,7 +26,7 @@ const indiceBusquedaGlobal = [
   { nombre: 'Bandas platismales (Cuello)', slug: 'bandas-platismales', categoria: 'Faciales', palabrasClave: 'cuello, anillos venus' },
   { nombre: 'Mesoterapia facial', slug: 'mesoterapia-facial', categoria: 'Faciales', palabrasClave: 'vitaminas, brillo' },
   { nombre: 'Mesoterapia periocular', slug: 'mesoterapia-periocular', categoria: 'Faciales', palabrasClave: 'ojos, contorno' },
-  { nombre: 'Bioestimulación Polinucleótidos', slug: 'polinucleotidos', categoria: 'Faciales', palabrasClave: 'regeneracion' },
+  { nombre: 'Bioestimulación Polinucleótidos', slug: 'bioestimulacion-polinucleotidos', categoria: 'Faciales', palabrasClave: 'regeneracion' },
   { nombre: 'PRP Facial', slug: 'prp-facial', categoria: 'Faciales', palabrasClave: 'plasma, sangre' },
   { nombre: 'Exosomas faciales', slug: 'exosomas-facial', categoria: 'Faciales', palabrasClave: 'exosomas, celulas' },
   { nombre: 'Radiesse', slug: 'radiesse', categoria: 'Faciales', palabrasClave: 'colageno, flacidez' },
@@ -95,7 +95,7 @@ const estructuraMenuTratamientos: MenuItem[] = [
         items: [
           { nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico.', slug: 'mesoterapia-facial' },
           { nombre: 'Mesoterapia periocular.', slug: 'mesoterapia-periocular' },
-          { nombre: 'Bioestimulación con Polinucleótidos.', slug: 'polinucleotidos' },
+          { nombre: 'Bioestimulación con Polinucleótidos.', slug: 'bioestimulacion-polinucleotidos' },
           { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', slug: 'prp-facial' },
           { nombre: 'Terapia avanzada con Exosomas.', slug: 'exosomas-facial' }
         ]

@@ -490,131 +490,500 @@ const tratamientosData: Record<string, Tratamiento> = {
     }
   },
   'codigo-barras': {
-    nombre: 'Corrección del "código de barras"',
-    imagen: imgProvisional, descripcionBreve: 'Alisado de las arrugas periorales para rejuvenecer la zona alrededor de la boca sin aportar volumen.', antesDespues: AD,
+    nombre: 'Corrección código de barras',
+    tituloDescripcion: '¿Qué es la corrección del "código de barras"?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Suaviza las arrugas periorales y rejuvenece tu sonrisa sin añadir volumen artificial al labio.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Blanching superficial' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '9-12 meses' }
+    ],
     detalles: {
-      descripcion: 'Las arrugas verticales sobre el labio superior se tratan combinando técnicas: usamos la técnica "Blanching" con infiltración superficial de ácido hialurónico muy elástico para rellenar la línea rota, a menudo apoyado con microdosis neuromoduladoras para evitar la contracción excesiva.',
-      ventajas: ['Rejuvenecimiento estético de la zona perioral.', 'Evita que el pintalabios se cuartee por las líneas finas.', 'Tratamiento discreto sin efecto de "labio inflado".'],
-      faqs: [{ pregunta: '¿Me cambiará la boca?', respuesta: 'En absoluto. Se trata solo la piel blanca (el bigote), no la mucosa labial.' }],
-      evidencia: [{ titulo: "Perioral Rejuvenation and Blanching Technique", fuente: "Plastic and Reconstructive Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Blanching superficial' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '6-9 meses' }]
+      descripcion: 'Es un tratamiento médico-estético diseñado para atenuar y eliminar las arrugas verticales que se forman en la piel del labio superior e inferior. Estas líneas de expresión aparecen debido al envejecimiento cutáneo, la pérdida de colágeno, la gesticulación repetitiva al hablar o fumar, y la disminución del soporte estructural de la propia boca.\n\nPara solucionarlo, empleamos un abordaje avanzado mediante la infiltración de ácido hialurónico dinámico de baja densidad y alta elasticidad. En lugar de rellenar de forma masiva, aplicamos la técnica de blanching o microinyecciones superficiales directamente en el lecho de cada arruga. Esto nos permite "sellar" la hendidura y rehidratar la piel desde el interior, devolviendo la tersura y el aspecto liso a la zona perioral sin modificar la anatomía ni aportar un volumen artificial al labio.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'En la mayoría de los casos, una sola sesión es suficiente para apreciar una mejoría y suavizar el relieve de la piel de forma inmediata.\n\nA las dos semanas del procedimiento, programamos una consulta de seguimiento en la clínica. Al ser una zona con tanta movilidad, esta revisión es clave para evaluar la integración del gel en el tejido y comprobar que el resultado es completamente homogéneo al gesticular.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Es un procedimiento perfectamente tolerable. La zona perioral superior es especialmente sensible, por lo que antes de comenzar, aplicamos una crema anestésica de alta potencia. Asimismo, el producto utilizado incorpora lidocaína (anestesia) en su fórmula, garantizando un procedimiento rápido, seguro y confortable.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar el éxito del tratamiento y reducir al mínimo el riesgo de pequeños hematomas, te recomendamos:\n\n• Evita medicamentos que afecten a la coagulación: No tomes antiinflamatorios (como ibuprofeno o aspirina) ni suplementos de Omega 3 o Vitamina E entre 3 y 5 días antes de la cita.\n• Si tienes tendencia a sufrir herpes, avísanos unos días antes para pautar un tratamiento preventivo.\n• No consumas bebidas alcohólicas ni fumes en las 24 horas previas.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La zona perioral es muy propensa a una inflamación transitoria en las primeras horas. Para optimizar el resultado, sigue estas pautas:\n\n• Primeras 24 horas: Evita tocar, frotar o presionar la zona tratada. No uses maquillaje ni labiales. Intenta no gesticular de manera exagerada o forzar la boca (evita usar pajitas).\n• Aplica frío local indirecto (envuelto en un paño limpio) en intervalos cortos. Es normal notar pequeños relieves o durezas al pasar el dedo los primeros días debido a la inflamación; desaparecerán al asentarse el producto.\n• No realices deporte intenso, ni acudas a saunas o piscinas durante los primeros 2 días.\n• Evita fumar y consumir bebidas alcohólicas o alimentos excesivamente calientes durante las primeras 48 horas.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, es 100% reversible. El ácido hialurónico dinámico utilizado es un material totalmente biocompatible que el cuerpo reabsorbe de manera natural con el tiempo. Si por cualquier motivo desearas modificar el resultado de forma inmediata, contamos en clínica con la enzima hialuronidasa, un protocolo de seguridad médica que disuelve el producto de forma rápida y segura en cuestión de horas.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Este procedimiento médico se pospondrá o estará contraindicado en caso de:\n\n• Embarazo y lactancia.\n• Infecciones activas en la zona: Brotes de herpes labial, infecciones bacterianas, acné inflamatorio o heridas abiertas alrededor de la boca.\n• Presencia de rellenos permanentes previos: No infiltramos ácido hialurónico si existen antecedentes de siliconas o biopolímeros en la zona perioral, debido al alto riesgo de complicaciones.\n• Enfermedades autoinmunes graves o sistémicas no controladas.\n• Alergias conocidas al ácido hialurónico o a la lidocaína.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Blanching Technique for Perioral Rhytids", fuente: "Journal of Cosmetic Dermatology", link: "#" }
+      ]
+    }
   },
   'bandas-platismales': {
     nombre: 'Tratamiento de bandas platismales',
-    imagen: imgProvisional, descripcionBreve: 'Suaviza el cuello, los anillos de Venus y estiliza el óvalo facial relajando la tensión muscular.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento de bandas platismales?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Rejuvenece el cuello, redefine el ángulo mandibular y elimina las cuerdas verticales.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección selectiva' },
+      { titulo: 'Tiempo', valor: '20 min' },
+      { titulo: 'Resultados', valor: 'A los 14 días' },
+      { titulo: 'Duración', valor: '4-6 meses' }
+    ],
     detalles: {
-      descripcion: 'El músculo platisma (en el cuello) tira constantemente hacia abajo, desdibujando la mandíbula y marcando "cuerdas" verticales. Al relajar estratégicamente estas bandas con neuromoduladores (Técnica del Lifting de Nefertiti), permitimos que los músculos elevadores de la cara ganen, redefiniendo el cuello.',
-      ventajas: ['Efecto "Lifting de Nefertiti" inmediato sin cirugía.', 'Estiliza y alarga visualmente el cuello.', 'Frena el descolgamiento del tercio inferior facial.'],
-      faqs: [{ pregunta: '¿Afecta al tragar o hablar?', respuesta: 'No, el tratamiento es estrictamente superficial en las bandas platismales, no afecta a las estructuras internas del cuello.' }],
-      evidencia: [{ titulo: "Nefertiti Lift: A new technique for lower face contouring", fuente: "Journal of Cosmetic and Laser Therapy", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Neuromodulación' }, { titulo: 'Tiempo', valor: '15 min' }, { titulo: 'Resultados', valor: 'A los 10 días' }, { titulo: 'Duración', valor: '4-6 meses' }]
+      descripcion: 'Es un procedimiento médico-estético no quirúrgico diseñado para rejuvenecer el cuello y redefinir la línea de la mandíbula. Con el paso del tiempo y la gesticulación, el músculo platisma (un músculo fino y plano que cubre la parte anterior del cuello) tiende a hipertrofiarse y descolgarse, formando unos cordones o cuerdas verticales conocidas como bandas platismales, que tiran de las facciones hacia abajo.\n\nEl tratamiento consiste en la aplicación microfocalizada de proteínas neuromoduladoras (relajantes musculares) directamente sobre estas bandas. Al relajar de forma selectiva las fibras del músculo platisma, conseguimos que las cuerdas verticales desaparezcan, la piel del cuello se alise y se libere la tracción negativa que sufre el tercio inferior, logrando un efecto de lifting biológico que redefine por completo el ángulo mandibular.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Se requiere una única sesión inicial. Al tratarse de un tratamiento de relajación muscular, el efecto no se aprecia de forma inmediata: el músculo empieza a destensarse a partir del tercer día y el resultado óptimo se consolida a los 14 días.\n\nComo parte de nuestro protocolo de seguridad, programamos una visita de control a las dos semanas para evaluar la simetría del cuello en movimiento y realizar un pequeño retoque si alguna fibra muscular mantiene demasiada fuerza.'
+        },
+        {
+          pregunta: '¿Cuánto duran los efectos del tratamiento?',
+          respuesta: 'Los efectos tienen una duración media de entre 4 y 6 meses. Este tiempo puede variar en función de factores individuales de cada paciente, como su velocidad metabólica, el nivel de gesticulación o la realización de ejercicio físico de alta intensidad. Transcurrido este periodo, el músculo recupera su fuerza de forma gradual y es el momento idóneo para programar la siguiente sesión de mantenimiento.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento prácticamente indoloro. Utilizamos agujas de calibre fino, por lo que las infiltraciones se perciben apenas como pequeños y rápidos pinchazos superficiales en la cara anterior del cuello.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar un procedimiento seguro y evitar la presencia de pequeños hematomas en la zona del cuello, te recomendamos:\n\n• Evita antiinflamatorios: No tomes medicamentos como el ibuprofeno o la aspirina, ni suplementos que puedan licuar la sangre (Omega 3, vitamina E) durante los 3-5 días previos.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Para garantizar que el producto actúe exclusivamente en los puntos musculares seleccionados del cuello, debes seguir estas pautas durante las 4 horas posteriores:\n\n• Evita tumbarte: Mantente en posición erguida (no te acuestes ni te pongas boca abajo).\n• Evita frotar, presionar o realizar masajes de drenaje en la zona tratada. Al aplicar tus cremas habituales, hazlo con toques muy suaves.\n• No realices deporte de alta intensidad ni vayas al gimnasio durante las primeras 24 horas para evitar la migración del producto por sudoración o esfuerzo excesivo.\n• No acudas a saunas, spas, baños turcos ni te expongas al sol de forma directa el día del tratamiento.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'El tratamiento es completamente reversible de forma natural. Al ser un procedimiento de neuromodulación temporal, el organismo metaboliza el producto de forma gradual. Transcurridos unos meses, el músculo platisma recupera su función y contracción habitual de manera progresiva, volviendo exactamente al estado inicial sin dejar ningún tipo de secuela.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Enfermedades neuromusculares de base: Como la Miastenia Gravis, el Síndrome de Lambert-Eaton o esclerosis lateral.\n• Presencia de infecciones cutáneas, acné quístico o heridas abiertas en la zona anterior del cuello.\n• Alergia documentada a los componentes de la fórmula o a la albúmina de huevo.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Treatment of Platysmal Bands with Neuromodulators", fuente: "Plastic and Reconstructive Surgery", link: "#" }
+      ]
+    }
   },
 
   // --- 1.3 CALIDAD DE PIEL ---
   'mesoterapia-facial': {
-    nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico',
-    imagen: imgProvisional, descripcionBreve: 'Nutrición profunda inyectada para un efecto "Glow" instantáneo, cerrando poros y unificando el tono.', antesDespues: AD,
+    nombre: 'Mesoterapia facial',
+    tituloDescripcion: '¿Qué es la mesoterapia facial con vitaminas y ácido hialurónico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Revitaliza tu piel desde el interior con un cóctel de vitaminas, minerales y ácido hialurónico.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Micropunciones' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: '3-4 meses' }
+    ],
     detalles: {
-      descripcion: 'Infiltramos un cóctel médico bio-nutritivo (ácido hialurónico no reticulado, vitaminas C, E, aminoácidos y coenzimas) directamente en la dermis superficial. Esto actúa como un fertilizante celular, rehidratando la piel desde dentro y protegiéndola de la oxidación celular.',
-      ventajas: ['Piel intensamente hidratada, jugosa y elástica.', 'Efecto flash luminoso ideal para eventos (Efecto Glow).', 'Lucha activa contra el fotoenvejecimiento.'],
-      faqs: [{ pregunta: '¿Quedan moratones?', respuesta: 'Las agujas son minúsculas, puede quedar algún micro-hematoma que se disimula fácilmente con maquillaje.' }],
-      evidencia: [{ titulo: "Mesotherapy for Facial Skin Rejuvenation", fuente: "Journal of Clinical Medicine", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Micropunciones' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'En 48 horas' }, { titulo: 'Duración', valor: 'Mantenimiento mensual/trimestral' }]
+      descripcion: 'Es un tratamiento médico-estético de revitalización celular diseñado para devolver de forma inmediata la luminosidad, la elasticidad y la jugosidad a la piel. Con el paso del tiempo, el estrés, la contaminación y la exposición solar, la piel pierde sus nutrientes esenciales, mostrándose apagada, deshidratada y con finas líneas de expresión.\n\nEl procedimiento consiste en la aplicación de microinyecciones superficiales en la dermis de un cóctel personalizado que combina ácido hialurónico no reticulado con más de 50 principios activos (vitaminas A, B, C y E, aminoácidos, coenzimas y minerales). Al depositar estos nutrientes directamente donde la cosmética convencional no puede llegar, estimulamos los fibroblastos, reactivamos la producción de colágeno y elastina, y logramos un efecto de "piel descansada" y profundamente hidratada, sin alterar en absoluto tus volúmenes naturales.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La mesoterapia facial es un tratamiento acumulativo y progresivo de la calidad de la piel. Para lograr un cambio estructural, profundo y duradero se requiere un protocolo inicial de entre 3 y 5 sesiones.\n\nEl número exacto de sesiones y el espacio entre ellas dependerá de las necesidades particulares de cada piel y del grado de envejecimiento. Una vez completado este ciclo inicial personalizado, se recomiendan sesiones de mantenimiento periódicas para prolongar la vitalidad celular y el efecto antioxidante en el tiempo.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y mínimamente invasivo. Las microinyecciones se realizan de forma muy superficial en la dermis utilizando agujas finas.\n\nPara garantizar que la experiencia sea completamente cómoda y agradable, aplicamos una crema anestésica de alta potencia en el rostro 20-30 minutos antes de comenzar la sesión. La mayoría de los pacientes solo perciben una leve sensación de hormigueo o pequeños pinchazos superficiales perfectamente tolerables.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel y minimizar la aparición de pequeñas rojeces, te recomendamos seguir estas pautas previas:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días anteriores a tu cita.\n• No te realices peelings químicos potentes, exfoliaciones mecánicas profundas o depilación facial con cera la semana previa.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La recuperación es prácticamente inmediata, aunque al tratarse de múltiples micropunciones superficiales, debes cuidar la piel las primeras horas:\n\n• Primeras 24 horas: No te maquilles ni apliques cosméticos que contengan retinol, ácidos (glicólico, salicílico) o alcohol. Lávate el rostro con un limpiador suave y agua tibia.\n• No frotes ni masajees la cara de forma enérgica. Es normal que queden pequeñas pápulas (pequeños bultitos donde se depositó el producto) o leves rojeces que desaparecen de forma natural en unas horas.\n• Aplica fotoprotector solar de amplio espectro (SPF 50+) cada 2-3 horas y evita la exposición solar directa durante los primeros 2 días.\n• No realices ejercicio físico intenso, ni acudas a saunas, piscinas o baños turcos durante las primeras 48 horas para evitar irritaciones.'
+        },
+        {
+          pregunta: '¿Cuánto duran los efectos del tratamiento?',
+          respuesta: 'Al completar el protocolo inicial de 3-5 sesiones, los beneficios de regeneración celular, firmeza y mejora de la textura de la piel tienen una duración media de entre 3 y 4 meses, momento en el cual el metabolismo celular agradece una sesión de mantenimiento.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Al tratarse de un procedimiento de nutrición e hidratación con componentes totalmente biocompatibles y reabsorbibles, el cuerpo los asimila de forma natural. No requiere ningún proceso de reversión (como la hialuronidasa), ya que el ácido hialurónico utilizado es libre (no reticulado), no genera volúmenes fijos ni asimetrías, y simplemente se integra en la dermis aportando agua y sustrato celular.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y lactancia.\n• Presencia de brotes de acné inflamatorio severo, herpes labial activo, eccemas, psoriasis o heridas abiertas en el rostro en el momento de la sesión.\n• Alergias conocidas a alguno de los componentes del cóctel (como a ciertas vitaminas o minerales).\n• Haberse realizado peelings médicos profundos o tratamientos láser ablativos en la zona en los días previos.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Mesotherapy in skin rejuvenation", fuente: "Journal of Cosmetic Dermatology", link: "#" }
+      ]
+    }
   },
   'mesoterapia-periocular': {
     nombre: 'Mesoterapia periocular',
-    imagen: imgProvisional, descripcionBreve: 'Revitalización profunda del contorno de ojos para borrar finas líneas y mejorar la pigmentación.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la mesoterapia periocular?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Revitaliza tu mirada, atenúa las ojeras oscuras y suaviza las finas líneas de expresión.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyecciones' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Acumulativa' }
+    ],
     detalles: {
-      descripcion: 'El contorno de ojos tiene la piel más fina del cuerpo. Utilizamos un complejo peptídico y despigmentante específico para esta zona. Drena líquidos, refuerza los capilares sanguíneos y engrosa la piel, atenuando las arrugas finas y aclarando las ojeras marrones/violáceas.',
-      ventajas: ['Reducción de ojeras vasculares y pigmentarias.', 'Alisa la textura "arrugada" de la piel inferior del ojo.', 'Mirada iluminada, drenada y descansada.'],
-      faqs: [{ pregunta: '¿Se inflaman los ojos?', respuesta: 'Puede haber una leve inflamación transitoria que baja a las pocas horas. Es completamente normal.' }],
-      evidencia: [{ titulo: "Periocular Rejuvenation Strategies", fuente: "Aesthetic Plastic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección dérmica' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Acumulativos' }, { titulo: 'Duración', valor: 'Mantenimiento' }]
+      descripcion: 'Es un tratamiento médico-estético diseñado para revitalizar, aclarar y rejuvenecer la zona del contorno de ojos. La piel periocular es hasta cinco veces más fina que la del resto del rostro, lo que la hace especialmente vulnerable al cansancio, la pérdida de colágeno, la flacidez y los trastornos de la microcirculación.\n\nEl procedimiento consiste en la aplicación de sutiles infiltraciones en la dermis periocular de un cóctel de activos médicos seleccionados (que suelen combinar ácido hialurónico no reticulado, péptidos tensores, aminoácidos, antioxidantes y agentes drenantes o despigmentantes). Al actuar directamente en la ojera, logramos mejorar la microcirculación linfática y sanguínea, atenuar el tono oscuro, suavizar las arrugas finas y aportar una hidratación profunda que devuelve la frescura y apertura a la mirada, sin aportar volúmenes artificiales.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La mesoterapia periocular es un tratamiento acumulativo y progresivo enfocado en la restauración del tejido. Para alcanzar un resultado óptimo, visible y sostenido, se requiere un protocolo inicial de entre 3 y 5 sesiones.\n\nEl número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se determinará de forma personalizada en la consulta tras una valoración médica de tu tipo de piel, el grado de envejecimiento y las indicaciones específicas del laboratorio del producto seleccionado para tu caso. Tras completar este ciclo inicial, se pautarán sesiones de mantenimiento espaciadas en el tiempo para prolongar los resultados.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable ya que antes de iniciar la sesión, aplicamos una crema anestésica de alta potencia para adormecer la piel de la zona. Las microinyecciones se realizan de forma muy superficial mediante agujas de calibre fino, minimizando las molestias al máximo. La mayoría de los pacientes describen la sensación como un leve hormigueo o pequeños pellizcos superficiales perfectamente tolerables.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar la zona periocular y disminuir el riesgo de que aparezcan pequeñas rojeces o hematomas en un área tan vascularizada, se recomienda:\n\n• Evita medicamentos anticoagulantes: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días previos a tu cita, salvo indicación médica.\n• Evita aplicar contornos de ojos con altas concentraciones de retinol o ácidos exfoliantes las 48 horas previas.\n• Ven a la clínica preferiblemente sin maquillaje, máscara de pestañas ni corrector de ojeras.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Dado que el tejido periocular es muy propenso a retener líquido de forma transitoria, el post-tratamiento inmediato requiere un cuidado delicado:\n\n• Primeras 24 horas: No frotes, presiones ni masajees la zona de las ojeras. Lávate el rostro de forma extremadamente suave y evita el uso de maquillaje o correctores en la zona tratada hasta el día siguiente.\n• Es normal presentar una ligera rojez, pápulas muy pequeñas (diminutos bultitos donde se depositó el producto) o un edema leve en el párpado inferior. Esto forma parte del proceso y desaparece de forma natural en unas horas o a lo largo del día siguiente.\n• Pospone el ejercicio físico intenso, el uso de saunas, baños turcos o ambientes con calor extremo durante las primeras 48 horas para evitar que aumente la inflamación.\n• Aplica fotoprotección solar específica y utiliza gafas de sol para proteger la zona de la radiación directa durante los primeros días.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Al tratarse de un procedimiento de nutrición cutánea profunda con principios activos totalmente biocompatibles y reabsorbibles, el organismo los metaboliza y asimila de forma natural con el tiempo.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones oculares o palpebrales activas: Presencia de conjuntivitis, blefaritis, herpes activo u orzuelos en el momento de la sesión.\n• Infecciones o heridas cutáneas en la zona del contorno de ojos.\n• Bolsas grasas palpebrales muy severas o hernia de grasa infraorbitaria: En estos casos, el tratamiento de elección suele ser quirúrgico (blefaroplastia), ya que la mesoterapia no elimina el exceso de grasa estructural.\n• Alergia documentada a alguno de los componentes del cóctel médico seleccionado.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Periorbital Rejuvenation with Mesotherapy", fuente: "Journal of Cutaneous and Aesthetic Surgery", link: "#" }
+      ]
+    }
   },
-  'polinucleotidos': {
-    nombre: 'Bioestimulación con Polinucleótidos',
-    imagen: imgProvisional, descripcionBreve: 'Medicina regenerativa celular de última generación para reparar tejidos dañados y fotoenvejecidos.', antesDespues: AD,
+  'bioestimulacion-polinucleotidos': {
+    nombre: 'Bioestimulación con polinucleótidos',
+    tituloDescripcion: '¿Qué es la bioestimulación con polinucleótidos?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Regenera tu piel desde el interior restaurando la firmeza y elasticidad con tecnología celular avanzada.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección dérmica' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Acumulativa' }
+    ],
     detalles: {
-      descripcion: 'Los polinucleótidos son fracciones de ADN altamente purificado. No son un relleno, son verdaderos "obreros" celulares. Se unen a los receptores de los fibroblastos ordenándoles que se multipliquen, reparen el daño solar, creen colágeno nuevo y neutralicen los radicales libres.',
-      ventajas: ['Regeneración tisular profunda a nivel ADN.', 'Aumento drástico de la elasticidad y firmeza de la piel.', 'Poder antiinflamatorio (excelente para pacientes con rosácea).'],
-      faqs: [{ pregunta: '¿Dan alergia?', respuesta: 'No, son moléculas purificadas que presentan una biocompatibilidad absoluta.' }],
-      evidencia: [{ titulo: "Polynucleotides in Aesthetic Medicine", fuente: "Journal of Cosmetic Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Infiltración intradérmica' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'A partir de 1 mes' }, { titulo: 'Duración', valor: 'Largo plazo' }]
+      descripcion: 'Es un tratamiento médico-estético de vanguardia englobado dentro de la medicina regenerativa, diseñado para restaurar la firmeza, la elasticidad y la salud de la piel desde su estructura celular profunda.\n\nAl ser infiltrados en la dermis, estos compuestos se unen a receptores específicos de las células de la piel (los fibroblastos), ordenándoles que vuelvan a fabricar colágeno propio de alta calidad y elastina de forma masiva. Además, tienen una altísima capacidad para captar agua (hidratación tridimensional), un potente efecto antioxidante que neutraliza los radicales libres y una acción antiinflamatoria. Es el tratamiento idóneo para combatir la flacidez, mejorar la textura y regenerar pieles envejecidas, dañadas por el sol o con cicatrices, manteniendo una naturalidad absoluta.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La bioestimulación con polinucleótidos es un proceso biológico de autoreparación cutánea, por lo que sus efectos son progresivos y acumulativos. Aunque la piel empieza a mostrarse más jugosa y tersa a las pocas semanas, el pico máximo de regeneración celular se consolida con el paso de los meses.\n\nPara lograr un cambio estructural, firme y duradero, se requiere habitualmente un protocolo inicial de entre 3 y 5 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se adaptará estrictamente en la consulta tras una valoración médica de las necesidades de tu piel, tu capacidad de regeneración y las indicaciones específicas del laboratorio del producto seleccionado. Una vez completado este ciclo de choque, se pautarán sesiones de mantenimiento personalizadas.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento perfectamente tolerable. Las infiltraciones se realizan de forma muy precisa en la dermis utilizando agujas o cánulas finas.\n\nPara garantizar que tu experiencia en la clínica sea completamente confortable, aplicamos una crema anestésica de alta potencia en la zona a tratar unos 20-30 minutos antes de comenzar la sesión. Los pacientes suelen describir la sensación como pequeños pinchazos o sutiles puntos de presión superficiales que se toleran sin ninguna dificultad.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel adecuadamente y minimizar el riesgo de que aparezcan pequeñas rojeces o hematomas, te recomendamos seguir estas pautas:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días previos a tu cita, a menos que sea por indicación médica.\n• Evita realizarte tratamientos agresivos en la zona (como peelings químicos potentes o láseres ablativos) la semana anterior.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'El proceso de recuperación es inmediato, requiriendo únicamente unos cuidados básicos durante las primeras horas:\n\n• Primeras 24 horas: No te maquilles ni apliques cosméticos que contengan activos renovadores potentes (retinol, ácidos exfoliantes) o alcohol. Lava la zona de forma suave con un limpiador delicado y agua tibia.\n• Es completamente normal y esperable que aparezcan pequeñas pápulas o bultitos en los puntos de inyección. Esto se debe al depósito del producto y a su alta capacidad hidrofílica; desaparecen de forma natural en unas horas o a lo largo del día siguiente a medida que el gel se integra en el tejido.\n• No realices deporte de alta intensidad, ni acudas a saunas, spas, piscinas o baños turcos durante las primeras 48 horas para evitar que aumente la inflamación local.\n• Aplica fotoprotección solar de amplio espectro (SPF 50+) de forma rigurosa y evita la exposición solar directa los días posteriores.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Al tratarse de un procedimiento de medicina regenerativa basado en polímeros biológicos de nucleótidos completamente biocompatibles y reabsorbibles, el cuerpo los metaboliza y asimila de forma natural a través de las enzimas celulares.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Presencia de brotes de acné inflamatorio severo, herpes activo, dermatitis o heridas abiertas en la zona a tratar en el momento de la sesión.\n• Enfermedades autoinmunes graves, sistémicas o del colágeno que no estén debidamente controladas por su médico especialista.\n• Alergias conocidas a los polinucleótidos o a los componentes de la fórmula.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Polynucleotides in Aesthetic Medicine", fuente: "Journal of Cosmetic Dermatology", link: "#" }
+      ]
+    }
   },
   'prp-facial': {
-    nombre: 'Plasma Rico en Plaquetas (PRP) Facial',
-    imagen: imgProvisional, descripcionBreve: 'El poder regenerador de tu propia sangre para una piel luminosa, firme y sin imperfecciones.', antesDespues: AD,
+    nombre: 'Plasma Rico en Plaquetas (PRP)',
+    tituloDescripcion: '¿Qué es la terapia facial con Plasma Rico en Plaquetas (PRP)?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Bioestimulación celular y regeneración cutánea utilizando los recursos biológicos de tu propio cuerpo.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyecciones' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Acumulativa' }
+    ],
     detalles: {
-      descripcion: 'Extraemos una pequeña muestra de tu sangre, la centrifugamos para separar el plasma y los Factores de Crecimiento Plaquetario, y los reinyectamos en la dermis facial. Estas proteínas autologas aceleran la reparación celular, creando colágeno nuevo y revitalizando el tejido (Vampire Facial).',
-      ventajas: ['Tratamiento 100% autólogo: imposible que haya rechazo o alergia.', 'Mejora drásticamente la calidad y luminosidad de la piel.', 'Acelera la curación de marcas y secuelas de acné.'],
-      faqs: [{ pregunta: '¿Duele?', respuesta: 'Aplicamos crema anestésica previamente para hacer el procedimiento muy confortable.' }],
-      evidencia: [{ titulo: "Platelet-Rich Plasma for Skin Rejuvenation", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Extracción + Mesoterapia' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'A los 20 días' }, { titulo: 'Duración', valor: 'Mantenimiento anual' }]
+      descripcion: 'Es un tratamiento médico-estético de bioestimulación celular y regeneración cutánea que utiliza los recursos biológicos del propio paciente para frenar el proceso de envejecimiento, mejorar la textura de la piel y restaurar su vitalidad. Consiste en el aislamiento y la aplicación concentrada de los factores de crecimiento presentes de forma natural en las plaquetas de nuestra sangre.\n\nEl procedimiento se realiza en la consulta mediante una pequeña extracción de sangre, la muestra se somete a un proceso de centrifugado que permite separar la fracción del plasma donde se concentran las plaquetas. Al ser infiltrado en la dermis, este concentrado activa de manera natural a los fibroblastos, induciendo la producción de colágeno propio, elastina y nuevo tejido, lo que se traduce en una piel notablemente más firme, tersa, luminosa y con arrugas atenuadas.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La terapia con PRP actúa activando los procesos biológicos internos de reparación de los tejidos, por lo que sus beneficios son progresivos. Aunque la mejora en la luminosidad y la elasticidad de la piel se percibe a los pocos días, la verdadera regeneración celular y síntesis de colágeno se consolida con el paso de las semanas.\n\nPara obtener un cambio estructural profundo, el protocolo médico inicial suele requerir entre 3 y 5 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se pautará de forma personalizada en la consulta tras una valoración médica del estado basal de tu piel, tu edad cronológica y tu capacidad de respuesta celular.\n\nUna vez completado este ciclo inicial de estimulación, se recomiendan sesiones de mantenimiento espaciadas a lo largo del año para prolongar los beneficios biológicos.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Para garantizar el máximo confort durante tu sesión en la clínica, aplicamos una crema anestésica de alta potencia en la zona a tratar unos 20-30 minutos antes del procedimiento. La mayoría de los pacientes describen la sensación como pequeños pinchazos superficiales que se toleran con total facilidad. Al finalizar la sesión, aplicamos una mascarilla fría o crema recuperadora para calmar la zona antes de que regreses a tus actividades habituales.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu organismo y asegurar la obtención de una muestra de plasma de óptima calidad biológica, te recomendamos seguir estas pautas previas:\n\n• No consumas antiinflamatorios (como el ibuprofeno o la aspirina) durante los 5-7 días previos a la cita, ya que estos fármacos inhiben la función plaquetaria de forma temporal y restan eficacia al tratamiento. Si necesitas analgésicos, puedes tomar paracetamol.\n• Evita el consumo de bebidas alcohólicas y el tabaco las 24-48 horas previas. Mantén una excelente hidratación bebiendo abundante agua el día de la cita.\n• Acude a la clínica preferiblemente con el rostro completamente limpio y desmaquillado.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: '• Primeras 24 horas: No te apliques maquillaje, correctores ni cosméticos con activos renovadores fuertes (como retinol o ácidos exfoliantes). Lava el rostro de forma muy suave con un limpiador delicado y agua tibia.\n• No frotes, presiones ni realices masajes enérgicos en el rostro. Es completamente normal presentar pequeñas pápulas o sobreelevaciones transitorias en los puntos de inyección, así como un leve eritema (rojez) que remite de forma espontánea en pocas horas.\n• No realices deporte de alta intensidad, ni acudas a saunas, piscinas, spas o baños turcos durante las primeras 48 horas para evitar la sudoración excesiva o la irritación de las micropunciones.\n• Aplica protector solar de amplio espectro (SPF 50+) de manera rigurosa y evita la exposición solar directa los días posteriores.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Al ser un producto autólogo, el riesgo de alergia o rechazo es inexistente. No obstante, este procedimiento médico está contraindicado o deberá posponerse en los siguientes supuestos:\n\n• Embarazo y periodo de lactancia.\n• Patologías hematológicas o de la coagulación: Pacientes diagnosticados con trombocitopenia (bajo recuento de plaquetas), trastornos funcionales plaquetarios o inestabilidad hemodinámica.\n• Tratamientos anticoagulantes activos: Pacientes bajo pautas farmacológicas estrictas de sintrom u otros anticoagulantes orales.\n• Infecciones activas: Presencia de brotes de acné inflamatorio severo, herpes labial activo, procesos infecciosos cutáneos o sistémicos (fiebre) el día de la sesión.\n• Enfermedades neoplásicas activas o antecedentes oncológicos que no cuenten con la autorización expresa de su especialista.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Platelet-Rich Plasma in Dermatology and Aesthetics", fuente: "Journal of Cutaneous and Aesthetic Surgery", link: "#" }
+      ]
+    }
   },
   'exosomas-facial': {
-    nombre: 'Terapia avanzada con Exosomas',
-    imagen: imgProvisional, descripcionBreve: 'La innovación definitiva en antiaging biológico. Señalización celular para una regeneración total.', antesDespues: AD,
+    nombre: 'Terapia avanzada con exosomas',
+    tituloDescripcion: '¿Qué es la terapia avanzada con exosomas?',
+    imagen: imgProvisional,
+    descripcionBreve: 'La vanguardia de la medicina regenerativa: reprogramación celular para una piel joven, firme y unificada.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Tópica + Microcanales' },
+      { titulo: 'Tiempo', valor: '40 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Acumulativa' }
+    ],
     detalles: {
-      descripcion: 'Los exosomas son nanovesículas mensajeras derivadas de células madre. Aplicados mediante micropunción, penetran en la piel y "comunican" a las células envejecidas que deben volver a comportarse de manera joven. Tienen una concentración regenerativa miles de veces superior al PRP.',
-      ventajas: ['El antiaging biológico más potente y moderno.', 'Reduce drásticamente rojeces, melasma y calma la rosácea.', 'Alisa la textura y cierra poros como ningún otro activo.'],
-      faqs: [{ pregunta: '¿Se inyectan?', respuesta: 'No, se aplican sobre la piel mediante canales creados con Microneedling (Dermapen) para maximizar su penetración.' }],
-      evidencia: [{ titulo: "Exosomes in Skin Regeneration and Rejuvenation", fuente: "Biomaterials Research", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microneedling' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Semanas' }, { titulo: 'Duración', valor: 'Largo Plazo' }]
+      descripcion: 'Es el tratamiento más revolucionario dentro de la medicina regenerativa celular, diseñado para revertir los signos del envejecimiento, acelerar la reparación de la piel y unificar el tono cutáneo. Los exosomas son nanopartículas biológicas (vesículas extracelulares) que actúan como el sistema de comunicación más avanzado de nuestro organismo, transportando una altísima concentración de proteínas, factores de crecimiento y material genético directamente de una célula a otra.\n\nEn clínica, aplicamos este tratamiento de forma tópica combinado con técnicas de Microneedling o tecnologías que generan microcanales en la epidermis. A través de estos canales, los exosomas penetran en las capas profundas y liberan su carga molecular, "reprogramando" a las células envejecidas o dañadas para que vuelvan a comportarse como células jóvenes. El resultado es un estímulo sin precedentes en la producción de colágeno y elastina, una reducción notable de arrugas, manchas y cicatrices, y una regeneración global de la textura cutánea.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La terapia con exosomas desencadena un proceso de renovación y reparación celular continuo. Aunque la mejora en la luminosidad, la textura y la reducción de las rojeces o inflamación es visible a los pocos días de la primera sesión, los cambios estructurales más profundos se consolidan progresivamente.\n\nPara maximizar el potencial regenerativo, el protocolo estándar inicial suele requerir entre 3 y 5 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se adaptará minuciosamente en la consulta tras una valoración médica del estado basal de tu piel y de las indicaciones específicas del laboratorio del producto seleccionado. Posteriormente, se pautarán sesiones de mantenimiento para prolongar la longevidad celular lograda.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Al aplicarse los exosomas por vía tópica a través de microcanales previos, la sensación del tratamiento dependerá exclusivamente de la técnica complementaria utilizada.\n\nPara garantizar una experiencia totalmente confortable en nuestra clínica, aplicamos una crema anestésica de alta potencia en la zona a tratar 20-30 minutos antes del procedimiento. La mayoría de los pacientes describen la sesión como una vibración constante o un leve cosquilleo superficial sobre la piel que se tolera con total facilidad.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: '• Suspende el uso de cosméticos que contengan retinol, ácido glicólico, salicílico u otros exfoliantes químicos potentes durante los 3-5 días anteriores a tu cita.\n• Evita la exposición solar intensa o quemaduras en el rostro la semana previa al tratamiento.'
+        },
+        {
+          pregunta: '¿Qué hacer después de la sesión?',
+          respuesta: '• Primeras 24 horas: No te apliques maquillaje, correctores ni cosméticos convencionales. Lava el rostro de forma extremadamente suave solo con agua tibia o con el limpiador específico que te paute el médico en la consulta.\n• Es completamente normal experimentar una ligera rojez o sensación de tirantez similar a una leve quemadura solar durante las primeras 12-24 horas. Disminuirá rápidamente gracias a la acción de las vesículas.\n• Pospone el ejercicio físico intenso, el uso de saunas, piscinas, spas o baños turcos durante las primeras 48 horas para evitar la contaminación de los microcanales o la irritación por sudor.\n• Aplica protector solar de amplio espectro (SPF 50+) de forma obligatoria cada 2-3 horas y evita la exposición solar directa durante los días posteriores.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones cutáneas activas: Presencia de brotes de acné inflamatorio agudo, herpes labial activo, eccemas, dermatitis o heridas abiertas en la zona a tratar el día de la sesión.\n• Enfermedades oncológicas activas: Pacientes en procesos tumorales o tratamientos de quimio/radioterapia activos (salvo autorización expresa de su oncólogo).\n• Alergia conocida a alguno de los componentes de la fórmula de soporte de los exosomas.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Exosomes in skin rejuvenation", fuente: "International Journal of Molecular Sciences", link: "#" }
+      ]
+    }
   },
 
   // --- 1.4 INDUCTORES DE COLÁGENO ---
   'radiesse': {
     nombre: 'Hidroxiapatita de Calcio (Radiesse)',
-    imagen: imgProvisional, descripcionBreve: 'Inductor de colágeno estelar. Tensa, redensifica y combate la flacidez creando una nueva red de soporte.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento de Hidroxiapatita Cálcica?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Combate la flacidez y recupera el soporte estructural de tu rostro con un efecto lifting biológico inmediato y duradero.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula ultrafina' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos + Progresivos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Infiltramos microesferas de Hidroxiapatita Cálcica mediante vectores de tensión bajo la piel. Estas esferas actúan como andamios que estimulan a tus fibroblastos para producir colágeno tipo I (colágeno joven) y elastina. Logramos un efecto lifting biológico, reafirmando el óvalo facial.',
-      ventajas: ['Efecto tensor reafirmante sin aportar volumen indeseado.', 'Trata eficazmente la flacidez del tercio inferior y cuello.', 'Mejora radical del grosor y la calidad cutánea.'],
-      faqs: [{ pregunta: '¿Se parece al ácido hialurónico?', respuesta: 'No. El hialurónico rellena e hidrata; Radiesse "despierta" a la piel para que se tense y se cure por sí misma.' }],
-      evidencia: [{ titulo: "Calcium Hydroxylapatite for Facial Rejuvenation", fuente: "Journal of Clinical and Aesthetic Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Vectores (Cánula)' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Efecto lifting progresivo (1 a 3 meses)' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado de bioestimulación celular e inducción de colágeno, diseñado para combatir la flacidez facial, recuperar el soporte estructural y redefinir los contornos del rostro de forma natural, sin añadir un volumen artificial. Las microesferas de este compuesto, biocompatible y presente de forma natural en nuestro organismo, actúan reactivando la juventud de la piel desde sus capas más profundas.\n\nEl procedimiento se realiza mediante infiltraciones precisas (habitualmente con una cánula ultrafina). Al depositarse en el tejido, produce un doble beneficio: un efecto de soporte y definición inmediato gracias al gel conductor que cohesiona el producto, y un estímulo regenerativo a medio plazo. Con el paso de las semanas, las microesferas activan a los fibroblastos para que sinteticen su propio colágeno nuevo y elastina, logrando una piel notablemente más firme, densa y elástica con un efecto de lifting biológico.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Al tratarse de un proceso de bioestimulación biológica, el resultado se consolida de forma progresiva a partir del tercer mes, que es cuando la nueva red de colágeno propio se ha formado por completo en la dermis. Dependiendo del grado de flacidez basal de la piel y de la respuesta celular de cada paciente, el médico evaluará en las consultas de seguimiento la idoneidad de realizar una sesión de refuerzo. Los resultados tienen una alta durabilidad, manteniéndose entre 12 y 18 meses.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos el tratamiento utilizando una cánula ultrafina de punta roma. La cánula avanza suavemente por los tejidos sin cortar los vasos sanguíneos, lo que reduce las molestias y el riesgo de hematomas.\n\nAdemás, el producto se diluye previamente en la consulta con una pequeña cantidad de lidocaína (anestésico local).'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel y minimizar la aparición de pequeños hematomas en las zonas de soporte facial, te recomendamos seguir estas pautas:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días previos a tu cita, salvo indicación médica expresa.\n• No te sometas a tratamientos estéticos agresivos en el rostro (como peelings químicos profundos o láseres abrasivos) la semana anterior.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'La recuperación es inmediata y te permite reincorporarte a tu vida diaria, siguiendo unos cuidados básicos durante los primeros días:\n\n• Primeras 24-48 horas: Evita masajear, presionar de forma enérgica o frotar las zonas tratadas. Intenta dormir boca arriba las primeras noches.\n• Evita aplicar maquillaje pesado o correctores durante las primeras 12-24 horas sobre los puntos de entrada de la cánula.\n• No realices ejercicio físico de alta intensidad, ni acudas a saunas, piscinas, spas o baños turcos durante los primeros 2 días para evitar un aumento de la inflamación transitoria.\n• Aplica protector solar de amplio espectro (SPF 50+) de manera rigurosa si vas a exponerte al sol.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones activas en la zona: Presencia de brotes de acné inflamatorio severo, herpes labial activo, procesos infecciosos cutáneos o heridas abiertas el día de la sesión.\n• Antecedentes de rellenos permanentes: Está contraindicado infiltrar este producto en zonas del rostro donde existan materiales no reabsorbibles antiguos (como siliconas o biopolímeros) debido al riesgo de desencadenar reacciones inflamatorias tardías.\n• Enfermedades autoinmunes graves, sistémicas o del colágeno no controladas.\n• Alergias conocidas: Hipersensibilidad documentada a la hidroxiapatita de calcio o a la lidocaína.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Calcium Hydroxylapatite for Facial Rejuvenation", fuente: "Aesthetic Surgery Journal", link: "#" }
+      ]
+    }
   },
   'sculptra': {
     nombre: 'Ácido Poli-L-Láctico (Sculptra)',
-    imagen: imgProvisional, descripcionBreve: 'El secreto del "Lifting líquido". Reactiva el colágeno profundo para restaurar toda la estructura facial.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento de Ácido Poli-L-Láctico?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Restituye la arquitectura interna de tu rostro estimulando tu propio colágeno para combatir la flacidez severa.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula fina' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'A partir de 4-6 semanas' },
+      { titulo: 'Duración', valor: '18-24 meses' }
+    ],
     detalles: {
-      descripcion: 'Sculptra actúa en la dermis profunda para restaurar los cimientos del rostro. Induce una respuesta inflamatoria subclínica controlada que reemplaza el colágeno perdido gradualmente, tratando la flacidez severa, el descolgamiento y restaurando los volúmenes perdidos de forma ultra natural.',
-      ventajas: ['Abordaje global de la flacidez de todo el rostro en una sesión.', 'Resultados progresivos y extremadamente sutiles (nadie nota el cambio de golpe).', 'Durabilidad clínica superior.'],
-      faqs: [{ pregunta: '¿Cuándo veré los resultados?', respuesta: 'Es un tratamiento para pacientes. El cuerpo tarda unas 4-8 semanas en sintetizar las nuevas bandas de colágeno.' }],
-      evidencia: [{ titulo: "Poly-L-lactic acid for soft tissue augmentation", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula profunda' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'A los 2-3 meses' }, { titulo: 'Duración', valor: 'Hasta 2 años' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado de bioestimulación celular y regeneración estructural, diseñado para combatir la flacidez severa, restaurar la firmeza cutánea y redefinir los contornos faciales. El ácido poli-L-Láctico es un polímero sintético, 100% biocompatible y completamente reabsorbible.\n\nA diferencia de los materiales de relleno convencionales, este compuesto no trabaja aportando un volumen inmediato. Su función principal es actuar como un potente inductor del propio colágeno del paciente. Al ser infiltrado en las capas profundas de la piel, las micropartículas de este polímero desencadenan una respuesta biológica que reactiva a los fibroblastos, obligándolos a fabricar una nueva red de colágeno propio. Esto restituye de forma progresiva la arquitectura interna del rostro, devolviendo la densidad y la tersura perdidas con los años.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'El ácido poli-L-Láctico es un tratamiento puramente biológico y acumulativo. Debido a que el organismo requiere tiempo para sintetizar las nuevas proteínas estructurales, los resultados no son inmediatos, sino que comienzan a apreciarse de forma natural a partir de la cuarta o sexta semana, alcanzando su punto óptimo a los 3 meses.\n\nDependiendo del grado de flacidez basal, la pérdida de soporte y la capacidad regenerativa de cada paciente, el protocolo médico estándar suele requerir un ciclo inicial de entre 2 y 3 sesiones, espaciadas entre 4 y 6 semanas. Tras completar este protocolo de choque, los resultados de firmeza y elasticidad son altamente duraderos, manteniéndose en perfectas condiciones entre 18 y 24 meses.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos el tratamiento utilizando una cánula fina de punta roma. La cánula avanza suavemente por los tejidos sin cortar los vasos sanguíneos, lo que reduce las molestias y el riesgo de hematomas. Además, el producto se diluye previamente en la consulta con una pequeña cantidad de lidocaína (anestésico local).'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel adecuadamente y minimizar la aparición de pequeños hematomas, te recomendamos seguir estas pautas:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 o Vitamina E durante los 3-5 días previos a tu cita, a menos que sea por indicación médica expresa.\n• Evita realizarte tratamientos agresivos en la zona (como peelings químicos potentes o láseres ablativos) la semana anterior.\n• Acude a tu cita médica preferiblemente con la piel completamente limpia y libre de maquillaje.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'El post-tratamiento del ácido poli-L-Láctico tiene una pauta específica y obligatoria que el paciente debe cumplir en casa para garantizar una correcta distribución del producto (la regla del 5):\n\n• El masaje de los 5 días (Fundamental): Debes masajear las zonas tratadas durante 5 minutos, 5 veces al día, durante los 5 días posteriores al tratamiento. Esto asegura que las micropartículas se repartan de manera homogénea en el tejido y optimiza la síntesis de colágeno.\n• Evita el maquillaje en los puntos de entrada de la cánula durante las primeras 24 horas.\n• No realices ejercicio físico de alta intensidad, ni acudas a saunas, piscinas o spas durante los primeros 2 días para evitar un aumento de la inflamación.\n• Aplica protector solar de amplio espectro (SPF 50+) de manera rigurosa.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones activas en la zona: Presencia de brotes de acné inflamatorio, herpes labial activo o heridas abiertas el día de la sesión.\n• Antecedentes de rellenos permanentes: Está contraindicado infiltrar este producto si existen materiales no reabsorbibles antiguos (como siliconas o biopolímeros) en la zona.\n• Predisposición a queloides: Pacientes con antecedentes demostrados de formación de cicatrices queloides o respuestas hipertróficas.\n• Enfermedades autoinmunes graves, sistémicas o del tejido conectivo no controladas.\n• Alergias conocidas: Hipersensibilidad documentada al ácido poli-L-Láctico.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Poly-L-lactic acid (PLLA) for facial volume restoration", fuente: "Journal of Cosmetic Dermatology", link: "#" }
+      ]
+    }
   },
 
   // --- 1.5 RENOVACIÓN CUTÁNEA ---
   'peelings-quimicos': {
     nombre: 'Peelings químicos médicos',
-    imagen: imgProvisional, descripcionBreve: 'Renovación celular programada para eliminar manchas, acné y devolverle a la piel su luz natural.', antesDespues: AD,
+    tituloDescripcion: '¿Qué son los peelings químicos médicos?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Renovación cutánea profunda para eliminar imperfecciones, unificar el tono y revelar una piel completamente nueva.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Tópica controlada' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'A los 7 días' },
+      { titulo: 'Duración', valor: 'Larga duración' }
+    ],
     detalles: {
-      descripcion: 'Aplicamos soluciones ácidas dermatológicas (TCA, salicílico, glicólico, fenol) que inducen una quimioexfoliación controlada de las capas dañadas de la epidermis. Esto obliga a la piel a renovarse con células nuevas, sanas y libres de pigmento excesivo.',
-      ventajas: ['Mejora radicalmente las marcas de acné activo y cicatrices superficiales.', 'Eliminación del estrato córneo apagado (Efecto Flash).', 'Difumina el melasma y unifica el tono.'],
-      faqs: [{ pregunta: '¿Me pelaré como una serpiente?', respuesta: 'Depende de la profundidad elegida. Tenemos peelings superficiales para iluminar sin pelar, y peelings medios donde descamarás suavemente unos 3 días.' }],
-      evidencia: [{ titulo: "Chemical Peels in Aesthetic Dermatology", fuente: "Clinical, Cosmetic and Investigational Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Quimioexfoliación' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Tras la descamación (5-7 días)' }, { titulo: 'Duración', valor: 'Mantenimiento' }]
+      descripcion: 'Es un tratamiento médico-estético de renovación cutánea global diseñado para eliminar las capas de células muertas, corregir imperfecciones y unificar el tono y la textura de la piel. Consiste en la aplicación controlada de diferentes sustancias ácidas purificadas de alta gama médica sobre el rostro, cuello o escote.\n\nA diferencia de las exfoliaciones convencionales, el peeling médico actúa a niveles profundos de la epidermis y la dermis. Según las necesidades de cada paciente, seleccionamos y combinamos diferentes activos. Este proceso induce una descamación controlada que elimina las células dañadas, reduce manchas, secuelas de acné, poros abiertos y arrugas finas, dando paso a una piel completamente nueva, tersa, luminosa y oxigenada.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La respuesta y los resultados de un peeling químico médico dependen directamente de la profundidad del tratamiento y de la patología a tratar (como melasma, acné activo o rejuvenecimiento). Aunque la piel muestra un cambio notable en textura y luminosidad desde la primera sesión, para lograr una corrección estructural y duradera se requiere habitualmente un protocolo inicial de entre 3 y 5 sesiones.\n\nEl número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se determinará de forma personalizada en la consulta tras una valoración médica de tu tipo de piel, tu fototipo y las indicaciones específicas del laboratorio del producto seleccionado. Al finalizar el ciclo de choque, se valorará la necesidad de sesiones de mantenimiento anuales, preferiblemente en las estaciones de menor radiación solar.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Para garantizar la máxima seguridad y el confort del paciente durante la sesión, realizamos una preparación exhaustiva de la piel y controlamos los tiempos de exposición de forma milimétrica. La sensación habitual durante la aplicación del ácido se limita a un calor local o un sutil hormigueo completamente tolerable que remite rápidamente al aplicar el producto neutralizante específico o mascarillas calmantes al finalizar el procedimiento.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar la piel adecuadamente y evitar efectos adversos como la hiperpigmentación postinflamatoria, es fundamental seguir estas pautas previas:\n\n• Suspende el uso de cremas o sérums que contengan retinol, ácido glicólico, salicílico u otros agentes exfoliantes entre 3 y 5 días antes de tu cita.\n• No realices depilación facial (con cera, hilo o crema depilatoria) ni te decolores el vello de la zona durante los 5 días anteriores.\n• No te expongas al sol de forma intensa ni acudas a soláriums la semana previa al tratamiento. La piel no debe estar bronceada ni presentar quemaduras.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'El éxito de un peeling químico médico depende en un 50% de los cuidados que el paciente realice estrictamente en casa durante el proceso de descamación:\n\n• Fotoprotección solar estricta (El cuidado más importante): Aplica protector solar de amplio espectro (SPF 50+) cada 2 o 3 horas de forma obligatoria, incluso en días nublados. Evita la exposición solar directa durante los 10-14 días posteriores para prevenir la aparición de manchas.\n• Aplica exclusivamente la crema recuperadora y calmante pautada por el médico en la consulta tantas veces al día como sientas la piel tirante o deshidratada.\n• Dependiendo del peeling, la piel puede descamarse entre el segundo y el quinto día. Nunca estires, rasgues ni arranques las pieles sueltas, ya que podrías generar cicatrices o manchas. Deja que se caigan de forma natural al lavarte el rostro de manera suave.\n• No realices ejercicio físico intenso, ni acudas a saunas, piscinas con cloro o baños turcos durante los primeros 3-4 días para evitar irritaciones extremas.\n• No utilices maquillaje durante las primeras 24-48 horas y pospone el uso de tus ácidos habituales o retinoides hasta que la piel esté completamente recuperada.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Fototipos muy altos o pieles recientemente bronceadas: Exige una valoración extrema o el uso de peelings específicos para evitar alteraciones pigmentarias.\n• Infecciones activas en la zona: Presencia de herpes labial activo, infecciones bacterianas, heridas abiertas o eccemas en el rostro el día de la sesión.\n• Uso reciente de retinoides orales: Haber tomado isotretinoína oral (tratamiento para el acné severo) durante los 6 meses previos.\n• Alergias conocidas: Hipersensibilidad documentada a alguno de los ácidos de la formulación.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Chemical Peels in Aesthetic Dermatology", fuente: "Journal of Clinical and Aesthetic Dermatology", link: "#" }
+      ]
+    }
   },
   'microneedling': {
-    nombre: 'Microneedling médico',
-    imagen: imgProvisional, descripcionBreve: 'Inducción de colágeno mediante microagujas para cicatrices, poros dilatados y mejora de textura.', antesDespues: AD,
+    nombre: 'Microneedling Médico',
+    tituloDescripcion: '¿Qué es el Microneedling?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Inducción mecánica de colágeno para difuminar cicatrices, reducir poros y transformar la textura de tu piel.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Micropunción mecánica' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Larga duración' }
+    ],
     detalles: {
-      descripcion: 'Utilizamos dispositivos médicos de micropunción motorizada (Dermapen/Nanopore) para crear miles de microcanales en la piel. Esto engaña al cuerpo haciéndole creer que hay una herida, provocando una avalancha de colágeno natural para curarla. Además, usamos estos canales para infundir vitaminas o ácido hialurónico puro.',
-      ventajas: ['Reducción espectacular del tamaño del poro.', 'Tratamiento no térmico ideal para afinar cicatrices de acné.', 'Renovación de la textura cutánea sin riesgo de quemadura.'],
-      faqs: [{ pregunta: '¿Sangra?', respuesta: 'Se genera un eritema (enrojecimiento) y un leve rocío sangrante microscópico que es necesario para liberar factores de crecimiento.' }],
-      evidencia: [{ titulo: "Microneedling: Advances and widening horizons", fuente: "Indian Journal of Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Micropunción automatizada' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'A los 15 días' }, { titulo: 'Duración', valor: 'Mantenimiento' }]
+      descripcion: 'Es un tratamiento médico-estético de inducción mecánica de colágeno y regeneración cutánea, diseñado para difuminar cicatrices de acné, reducir poros abiertos y mejorar globalmente la firmeza y la textura de la piel. El procedimiento se realiza mediante un dispositivo médico de micropunción de última generación provisto de cabezales con microagujas estériles ultrafinas.\n\nEste tratamiento actúa mediante un doble mecanismo de acción: por un lado, las microagujas realizan miles de microperforaciones controladas en la dermis, lo que activa los mecanismos naturales de cicatrización y autorreparación del organismo, estimulando de forma masiva la producción de nuevo colágeno tipo I y elastina. Por otro lado, aprovechamos la apertura de estos microcanales para realizar una terapia de drug delivery, aplicando de forma tópica cócteles médicos que penetran de forma directa y profunda, multiplicando su eficacia exponencialmente.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'El microneedling médico estimula un proceso biológico y gradual de reestructuración dérmica. Aunque la piel se muestra visiblemente más suave, tersa y luminosa a los pocos días de la primera sesión, los cambios estructurales profundos (como la atenuación de cicatrices o la mejora de la flacidez) se consolidan de forma progresiva.\n\nPara obtener un resultado óptimo, visible y duradero, el protocolo médico inicial suele requerir entre 3 y 5 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se determinará de forma personalizada en la consulta tras una valoración médica del estado basal de tu piel, tu capacidad de reparación cutánea y los objetivos terapéuticos buscados.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos el tratamiento aplicando previamente una crema anestésica de alta potencia en la zona a tratar durante 20-30 minutos. Esto adormece la superficie cutánea, haciendo que la sesión sea una experiencia rápida, perfectamente tolerable y donde el paciente solo percibe una sutil vibración mecánica sobre la piel.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel adecuadamente y asegurar un procedimiento seguro y libre de irritaciones, te recomendamos seguir estas pautas previas:\n\n• Suspende el uso de cremas o cosméticos que contengan retinol, ácido glicólico, salicílico u otros exfoliantes químicos entre 3 y 5 días antes de tu cita.\n• No acudas a la sesión con la piel recientemente bronceada o que presente quemaduras solares.\n• Ven a la consulta preferiblemente con la zona a tratar (rostro, cuello o escote) completamente limpia y libre de maquillaje.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Al haberse generado miles de microcanales en la epidermis, el cuidado posterior en casa durante las primeras horas es estricto:\n\n• Primeras 24 horas: No te apliques maquillaje, correctores ni cosméticos convencionales. Lava la zona de forma extremadamente suave solo con agua tibia o con el limpiador específico que te paute el médico en la consulta.\n• Es completamente normal y esperable presentar un eritema (rojez) moderado y una sensación de calor o tirantez similar a una leve quemadura solar. Este proceso remite de forma natural en las primeras 24-48 horas, dando paso en ocasiones a una sutil descamación seca en los días posteriores.\n• No realices ejercicio físico de alta intensidad, ni acudas a saunas, piscinas, spas o baños turcos durante las primeras 48 horas para evitar que el sudor o el cloro irriten los microcanales abiertos.\n• Aplica protector solar de amplio espectro (SPF 50+) de forma obligatoria cada 2-3 horas y evita la exposición solar directa durante los 7 días posteriores para prevenir la hiperpigmentación postinflamatoria.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones cutáneas activas: Presencia de brotes de acné inflamatorio activo, herpes labial activo, eccemas, dermatitis o heridas abiertas en la zona a tratar el día de la sesión.\n• Uso reciente de retinoides orales: Haber realizado tratamiento con isotretinoína oral durante los 6 meses previos.\n• Cicatrización anómala: Pacientes con antecedentes demostrados de formación de cicatrices queloides o hipertróficas.\n• Tratamientos anticoagulantes activos o trastornos graves de la coagulación.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Microneedling: Advances and widening horizons", fuente: "Indian Dermatology Online Journal", link: "#" }
+      ]
+    }
   },
   'limpieza-facial': {
     nombre: 'Limpieza Facial Personalizada',
@@ -1023,10 +1392,15 @@ export default function TratamientoPage() {
             <div className="animate-fade-in-up space-y-16">
               <div className="max-w-3xl mx-auto text-center space-y-6">
                 <h3 className="text-2xl font-serif text-brand-dark mb-6">
-                {tratamiento.tituloDescripcion || "Protocolo Médico"}
-              </h3>
-                <p className="text-brand-dark/80 leading-relaxed text-lg text-left md:text-center">{tratamiento.detalles.descripcion}</p>
+                  {tratamiento.tituloDescripcion || "Protocolo Médico"}
+                </h3>
+                <div className="space-y-4 text-brand-dark/80 leading-relaxed text-lg text-left md:text-center">
+                  {tratamiento.detalles.descripcion.split('\n\n').map((parrafo, index) => (
+                    <p key={index}>{parrafo}</p>
+                  ))}
+                </div>
               </div>
+              
               <div className="flex flex-wrap justify-center gap-8 border-t border-brand-sand/30 pt-12">
                 {tratamiento.parametros.map((param, i) => (
                   <div key={i} className="text-center space-y-2 min-w-[120px]">
@@ -1052,26 +1426,19 @@ export default function TratamientoPage() {
                ))}
              </div>
           )}
-
-          {tabActiva === 'evidencia' && (
+          {/* PESTAÑA: EVIDENCIA CIENTÍFICA */}
+          {tabActiva === 'evidencia' && tratamiento.detalles.evidencia && (
             <div className="animate-fade-in-up max-w-3xl mx-auto space-y-6">
-              <div className="text-center mb-10">
-                <span className="text-brand-terra text-2xl mb-2 block">✦</span>
-                <h2 className="text-3xl font-serif text-brand-dark">Respaldo Médico</h2>
-              </div>
-              <div className="grid gap-4">
-                {tratamiento.detalles.evidencia?.map((estudio, i) => (
-                  <div key={i} className="bg-white p-6 border border-brand-sand/30 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-md transition">
-                    <div>
-                      <h4 className="font-serif text-brand-dark text-lg mb-1">{estudio.titulo}</h4>
-                      <p className="text-[10px] uppercase tracking-widest text-brand-terra font-bold">{estudio.fuente}</p>
-                    </div>
-                    <a href={estudio.link} target="_blank" rel="noopener noreferrer" className="text-xs uppercase tracking-widest text-brand-dark border border-brand-dark px-4 py-2 hover:bg-brand-dark hover:text-brand-light transition flex-shrink-0">
-                      Ver en PubMed
-                    </a>
-                  </div>
-                ))}
-              </div>
+              {tratamiento.detalles.evidencia.map((item, i) => (
+                <div key={i} className="border-b border-brand-sand/50 pb-6">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="block hover:opacity-70 transition-opacity">
+                    <h4 className="text-lg font-serif text-brand-dark mb-2 flex items-center gap-2">
+                      <span className="text-brand-terra">✦</span> {item.titulo}
+                    </h4>
+                    <p className="text-brand-dark/60 text-sm uppercase tracking-wider">{item.fuente}</p>
+                  </a>
+                </div>
+              ))}
             </div>
           )}
         </div>
