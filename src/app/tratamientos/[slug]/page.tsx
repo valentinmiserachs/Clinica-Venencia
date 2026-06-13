@@ -1,6 +1,21 @@
 "use client";
+
+// IMPORTACIONES DE IMÁGENES DE TRATAMIENTOS
+import img_Lentigos from '@/app/assets/images/tratamientos/manchas.jpeg';
+import img_Fotorejuvenecimiento from '@/app/assets/images/tratamientos/fotorejuvenecimiento.jpeg';
+import img_AcneIntegral from '@/app/assets/images/tratamientos/integral-acne.jpeg';
+import img_MesoterapiaCapilar from '@/app/assets/images/tratamientos/mesoterapia-capilar.jpeg';
+import img_MesoterapiaFacial from '@/app/assets/images/tratamientos/mesoterapia-facial.jpeg';
+import img_Peeling from '@/app/assets/images/tratamientos/peeling.jpeg';
+import img_Surco from '@/app/assets/images/tratamientos/surconasogeniano.jpeg';
+import img_TerapiaFotobiologica from '@/app/assets/images/tratamientos/terapia-fotobiologica.jpeg';
+import img_Labios from '@/app/assets/images/tratamientos/voluminizacion-labios.jpeg';
+import img_LimpiezaFacial from '@/app/assets/images/tratamientos/limpieza-facial.jpeg';
+
+// import imgProvisional from '@/app/assets/images/tratamientos/provisional.jpeg';
+
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -12,7 +27,7 @@ interface FAQ { pregunta: string; respuesta: string; }
 interface Parametro { titulo: string; valor: string; }
 interface AntesDespues { antes: string; despues: string; }
 interface DetallesTratamiento { descripcion: string; ventajas: string[]; faqs: FAQ[]; evidencia?: Evidencia[]; }
-interface Tratamiento { nombre: string; tituloDescripcion?: string; imagen: string; descripcionBreve: string; antesDespues: AntesDespues; detalles: DetallesTratamiento; parametros: Parametro[]; }
+interface Tratamiento { nombre: string; tituloDescripcion?: string; imagen: string | StaticImageData; descripcionBreve: string; antesDespues: AntesDespues; detalles: DetallesTratamiento; parametros: Parametro[]; }
 
 const imgProvisional = '/textura-piel.webp';
 const AD: AntesDespues = { antes: imgProvisional, despues: imgProvisional };
@@ -640,7 +655,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-periocular': {
     nombre: 'Mesoterapia periocular',
     tituloDescripcion: '¿Qué es la mesoterapia periocular?',
-    imagen: imgProvisional,
+    imagen: img_MesoterapiaCapilar,
     descripcionBreve: 'Revitaliza tu mirada, atenúa las ojeras oscuras y suaviza las finas líneas de expresión.',
     antesDespues: AD,
     parametros: [
@@ -999,122 +1014,539 @@ const tratamientosData: Record<string, Tratamiento> = {
 
   // --- 2. TRATAMIENTOS CORPORALES ---
   'mesoterapia-lipolitica': {
-    nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis)',
-    imagen: imgProvisional, descripcionBreve: 'Elimina adiposidades rebeldes y deshace la celulitis con principios activos inyectados que queman grasa.', antesDespues: AD,
+    nombre: 'Mesoterapia Lipolítica Corporal',
+    tituloDescripcion: '¿Qué es la mesoterapia lipolítica corporal?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Reduce la grasa localizada, combate la celulitis y reafirma tu figura con nuestro cóctel médico personalizado.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyecciones localizadas' },
+      { titulo: 'Tiempo', valor: '30-45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (6-10 sesiones)' },
+      { titulo: 'Duración', valor: 'Permanente (con hábitos)' }
+    ],
     detalles: {
-      descripcion: 'Microinyecciones de activos lipolíticos, péptidos y enzimas (como la L-carnitina y desoxicolato) directamente en el tejido graso subcutáneo. Estos compuestos destruyen la membrana del adipocito y disuelven los nódulos fibróticos de la celulitis, permitiendo al sistema linfático drenar la grasa naturalmentte.',
-      ventajas: ['Reducción de centímetros en zonas rebeldes (flancos, abdomen, cartucheras).', 'Alisado visible de la "piel de naranja".', 'Alternativa real sin cirugía a la liposucción focalizada.'],
-      faqs: [{ pregunta: '¿Duele?', respuesta: 'Las agujas de mesoterapia corporal son mínimas. Es un tratamiento rápido y perfectamente tolerable.' }],
-      evidencia: [{ titulo: "Injection Lipolysis for Body Contouring", fuente: "Plastic and Reconstructive Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección corporal' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Progresivos' }, { titulo: 'Duración', valor: 'Permanente (en esa célula)' }]
+      descripcion: 'Es un tratamiento médico-estético mínimamente invasivo diseñado específicamente para reducir la grasa localizada, combatir la celulitis y mejorar la firmeza de la piel.\n\nEl tratamiento consiste en la aplicación de microinyecciones directas en el tejido adiposo de un cóctel personalizado de sustancias médicas. Estos activos combinan agentes lipolíticos (que rompen y disuelven las células grasas), sustancias drenantes (que activan la microcirculación y eliminan la retención de líquidos) y componentes tensores. Al actuar directamente sobre el foco del problema, conseguimos disminuir el volumen local, alisar la "piel de naranja" y reestructurar el tejido conectivo de forma progresiva.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La mesoterapia lipolítica es un tratamiento progresivo y altamente dependiente de la constancia. Aunque la mejora en la inflamación interna y la textura de la piel se empieza a notar desde las primeras citas, la reducción de volumen graso requiere que el organismo metabolice y elimine la grasa liberada.\n\nPara obtener un resultado óptimo, visible y satisfactorio, se requiere un protocolo inicial de entre 6-10 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas (que suele ser de 1 o 2 semanas), se pautará de forma personalizada en la consulta tras una valoración médica del tipo de grasa, el grado de celulitis y las indicaciones específicas del laboratorio del producto seleccionado para tu caso.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos o de qué depende su duración?',
+          respuesta: 'La reducción de la grasa localizada alcanzada con el tratamiento es permanente, ya que las células grasas destruidas y metabolizadas no se vuelven a regenerar. Sin embargo, la durabilidad de este resultado en el tiempo depende estrictamente de los hábitos del paciente.\n\nPara mantener el contorno corporal estilizado y evitar que las células grasas remanentes de la zona aumenten de tamaño, es fundamental acompañar el procedimiento de un estilo de vida saludable que incluya una alimentación equilibrada, una correcta hidratación y la práctica regular de ejercicio físico. La mesoterapia es una herramienta médica excepcional para eliminar la grasa rebelde, pero el mantenimiento del éxito a largo plazo es un trabajo en equipo entre el médico y el paciente.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Las infiltraciones se realizan directamente en el tejido graso —una zona con menor densidad de terminaciones nerviosas sensitivas que la piel superficial— utilizando agujas finas.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu cuerpo adecuadamente y minimizar la aparición de pequeñas rojeces o hematomas en las zonas de punción, te recomendamos:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 durante los 3-5 días previos a tu cita, salvo indicación médica.\n• Bebe abundante agua (entre 1,5 y 2 litros) el día de la sesión para ayudar a tu sistema renal y linfático a prepararse para la eliminación de toxinas.\n• Acude a la clínica con prendas holgadas que no presionen la zona corporal que se va a tratar.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'El proceso de eliminación de la grasa disuelta depende directamente de tus hábitos en los días posteriores a la sesión:\n\n• Primeras 24 horas: No frotes, presiones ni masajees enérgicamente la zona tratada. Es completamente normal presentar una ligera inflamación, sensación de agujetas locales, calor o pequeños hematomas que desaparecen de manera natural.\n• Potencia el drenaje (Fundamental): Bebe al menos 2 litros de agua diarios durante los días siguientes. Es altamente recomendable combinar el tratamiento con masajes de drenaje linfático manual o presoterapia a partir de las 48 horas para acelerar la eliminación de la grasa liberada.\n• No acudas a saunas, spas, baños turcos ni te expongas al sol de forma directa durante los primeros 2-3 días.\n• Mantén una alimentación equilibrada, baja en grasas saturadas y azúcares, y evita el consumo de alcohol principalmente durante las 48 horas posteriores, ya que el hígado debe centrarse en metabolizar la grasa liberada.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones activas en la piel: Presencia de infecciones bacterianas, heridas abiertas, eccemas o dermatitis en la zona corporal a tratar el día de la sesión.\n• Patologías hepáticas o renales graves: Debido a que la grasa liberada debe ser metabolizada por el hígado y eliminada por los riñones.\n• Alteraciones graves de la coagulación o tratamientos anticoagulantes activos.\n• Alergias conocidas: Hipersensibilidad documentada a alguno de los principios activos del cóctel lipolítico.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Efficacy and Safety of Injection Lipolysis", fuente: "Journal of Clinical and Aesthetic Dermatology", link: "#" }
+      ]
+    }
   },
   'esclerosis-vascular': {
-    nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares)',
-    imagen: imgProvisional, descripcionBreve: 'Eliminación médica definitiva de varices y antiestéticas arañas vasculares en las piernas.', antesDespues: AD,
+    nombre: 'Esclerosis Vascular',
+    tituloDescripcion: '¿Qué es el tratamiento de Esclerosis Vascular?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Eliminación segura y eficaz de arañas vasculares y pequeñas varices para recuperar la salud y estética de tus piernas.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyecciones / Microespuma' },
+      { titulo: 'Tiempo', valor: '30-45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (3-6 sesiones)' },
+      { titulo: 'Duración', valor: 'Larga duración' }
+    ],
     detalles: {
-      descripcion: 'El gold-standard de la fleboestética. Infiltramos un agente esclerosante (en líquido o microespuma) con una aguja invisible directamente en la vena o araña vascular. El líquido irrita la pared de la vena, haciendo que se cierre (colapse) y se convierta en tejido fibroso que el cuerpo reabsorbe y hace desaparecer.',
-      ventajas: ['Eliminación completa de trayectos venosos y capilares rotos.', 'Alivio de la sensación de pesadez y dolor en piernas.', 'Procedimiento ambulatorio, sin quirófano ni baja médica.'],
-      faqs: [{ pregunta: '¿Hay que llevar medias de compresión?', respuesta: 'Sí, recomendamos usar medias de compresión los días posteriores para asegurar el cierre de la vena.' }],
-      evidencia: [{ titulo: "Sclerotherapy in the Treatment of Varicose Veins", fuente: "Phlebology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Micro-escleroterapia' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'A las semanas' }, { titulo: 'Duración', valor: 'Definitiva' }]
+      descripcion: 'Es un procedimiento médico diseñado específicamente para eliminar de forma segura y eficaz las arañas vasculares (telangiectasias) y las pequeñas venas varicosas que aparecen principalmente en las piernas. Estas lesiones no solo suponen un problema estético, sino que a menudo son el reflejo de una alteración en el retorno venoso que genera pesadez, cansancio o reactividad local.\n\nEl procedimiento consiste en la infiltración microfocalizada de un fármaco líquido o en forma de microespuma directamente en el interior de la vena afectada mediante agujas de calibre médico ultrafino. Este principio activo produce una irritación controlada de las paredes internas del vaso, provocando su cierre inmediato y su posterior cicatrización. Con el paso de las semanas, el propio organismo reabsorbe de forma natural la vena colapsada y desvía la circulación hacia vasos sanos, haciendo desaparecer la imperfección y aliviando la sintomatología de la zona.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La esclerosis vascular es un proceso progresivo de reabsorción biológica. Aunque muchas venitas se difuminan o desaparecen desde la primera sesión, la eliminación completa de una red vascular requiere tiempo y constancia.\n\nPara lograr un resultado óptimo, limpio y satisfactorio, se requiere habitualmente un protocolo inicial de entre 3 y 6 sesiones por zona. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, dependerá estrictamente del calibre de los vasos, de la extensión de la zona a tratar y de la respuesta inflamatoria de cada paciente. Tras una valoración médica exhaustiva en la consulta, se diseñará tu plan de tratamiento personalizado.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento tolerable. Al realizarse las infiltraciones con agujas de calibre fino, la molestia es mínima. La sensación se limita a un leve pinchazo superficial seguido, en ocasiones, de un ligero picor o escozor local transitorio que dura apenas unos minutos y que coincide con la acción del esclerosante dentro del vaso sanguíneo, permitiéndote retomar tus actividades diarias inmediatamente al salir de la clínica.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tus piernas adecuadamente y garantizar un procedimiento seguro, te recomendamos seguir estas pautas:\n\n• Evita medicamentos que afecten a la coagulación: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) durante los 3-5 días previos a tu cita, a menos que sea por indicación médica estricta.\n• Ropa holgada: Ven a la clínica con pantalones o faldas anchas y calzado cómodo para facilitar la colocación de las medias de compresión posteriores.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'El éxito de la esclerosis vascular depende en gran medida del cumplimiento de los cuidados en casa durante los días posteriores:\n\n• Uso de compresión (Fundamental): Deberás utilizar medias de compresión elástica médica inmediatamente después de la sesión y durante los días que te paute el médico. La compresión es clave para mantener la vena cerrada y optimizar el proceso de esclerosis.\n• Es muy recomendable caminar de 30 a 45 minutos diarios tras el tratamiento para activar la circulación profunda. Evita permanecer de pie o sentada en la misma posición durante periodos muy prolongados.\n• Es completamente normal que la zona presente rojez, una ligera inflamación local (similar a una picadura) o pequeños hematomas en los puntos de inyección. También es habitual que las venitas tratadas se tornen de un color más oscuro o violáceo antes de desaparecer; esto indica que el proceso de esclerosis ha comenzado.\n• No te des baños con agua muy caliente, ni acudas a saunas, spas o baños turcos durante la primera semana, ya que el calor produce vasodilatación y contrarresta el efecto del tratamiento.\n• No expongas las piernas al sol de forma directa mientras existan hematomas o marcas de las punciones para evitar la aparición de hiperpigmentación postinflamatoria (manchas oscuras).'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Las venas que se han esclerosado y reabsorbido con éxito desaparecen de forma definitiva. Sin embargo, la insuficiencia venosa crónica es una condición evolutiva y de carácter genético.\n\nLa aparición de nuevas arañas vasculares en otras zonas con el paso del tiempo dependerá estrictamente de los factores de riesgo y los hábitos del paciente. Para prolongar los resultados al máximo, es fundamental mantener un estilo de vida saludable: evitar el sedentarismo, realizar ejercicio físico de forma regular, mantener un peso adecuado, evitar el uso de ropa excesivamente ajustada y no exponer las piernas a fuentes de calor intensas y directas. Se recomiendan revisiones anuales para tratar precozmente los nuevos vasos que puedan desarrollarse.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Insuficiencia venosa profunda grave: Pacientes que presenten patología de los ejes venosos mayores no tratada que requiera cirugía previa.\n• Antecedentes de Trombosis Venosa Profunda (TVP) o tromboembolismo pulmonar.\n• Infecciones activas: Presencia de infecciones cutáneas, úlceras abiertas, eccemas graves o heridas en la zona de las piernas el día de la sesión.\n• Inmovilización prolongada: Pacientes encamados o que vayan a realizar un viaje en avión de larga duración de forma inmediata.\n• Alergias conocidas: Hipersensibilidad documentada al fármaco esclerosante (polidocanol).'
+        }
+      ],
+      evidencia: [
+        { titulo: "Sclerotherapy in the treatment of varicose and spider veins", fuente: "Journal of Vascular Surgery", link: "#" }
+      ]
+    }
   },
-  'inductores-corporales': {
-    nombre: 'Inductores de colágeno corporal (Firmeza y flacidez)',
-    imagen: imgProvisional, descripcionBreve: 'Combate la flacidez severa en brazos, abdomen o muslos tensando la piel desde su interior.', antesDespues: AD,
+  'inductores-corporales': { 
+    nombre: 'Inductores de Colágeno Corporal',
+    tituloDescripcion: '¿Qué es el tratamiento con inductores de colágeno corporal?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Combate la flacidez y recupera la densidad de la piel de tu cuerpo mediante una estimulación celular profunda y duradera.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Cánula fina' },
+      { titulo: 'Tiempo', valor: '45-60 min' },
+      { titulo: 'Resultados', valor: 'A partir de 4-6 semanas' },
+      { titulo: 'Duración', valor: '12-24 meses' }
+    ],
     detalles: {
-      descripcion: 'Utilizamos bioestimuladores avanzados (como ácido poliláctico o hidroxiapatita cálcica hiperdiluida) inyectados en red bajo la piel del cuerpo. Provocan una reacción que genera mallas densas de colágeno y elastina, "pegando" la piel laxa al músculo en zonas conflictivas (cara interna de brazos/muslos, rodillas, abdomen).',
-      ventajas: ['Tensado espectacular y engrosamiento de la piel fina y arrugada.', 'Mejora estética de estrías blancas y celulitis flácida.', 'Recuperación de la tensión abdominal post-parto.'],
-      faqs: [{ pregunta: '¿Cuántas sesiones se necesitan?', respuesta: 'Normalmente se pautan entre 2 y 3 sesiones espaciadas para una creación de colágeno óptima.' }],
-      evidencia: [{ titulo: "Body Contouring using Bio-stimulatory Fillers", fuente: "Journal of Drugs in Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula en abanico' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'A los 2-3 meses' }, { titulo: 'Duración', valor: '18-24 meses' }]
+      descripcion: 'Es un tratamiento médico-estético avanzado de bioremodelación y medicina regenerativa, diseñado específicamente para combatir la flacidez, la pérdida de densidad cutánea y la laxitud en diferentes zonas del cuerpo.\n\nLas micropartículas del compuesto actúan como un potente estímulo mecánico y químico sobre los fibroblastos, obligándolos a sintetizar una gran cantidad de colágeno nuevo (principalmente tipo I) y elastina. El resultado es un efecto de tensado biológico, un aumento del grosor de la dermis y una piel visiblemente más firme, tersa y rejuvenecida.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Al tratarse de una terapia basada en una respuesta biológica del propio organismo, los resultados son progresivos y acumulativos. La síntesis de la nueva red de soporte dérmico comienza a consolidarse a partir de la cuarta o sexta semana, alcanzando su punto máximo de tensado y firmeza entre el tercer y el cuarto mes posterior a la aplicación.\n\nDependiendo de la zona corporal a tratar, del grado de flacidez basal y de la capacidad de regeneración celular de cada paciente, el protocolo médico inicial suele requerir entre 1 y 3 sesiones, espaciadas entre 4 y 8 semanas. Una vez alcanzado el resultado óptimo, los beneficios estructurales son muy duraderos, manteniéndose estables entre 12 y 24 meses según las características individuales del paciente.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable y cómodo. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos el tratamiento utilizando una cánula fina de punta roma. La cánula avanza suavemente por los tejidos corporales sin cortar los vasos sanguíneos, lo que reduce las molestias y el riesgo de hematomas. Además, el producto se diluye previamente en la consulta con una pequeña cantidad de lidocaína (anestésico local).'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar la zona corporal adecuadamente y minimizar el riesgo de que aparezcan pequeños hematomas, te recomendamos seguir estas pautas:\n\n• Evita medicamentos anticoagulantes: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 durante los 3-5 días anteriores a tu cita, a menos que sea por indicación médica estricta.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: '• Protocolo de masajes (Si se utiliza Ácido Poli-L-Láctico): Si tu tratamiento se realiza con este compuesto, deberás realizar masajes firmes en la zona tratada durante 5 minutos, 5 veces al día, durante los primeros 5 días. Esto garantiza una distribución de las micropartículas en el tejido.\n• Utiliza prendas suaves y holgadas que no ejerzan una fricción excesiva sobre la zona tratada durante las primeras 24 horas.\n• Pospone el ejercicio físico de alta intensidad, las saunas, piscinas, spas o baños calientes durante las primeras 48 horas para prevenir la inflamación del tejido.\n• Evita la exposición solar directa sobre la zona tratada mientras persista cualquier marca o pequeño hematoma para prevenir manchas en la piel.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Aunque el estímulo de colágeno generado es de larga duración, la estabilidad del resultado en el tiempo está estrechamente relacionada con los hábitos y el estilo de vida del paciente.\n\nPara prolongar el efecto de firmeza y evitar la degradación prematura de las nuevas fibras estructurales, es fundamental mantener una alimentación equilibrada y proteica, una correcta hidratación diaria, evitar el consumo de tabaco (que destruye el colágeno) y realizar ejercicios de fuerza o tonificación muscular que den soporte al tejido cutáneo. Al tratarse de un proceso de envejecimiento cronológico natural, se recomiendan sesiones de mantenimiento anuales para preservar la turgencia lograda.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Presencia de infecciones bacterianas, heridas abiertas, brotes de eccema, psoriasis o dermatitis en la zona corporal a tratar el día de la sesión.\n• Enfermedades autoinmunes graves, sistémicas o alteraciones severas del tejido conectivo que no estén debidamente controladas.\n• Está contraindicado infiltrar inductores en zonas corporales donde existan materiales no reabsorbibles antiguos (como biopolímeros o siliconas).\n• Hipersensibilidad documentada a los componentes del inductor seleccionado o a la lidocaína.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Collagen Stimulators for Body Contouring and Skin Laxity", fuente: "Aesthetic Surgery Journal", link: "#" }
+      ]
+    }
   },
   'aumento-gluteos': {
-    nombre: 'Remodelación y aumento de glúteos con ácido hialurónico',
-    imagen: imgProvisional, descripcionBreve: 'Proyecta, redondea y eleva tus glúteos sin necesidad de someterte a cirugías ni implantes.', antesDespues: AD,
+    nombre: 'Aumento de glúteos con Ácido Hialurónico',
+    tituloDescripcion: '¿Qué es la remodelación y aumento de glúteos con ácido hialurónico?',
+    imagen: imgProvisional, // Cambia esto por la variable de la foto si ya la tienes
+    descripcionBreve: 'Tratamiento médico-estético corporal diseñado para proyectar, elevar, dar volumen y corregir imperfecciones como los hip dips de forma inmediata y sin cirugía.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Infiltración con cánula de punta roma' },
+      { titulo: 'Tiempo', valor: '45 - 60 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos y naturales' },
+      { titulo: 'Duración', valor: '12 a 24 meses' }
+    ],
     detalles: {
-      descripcion: 'Procedimiento de vanguardia usando ácido hialurónico corporal macromolecular (muy denso). Se inyecta profundamente para rediseñar la forma del glúteo a medida: rellenamos hundimientos laterales (los temidos "hip dips"), elevamos el polo superior y aportamos un volumen sensual, liso y sin celulitis.',
-      ventajas: ['Aumento de glúteos sin cirugía, sin anestesia general y sin posoperatorio doloroso.', 'Moldeado anatómico exacto a diferencia de las prótesis.', 'Mejora la tensión de la piel, alisando hoyuelos de celulitis.'],
-      faqs: [{ pregunta: '¿Se nota al tacto?', respuesta: 'No. El material se integra en el tejido celular subcutáneo y tiene la misma textura natural que la grasa glútea.' }],
-      evidencia: [{ titulo: "Non-surgical Gluteal Augmentation with Hyaluronic Acid", fuente: "Aesthetic Surgery Journal", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Cánula profunda corporal' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-24 meses' }]
-  },
+      descripcion: 'Es un tratamiento médico-estético y mínimamente invasivo diseñado para proyectar, elevar, dar volumen y redefinir la silueta de los glúteos sin necesidad de pasar por un quirófano ni someterse a largos periodos de baja. Consiste en la infiltración de un ácido hialurónico de alta densidad y máxima pureza, desarrollado específicamente para el remodelado corporal.\n\nEs el tratamiento idóneo para pacientes que desean restaurar el volumen perdido por la edad o la pérdida de peso, proyectar el polo superior del glúteo, redondear los flancos corrigiendo las depresiones laterales (conocidas como hip dips) y mejorar visiblemente la tersura de la piel, suavizando las imperfecciones de la celulitis. Todo ello se consigue de forma inmediata, aportando una consistencia y un aspecto absolutamente naturales al tacto.',
+      ventajas: [], // <-- ARREGLADO: Vacío para que no se muestre nada
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Los resultados de la remodelación de glúteos con ácido hialurónico son visibles e inmediatos desde el mismo momento en que finaliza la sesión.\n\nAunque el cambio es inmediato, para alcanzar el volumen óptimo y un diseño perfectamente consolidado, el protocolo médico puede estructurarse en 1 o 2 sesiones, espaciadas entre 4 y 6 semanas. Dividir el tratamiento permite que el tejido se adapte cómodamente al producto y ayuda al médico a realizar sutiles retoques de simetría fina en la segunda cita. Al ser un material reabsorbible de alta resistencia, la duración del resultado oscila entre los 12 y 24 meses, dependiendo de las características individuales del paciente.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos el tratamiento utilizando una cánula fina de punta roma. La cánula avanza suavemente por los tejidos corporales, lo que reduce las molestias y el riesgo de hematomas.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar un procedimiento seguro y minimizar la aparición de hematomas en el área glútea, te recomendamos seguir estas pautas:\n\n• Evita medicamentos anticoagulantes: No consumas antiinflamatorios (como el ibuprofeno o la aspirina) ni suplementos de Omega 3 durante los 5-7 días previos a tu cita, salvo indicación médica expresa.\n• Higiene de la zona: No realices depilación agresiva (cera o láser) en la zona de los glúteos las 48 horas previas para evitar microlesiones en la epidermis.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Al tratarse de la infiltración de un volumen significativo en una zona de apoyo, los cuidados post-tratamiento durante las primeras semanas son muy específicos:\n\n• Primeras 48-72 horas: Intenta evitar dormir boca arriba (hazlo de lado o boca abajo) y reduce al mínimo el tiempo que pasas sentada directamente sobre superficies duras.\n• Evita el calor y el sudor: No realices ejercicio físico de alta intensidad (especialmente entrenamientos de pierna o glúteo con peso), ni acudas a saunas, spas, piscinas o playas durante los primeros 7-10 días para garantizar la correcta fijación del producto y evitar infecciones en los puntos de entrada.\n• Higiene local: Mantén los pequeños puntos de entrada de la cánula limpios y secos. Puedes ducharte con normalidad al día siguiente con agua tibia y jabón neutro, evitando frotar la zona de forma enérgica.\n• Uso de prendas de soporte: Se recomienda utilizar una prenda de compresión suave o mallas deportivas cómodas durante la primera semana para ayudar a estabilizar el gel en su posición anatómica perfecta.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Aunque el ácido hialurónico corporal está diseñado con una reticulación de alta resistencia para ralentizar su degradación, la duración del resultado depende de factores biológicos y de los hábitos del paciente.\n\nEl metabolismo basal de cada persona degrada el gel a un ritmo diferente, pero la práctica de ejercicio de fuerza extrema en la zona glútea o someterse a fluctuaciones drásticas de peso pueden acelerar la reabsorción del producto. Para prolongar los resultados al máximo, se aconseja mantener un peso estable, una hidratación excelente y realizar sesiones de mantenimiento anuales con menor cantidad de viales para conservar la proyección inicial de forma indefinida.'
+        },
+        {
+          pregunta: '¿Es un tratamiento reversible?',
+          respuesta: 'Sí, esta es una de las mayores ventajas de este procedimiento. Al tratarse de un implante inyectable de ácido hialurónico puro, es un tratamiento 100% reversible. Si por cualquier motivo el paciente desea modificar el resultado, corregir una asimetría o retirar el volumen, disponemos en la consulta de la hialuronidasa, una enzima médica inyectable capaz de disolver y eliminar el gel de forma segura e inmediata en cuestión de horas.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones activas en la zona: Presencia de infecciones bacterianas, foliculitis activa en los glúteos, eccemas o heridas abiertas el día de la sesión.\n• Antecedentes de rellenos permanentes: Está estrictamente contraindicado infiltrar este producto en glúteos donde existan materiales no reabsorbibles previos (como siliconas líquidas, poliacrilamidas o biopolímeros).\n• Enfermedades autoinmunes graves o sistémicas que puedan alterar la respuesta inmunitaria frente al implante.\n• Alergias conocidas: Hipersensibilidad documentada al ácido hialurónico o a la lidocaína.'
+        }
+      ], // <-- AQUÍ TERMINAN TUS FAQS
+      evidencia: [
+        { 
+          titulo: "Effectiveness and Safety of Hyaluronic Acid for Gluteal Augmentation", 
+          fuente: "Aesthetic Plastic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/37407710/" 
+        },
+        { 
+          titulo: "Assessment of HA Filler in Gluteal Contouring: A 1-Year Prospective Study", 
+          fuente: "PubMed Central (PMC)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/41423732/" 
+        }
+      ]
+    }
+  }, // <-- Y aquí termina el tratamiento de aumento de glúteos
   'depilacion-laser': {
     nombre: 'Depilación Láser Médica',
-    imagen: imgProvisional, descripcionBreve: 'Eliminación permanente del vello corporal bajo estricta supervisión médica y tecnología clínica de alta potencia.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la Depilación Láser Médica con la plataforma Nordlys de Candela?',
+    imagen: imgProvisional, // Luego lo vincularemos con su foto renombrada de la carpeta assets
+    descripcionBreve: 'Eliminación permanente del vello corporal bajo estricta supervisión médica y tecnología clínica de alta potencia.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Nordlys de Candela (HR 600 SWT)' },
+      { titulo: 'Tiempo', valor: 'Zonal (15 - 60 min)' },
+      { titulo: 'Resultados', valor: 'Permanentes y progresivos' },
+      { titulo: 'Sesiones', valor: '8 a 10 sesiones' }
+    ],
     detalles: {
-      descripcion: 'No toda la depilación láser es igual. En un entorno clínico usamos plataformas médicas de alta penetración que alcanzan la papila folicular con temperaturas superiores a los 65ºC. Esto coagula los vasos que alimentan al pelo, destruyendo la matriz germinativa y eliminando el vello para siempre, resolviendo problemas como la foliculitis.',
-      ventajas: ['Eficacia clínica real en muchas menos sesiones que los equipos de centros estéticos.', 'Supervisión médica: garantía contra quemaduras y ajuste a tu fototipo de piel.', 'Solución médica y estética para la pseudofoliculitis (vellos enquistados).'],
-      faqs: [{ pregunta: '¿Duele?', respuesta: 'Nuestros equipos clínicos incorporan sistemas de refrigeración por gas o zafiro que congelan la piel milisegundos antes del disparo láser, haciéndolo casi indoloro.' }],
-      evidencia: [{ titulo: "Laser Hair Removal: Long-Term Efficacy", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Láser Médico Alta Potencia' }, { titulo: 'Tiempo', valor: 'Variable' }, { titulo: 'Resultados', valor: 'Desde la 1ª sesión' }, { titulo: 'Duración', valor: 'Permanente' }]
+      descripcion: 'Es un procedimiento médico-estético diseñado para eliminar el vello corporal y facial de forma permanente, segura y eficaz. En nuestra clínica utilizamos la prestigiosa plataforma médica Nordlys de Candela, equipada con la tecnología avanzada HR 600 (Selective Waveband Technology).\n\nA diferencia de los sistemas de depilación convencionales, esta tecnología médica utiliza un sistema de filtrado doble patentado que emite pulsos de luz de banda estrecha de alta precisión. La energía es absorbida de manera selectiva por la melanina del vello y se transforma en calor, destruyendo las células madre responsables del crecimiento del folículo piloso (fototermólisis selectiva) sin calentar ni dañar la piel circundante.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La tecnología médica HR 600 de Nordlys destruye de forma eficaz únicamente el vello que se encuentra en la fase anágena (fase de crecimiento activo), que es cuando el pelo está conectado con la raíz. Dado que no todos los folículos están en la misma fase a la vez, se requieren varias sesiones para actuar sobre la totalidad del vello de una zona.\n\nPara lograr una eliminación de entre el 80% y el 90% del vello corporal, el protocolo estándar suele requerir de 8 a 10 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas (que suele oscilar entre 6 y 8 semanas), se determinará de forma personalizada tras una valoración médica de tu tipo de piel, color y grosor de vello, y perfil hormonal. Tras completar el ciclo, se recomiendan sesiones de mantenimiento espaciadas a lo largo de los años para controlar el vello residual.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Al utilizar la tecnología avanzada HR 600 de Nordlys de Candela, el sistema filtra de forma inteligente la luz infrarroja innecesaria, evitando el calentamiento excesivo del agua de la piel que suele causar el dolor en otros equipos. Esto, sumado al uso de pulsos ultra cortos y controlados, minimiza drásticamente la sensación de molestia.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu piel de forma óptima y evitar complicaciones como las quemaduras o la pérdida de eficacia del tratamiento, debes seguir estas pautas:\n\n• No arranques el vello de raíz: Durante las 4 semanas previas a tu cita, no utilices cera, pinzas, hilo ni máquinas eléctricas de depilación. El folículo debe estar intacto para que la luz actúe. Puedes rasurarte con cuchilla cuantas veces lo necesites.\n• Rasurado previo: Rasura la zona a tratar con cuchilla de 24 a 48 horas antes de acudir a la clínica.\n• Evita la exposición solar: No tomes el sol, no acudas a soláriums ni utilices cremas autobronceadoras durante las 2-3 semanas previas. La piel no debe estar irritada ni presentar quemaduras solares.\n• Piel libre de productos: Acude a tu cita con la piel limpia. No apliques cremas hidratantes, aceites, desodorantes (en caso de axilas) ni perfumes el día de la sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Tras la sesión, la piel puede presentar un eritema o edema perifolicular (pequeñas rojeces alrededor del folículo), lo cual es una señal excelente de que la raíz ha sido destruida. Los cuidados básicos en casa son:\n\n• Hidratación y regeneración (Fundamental): Aplica abundante gel de Aloe Vera puro o la crema regeneradora pautada en consulta durante los 3-4 días posteriores para calmar la zona. Evita ducharte con agua excesivamente caliente las primeras 24 horas.\n• No arranques el vello que cae: En las 2 semanas posteriores a la sesión, notarás que el vello tratado empieza a ser expulsado por el folículo. Déjalo caer de forma natural o exfólialo suavemente durante la ducha.\n• Evita el sudor y el calor extremo: No realices ejercicio físico de alta intensidad, ni acudas a saunas, piscinas con cloro o baños turcos durante las primeras 24-48 horas para evitar que el sudor irrite los poros.\n• Fotoprotección solar estricta: Aplica de forma obligatoria protector solar de amplio espectro (SPF 50+) en las zonas expuestas (como el rostro o los brazos) y evita la exposición solar directa durante los 7-10 días posteriores para prevenir la aparición de manchas (hiperpigmentación postinflamatoria).'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'El tratamiento con la plataforma médica Nordlys logra una destrucción permanente de los folículos pilosos tratados, lo que significa que el vello eliminado no volverá a crecer. Sin embargo, el cuerpo humano tiene la capacidad de generar nuevos folículos a lo largo de la vida debido a estímulos y cambios hormonales (como el embarazo, la menopausia o el uso de ciertos medicamentos). Por esta razón, el tratamiento se define clínicamente como una depilación permanente o de larga duración, siendo muy habitual realizar una única sesión de recordatorio anual o bianual para mantener la piel perfectamente lisa.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Medicamentos fotosensibilizantes: Pacientes bajo tratamientos farmacológicos activos que aumenten la sensibilidad de la piel a la luz (como ciertos antibióticos, retinoides orales como la isotretinoína, o algunos antiinflamatorios de uso continuado). Es obligatorio informar al médico de cualquier tratamiento actual.\n• Infecciones o lesiones activas: Presencia de herpes, infecciones bacterianas, heridas abiertas, eccemas agudos o quemaduras solares en la zona a tratar el día de la sesión.\n• Pieles extremadamente bronceadas recientemente: Se deberá evaluar clínicamente si es necesario posponer la sesión unas semanas para garantizar la total seguridad epidérmica.\n• Patologías oncológicas activas o procesos inmunológicos severos sin autorización del especialista.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia a Largo Plazo de la Tecnología de Banda Estrecha (SWT) en la Reducción del Vello", 
+          fuente: "Journal of Cosmetic and Laser Therapy (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/16753748/" 
+        },
+        { 
+          titulo: "Análisis Comparativo de Sistemas Lumínicos Médicos para la Fotodepilación Permanente", 
+          fuente: "Lasers in Surgery and Medicine (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/11568631/" 
+        }
+      ]
+    }
   },
 
   // --- 3. TRATAMIENTOS CAPILARES ---
   'mesoterapia-capilar': {
-    nombre: 'Mesoterapia capilar avanzada',
-    imagen: imgProvisional, descripcionBreve: 'Nutrición y medicación inyectada directamente en la raíz para frenar en seco la caída capilar.', antesDespues: AD,
+    nombre: 'Mesoterapia Capilar',
+    tituloDescripcion: '¿Qué es el tratamiento de Mesoterapia Capilar?',
+    imagen: img_MesoterapiaCapilar, // Vinculada a tu foto real de la clínica
+    descripcionBreve: 'Nutrición y medicación inyectada directamente en la raíz para frenar en seco la caída capilar.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyecciones bulbares' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'A partir del 3º mes' },
+      { titulo: 'Duración', valor: 'Mantenimiento periódico' }
+    ],
     detalles: {
-      descripcion: 'El folículo piloso a menudo no recibe los nutrientes por vía oral. Inyectamos magistralmente en la dermis del cuero cabelludo (a 2mm de profundidad) una mezcla de inhibidores hormonales (como Dutasterida), péptidos bioactivos, vitaminas y aminoácidos que frenan la miniaturización y engrosan el tallo piloso.',
-      ventajas: ['Entrega la medicación al 100% en la diana (la raíz del pelo).', 'Engrosa visiblemente el pelo fino y debilitado.', 'Detiene con alta eficacia la caída androgénica y el efluvio telógeno.'],
-      faqs: [{ pregunta: '¿Duele que te pinchen en la cabeza?', respuesta: 'Usamos agujas invisibles de mesoterapia y sistemas de frío (crioterapia local) que hacen el procedimiento muy tolerable.' }],
-      evidencia: [{ titulo: "Dutasteride Mesotherapy in Androgenetic Alopecia", fuente: "Journal of the American Academy of Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyecciones bulbares' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Al 3º mes' }, { titulo: 'Duración', valor: 'Mantenimiento periódico' }]
+      descripcion: 'Es un tratamiento médico-estético de bioestimulación y nutrición folicular activa, diseñado específicamente para frenar la caída del cabello, estimular el crecimiento de pelo nuevo y mejorar la densidad, grosor y calidad de la masa capilar. Consiste en la aplicación microfocalizada de sustancias terapéuticas directamente en el cuero cabelludo, alcanzando la capa dérmica profunda donde se alojan las raíces de los folículos pilosos.\n\nA diferencia de los tratamientos tópicos convencionales (como lociones o champús), que difícilmente atraviesan la barrera cutánea, la mesoterapia introduce de forma directa un concentrado personalizado de alta gama médica. Estos cócteles biológicos suelen incluir vitaminas esenciales, aminoácidos, minerales, coenzimas, ácido hialurónico y fármacos antiandrógenos específicos de uso médico. Este aporte directo de nutrientes reactiva los folículos debilitados, prolonga la fase de crecimiento del vello (fase anágena) y revierte el proceso de miniaturización capilar.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La mesoterapia capilar actúa respetando y potenciando los ciclos biológicos naturales de crecimiento del cabello. Al tratarse de un estímulo celular progresivo, los resultados no son inmediatos: la detención de la caída anormal del cabello suele apreciarse a partir de la tercera o cuarta semana, mientras que el nacimiento de pelo nuevo y el aumento visible de la densidad capilar se consolidan a partir del tercer o cuarto mes.\n\nPara obtener un cambio estructural profundo, el protocolo médico inicial suele requerir entre 4 y 6 sesiones. El número definitivo de sesiones, así como el intervalo de tiempo entre ellas, se pautará de forma personalizada en la consulta tras un diagnóstico capilar exhaustivo. Una vez completado este ciclo de choque, se recomiendan sesiones de mantenimiento espaciadas a lo largo del año para prolongar la vitalidad del folículo.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento muy tolerable. Para garantizar la máxima seguridad anatómica y el confort del paciente, realizamos las infiltraciones utilizando agujas finas, aplicando el producto de forma superficial.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para preparar tu cuero cabelludo y asegurar un procedimiento higiénico y eficaz, te recomendamos seguir estas pautas previas:\n\n• Evita productos de peinado: No te apliques lacas, gominas, geles, espumas ni fibras capilares el día del tratamiento, ya que es fundamental que la piel esté libre de residuos.\n• Medicamentos: Evita el consumo de antiinflamatorios (como el ibuprofeno o la aspirina) durante las 24-48 horas previas para minimizar el riesgo de pequeños puntos de sangrado.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Al tratarse de un procedimiento mínimamente invasivo que genera micropunciones transitorias en el cuero cabelludo, debes seguir estos cuidados higiénicos básicos en las horas posteriores:\n\n• No laves la cabeza ni te mojes el cuero cabelludo durante las 12-24 horas posteriores a la sesión para permitir que los principios activos terminen de absorberse por completo en la dermis.\n• Evita tocar, rascar o frotar el cuero cabelludo de forma enérgica. Tras el periodo de espera, utiliza un champú suave o neutro para el primer lavado.\n• No realices deporte de alta intensidad, ni acudas a saunas, piscinas, spas o playas durante las primeras 48 horas para evitar que la sudoración excesiva o el cloro irriten las micropunciones.\n• No utilices cascos de moto, gorras o sombreros ajustados inmediatamente después del tratamiento para evitar la acumulación de calor y mantener la zona perfectamente oxigenada.\n• Pospone la aplicación de tintes, decoloraciones o permanentes hasta que hayan transcurrido al menos 5-7 días desde la sesión.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'La mesoterapia capilar es una herramienta médica excepcional para reactivar los folículos pilosos, pero la estabilidad de sus resultados a largo plazo depende de la constancia del paciente y de la causa subyacente de la alopecia.\n\nEn casos de alopecias de origen genético y hormonal (como la alopecia androgénica), el estímulo destructivo sobre el folículo es crónico. Por lo tanto, para mantener el pelo fuerte y evitar que vuelva a miniaturizarse, es fundamental cumplir de forma estricta con las sesiones de mantenimiento pautadas y combinarlas, si el médico lo indica, con tratamientos domiciliarios orales o tópicos. En casos de caídas temporales (efluvios telógenos por estrés o postparto), los resultados pueden ser definitivos una vez corregido el factor desencadenante.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones o patologías activas en el cuero cabelludo: Presencia de dermatitis seborreica severa en brote, psoriasis capilar activa, infecciones bacterianas (foliculitis), heridas abiertas o quemaduras solares el día de la sesión.\n• Alteraciones graves de la coagulación o pacientes bajo tratamientos anticoagulantes activos severos.\n• Enfermedades neoplásicas activas en la zona o antecedentes oncológicos sin la autorización expresa de su especialista.\n• Alergias conocidas: Hipersensibilidad documentada a alguno de los principios activos o vitaminas de la formulación seleccionada.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia y Seguridad de la Mesoterapia con Antiandrógenos en Alopecia Androgenética", 
+          fuente: "International Journal of Trichology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/28900321/" 
+        },
+        { 
+          titulo: "Uso de la Mesoterapia como Tratamiento Adyuvante para la Pérdida Capilar", 
+          fuente: "Journal of Clinical and Aesthetic Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/33907572/" 
+        }
+      ]
+    }
   },
   'laser-led-capilar': {
     nombre: 'Terapia fotobiológica (Láser LED capilar)',
-    imagen: imgProvisional, descripcionBreve: 'Estimulación lumínica indolora para multiplicar el riego sanguíneo de tus folículos capilares.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es la Terapia Fotobiológica o Láser LED capilar?',
+    imagen: img_TerapiaFotobiologica, // Vinculada a tu foto real de la clínica
+    descripcionBreve: 'Estimulación lumínica indolora para multiplicar el riego sanguíneo de tus folículos capilares.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Fotobiomodulación' },
+      { titulo: 'Tiempo', valor: '15 - 20 min' },
+      { titulo: 'Resultados', valor: 'Progresivos y acumulativos' },
+      { titulo: 'Sesiones', valor: '8 a 12 sesiones' }
+    ],
     detalles: {
-      descripcion: 'La Terapia LLLT (Low Level Laser Therapy) baña el cuero cabelludo con luz roja y cercana al infrarrojo. Las células madre del folículo absorben esta energía y aumentan su metabolismo (ATP). Esto reduce la inflamación microscópica y prolonga la fase anágena (de crecimiento) del pelo.',
-      ventajas: ['Tratamiento 100% indoloro, no invasivo y relajante.', 'Potencia exponencialmente los efectos del PRP capilar y la mesoterapia.', 'Mejora el entorno capilar, reduciendo dermatitis, caspa o grasa excesiva.'],
-      faqs: [{ pregunta: '¿Funciona por sí solo?', respuesta: 'Sirve como mantenimiento y prevención, pero su verdadero poder clínico se ve al combinarlo con terapias inyectables.' }],
-      evidencia: [{ titulo: "Low-Level Laser (Light) Therapy for Hair Loss", fuente: "Lasers in Surgery and Medicine", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Fotobiomodulación' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Progresivos' }, { titulo: 'Duración', valor: 'Apoyo constante' }]
+      descripcion: 'Es un tratamiento médico-estético de fotobiomodulación celular, diseñado de forma específica para frenar la caída del cabello, acelerar el crecimiento capilar y mejorar la densidad y vitalidad de los folículos pilosos. Consiste en la aplicación de una luz enriquecida de baja intensidad a través de longitudes de onda rojas e infrarrojas sumamente precisas, que penetran en el cuero cabelludo sin emitir calor ni dañar los tejidos.\n\nEl mecanismo de acción actúa directamente a nivel mitocondrial (la central energética de las células) desencadenando un aumento inmediato en la producción de energía celular (ATP). Esto estimula la microcirculación local, mejora el aporte de oxígeno y nutrientes a la raíz del pelo, disminuye la inflamación perifolicular y reduce la acción de los radicales libres. Como resultado, los folículos miniaturizados y debilitados se reactivan, logrando un cabello notablemente más grueso, denso y resistente.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La terapia fotobiológica capilar de baja intensidad estimula una respuesta biológica progresiva y acumulativa en el cuero cabelludo. Al tratarse de un proceso de regeneración celular, los resultados se consolidan de manera gradual: la estabilización de la caída del vello suele apreciarse a partir de las 4 o 6 semanas, mientras que la mejora en el grosor y el aumento de la densidad capilar se hacen visibles a partir del tercer o cuarto mes de tratamiento continuo.\n\nPara obtener un beneficio terapéutico sólido y duradero, el protocolo estándar inicial suele requerir un ciclo de entre 8 y 12 sesiones. Al ser un procedimiento no invasivo, las sesiones se pautan generalmente 1 o 2 veces por semana, con una duración de entre 15 y 20 minutos por sesión. El diseño definitivo de tu calendario se adaptará minuciosamente en la consulta tras un diagnóstico capilar personalizado.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento absolutamente indoloro, cómodo y relajante. La tecnología de emisión LED de baja intensidad es una forma de "energía fría", lo que significa que no genera quemaduras, pinchazos ni molestias de ningún tipo. No requiere ningún tipo de anestesia y te permite reincorporarte a tu vida diaria de forma inmediata al salir de la clínica.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar que la luz penetre de forma limpia y directa en el cuero cabelludo sin interferencias ópticas, te recomendamos seguir estas pautas previas:\n\n• Piel libre de residuos: No te apliques lacas, gominas, geles, espumas ni, de forma muy importante, fibras capilares densificadoras el día de la cita, ya que estos productos pueden bloquear o reflejar los fotones de luz, disminuyendo la eficacia del tratamiento.\n• Sin cosméticos grasos: Intenta evitar el uso de lociones capilares excesivamente aceitosas unas horas antes de la sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Al ser un tratamiento completamente no invasivo que respeta la integridad de la piel, la recuperación es inmediata y no requiere cuidados complejos en casa.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'La fotobiomodulación mantiene activos los folículos pilosos mientras persista el estímulo energético y se controlen los factores causantes de la caída. En alopecias crónicas o de origen genético (como la alopecia androgénica), el folículo sigue estando expuesto al ataque hormonal nativo del organismo.\n\nPor esta razón, la duración de los resultados estéticos depende de la constancia en el mantenimiento. Una vez finalizado el protocolo de choque inicial, es fundamental realizar sesiones de recuerdo espaciadas combinadas con el tratamiento médico integral pautado en consulta para conservar de forma indefinida la densidad y el grosor capilar recuperados.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Medicamentos fotosensibilizantes potentes: Pacientes que estén tomando fármacos que aumenten de forma severa la sensibilidad de la piel a la luz (como ciertos antibióticos o tratamientos dermatológicos específicos).\n• Patologías de la piel fotosensibles: Enfermedades que empeoren con la exposición lumínica, como el Lupus Eritematoso Sistémico o la porfiria.\n• Infecciones o heridas abiertas: Presencia de infecciones bacterianas agudas o ulceraciones sangrantes en el cuero cabelludo el día de la sesión.\n• Antecedentes de patologías oncológicas activas en la zona de tratamiento.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Terapia de Luz de Baja Intensidad (LLLT) para el Tratamiento de la Pérdida de Cabello: Un Estudio Clínico", 
+          fuente: "Lasers in Surgery and Medicine (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/24078483/" 
+        },
+        { 
+          titulo: "Eficacia de la Fotobiomodulación en la Alopecia Androgenética Masculina y Femenina", 
+          fuente: "Annals of Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/30402061/" 
+        }
+      ]
+    }
   },
   'prp-capilar': {
     nombre: 'Plasma Rico en Plaquetas (PRP) Capilar',
-    imagen: imgProvisional, descripcionBreve: 'Reactivamos los folículos inactivos y dormidos usando los factores de crecimiento de tu propia sangre.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento de Plasma Rico en Plaquetas (PRP) Capilar?',
+    imagen: imgProvisional, // Luego lo vincularemos con su foto si dispones de ella
+    descripcionBreve: 'Reactivamos los folículos inactivos y dormidos usando los factores de crecimiento de tu propia sangre.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Mesoterapia Autóloga' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'A partir del 3º o 4º mes' },
+      { titulo: 'Sesiones', valor: '4 a 6 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Aislando tus factores de crecimiento plaquetario (a través de una pequeña muestra de sangre) e inyectándolos en el cuero cabelludo, provocamos una angiogénesis masiva (creación de nuevos vasos sanguíneos). Esto despierta folículos en fase de reposo, multiplicando la densidad y sanando la raíz del pelo.',
-      ventajas: ['Tratamiento biológico autólogo (sin químicos ni riesgo de alergias).', 'Detiene las caídas masivas por estrés, posparto o Covid (efluvios).', 'Aporta un anclaje, brillo y vitalidad únicos al cabello.'],
-      faqs: [{ pregunta: '¿Cuántas sesiones se pautan?', respuesta: 'Por lo general, un protocolo de choque de 3-4 sesiones mensuales, seguido de mantenimientos espaciados.' }],
-      evidencia: [{ titulo: "PRP in the treatment of hair loss", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Mesoterapia Autóloga' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'A los 2 meses' }, { titulo: 'Duración', valor: 'Mantenimiento anual' }]
+      descripcion: 'Es un tratamiento médico-estético de digitalización celular y terapia biológica autóloga, diseñado para frenar la pérdida de cabello, potenciar el nacimiento de pelo nuevo y engrosar los folículos debilitados. Consiste en la aplicación intradérmica de una alta concentración de plaquetas obtenidas de la propia sangre del paciente, las cuales contienen factores de crecimiento.\n\nEl procedimiento se realiza de forma inmediata en la consulta: se extrae una pequeña muestra de sangre al paciente y se somete a un proceso de centrifugado médico. Esto permite separar las plaquetas del resto de los componentes sanguíneos. Al infiltrar este plasma hiperconcentrado directamente en el cuero cabelludo, los factores de crecimiento activan de forma natural las células madre del folículo piloso, estimulan la formación de nuevos vasos sanguíneos y aumentan la vascularización local. Como resultado, se reactivan los folículos en fase de reposo y se repara el tejido capilar desde el interior.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'El PRP capilar desencadena una respuesta de reparación y bioestimulación biológica profunda y progresiva. La respuesta celular requiere tiempo para traducirse en cambios macroscópicos: la mejora en el grosor, la densidad y la textura del pelo se consolidan de forma notable a partir del tercer o cuarto mes.\n\nPara un tratamiento de choque eficaz, el protocolo médico habitual consiste en un ciclo inicial de 4 a 6 sesiones, espaciadas de forma estricta cada 4 o 6 semanas. El diseño definitivo del plan de tratamiento se estructurará de forma personalizada tras una valoración clínica y tricoscópica de tu salud capilar en la consulta.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'Es un procedimiento tolerable y seguro. Para maximizar el confort del paciente durante la sesión, las infiltraciones se realizan de forma muy superficial mediante agujas finas.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar que el procedimiento se realice bajo las máximas condiciones de asepsia y optimizar la calidad de la muestra biológica, te recomendamos seguir estas pautas:\n\n• Acude a la clínica con el cuero cabelludo limpio, seco y libre de cualquier producto de peinado (lacas, gominas, geles o fibras capilares).\n• Bebe abundante agua durante las horas previas a la extracción sanguínea. No acudas en ayunas de muchas horas; realiza una comida ligera antes de acudir a tu cita.\n• Evita de forma estricta el consumo de antiinflamatorios (como el ibuprofeno o la aspirina) durante los 3-5 días previos a la sesión, ya que estos fármacos inhiben transitoriamente la función plaquetaria y reducirían la eficacia biológica del tratamiento.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Al tratarse de una infiltración médica con micropunciones transitorias, es fundamental mantener unas pautas higiénicas sencillas durante las horas posteriores:\n\n• No laves tu cabello ni mojes el cuero cabelludo durante las 12-24 horas posteriores a la sesión, permitiendo que la zona se asiente y las micropunciones se sellen por completo de forma natural.\n• No frotes, rasques ni masajes el cuero cabelludo con fuerza. Cuando laves la cabeza por primera vez, hazlo de forma suave con un champú neutro y agua tibia.\n• Evita realizar ejercicio físico intenso, acudir a saunas, spas, baños turcos o pfscinas con cloro durante las primeras 48 horas para prevenir irritaciones o infecciones asociadas a la sudoración.\n• No utilices gorras, sombreros ajustados ni cascos de moto inmediatamente después del tratamiento para evitar la fricción y la acumulación de calor local.\n• Pospone la aplicación de tintes, keratinas o decoloraciones durante los 7 días posteriores a la sesión.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Al ser un tratamiento autólogo, el PRP potencia de forma espectacular los recursos regenerativos de tu propio cuerpo, pero su duración está directamente vinculada a la patología de base del paciente.\n\nEn procesos de alopecia de carácter crónico y evolutivo (como la alopecia androgénica), el estímulo hormonal que debilita el folículo sigue activo en el organismo. Por tanto, para consolidar los resultados y evitar que el cabello vuelva a miniaturizarse, es imprescindible realizar sesiones de mantenimiento pautadas. En caídas temporales por efluvio telógeno o recuperación post-estrés, los beneficios pueden ser definitivos una vez superado el factor desencadenante.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Trastornos de la coagulación o hematológicos: Pacientes diagnosticados con trombocitopenia (bajo recuento de plaquetas), hipofibrinogenemia o bajo tratamiento con anticoagulantes orales que alteren el perfil plaquetario.\n• Infecciones o patologías activas: Presencia de foliculitis, dermatitis seborreica severa en brote, psoriasis capilar, herpes o heridas abiertas en el cuero cabelludo el día de la cita.\n• Enfermedades autoinmunes graves o patologías oncológicas activas sin la autorización expresa del especialista a cargo.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia del Plasma Rico en Plaquetas en la Alopecia Androgenética: Una Revisión Sistemática", 
+          fuente: "Aesthetic Plastic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/32333179/" 
+        },
+        { 
+          titulo: "Evaluación de los Factores de Crecimiento del PRP en la Regeneración del Folículo Piloso", 
+          fuente: "Dermatologic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/27054924/" 
+        }
+      ]
+    }
   },
   'exosomas-capilar': {
     nombre: 'Tratamiento capilar con Exosomas',
-    imagen: imgProvisional, descripcionBreve: 'La innovación definitiva en tricología. Señalización celular hiperconcentrada para multiplicar el pelo.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el tratamiento capilar con Exosomas?',
+    imagen: imgProvisional, // Pendiente de enlazar con la imagen real cuando la tengas
+    descripcionBreve: 'La innovación definitiva en tricología. Señalización celular hiperconcentrada para multiplicar el pelo.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microneedling capilar' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Primeras semanas' },
+      { titulo: 'Duración', valor: 'Largo plazo' }
+    ],
     detalles: {
-      descripcion: 'Los exosomas envían señales directas a las células madre del folículo piloso ordenando su regeneración y crecimiento incesante. Poseen una concentración de factores de crecimiento y ARNm purificado en laboratorio que es 100 veces superior al PRP tradicional, logrando recuperar densidad en alopecias muy resistentes.',
-      ventajas: ['El tratamiento regenerativo capilar más potente, puro y moderno del mercado.', 'Disminución ultra-rápida del proceso inflamatorio folicular.', 'Alta eficacia en casos severos donde otros tratamientos convencionales han fallado.'],
-      faqs: [{ pregunta: '¿Se aplican con aguja?', respuesta: 'Se aplican tópicamente ayudados por micro-canales generados con tecnología Microneedling (Dermapen) para llegar a la raíz.' }],
-      evidencia: [{ titulo: "Exosomes in Hair Regeneration", fuente: "Stem Cell Research & Therapy", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microneedling capilar' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Primeras semanas' }, { titulo: 'Duración', valor: 'Largo plazo' }]
+      descripcion: 'Es de los tratamientos médico-estético más avanzados de biomedicina y regeneración, diseñado para revertir el debilitamiento capilar severo y regenerar los folículos pilosos desde su núcleo molecular.\n\nLos exosomas son nanovesículas biológicas liberadas por células madre que funcionan como un potente sistema de comunicación intercelular. Los exosomas no contienen células, sino que transportan de forma concentrada las instrucciones genéticas y moleculares exactas (factores de crecimiento, proteínas reguladoras y micro-ARN) que los folículos debilitados necesitan para repararse. Para permitir su correcta absorción, primero generamos una apertura indolora de microcanales en la piel mediante un dispositivo de micropunción controlada (microneedling). Al aplicar seguidamente este concentrado molecular, los exosomas penetran directamente hacia la papila dérmica, reactivando los folículos en fase latente, incrementando la vascularización y deteniendo los procesos inflamatorios que destruyen el pelo.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'Debido a su altísima concentración de señales biológicas purificadas, la terapia con exosomas genera una respuesta regenerativa mucho más rápida e intensa que los tratamientos capilares tradicionales. El aumento del volumen y la redensificación capilar se consolidan de manera evidente entre el segundo y el tercer mes.\n\nGracias a la potencia de este concentrado biomédico, los protocolos de choque son muy eficientes y suelen requerir únicamente de 1 a 3 sesiones, espaciadas entre 4 y 6 semanas según el grado de alopecia del paciente. La pauta definitiva y personalizada se determinará en la consulta médica tras un minucioso examen tricoscópico de la salud de tu cuero cabelludo.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento seguro y perfectamente tolerable. Al no utilizarse agujas de inyección tradicionales, la molestia se reduce al mínimo. La fase previa de micropunción controlada para abrir los canales de absorción se realiza con dispositivos avanzados de alta velocidad y profundidad milimétrica, lo que apenas genera una sutil sensación de hormigueo o fricción en el cuero cabelludo que los pacientes toleran con total facilidad. No requiere el uso de anestesias y te permite reincorporarte a tus actividades habituales inmediatamente después de terminar la sesión.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para asegurar un procedimiento higiénico y garantizar que las nanovesículas biológicas penetren sin interferencias a través de los microcanales, te recomendamos seguir estas indicaciones previas:\n\n• Acude a la sesión con el cabello recién lavado (esa misma mañana o la noche anterior) y completamente seco.\n• No utilices lacas, espumas, gominas, geles ni fibras capilares densificadoras el día del tratamiento. La piel debe estar completamente limpia para que los microcanales permanezcan permeables y libres de contaminación cosmética.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: '• No laves tu cabello ni mojes el cuero cabelludo durante las 24 horas posteriores a la sesión, permitiendo que el producto aplicado por vía tópica se absorba por completo y ejerza su acción en las capas internas de la piel.\n• Evita rascar, frotar o masajear el cuero cabelludo de forma enérgica. En el primer lavado posterior, utiliza un champú suave o neutro y agua tibia, sin friccionar con las uñas.\n• No realices actividad física de alta intensidad, ni acudas a saunas, baños de vapor o piscinas durante las primeras 48 horas. El sudor excesivo o el cloro podrían irritar los canales de absorción que se están cerrando.\n• Evita el uso de gorras, sombreros ajustados o cascos de moto inmediatamente después de la sesión para mantener la zona limpia y perfectamente oxigenada.\n• No te apliques tintes, decoloraciones ni tratamientos de keratina hasta pasados al menos 7 días de la sesión.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Los exosomas inducen un cambio estructural y biológico profundo en el folículo piloso, despertando su capacidad regenerativa nativa. Sin embargo, en alopecias con una fuerte carga genética y hormonal (como la alopecia androgénica), el estímulo del organismo que debilita el pelo sigue existiendo a nivel sistémico.\n\nPor tanto, la estabilidad de los resultados a largo plazo depende de la estrategia de mantenimiento médico. Una vez alcanzado el objetivo de densidad y grosor con el protocolo de choque, se suele recomendar una o dos sesiones de recuerdo al año, combinada con el soporte terapéutico domiciliario (tópico u oral) que prescriba el equipo médico para proteger el folículo de forma continua.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Infecciones o inflamaciones activas en la zona: Presencia de foliculitis bacteriana, brotes severos de dermatitis seborreica, psoriasis capilar activa, eccemas o heridas abiertas en el cuero cabelludo el día de la cita (ya que impedirían realizar la micropunción).\n• Patologías oncológicas activas: Antecedentes de neoplasias en el cuero cabelludo o procesos oncológicos sistémicos activos sin la autorización expresa y por escrito de su oncólogo.\n• Alergia conocida a alguno de los componentes acompañantes en la solución cosmética estéril.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Exosomas Derivados de Células Madre Mesenquimales para la Regeneración Capilar", 
+          fuente: "Stem Cell Research & Therapy (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/31818593/" 
+        },
+        { 
+          titulo: "El Rol de los Exosomas en la Promoción del Crecimiento del Folículo Piloso", 
+          fuente: "International Journal of Molecular Sciences (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/33945657/" 
+        }
+      ]
+    }
   },
   'alopecia': {
-    nombre: 'Abordaje médico de la Alopecia y caída capilar',
-    imagen: imgProvisional, descripcionBreve: 'Diagnóstico exhaustivo y tricoscopia para descubrir la verdadera causa de tu pérdida de cabello.', antesDespues: AD,
+    nombre: 'Abordaje Médico de la Alopecia y Caída Capilar',
+    tituloDescripcion: '¿Qué es el Abordaje Médico de la Alopecia y Caída Capilar?',
+    imagen: imgProvisional, // Se enlazará a tu foto cuando esté disponible
+    descripcionBreve: 'Diagnóstico exhaustivo, tricoscopia y tratamiento médico personalizado para detener la pérdida de cabello.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Tricoscopia y Terapia Sistémica' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (4 - 8 semanas)' },
+      { titulo: 'Duración', valor: 'Control Crónico' }
+    ],
     detalles: {
-      descripcion: 'No hay tratamiento que funcione sin un diagnóstico correcto. Realizamos un estudio minucioso del cuero cabelludo, los vasos sanguíneos y el tallo piloso mediante microscopía digital de alta resolución (Tricoscopia), junto con analíticas de sangre específicas para descartar factores carenciales o tiroideos.',
-      ventajas: ['Evita que gastes tiempo y dinero en champús comerciales que no solucionan el problema.', 'Diagnóstico diferencial certero (efluvios, alopecias androgénicas, cicatriciales o autoinmunes).', 'Diseño de una hoja de ruta clínica (plan de acción) garantizada.'],
-      faqs: [{ pregunta: '¿Por qué se me cae el pelo a mechones?', respuesta: 'Las causas van desde el estrés agudo (efluvio telógeno) hasta desórdenes genético-hormonales. El diagnóstico médico es el único camino para detenerlo.' }],
-      evidencia: []
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Tricoscopia Digital Médica' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Diagnóstico inmediato' }, { titulo: 'Duración', valor: 'Valoración inicial' }]
+      descripcion: 'Es un servicio médico especializado enfocado en el diagnóstico, control y tratamiento farmacológico personalizado de las diferentes patologías que provocan la pérdida de densidad, el debilitamiento y la caída del cabello.\n\nLa alopecia no es un problema puramente estético; en la gran mayoría de los casos (como la alopecia androgénica o los efluvios telógenos), responde a factores hormonales, genéticos, déficits nutricionales o estrés oxidativo que afectan directamente al folículo piloso. Mediante una valoración clínica exhaustiva, el diseño de analíticas específicas y el uso de tricoscopia digital, pautamos un tratamiento médico integral que incluye fórmulas magistrales tópicas, suplementación de grado médico y terapia sistémica por vía oral para frenar la caída de forma definitiva y recuperar el cabello miniaturizado en el caso de ser necesario.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿En qué consiste el tratamiento por Vía Oral y Tópica?',
+          respuesta: 'El tratamiento médico domiciliario es el pilar fundamental que da soporte y continuidad a las terapias realizadas en la clínica. Se diseña a medida según las necesidades biológicas de cada paciente:\n\n• Terapia Médica por Vía Oral (Sistémica): Consiste en la prescripción de fármacos específicos destinados a bloquear los factores internos que destruyen el folículo. Empleamos inhibidores hormonales (como el Dutasteride o Finasteride) para frenar la miniaturización del vello provocada por la dihidrotestosterona (DHT), o vasodilatadores orales a bajas dosis (como el Minoxidil oral), un tratamiento médico de altísima eficacia que mejora de forma masiva el riego sanguíneo en la raíz del pelo y que ha revolucionado la adherencia al tratamiento al evitar la incomodidad de las lociones diarias.\n• Terapia Médica por Vía Tópica: Diseñamos fórmulas magistrales personalizadas (lociones, espumas o champús médicos) con concentraciones precisas de activos que el paciente aplica directamente en su hogar. Estas fórmulas combinan principios activos anticaída, antiandrógenos tópicos o corticoides de alta especificidad en caso de alopecias de base inflamatoria o autoinmune.'
+        },
+        {
+          pregunta: '¿Cuánto tiempo se necesita para ver resultados?',
+          respuesta: 'El ciclo biológico del vello es lento y requiere constancia absoluta. Los tratamientos médicos actúan modificando las fases de crecimiento del folículo desde la raíz dérmica, por lo que los cambios estructurales siguen un calendario fisiológico muy marcado:\n\n• A las 4 - 8 semanas: Se aprecia una estabilización biológica de la caída activa (el cabello deja de caerse de forma anormal). En ocasiones, durante los primeros dos meses puede aparecer el llamado efecto shedding (caída transitoria del vello debilitado para dar paso al pelo nuevo y fuerte), un proceso médico completamente normal que indica que el tratamiento está funcionando.\n• A los 3 - 6 meses: Comienza a ser visible el aumento del grosor, el nacimiento de pelo nuevo y una mayor cobertura del cuero cabelludo.\n• A los 12 meses: Se alcanza el pico máximo de resultado estético y terapéutico de la terapia inicial, mostrando una melena redensificada, fuerte y con un diámetro de fibra capilar notablemente rejuvenecido.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de iniciar el tratamiento?',
+          respuesta: 'Para realizar una prescripción médica segura y eficaz, es imprescindible realizar una valoración previa en la consulta:\n\n• Historia clínica y analítica dirigida: El médico evaluará tus antecedentes, alergias, estilo de vida y, si es necesario, solicitará una analítica de sangre específica (perfil hormonal, tiroideo, niveles de hierro y vitaminas) para descartar causas metabólicas subyacentes.\n• Diagnóstico por tricoscopia: Evaluaremos tu cuero cabelludo mediante lentes de alta definición para identificar el tipo exacto de alopecia antes de iniciar cualquier fármaco.\n\nEs fundamental que comuniques al médico cualquier fármaco, anticonceptivo o suplemento que consumas de forma habitual.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'En patologías capilares de carácter genético y crónico (como la alopecia androgénica), el estímulo hormonal del organismo que ataca al folículo piloso se mantiene activo de forma indefinida a lo largo de la vida.\n\nPor lo tanto, la duración y el éxito de los resultados dependen estrictamente de la continuidad del tratamiento. El abordaje médico de la alopecia debe entenderse como un tratamiento de mantenimiento a largo plazo; si los fármacos se suspenden de forma definitiva, el folículo volverá a quedar desprotegido frente a la acción hormonal y el cabello retomará de forma paulatina su proceso natural de miniaturización y caída previa. El médico adaptará y modulará las dosis a lo largo de los años para que el mantenimiento sea lo más cómodo y ligero posible.'
+        },
+        {
+          pregunta: '¿Tiene efectos secundarios el tratamiento médico?',
+          respuesta: 'Como cualquier tratamiento farmacológico, la terapia oral o tópica puede presentar efectos adversos, aunque en las dosis médicas controladas empleadas en tricología estética su incidencia es sumamente baja y totalmente reversible. El uso de dosis optimizadas y personalizadas minimiza al máximo la aparición de efectos secundarios corporales u hormonales. Además, cualquier síntoma o molestia es completamente reversible y desaparece de forma inmediata al ajustar la dosis o suspender el fármaco bajo la supervisión directa del médico en las revisiones periódicas.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'La prescripción de fármacos capilares sistémicos estará contraindicada o requerirá una estricta adaptación en caso de:\n\n• Embarazo, intención de búsqueda de embarazo o periodos de lactancia: Ciertos fármacos antiandrógenos orales (como el Dutasteride o Finasteride) presentan teratogenicidad estricta y están absolutamente prohibidos en mujeres en edad fértil sin un método anticonceptivo seguro asociado.\n• Patologías hepáticas o renales severas: Que impidan la correcta metabolización o aclaramiento de los fármacos orales.\n• Alteraciones cardiovasculares graves o hipotensión severa: En el caso de utilizar vasodilatadores como el minoxidil a dosis sistémicas, requiere una valoración minuciosa de la tensión arterial basal del paciente.\n• Alergias conocidas: Hipersensibilidad documentada a alguno de los principios activos o excipientes de las fórmulas magistrales pautadas.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia y Seguridad del Minoxidil Oral a Bajas Dosis en el Tratamiento de la Alopecia", 
+          fuente: "Journal of the American Academy of Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/31102717/" 
+        },
+        { 
+          titulo: "Dutasteride Oral vs Tópico en el Manejo de la Alopecia Androgenética Masculina y Femenina", 
+          fuente: "Clinical Interventions in Aging (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/30858696/" 
+        }
+      ]
+    }
   },
 
   // --- 4. PATOLOGÍAS DE LA PIEL ---
   'tratamiento-acne': {
     nombre: 'Tratamiento integral del Acné',
-    imagen: imgProvisional, descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.', antesDespues: AD,
+    imagen: img_AcneIntegral, descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.', antesDespues: AD,
     detalles: {
       descripcion: 'El acné es una enfermedad, no un problema cosmético. Implementamos un protocolo clínico que suprime la secreción sebácea y destruye la bacteria (C. Acnes). Combinamos prescripción médica (retinoides orales o antibióticos), terapias lumínicas (IPL) y peelings profundos con ácido salicílico para secar y desinflamar la piel.',
       ventajas: ['Freno clínico a brotes infecciosos y nódulos dolorosos.', 'Previene la formación de las temidas cicatrices hundidas post-acné.', 'Educación y pauta cosmecéutica para cambiar la salud de tu piel para siempre.'],
@@ -1123,16 +1555,47 @@ const tratamientosData: Record<string, Tratamiento> = {
     },
     parametros: [{ titulo: 'Técnica', valor: 'Médico + Peelings/Láser' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Semanas-Meses' }, { titulo: 'Duración', valor: 'Cura o control crónico' }]
   },
-  'manchas-melasma': {
-    nombre: 'Eliminación de manchas y Melasma',
-    imagen: imgProvisional, descripcionBreve: 'Unifica tu tono borrando los daños solares acumulados e inhibiendo el melasma hormonal rebelde.', antesDespues: AD,
+  'eliminacion-lentigos': {
+    nombre: 'Eliminación de Léntigos / Manchas solares',
+    tituloDescripcion: '¿Cómo es el tratamiento de Eliminación de Léntigos Solares (Manchas Solares)?',
+    imagen: img_Lentigos,
+    descripcionBreve: 'Unifica tu tono borrando los daños solares acumulados y recuperando la luminosidad de tu piel de forma definitiva.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Tecnología lumínica / Peelings' },
+      { titulo: 'Tiempo', valor: '30-45 min' },
+      { titulo: 'Resultados', valor: '1 a 3 sesiones' },
+      { titulo: 'Duración', valor: 'Definitivos' }
+    ],
     detalles: {
-      descripcion: 'Aplicamos un abordaje dual. Para las pecas y léntigos solares (daño solar), usamos láseres Q-Switched/IPL para fulminar el pigmento. Para el Melasma (mancha hormonal difusa tipo "mapa"), usamos protocolos médicos despigmentantes (mesoterapia de ácido tranexámico, peelings químicos) que paralizan o duermen al melanocito hiperactivo.',
-      ventajas: ['Abordaje clínico diferenciado para manchas superficiales o profundas.', 'Piel clara, homogénea, luminosa y libre de pigmento asimétrico.', 'Pautas estrictas para prevenir el fotoenvejecimiento futuro avanzado.'],
-      faqs: [{ pregunta: '¿El melasma desaparece para siempre?', respuesta: 'El melasma tiene "memoria". Lo silenciamos y blanqueamos, pero requiere de fotoprotección estricta y mantenimientos.' }],
-      evidencia: [{ titulo: "Treatment of Melasma and Pigmentation Disorders", fuente: "Dermatology and Therapy", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Láser + Peeling / Tranexámico' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Al mes' }, { titulo: 'Duración', valor: 'Mantenimiento' }]
+      descripcion: 'Es un procedimiento médico-estético diseñado específicamente para eliminar de forma segura, precisa y definitiva los léntigos solares, comúnmente conocidos como manchas solares o seniles. Estas lesiones son hiperpigmentaciones benignas, de bordes nítidos y coloración marrón variable, que aparecen en las zonas más expuestas a la radiación (rostro, escote, dorso de las manos y brazos) como consecuencia del daño actínico acumulado a lo largo de los años.\n\nEl pigmento del léntigo solar se encuentra concentrado de forma muy superficial (epidérmica). El tratamiento médico se basa en la aplicación de tecnologías lumínicas avanzadas o peelings químicos de grado médico en la consulta. Mediante un mecanismo de fototermólisis selectiva, la energía incide exclusivamente sobre el acúmulo de melanina de la mancha sin dañar el tejido sano circundante, fragmentando el pigmento para que el propio organismo lo elimine de forma natural mediante el proceso de renovación celular.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
+          respuesta: 'La eliminación de los léntigos solares es uno de los tratamientos más agradecidos y con resultados más rápidos. Al encontrarse el pigmento en las capas más superficiales de la piel, muchas de estas manchas se eliminan por completo desde la primera sesión.\n\nPor lo general, el protocolo estándar requiere de 1 a 3 sesiones. El número definitivo dependerá estrictamente de la antigüedad de la mancha, su tamaño y la cantidad de pigmento acumulado. Tras una evaluación dermatoscópica previa en la consulta para confirmar la benignidad de la lesión, el equipo médico diseñará tu plan personalizado.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar un procedimiento seguro en la clínica y evitar efectos secundarios en la piel, es fundamental cumplir con estas pautas previas:\n\n• Exposición solar cero (Fundamental): No puedes realizarte este tratamiento si has tomado el sol recientemente o si tu piel presenta un bronceado activo. La piel debe acudir a la cita en su tono basal para que el haz de luz distinga perfectamente la mancha del tejido sano.\n• Suspende activos renovadores: Interrumpe la aplicación de cremas con retinol, ácido glicólico o salicílico en la zona a tratar entre 3 y 5 días antes de tu sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'El proceso posterior a la sesión sigue una evolución cutánea muy característica y predecible:\n\n• Evolución normal de la mancha: Es completamente normal y esperable que, inmediatamente después de la sesión, el léntigo solar tratado se oscurezca notablemente y adquiera un tono marrón oscuro o grisáceo. En los días posteriores, se formará una microcostra muy fina superficial.\n• No manipules la piel: Deja que la microcostra o la fina descamación se desprenda sola de forma natural (suele tardar entre 5 y 7 días en rostro, y algo más en el cuerpo). No utilices exfoliantes físicos (scrubs) ni frotes la piel al secarte.\n• Hidratación y reparación: Aplica la crema regeneradora y calmante pautada en consulta dos o tres veces al día para acelerar la cicatrización del tejido.\n• Fotoprotección solar absoluta (Innegociable): Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año. La piel nueva que aparece tras la caída de la costra es muy sensible y el sol podría generar una mancha nueva de forma inmediata.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'Sí, la eliminación de los léntigos solares tratados con tecnologías médicas es definitiva. La mancha que ha sido destruida y expulsada por la piel no vuelve a aparecer.\n\nSin embargo, es crucial comprender que la piel tiene "memoria celular" debido al daño solar acumulado a lo largo de tu vida. Si no mantienes unos hábitos estrictos de fotoprotección, con el paso del tiempo el sol activará los melanocitos de las zonas contiguas y aparecerán léntigos solares nuevos. El éxito a largo plazo radica en tu compromiso con el protector solar diario.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: 'Este procedimiento médico de eliminación de manchas solares se pospondrá o evitará en caso de presentar:\n\n• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o que vayan a exponerse al sol de forma inmediata (por ejemplo, viajes programados a la playa).\n• Lesiones sospechosas de malignidad: Cualquier mancha que presente bordes irregulares, asimetría o cambios de color atípicos no se tratará con fines estéticos y se derivará para estudio histológico (biopsia).\n• Infecciones activas: Presencia de herpes labial o infecciones bacterianas en la zona a tratar el día de la cita.\n• Uso de fármacos fotosensibilizantes severos de forma activa.'
+        }
+      ],
+      evidencia: [
+        { titulo: "Laser Treatment of Benign Pigmented Lesions", fuente: "Journal of Clinical and Aesthetic Dermatology", link: "#" }
+      ]
+    }
   },
   'rosacea-cuperosis': {
     nombre: 'Control de Rosácea / Cuperosis',
@@ -1193,7 +1656,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'fotorrejuvenecimiento': {
     nombre: 'Fotorrejuvenecimiento de Alta Precisión',
-    imagen: imgProvisional, descripcionBreve: 'Baños de luz intensa controlados clínicamente para eliminar imperfecciones cromáticas y devolver a la piel el tono porcelana de la juventud.', antesDespues: AD,
+    imagen: img_Fotorejuvenecimiento, descripcionBreve: 'Baños de luz intensa controlados clínicamente para eliminar imperfecciones cromáticas y devolver a la piel el tono porcelana de la juventud.', antesDespues: AD,
     detalles: {
       descripcion: 'Empleamos Luz Pulsada Intensa (IPL) de grado médico equipada con filtros de corte hiperselectivos. La energía lumínica viaja a través de la piel y es absorbida por sus cromóforos diana (la melanina de las manchas o la hemoglobina de las rojeces). Estas lesiones se calientan y destruyen (fototermólisis selectiva) mientras el tejido sano queda intacto, estimulando de paso los fibroblastos superficiales.',
       ventajas: ['Unifica el tono de forma global, borrando el daño de veranos pasados.', 'Aporta una luminosidad extrema, cerrando poros sutilmente.', 'Tratamiento de elección ("buena cara") como mantenimiento antiaging preventivo anual.'],

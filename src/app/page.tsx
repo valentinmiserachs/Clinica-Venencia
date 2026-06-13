@@ -1,13 +1,25 @@
 "use client";
+// IMPORTACIONES DE IMÁGENES DE TRATAMIENTOS (PARA LA HOME)
+import img_Lentigos from '@/app/assets/images/tratamientos/manchas.jpeg';
+import img_Fotorejuvenecimiento from '@/app/assets/images/tratamientos/fotorejuvenecimiento.jpeg';
+import img_AcneIntegral from '@/app/assets/images/tratamientos/integral-acne.jpeg';
+import img_MesoterapiaCapilar from '@/app/assets/images/tratamientos/mesoterapia-capilar.jpeg';
+import img_MesoterapiaFacial from '@/app/assets/images/tratamientos/mesoterapia-facial.jpeg';
+import img_Peeling from '@/app/assets/images/tratamientos/peeling.jpeg';
+import img_Surco from '@/app/assets/images/tratamientos/surconasogeniano.jpeg';
+import img_TerapiaFotobiologica from '@/app/assets/images/tratamientos/terapia-fotobiologica.jpeg';
+import img_Labios from '@/app/assets/images/tratamientos/voluminizacion-labios.jpeg';
+import img_LimpiezaFacial from '@/app/assets/images/tratamientos/limpieza-facial.jpeg';
+
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 interface Tratamiento {
   nombre: string;
   subtitulo: string;
   slug: string;
-  imagen: string;
+  imagen: string | StaticImageData;
 }
 
 interface Subcategoria {
@@ -90,7 +102,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
   'Tratamientos Capilares': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Mesoterapia capilar avanzada.', subtitulo: 'Nutrición Folicular', slug: 'mesoterapia-capilar', imagen: imgProvisional },
+      { nombre: 'Mesoterapia capilar avanzada.', subtitulo: 'Nutrición Folicular', slug: 'mesoterapia-capilar', imagen: img_MesoterapiaCapilar },
       { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: imgProvisional },
       { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: imgProvisional },
       { nombre: 'Tratamiento capilar con Exosomas.', subtitulo: 'Terapia Regenerativa', slug: 'exosomas-capilar', imagen: imgProvisional },
@@ -100,8 +112,8 @@ const tratamientosDB: Record<string, CategoriaData> = {
   'Patologías de la Piel': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: imgProvisional },
-      { nombre: 'Eliminación de manchas y Melasma.', subtitulo: 'Unificación del Tono', slug: 'manchas-melasma', imagen: imgProvisional },
+      { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: img_AcneIntegral },
+      { nombre: 'Eliminación de léntigos / Manchas solares.', subtitulo: 'Unificación del Tono', slug: 'eliminacion-lentigos', imagen: img_Lentigos },
       { nombre: 'Control de Rosácea / Cuperosis.', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: imgProvisional },
       { nombre: 'Tratamiento de cicatrices de acné y atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: imgProvisional },
       { nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: imgProvisional }
@@ -115,7 +127,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
         tratamientos: [
           { nombre: 'Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright', imagen: imgProvisional },
           { nombre: 'Resurfacing Facial.', subtitulo: 'Renovación Cutánea', slug: 'resurfacing-facial', imagen: imgProvisional },
-          { nombre: 'Fotorrejuvenecimiento de Alta Precisión.', subtitulo: 'Tono y Textura', slug: 'fotorrejuvenecimiento', imagen: imgProvisional }
+          { nombre: 'Fotorrejuvenecimiento de Alta Precisión.', subtitulo: 'Tono y Textura', slug: 'fotorrejuvenecimiento', imagen: img_Fotorejuvenecimiento }
         ]
       },
       {

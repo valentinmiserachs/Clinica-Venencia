@@ -36,14 +36,14 @@ const indiceBusquedaGlobal = [
   { nombre: 'Limpieza Facial Personalizada', slug: 'limpieza-facial', categoria: 'Faciales', palabrasClave: 'limpieza, higiene' },
   { nombre: 'Mesoterapia Lipolítica', slug: 'mesoterapia-lipolitica', categoria: 'Corporales', palabrasClave: 'grasa, celulitis' },
   { nombre: 'Esclerosis Vascular', slug: 'esclerosis-vascular', categoria: 'Corporales', palabrasClave: 'varices, arañas' },
-  { nombre: 'Inductores corporales', slug: 'inductores-corporales', categoria: 'Corporales', palabrasClave: 'flacidez corporal' },
+  { nombre: 'Inductores de Colágeno Corporal', slug: 'inductores-colageno', categoria: 'Corporales', palabrasClave: 'flacidez corporal' },
   { nombre: 'Aumento de glúteos', slug: 'aumento-gluteos', categoria: 'Corporales', palabrasClave: 'gluteos, culo' },
   { nombre: 'Mesoterapia capilar', slug: 'mesoterapia-capilar', categoria: 'Capilares', palabrasClave: 'pelo, vitaminas pelo' },
   { nombre: 'Láser LED capilar', slug: 'laser-led-capilar', categoria: 'Capilares', palabrasClave: 'led, fotobiologica' },
   { nombre: 'PRP Capilar', slug: 'prp-capilar', categoria: 'Capilares', palabrasClave: 'plasma pelo' },
   { nombre: 'Exosomas Capilares', slug: 'exosomas-capilar', categoria: 'Capilares', palabrasClave: 'exosomas pelo' },
   { nombre: 'Tratamiento Acné', slug: 'tratamiento-acne', categoria: 'Patologías', palabrasClave: 'acne, granos' },
-  { nombre: 'Manchas y Melasma', slug: 'manchas-melasma', categoria: 'Patologías', palabrasClave: 'manchas, melasma' },
+  { nombre: 'Eliminación de léntigos / Manchas solares', slug: 'eliminacion-lentigos', categoria: 'Patologías', palabrasClave: 'manchas, melasma' },
   { nombre: 'Control Rosácea', slug: 'rosacea-cuperosis', categoria: 'Patologías', palabrasClave: 'rosacea, rojeces' },
   { nombre: 'Cicatrices de acné', slug: 'cicatrices-acne', categoria: 'Patologías', palabrasClave: 'marcas acne, cicatrices' },
   { nombre: 'Cicatrices queloides', slug: 'cicatrices-queloides', categoria: 'Patologías', palabrasClave: 'queloides, abultadas' },
@@ -128,7 +128,7 @@ const estructuraMenuTratamientos: MenuItem[] = [
     ]
   },
   {
-    nombre: '3. Tratamientos Capilares (Salud Capilar)',
+    nombre: '3. Tratamientos Capilares',
     items: [
       { nombre: 'Mesoterapia capilar avanzada.', slug: 'mesoterapia-capilar' },
       { nombre: 'Terapia fotobiológica (Láser LED capilar).', slug: 'laser-led-capilar' },
@@ -140,8 +140,8 @@ const estructuraMenuTratamientos: MenuItem[] = [
   {
     nombre: '4. Patologías de la Piel',
     items: [
-      { nombre: 'Tratamiento integral del Acné (Fase activa).', slug: 'tratamiento-acne' },
-      { nombre: 'Eliminación de manchas y Melasma.', slug: 'manchas-melasma' },
+      { nombre: 'Tratamiento integral del Acné.', slug: 'tratamiento-acne' },
+      { nombre: 'Eliminación de Léntigos / Manchas solares.', slug: 'eliminacion-lentigos' },
       { nombre: 'Control de Rosácea / Cuperosis.', slug: 'rosacea-cuperosis' },
       { nombre: 'Tratamiento de cicatrices de acné y atróficas.', slug: 'cicatrices-acne' },
       { nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas.', slug: 'cicatrices-queloides' }
