@@ -1912,94 +1912,406 @@ const tratamientosData: Record<string, Tratamiento> = {
       ]
     }
   },
-  // --- 5. LÁSER Y PLATAFORMA LUMÍNICA ---
-  'light-bright': {
-    nombre: 'Light & Bright',
-    imagen: imgProvisional, descripcionBreve: 'Fusión sinérgica de luz pulsada y láser fraccionado para renovar simultáneamente tono, textura y luminosidad profunda.', antesDespues: AD,
+  // --- 5. LÁSER Y PLATAFORMA LUMÍNICA (NUEVOS PROTOCOLOS NORDLYS CANDELA) ---
+  'acne-activo-vl555': {
+    nombre: 'Acné Activo e Inflamatorio (VL 555)',
+    tituloDescripcion: '¿Qué es el tratamiento de Acné Activo con el sistema VL 555 de Nordlys?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Frena el brote inflamatorio, destruye la bacteria del acné y reduce las rojeces post-lesionales en tiempo récord.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Luz Pulsada Estrecha (VL 555)' },
+      { titulo: 'Tiempo', valor: '20-30 min' },
+      { titulo: 'Resultados', valor: 'A partir de 48-72h' },
+      { titulo: 'Sesiones', valor: '3 a 5 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Protocolo de grado médico que aborda el fotoenvejecimiento facial en tres dimensiones (3D). En una única sesión, la tecnología IPL de banda estrecha fulmina rojeces capilares y manchas marrones; seguido, el láser fraccionado no ablativo 1550nm crea microcolumnas de coagulación que obligan al cuerpo a generar colágeno nuevo, cerrando poros y alisando arrugas finas sin dañar la capa más superficial de la piel.',
-      ventajas: ['Abordaje simultáneo: corrige textura porosa, manchas solares y venitas dilatadas.', 'Incremento radical de la luminosidad cutánea (Efecto "filtro" real).', 'Al ser no ablativo, la recuperación es muy noble y permite maquillarse al día siguiente.'],
-      faqs: [{ pregunta: '¿Qué se siente durante y después?', respuesta: 'Sensación de calor intenso durante los disparos. Después, la piel queda enrojecida como tras un día de playa, remitiendo rápidamente sin pelar escandalosamente.' }],
-      evidencia: [{ titulo: "Synergistic approach: IPL and Fractional Non-Ablative Laser in Photoaging", fuente: "Lasers in Surgery and Medicine", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'IPL + Láser Fracc. No Ablativo' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Al mes' }, { titulo: 'Duración', valor: 'Anual' }]
+      descripcion: 'Es un procedimiento médico avanzado que utiliza la tecnología de Luz Pulsada de Banda Estrecha (aplicador VL 555) para controlar, reducir y frenar el acné inflamatorio en fase activa. Este sistema emite una longitud de onda de alta precisión que penetra en la piel con un doble objetivo biológico inmediato:\n\n• Efecto Bactericida Potente: La luz interactúa con las porfirinas (sustancias producidas por la propia bacteria Cutibacterium acnes), desencadenando una reacción química interna que destruye la bacteria desde el interior del poro de forma selectiva.\n• Acción Antiinflamatoria y Vascular: El aplicador VL 555 capta la hemoglobina de los microvasos que rodean la glándula sebácea lo que reduce el aporte de sangre a la glándula, disminuyendo la inflamación dolorosa, el tamaño de las lesiones quísticas y acelerando la desaparición de las marcas rojas postinflamatorias.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se notan los efectos?',
+          respuesta: 'El protocolo médico estándar consta de entre 3 y 5 sesiones, las cuales se programan de forma estricta cada 2 o 3 semanas (un intervalo más corto que en otros tratamientos lumínicos debido al ciclo de replicación bacteriana).\n\nLos resultados son muy rápidos y agradecidos para el paciente: la disminución de la inflamación, el aplanamiento de las lesiones dolorosas y el control del exceso de grasa (sebo) comienzan a apreciarse a partir de las 48-72 horas posteriores a la primera sesión. La remisión del brote activo y la recuperación del tono homogéneo de la piel se consolidan visiblemente al finalizar la tercera sesión.'
+        },
+        {
+          pregunta: '¿Es doloroso el procedimiento con el aplicador VL 555?',
+          respuesta: 'No, es un tratamiento perfectamente tolerable. Durante la sesión se aplica un gel conductor frío sobre la zona y el médico realiza los disparos de luz. El paciente percibe un destello brillante y una sensación de calor local breve.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de acudir a mi sesión?',
+          respuesta: 'Para garantizar la seguridad clínica del tratamiento y evitar quemaduras o efectos adversos, es fundamental cumplir con los siguientes requisitos previos:\n\n• Exposición solar cero: La piel no puede estar recientemente bronceada, congestionada o expuesta al sol en las 4 semanas previas. La luz debe concentrarse en la inflamación y la bacteria, no en la melanina de una piel bronceada.\n• Suspende tratamientos irritantes: Interrumpe el uso de cremas con retinol, ácido salicílico, glicólico o peróxido de benzoilo entre 3 y 5 días antes de acudir a la clínica.\n• Medicación: Si estás bajo tratamiento con antibióticos orales típicos para el acné (como la doxiciclina o la minociclina), debes comunicarlo obligatoriamente en la consulta, ya que son altamente fotosensibilizantes y obligan a reprogramar la sesión o ajustar los parámetros médicos.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa tras la sesión?',
+          respuesta: 'Al salir de la consulta, la piel presentará un eritema (rojez) transitorio y una sutil sensación de calor que desaparece en pocas horas. El paciente puede reincorporarse a su vida diaria de inmediato siguiendo estas pautas de cuidado:\n\n• Fotoprotección solar absoluta (Obligatoria): Aplica un protector solar médico de amplio espectro (SPF 50+), preferiblemente de textura fluida, oil-free y no comedogénica, cada 3 horas. La radiación ultravioleta sobre una piel tratada e inflamada causaría manchas oscuras definitivas.\n• Higiene médica suave: Lava el rostro dos veces al día con agua templada y el limpiador específico que indique tu médico en la consulta. Seca el rostro a toques suaves con una toalla limpia o papel, sin frotar.\n• Aplica únicamente las emulsiones calmantes, seborreguladoras o reparadoras pautadas específicamente por el médico en la consulta.\n• Evita el calor y la oclusión: Durante las primeras 48 horas, pospone el uso de maquillajes pesados, la asistencia a saunas, spas o la práctica de ejercicio físico de alta intensidad que provoque sudoración excesiva.'
+        },
+        {
+          pregunta: '¿Los resultados del tratamiento son definitivos?',
+          respuesta: 'El tratamiento con el aplicador VL 555 es extremadamente eficaz para frenar de golpe el brote inflamatorio, destruir la carga bacteriana y restaurar la salud cutánea. Sin embargo, el acné es una patología médica de origen multifactorial (influenciada por hormonas, genética y estilo de vida).\n\nPor lo tanto, para que los resultados se mantengan estables en el tiempo y evitar futuros brotes, el tratamiento en clínica debe complementarse obligatoriamente con una rutina de mantenimiento domiciliaria estricta de grado médico y, en ocasiones, con sesiones de mantenimiento espaciadas a lo largo del año según la evolución clínica del paciente.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones de este tratamiento lumínico?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o que prevean una exposición solar intensa de forma inmediata (meses de verano).\n• Consumo activo de Isotretinoína oral: Se evaluará rigurosamente el estado de la barrera cutánea y las dosis antes de realizar el tratamiento, siguiendo los protocolos clínicos actualizados.\n• Infecciones activas concomitantes: Presencia de brotes de herpes labial o infecciones bacterianas abiertas (no acnéicas) en la zona de tratamiento el día de la cita.\n• Uso de medicación fotosensibilizante activa que no pueda ser suspendida.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia de la Luz Pulsada Intensa en el Acné Inflamatorio Activo", 
+          fuente: "Dermatologic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/26431214/" 
+        }
+      ]
+    }
   },
-  'resurfacing-facial': {
-    nombre: 'Resurfacing Facial',
-    imagen: imgProvisional, descripcionBreve: 'El estándar de oro en el rejuvenecimiento cutáneo profundo. Vaporización fraccionada para eliminar arrugas consolidadas y daño solar severo.', antesDespues: AD,
+  'fotorejuvenecimiento-nordlys': {
+    nombre: 'Fotorejuvenecimiento (PR 530 / CL 555)',
+    tituloDescripcion: '¿Qué es el Fotorejuvenecimiento?',
+    imagen: img_Fotorejuvenecimiento,
+    descripcionBreve: 'Devuelve la luz y unifica el tono de tu rostro eliminando manchas solares y capilares en una sola sesión.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'IPL Banda Estrecha' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: '7 - 14 días' },
+      { titulo: 'Sesiones', valor: '2 a 4 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Tecnología láser fraccionada ablativa (generalmente de tipo CO2 o Erbio). Este láser actúa con una potencia extraordinaria vaporizando microcolumnas de tejido envejecido, laxo o cicatricial. El organismo, al reparar estas zonas quemadas microscópicamente, genera una reepitelización completa, reemplazando la piel vieja por otra nueva y provocando una retracción de los tejidos similar a un minilifting.',
-      ventajas: ['El arma más eficaz que existe en dermatología contra arrugas severas (ej. código de barras o patas de gallo).', 'Tensa y compacta la piel, revirtiendo años de flacidez.', 'Elimina lesiones premalignas, queratosis y pecas oscuras profundas.'],
-      faqs: [{ pregunta: '¿Cuánto tiempo de baja médica necesito?', respuesta: 'Al ser un tratamiento ablativo potente, requiere de 5 a 7 días de baja social (aparecen rojeces intensas y costras microscópicas que se descaman a los pocos días).' }],
-      evidencia: [{ titulo: "Fractional Ablative Laser Resurfacing for Severe Photoaging", fuente: "Dermatologic Clinics", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Láser Ablativo Fraccionado' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'A los 3 meses (pico de colágeno)' }, { titulo: 'Duración', valor: 'Años' }]
+      descripcion: 'El Fotorrejuvenecimiento es un tratamiento médico-estético no invasivo diseñado para restaurar la homogeneidad del rostro, eliminar las imperfecciones de color (manchas y rojeces) y devolver la luminosidad natural a la piel en una misma sesión. A diferencia de los sistemas lumínicos tradicionales, este procedimiento se realiza con la plataforma médica de vanguardia Nordlys de Candela, utilizando su tecnología patentada de Luz Pulsada de Banda Estrecha (SWT).\n\nEsta tecnología actúa emitiendo pulsos de luz filtrados con una precisión absoluta. La energía lumínica atraviesa la superficie de la piel sin dañarla y es absorbida de forma selectiva por dos objetivos específicos (cromóforos): la melanina de las manchas solares (léntigos) y la hemoglobina de las rojeces, capilares dilatados o cuperosis. Al impactar sobre ellos, los destruye por un mecanismo térmico regulado para que el propio organismo los elimine de forma natural, logrando al mismo tiempo un estímulo lumínico que cierra el poro y mejora la calidad global de la piel.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se ven los resultados?',
+          respuesta: 'Al tratarse de una tecnología médica de banda estrecha de alta concentración energética, los resultados se aprecian de forma rápida y con un número menor de sesiones que con plataformas convencionales. Por lo general, el protocolo estándar requiere de 2 a 4 sesiones, espaciadas de forma estricta entre 4 y 6 semanas.\n\n• A partir de la primera semana: Se evidencia un cambio en la luminosidad del rostro. La piel pierde ese tono "apagado" o cetrino, los poros se minimizan y las rojeces difusas disminuyen notablemente.\n• Entre los 10 y 14 días: Las manchas solares tratadas terminan de descamar, revelando una piel con un tono completamente unificado, limpio y rejuvenecido.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento seguro y perfectamente tolerable. Durante la sesión, al emitirse el pulso de luz, el paciente percibe un destello brillante acompañado de una sensación térmica muy sutil. La avanzada ingeniería de la plataforma Nordlys optimiza la entrega de energía para que no exista calor residual innecesario, lo que garantiza el máximo confort sin necesidad de usar anestesia tópica.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de acudir a la clínica?',
+          respuesta: 'Para garantizar la máxima seguridad durante el procedimiento y evitar efectos adversos en la coloración de la piel, es indispensable cumplir las siguientes pautas previas:\n\n• Exposición solar cero (Obligatorio): No puedes realizarte el fotorejuvenecimiento si has tomado el sol recientemente, si presentas un bronceado activo o si has usado autobronceadores. La piel debe acudir a la cita en su tono basal para que la luz distinga perfectamente la mancha o el capilar del tejido sano.\n• Suspende activos intensos: Interrumpe el uso de cremas con retinol, ácido glicólico y salicílico en la zona a tratar entre 3 y 5 días antes de tu sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'El fotorejuvenecimiento destaca por tener un downtime (tiempo de recuperación) prácticamente nulo, permitiéndote reincorporarte a tu actividad laboral y social de forma inmediata al salir de la consulta. La evolución normal de la piel en casa requiere los siguientes cuidados:\n\n• Evolución normal de las manchas: Es completamente normal y esperable que las manchas solares tratadas se oscurezcan notablemente inmediatamente después de la sesión, adquiriendo un tono marrón oscuro o grisáceo. En los días posteriores, se formará una microcostra extremadamente fina superficial (textura "de lija").\n• No manipules la piel: Deja que la fina descamación o microcostras se desprendan solas de forma natural (suele tardar entre 5 y 7 días en el rostro). Está estrictamente prohibido usar exfoliantes físicos o frotar con la toalla al secarte.\n• Fotoprotección solar absoluta (Innegociable): Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año. La piel tratada está renovándose y la radiación solar directa anularía el efecto aclarante.\n• Hidratación y cosmética suave: Aplica la crema regeneradora y calmante pautada en la consulta durante los primeros días. Evita el maquillaje pesado durante las primeras 24 horas y pospone el uso de saunas o ejercicio físico intenso durante 48 horas.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'Sí, la eliminación de las manchas solares, léntigos y capilares dilatados tratados con la tecnología Nordlys es definitiva. El pigmento destruido y el vaso colapsado son eliminados por el organismo y no vuelven a aparecer.\n\nSin embargo, debes recordar que la piel tiene "memoria solar" debido al daño actínico acumulado a lo largo de tu vida y que el envejecimiento fisiológico continúa. Si no mantienes unos hábitos estrictos de fotoprotección diaria, el sol volverá a activar los melanocitos de las zonas contiguas o dilatará nuevos capilares. El éxito a largo plazo y la permanencia de ese rostro luminoso dependen directamente de tu compromiso con el protector solar diario.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o que prevean una exposición solar intensa de forma inmediata (por ejemplo, vacaciones de verano programadas).\n• Uso de fármacos fotosensibilizantes de forma activa (ciertos antibióticos, antiinflamatorios o tratamientos retinoideos).\n• Infecciones activas en la zona: Presencia de brotes de herpes labial activo o infecciones bacterianas abiertas el día de la sesión en la clínica.\n• Lesiones cutáneas sospechosas: Cualquier mancha que presente criterios dermatoscópicos de atipia o malignidad no se tratará con fines estéticos y se derivará para estudio histológico.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Evaluación del Fotorejuvenecimiento con IPL de Banda Estrecha", 
+          fuente: "Journal of Cutaneous and Aesthetic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/22457534/" 
+        }
+      ]
+    }
   },
-  'fotorrejuvenecimiento': {
-    nombre: 'Fotorrejuvenecimiento de Alta Precisión',
-    imagen: img_Fotorejuvenecimiento, descripcionBreve: 'Baños de luz intensa controlados clínicamente para eliminar imperfecciones cromáticas y devolver a la piel el tono porcelana de la juventud.', antesDespues: AD,
+  'rosacea-nordlys': {
+    nombre: 'Rosácea, Cuperosis y Rojeces (VL 555)',
+    tituloDescripcion: '¿Qué es el tratamiento de Rosácea y Cuperosis con el sistema VL 555 de Nordlys?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Colapsamos de forma selectiva la red capilar dilatada para apagar el enrojecimiento crónico facial.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Nordlys VL 555' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Sesiones', valor: '3 a 5 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Empleamos Luz Pulsada Intensa (IPL) de grado médico equipada con filtros de corte hiperselectivos. La energía lumínica viaja a través de la piel y es absorbida por sus cromóforos diana (la melanina de las manchas o la hemoglobina de las rojeces). Estas lesiones se calientan y destruyen (fototermólisis selectiva) mientras el tejido sano queda intacto, estimulando de paso los fibroblastos superficiales.',
-      ventajas: ['Unifica el tono de forma global, borrando el daño de veranos pasados.', 'Aporta una luminosidad extrema, cerrando poros sutilmente.', 'Tratamiento de elección ("buena cara") como mantenimiento antiaging preventivo anual.'],
-      faqs: [{ pregunta: '¿Me puedo hacer este láser en verano?', respuesta: 'Rotundamente no. Exige que la piel no esté bronceada ni expuesta al sol semanas antes ni después del tratamiento.' }],
-      evidencia: [{ titulo: "Intense Pulsed Light for Complete Skin Rejuvenation", fuente: "American Journal of Clinical Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'IPL de grado Médico' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'A los 15 días' }, { titulo: 'Duración', valor: 'Mantenimiento semestral/anual' }]
+      descripcion: 'El tratamiento de la patología vascular facial con el sistema VL 555 de Nordlys es un procedimiento médico de alta precisión diseñado para erradicar el enrojecimiento crónico, las arañas vasculares (telangiectasias) y los síntomas de la rosácea.\n\nEl aplicador VL 555 emite una luz pulsada de banda estrecha optimizada con una longitud de onda específica que es absorbida exclusivamente por la hemoglobina (el pigmento rojo de la sangre). Al impactar sobre los vasos sanguíneos dilatados o "aberrantes" que causan la rojez, la energía lumínica se convierte en energía térmica, provocando un colapso y sellado controlado del vaso (fototermólisis selectiva). Esto permite eliminar la red vascular visible y reducir el eritema difuso, logrando un tono de piel uniforme, saludable y sin la inflamación característica de esta condición.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo veré resultados?',
+          respuesta: 'La rosácea es una condición vascular crónica, por lo que el protocolo médico se diseña de forma personalizada según el grado de afectación. Por lo general, se requieren entre 3 y 5 sesiones, espaciadas cada 4 semanas.\n\nLos resultados son visibles de forma progresiva:\n• Desde la primera sesión: Es frecuente observar una reducción inmediata de la intensidad del enrojecimiento y una sensación de "piel más calmada".\n• A partir de la segunda/tercera sesión: Las telangiectasias (arañas vasculares) más marcadas comienzan a desvanecerse y el eritema persistente se atenúa drásticamente.\n• Al finalizar el protocolo: Se logra una estabilización clínica donde la piel recupera su tono natural y, lo más importante, se reduce la hiperreactividad vascular ante los factores desencadenantes habituales (cambios de temperatura, estrés, comidas picantes, etc.).'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'La tecnología Nordlys destaca por su confort. El tratamiento se siente como un leve hormigueo cálido ya que el sistema incorpora un enfriamiento cutáneo continuo por el cabezal que protege la epidermis y minimiza la sensación térmica.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Como en todos los tratamientos lumínicos médicos, la seguridad es nuestra prioridad. Para acudir a la consulta debes seguir estas pautas:\n\n• Exposición solar prohibida: Es indispensable no tener la piel bronceada ni haber estado expuesta al sol en las 4 semanas previas. La luz debe detectar el vaso sanguíneo, no la melanina superficial de un bronceado.\n• Suspende irritantes: Evita el uso de productos cosméticos muy activos (ácidos, retinol, exfoliantes físicos) en las 48 horas previas a la cita.\n• Informa de tu medicación: Comunica al médico cualquier fármaco que estés tomando, especialmente si son tratamientos para la presión arterial o vasodilatadores, ya que pueden influir en el comportamiento vascular de tu piel.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'El post-tratamiento del VL 555 es muy agradecido, permitiendo el retorno a la vida social y laboral de forma inmediata. La piel puede presentar un leve eritema o una sutil hinchazón (edema) que remite en pocas horas. Los cuidados esenciales son:\n\n• Fotoprotección solar absoluta: Debes usar protector solar físico SPF 50+ cada 2-3 horas durante todo el tratamiento. La piel con rosácea es extremadamente fotosensible y el sol reactiva la inflamación vascular.\n• Utiliza limpiadores muy suaves y aplica únicamente las cremas calmantes o reparadoras prescritas en consulta, libres de perfumes y alcoholes.\n• Durante las primeras 48 horas, evita el ejercicio intenso, las saunas, el consumo de alcohol y las comidas muy picantes. El objetivo es mantener la calma vascular post-sesión.\n• Si aparece alguna pequeña costra puntual (más habitual en el tratamiento de telangiectasias marcadas), no la toques; se desprenderá sola en pocos días.'
+        },
+        {
+          pregunta: '¿El resultado es definitivo?',
+          respuesta: 'El tratamiento con el aplicador VL 555 es altamente eficaz para cerrar los vasos sanguíneos dañados, los cuales desaparecen y no vuelven a aparecer. No obstante, la rosácea es una condición con base genética y un componente inflamatorio sistémico. Esto significa que, con el paso de los años, el organismo puede desarrollar nuevos capilares dilatados debido a factores externos (sol, estilo de vida, cambios hormonales).\n\nPor eso, el éxito a largo plazo se basa en realizar 1 o 2 sesiones de mantenimiento anuales para controlar cualquier pequeña reactivación vascular temprana antes de que se vuelva un problema clínico evidente.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: 'Este protocolo se pospondrá o adaptará en caso de presentar:\n\n• Embarazo y lactancia.\n• Infecciones activas: Cualquier proceso infeccioso o herida abierta en la zona a tratar.\n• Consumo de fotosensibilizantes: Medicamentos que aumenten la sensibilidad de la piel a la luz (antibióticos, retinoides, etc.).\n• Rosácea severa descompensada: Si existe un brote agudo con pústulas purulentas masivas, primero realizaremos un tratamiento médico de choque (tópico/oral) para estabilizar la piel antes de aplicar el láser.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Terapias Vasculares Lumínicas en el Manejo de la Rosácea", 
+          fuente: "Lasers in Surgery and Medicine (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/22159832/" 
+        }
+      ]
+    }
   },
-  'laser-manchas': {
-    nombre: 'Tratamiento de Manchas Solares y Léntigos',
-    imagen: imgProvisional, descripcionBreve: 'Impactos fotoacústicos ultracortos para pulverizar la melanina y borrar las manchas (léntigos y pecas) de forma focalizada.', antesDespues: AD,
+  'light-bright-nordlys': {
+    nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright',
+    tituloDescripcion: '¿Qué es el Tratamiento Light & Bright?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Fusión sinérgica para renovar el tono, borrar manchas y remodelar la firmeza de la piel de una sola vez.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'VL 555 + Frax 1550/1940' },
+      { titulo: 'Tiempo', valor: '60 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (Semanas)' },
+      { titulo: 'Sesiones', valor: '2 a 4 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Utilizamos láseres de altísima velocidad (Q-Switched o Picosegundos). A diferencia de los láseres térmicos que "queman", estos equipos disparan energía en nanosegundos. Esto genera un efecto mecánico (fotoacústico) que literalmente estalla los acúmulos de melanina en partículas de polvo microscópicas. Los macrófagos del sistema inmunológico se encargan después de "barrer" esos restos.',
-      ventajas: ['Eliminación exacta y limpia de léntigos solares ("manchas de la edad"), efélides y algunos nevus.', 'Al no calentar el tejido circundante, es hiperseguro y rápido.', 'Altísima eficacia en un número muy reducido de sesiones.'],
-      faqs: [{ pregunta: '¿Qué aspecto tiene la mancha recién disparada?', respuesta: 'La mancha tratada se oscurece inmediatamente y forma una fina costra superficial y plana que se cae de forma natural en 7-10 días.' }],
-      evidencia: [{ titulo: "Q-Switched Lasers for Benign Pigmented Lesions", fuente: "Lasers in Medical Science", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Láser Q-Switched / Pico' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Tras la descamación (10 días)' }, { titulo: 'Duración', valor: 'Permanente (en esa mancha)' }]
+      descripcion: 'Light & Bright es un protocolo médico de rejuvenecimiento facial de alta gama diseñado para devolver la luminosidad extrema al rostro, unificar el tono cutáneo y remodelar la estructura de la piel en una misma sesión. Este tratamiento premium combina de forma sinérgica dos de las tecnologías lumínicas más potentes y precisas del sector médico-estético.\n\nEl tratamiento actúa bajo un concepto de doble acción biológica. Por un lado, la tecnología de Luz Pulsada de Banda Estrecha se dirige selectivamente a los problemas de color de la piel, eliminando manchas solares, léntigos, rojeces difusas y capilares dilatados (cuperosis). Por otro lado, en el mismo procedimiento, el Láser Fraccionado No Ablativo penetra profundamente en la dermis para estimular una producción masiva de colágeno y elastina nuevos. El resultado es un rejuvenecimiento integral: una piel visiblemente más clara, homogénea, firme, con poros minimizados y un efecto de luminosidad (bright) radiante.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se ven los resultados?',
+          respuesta: 'El aumento de la luminosidad y el aclaramiento de las rojeces y manchas superficiales comienzan a apreciarse a partir de la primera semana posterior a la sesión. La mejora en la firmeza, la textura de la piel y la reducción de líneas de expresión se consolida de manera progresiva entre el segundo y el tercer mes, coincidiendo con el ciclo de fabricación de colágeno nuevo.\n\nPara lograr una transformación global y duradera de la calidad de la piel, el protocolo estándar pauta entre 2 y 4 sesiones, espaciadas de forma estricta cada 4 semanas. Tras una valoración médica personalizada, diseñaremos el calendario óptimo para tu tipo de piel.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento y cómo es la experiencia?',
+          respuesta: 'No, es un procedimiento perfectamente tolerable y seguro. Durante la fase de Luz Pulsada, el paciente percibe destellos lumínicos acompañados de una sutil sensación de calor transitorio. En la fase del Láser Fraccionado, para garantizar el máximo confort, aplicamos previamente una crema anestésica de alta potencia médica en la zona a tratar. Además, la plataforma incorpora un sistema de enfriamiento cutáneo continuo que protege la epidermis en todo momento, reduciendo las molestias al mínimo y permitiendo una experiencia clínica cómoda.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para garantizar una aplicación segura y evitar respuestas inflamatorias anómalas por el uso de tecnologías lumínicas, es fundamental seguir estas pautas:\n\n• Exposición solar cero: No puedes realizarte el tratamiento si has tomado el sol recientemente o si tu piel presenta un bronceado activo o quemaduras. La piel debe acudir a la cita en su tono basal.\n• Suspende activos renovadores: Interrumpe el uso de cremas con retinol, ácido glicólico, salicílico o fórmulas despigmentantes intensas entre 3 y 5 días antes de tu cita en la clínica.\n• Informa de tus medicamentos: Comunica al médico cualquier fármaco que consumas de forma habitual, especialmente si se trata de medicamentos fotosensibilizantes o tratamientos hormonales.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'Una de las grandes ventajas del protocolo Light & Bright es que, al emplear un láser no ablativo, la superficie de la piel permanece intacta, lo que reduce el tiempo de recuperación al mínimo. Inmediatamente después de la sesión, la piel presentará un eritema (rojez) y una ligera sensación de calor similar a una leve quemadura solar que remite en 24-48 horas. En casa deberás seguir estos cuidados:\n\n• Fotoprotección solar absoluta (Obligatoria): Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año. La radiación ultravioleta sobre la piel tratada anularía los efectos despigmentantes y generaría nuevas marcas.\n• Aparición de microcostras: En los días posteriores, las manchas solares tratadas se oscurecerán sutilmente y darán paso a unas microcostras extremadamente finas (del tamaño de un grano de arena) que se desprenden solas en 5-7 días. Está prohibido rascar, frotar o usar exfoliantes físicos; deben caer de forma natural.\n• Hidratación y reparación: Aplica la crema hidratante y regeneradora pautada en consulta dos o tres veces al día para confortar la barrera cutánea.\n• Pospone el calor extremo: Evita saunas, spas, baños de vapor o ejercicio físico de alta intensidad durante las primeras 48 horas tras la sesión para evitar una vasodilatación excesiva.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'Los resultados logrados sobre la estructura de la piel (el colágeno nuevo que aporta firmeza y cierra poros) y la eliminación de las manchas solares y capilares existentes son duraderos y estables. Sin embargo, la piel es un órgano vivo que sigue envejeciendo de forma natural y acumulando el impacto del estilo de vida y la radiación solar diaria.\n\nPor este motivo, para mantener ese tono perfectamente homogéneo, la firmeza y la luminosidad radiante a lo largo de los años, se recomienda realizar 1 sesión de mantenimiento anual (preferiblemente durante los meses de otoño o invierno), combinada con una rutina de cosmética médica domiciliaria y fotoprotección estricta diaria.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del protocolo?',
+          respuesta: 'Este procedimiento médico avanzado se pospondrá o evitará en caso de presentar:\n\n• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o que prevean una exposición solar intensa de forma inmediata en las semanas posteriores.\n• Infecciones activas en la zona: Presencia de brotes de herpes labial activo o infecciones bacterianas abiertas el día de la cita.\n• Uso de fármacos fotosensibilizantes severos de forma activa (como ciertos antibióticos o tratamientos retinoideos orales).\n• Antecedentes de cicatrización queloide severa.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia Clínica del Protocolo Combinado Light & Bright en Fotoenvejecimiento", 
+          fuente: "Journal of Cosmetic Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/30672076/" 
+        }
+      ]
+    }
   },
-  'laser-vascular': {
-    nombre: 'Eliminación de Rojeces, Cuperosis y Arañas Vasculares',
-    imagen: imgProvisional, descripcionBreve: 'Termocoagulación selectiva precisa para borrar vasos sanguíneos dilatados y apagar patologías de enrojecimiento crónico.', antesDespues: AD,
+  'resurfacing-frax': {
+    nombre: 'Resurfacing Facial No Ablativo (Láser Frax)',
+    tituloDescripcion: '¿Qué es el Resurfacing Facial No Ablativo y qué tecnología se utiliza?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Reseteo celular profundo para alisar arrugas y textura sin necesidad de bajas médicas prolongadas.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Frax 1550 / Frax 1940' },
+      { titulo: 'Tiempo', valor: '45-60 min' },
+      { titulo: 'Resultados', valor: 'A partir de 4 semanas' },
+      { titulo: 'Sesiones', valor: '3 a 4 sesiones' }
+    ],
     detalles: {
-      descripcion: 'La herramienta definitiva contra las arañas vasculares, telangiectasias, puntos rubí y la cuperosis grave. El láser vascular (ej. Nd:YAG o Colorante Pulsado) emite una luz que busca el color rojo de la sangre (hemoglobina). El calor coagula el vaso al instante, las paredes venosas se pegan y el vaso colapsado desaparece para siempre.',
-      ventajas: ['Cierre y desaparición instantánea de vasos sanguíneos visibles en cara y cuerpo.', 'Reducción drástica del flushing (sofocos) en pacientes con rosácea crónica.', 'La refrigeración avanzada de los equipos clínicos protege la epidermis de cualquier quemadura.'],
-      faqs: [{ pregunta: '¿Quedará alguna marca?', respuesta: 'Dependiendo del calibre del vaso, puede aparecer un leve oscurecimiento (púrpura o hematoma suave) que el cuerpo reabsorbe en unos días.' }],
-      evidencia: [{ titulo: "Vascular Laser Therapy for Facial Telangiectasia and Erythema", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Láser Vascular Específico' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Visibles desde la 1ª sesión' }, { titulo: 'Duración', valor: 'Largo plazo' }]
+      descripcion: 'El Resurfacing Facial No Ablativo es un procedimiento médico diseñado para renovar la textura de la piel, eliminar arrugas finas y medias, y corregir los signos del envejecimiento cutáneo sin alterar la superficie de la piel. A diferencia de los láseres ablativos tradicionales que evaporan las capas externas de la epidermis provocando largas recuperaciones, este tratamiento consigue un "reseteo" celular profundo manteniendo la capa más superficial de la piel completamente intacta.\n\nPara lograr este nivel de eficacia y seguridad, en nuestra clínica utilizamos la plataforma médica el Láser Fraccionado Frax de Candela, operando con dos longitudes de onda de vanguardia según las necesidades de cada paciente:\n• Frax 1550: Penetra de forma profunda en la dermis para estimular de forma masiva los fibroblastos y forzar la creación de colágeno estructural, ideal para tratar arrugas y firmeza.\n• Frax 1940: Actúa en las capas más superficiales y en la unión dermoepidérmica para afinar la textura, unificar el tono y cerrar poros dilatados de forma inmediata.\n\nLa tecnología emite miles de haces microscópicos de forma fraccionada, generando microcolumnas de estimulación térmica rodeadas de tejido sano. Esto activa un proceso de curación natural que reemplaza la piel envejecida por un tejido nuevo, elástico y visiblemente rejuvenecido.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se aprecian los resultados?',
+          respuesta: 'Al tratarse de una tecnología fraccionada no ablativa que respeta al máximo la integridad cutánea, los resultados se consiguen de manera gradual y acumulativa. El protocolo estándar pauta entre 3 y 4 sesiones, realizadas con un intervalo de 4 semanas entre cada una.\n\nLos resultados combinan dos fases:\n• Resultados Tempranos: A partir de la primera semana, una vez finalizado el sutil proceso de renovación superficial, el paciente percibe una piel notablemente más lisa, suave al tacto, con poros más cerrados y un tono más homogéneo.\n• Resultados Estructurales: El verdadero efecto de tensado, firmeza y difuminado de arrugas alcanza su punto óptimo entre el segundo y el tercer mes tras finalizar el protocolo, periodo en el que el organismo completa la síntesis de nuevas redes de colágeno y elastina (neocolagénesis).'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'El Resurfacing Fraccionado No Ablativo es un procedimiento muy tolerable y seguro. Dado que la energía trabaja a nivel de la dermis, antes de iniciar la sesión aplicamos una crema anestésica de alta potencia médica en la zona a tratar para garantizar el confort absoluto del paciente. Durante el procedimiento, la pieza de mano de la plataforma Candela asocia un sistema continuo de enfriamiento cutáneo por aire subcero que insensibiliza la piel y mitiga el impacto térmico. El paciente percibe únicamente un hormigueo cálido transitorio, haciendo que la experiencia en la camilla sea cómoda y tranquila.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de acudir a la sesión?',
+          respuesta: 'La preparación previa en medicina estética es fundamental para maximizar los resultados del sistema Frax y garantizar la máxima seguridad:\n\n• Exposición solar prohibida: Es indispensable no haber tomado el sol ni presentar un bronceado activo o quemaduras durante las 4 semanas previas al tratamiento. La piel debe acudir en su tono basal.\n• Suspende activos renovadores: Interrumpe el uso de cremas con retinol, ácido glicólico o salicílico entre 3 y 5 días antes de tu cita en la clínica.\n• Profilaxis antiviral: Si tienes tendencia a sufrir brotes de herpes labial, el equipo médico te prescribirá una pauta preventiva por vía oral días antes de la sesión.'
+        },
+        {
+          pregunta: '¿Cómo es la recuperación en casa?',
+          respuesta: 'La gran ventaja del Resurfacing No Ablativo con Frax de Candela es que el tiempo de recuperación (downtime) es mínimo, permitiéndote retomar tu vida laboral y social de forma casi inmediata.\n\nInmediatamente después de la sesión, la piel presentará un eritema (rojez) moderado, una ligera inflamación y una sensación de calor similar a la de un día de sol intenso, síntomas que remiten en 24-48 horas. Los cuidados domiciliarios son:\n\n• Fotoprotección solar absoluta (Innegociable): Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año. La piel nueva en fase de remodelación es extremadamente sensible a la radiación ultravioleta.\n• Textura "de lija" o microcostras: Entre el tercer y el quinto día, notarás que la piel adquiere una textura áspera muy fina (microcostras invisibles del tamaño de un grano de arena) debido a la expulsión del tejido antiguo. Está estrictamente prohibido rascar, frotar o usar exfoliantes; estas microcostras deben desprenderse solas de forma natural en 5-7 días.\n• Hidratación y reparación: Aplica la crema regeneradora y calmante específica pautada en la consulta 3 o 4 veces al día para mantener la barrera cutánea perfectamente hidratada.\n• Evita el calor extremo: Pospone el uso de saunas, baños turcos, spas o la práctica de ejercicio físico de muy alta intensidad durante las primeras 48 horas para evitar una vasodilatación excesiva en el rostro.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'Los cambios logrados en la arquitectura interna de la piel son estables y muy duraderos. El colágeno nuevo que fabrica tu propio organismo para reestructurar la dermis y rellenar las arrugas pasa a formar parte de la estructura fija de tu piel de forma indefinida, retrasando de manera drástica el reloj del envejecimiento cutáneo.\n\nNo obstante, dado que el proceso fisiológico de envejecimiento natural continúa con el paso de los años, para prolongar este efecto de piel tersa, lisa y rejuvenecida a largo plazo, se recomienda realizar 1 sola sesión médica de mantenimiento anual, acompañada siempre de una rutina cosmética domiciliaria adecuada y fotoprotección diaria.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: 'Este procedimiento médico avanzado se pospondrá o evitará en caso de presentar:\n\n• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o que prevean una exposición solar intensa e inmediata en las semanas posteriores a la sesión.\n• Infecciones activas en el rostro: Presencia de brotes de herpes labial activo, infecciones bacterianas o heridas abiertas el día de la cita.\n• Consumo reciente de retinoides orales (Isotretinoína): Se debe evaluar en consulta el tiempo de seguridad transcurrido tras la última toma antes de someter la piel al láser.\n• Historial de cicatrización anómala (tendencia demostrada a queloides o cicatrices hipertróficas severas).'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Rejuvenecimiento Cutáneo con Láser Fraccionado No Ablativo 1550 nm", 
+          fuente: "Dermatologic Clinics (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/24220371/" 
+        }
+      ]
+    }
   },
-  'laser-cicatrices': {
-    nombre: 'Remodelación de Cicatrices',
-    imagen: imgProvisional, descripcionBreve: 'Tecnología fraccionada profunda para romper la fibrosis cicatricial y promover un tejido nuevo, liso y estéticamente sano.', antesDespues: AD,
+  'cicatrices-estrias-frax': {
+    nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550)',
+    tituloDescripcion: '¿Qué es el tratamiento de Cicatrices y Estrías con el sistema Frax 1550 de Candela?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Micro-estimulación térmica para romper el tejido fibrótico dañado y obligar a tu cuerpo a generar piel nueva y lisa.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Frax 1550' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Progresivos y estructurales' },
+      { titulo: 'Sesiones', valor: '3 a 5 sesiones' }
+    ],
     detalles: {
-      descripcion: 'El tejido de una cicatriz tiene un colágeno "desordenado" y fibrótico. El láser fraccionado perfora microscópicamente esa cicatriz atrófica (como las secuelas severas del acné) o hipertrófica. Esta lesión controlada estimula la cascada de reparación celular natural del organismo, induciendo la creación de nuevo colágeno, esta vez, ordenado y liso.',
-      ventajas: ['Aplanamiento de bordes, elevación de hundimientos y mejora global de textura.', 'Difumina cicatrices traumáticas, de varicela o intervenciones quirúrgicas.', 'Aumenta notablemente la elasticidad de la piel rígida o acartonada dañada.'],
-      faqs: [{ pregunta: '¿Se borra por completo la marca de la piel?', respuesta: 'Una cicatriz consolidada madura nunca se borra al 100%, pero sí logramos una difuminación y mejora del relieve del 70-80%.' }],
-      evidencia: [{ titulo: "Fractional Laser Therapy for the Management of Scars", fuente: "Journal of Cutaneous and Aesthetic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Láser Fraccionado (Ablativo/No Ablativo)' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Mes a mes (Acumulativo)' }, { titulo: 'Duración', valor: 'Definitiva' }]
+      descripcion: 'Es un procedimiento médico avanzado de remodelación dérmica profunda que utiliza el láser fraccionado no ablativo Frax 1550. Está diseñado específicamente para corregir imperfecciones estructurales de la piel como las cicatrices de acné, cicatrices quirúrgicas o traumáticas, y estrías corporales (tanto las rojas de reciente aparición como las blancas ya consolidadas).\n\nEl cabezal Frax 1550 emite miles de haces de luz microscópicos que penetran de forma profunda en la dermis sin romper ni evaporar la capa más superficial de la piel (la epidermis). Estas microcolumnas de calor térmico controlado actúan rompiendo de forma selectiva los tejidos fibróticos rígidos y desgarrados que hunden la piel, forzando a las células de la dermis a iniciar una respuesta de curación natural que fabrica colágeno estructural y elastina nuevos. El resultado es una piel visiblemente más lisa, uniforme y con una reducción drástica de la profundidad de las marcas.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se aprecian los resultados?',
+          respuesta: 'La reparación del tejido conectivo dañado es un proceso biológico que requiere tiempo. El protocolo clínico estándar pauta entre 3 y 5 sesiones, realizadas con un intervalo estricto de 4 semanas entre cada una de ellas.\n\nLos resultados se aprecian en dos fases diferenciadas:\n• Resultados Iniciales: A partir de los 7 a 10 días posteriores a la primera sesión, una vez que finaliza la sutil renovación superficial, el paciente nota una mejoría evidente en la suavidad, la textura y el tono global de la piel.\n• Resultados Definitivos (Remodelación): La verdadera corrección —el aplanamiento de las estrías y la elevación del fondo de las cicatrices de acné— se consolida de forma espectacular entre el segundo y el cuarto mes tras finalizar el protocolo. Este es el tiempo biológico que necesitan los fibroblastos para madurar las nuevas redes de colágeno.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento con el láser Frax 1550?',
+          respuesta: 'Al trabajar a niveles profundos de la dermis, el disparo del láser genera un estímulo térmico perceptible. Para garantizar el confort absoluto del paciente, antes de iniciar la sesión aplicamos una crema anestésica de alta potencia médica en la zona a tratar. Además, la pieza de mano del sistema Nordlys de Candela incorpora un canal de enfriamiento continuo por aire que protege la piel en todo momento e insensibiliza la zona.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de acudir a mi sesión?',
+          respuesta: 'Para optimizar la eficacia del láser Frax 1550 y evitar cualquier complicación pigmentaria, es fundamental seguir estas indicaciones:\n\n• Exposición solar prohibida: No debes tomar el sol ni presentar un bronceado activo (incluyendo solárium o autobronceadores) en las 4 semanas previas al tratamiento. La piel debe estar en su tono basal.\n• Suspende activos renovadores: Interrumpe la aplicación de cremas con retinol, ácido glicólico, salicílico o fórmulas despigmentantes entre 3 y 5 días antes de la cita.\n• La zona a tratar debe estar libre de infecciones, heridas abiertas o brotes de acné purulento severo el día de la sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Cómo es la recuperación en casa?',
+          respuesta: 'La gran ventaja del láser no ablativo Frax 1550 es su mínimo tiempo de recuperación (downtime). Al salir de la consulta, la zona tratada presentará un eritema (rojez) moderado, una ligera inflamación y sensación de calor que remite en 24-48 horas. Las pautas post-sesión innegociables son:\n\n• Fotoprotección solar absoluta (Obligatoria): Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año si la zona está expuesta (como el rostro en cicatrices de acné). El sol sobre la piel en fase de curación generaría manchas oscuras permanentes.\n• Entre el tercer y el quinto día, notarás que la piel adquiere una textura áspera muy fina. Está estrictamente prohibido rascar, frotar o usar exfoliantes; las microcostras invisibles deben caer solas en 5-7 días.\n• Aplica de forma generosa (3-4 veces al día) la crema reparadora o bálsamo cicatrizante específico prescrito en consulta para acelerar la recuperación de la barrera cutánea.\n• Pospone el uso de saunas, baños turcos, spas o entrenamientos de alta intensidad que provoquen sudoración excesiva durante las primeras 48 horas.'
+        },
+        {
+          pregunta: '¿Los resultados sobre las cicatrices y estrías son definitivos?',
+          respuesta: 'Sí, los resultados logrados con el láser Frax 1550 son permanentes. El colágeno y la elastina nuevos que fabrica tu propio organismo para rellenar las cicatrices atróficas de acné o para unir el tejido roto de las estrías forman una nueva estructura dérmica que no se reabsorbe ni desaparece con el tiempo. La textura ganada y la atenuación de las marcas se mantienen estables a largo plazo, logrando una mejora definitiva en la calidad de la piel del paciente.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones de este tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o con previsión de exposición solar intensa inmediata.\n• Consumo reciente de Isotretinoína oral: Se debe evaluar en consulta el tiempo de seguridad transcurrido tras la última toma antes de someter la piel al láser profundo, conforme a las guías clínicas actuales.\n• Infecciones activas en la zona: Presencia de brotes de herpes labial activo o infecciones bacterianas abiertas el día de la cita.\n• Historial de cicatrización anómala (tendencia demostrada a la formación de queloides severos).'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Manejo de Cicatrices Atróficas de Acné con Láser Fraccionado 1550 nm", 
+          fuente: "Journal of Cosmetic Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/20302568/" 
+        }
+      ]
+    }
   },
-  'laser-estrias': {
-    nombre: 'Tratamiento de Estrías Corporales',
-    imagen: imgProvisional, descripcionBreve: 'Reparación del desgarro dérmico reactivando de urgencia la producción de elastina en estrías rojas y blancas.', antesDespues: AD,
+  'hemangiomas-nordlys': {
+    nombre: 'Hemangiomas y Puntos Rubí (VL 555)',
+    tituloDescripcion: '¿Cómo es el tratamiento de Hemangiomas y Puntos Rubí con el aplicador VL 555?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Destrucción fotoacústica y colapso de las lesiones rojizas del cuerpo de forma rápida y sin dejar cicatrices.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Nordlys VL 555' },
+      { titulo: 'Tiempo', valor: '15-20 min' },
+      { titulo: 'Resultados', valor: 'Eliminación en 7-10 días' },
+      { titulo: 'Sesiones', valor: '1 a 3 sesiones' }
+    ],
     detalles: {
-      descripcion: 'Una estría es una cicatriz interna por estiramiento abrupto de la piel donde las fibras elásticas se han roto. Aplicando láser fraccionado o radiofrecuencia microneedling (Morpheus), calentamos la dermis profunda para forzar la neocologénesis. Esto engrosa el tejido que había quedado fino como un "papel de fumar", acortando la anchura de la estría.',
-      ventajas: ['Eficacia clínica elevadísima en estrías recientes (rojas o violáceas).', 'Mejora visible del grosor, la contracción y la textura en estrías antiguas (blancas o nacaradas).', 'Tratamiento de elección para recuperar la tensión en abdómenes post-parto.'],
-      faqs: [{ pregunta: '¿Cuántas sesiones se necesitan para ver resultados?', respuesta: 'Las estrías son rebeldes, suelen requerir protocolos de 4 a 6 sesiones para mostrar una mejoría contundente.' }],
-      evidencia: [{ titulo: "Lasers and Energy Devices for the Treatment of Striae Distensae", fuente: "Dermatology Research and Practice", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Fraccionado / Radiofrecuencia Agujas' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Acumulativos y progresivos' }, { titulo: 'Duración', valor: 'Definitiva' }]
+      descripcion: 'Los puntos rubí (pequeñas sobreelevaciones de color rojo brillante que aparecen con la edad en el torso, cuello y escote) y los hemangiomas son lesiones vasculares benignas causadas por una proliferación y dilatación de microcapilares sanguíneos en la superficie de la piel.\n\nEl tratamiento con el aplicador VL 555 de Nordlys es el método médico de elección para eliminarlos de forma rápida, limpia y sin dejar cicatrices. El dispositivo emite un pulso de luz de banda estrecha de alta precisión que es absorbido de forma exclusiva por la hemoglobina concentrada dentro de la lesión. La energía lumínica se transforma instantáneamente en un pico de calor que colapsa y coagula los vasos sanguíneos que alimentan el angioma (fototermólisis selectiva), destruyendo la lesión desde el interior sin dañar en absoluto la piel sana circundante.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo desaparecen por completo?',
+          respuesta: '• Puntos Rubí: La inmensa mayoría de los puntos rubí pequeños y medianos se eliminan por completo en una sola sesión (a veces se realiza un retoque a las 4 semanas si la lesión era muy voluminosa).\n• Hemangiomas planos o difusos: Dependiendo de su extensión y profundidad anatómica, pueden requerir entre 2 y 3 sesiones espaciadas cada 4 semanas.\n\nInmediatamente después del disparo médico, notarás que el punto rubí cambia de su color rojo brillante a un tono grisáceo, morado oscuro o negruzco. Esto es el signo clínico de que la sangre se ha coagulado con éxito. En los siguientes 7 a 10 días, el organismo reabsorberá ese tejido dañado de forma natural, la microcostra se desprenderá sola y aparecerá piel completamente nueva, limpia y sana debajo.'
+        },
+        {
+          pregunta: '¿Es doloroso el procedimiento?',
+          respuesta: 'No, el paciente percibe una sensación muy breve similar a un "pequeño pinchazo cálido". Al ser disparos tan localizados y precisos, no se requiere el uso de cremas anestésicas previas y las molestias desaparecen de forma inmediata al terminar el disparo.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tomar antes de la sesión?',
+          respuesta: 'Para garantizar una eliminación segura y evitar alteraciones en la pigmentación de la piel, debes cumplir con los siguientes requisitos previos:\n\n• Exposición solar cero: La zona donde se encuentren los hemangiomas o puntos rubí a tratar no puede estar bronceada ni haber estado expuesta al sol de forma intensa durante las 4 semanas previas. Si la piel está bronceada, la melanina superficial competiría con la hemoglobina de la lesión, aumentando el riesgo de quemadura epidérmica.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: '• Fotoprotección solar absoluta: Si las lesiones tratadas estaban en zonas expuestas (como rostro, escote, brazos o piernas), debes aplicar protector solar de amplio espectro (SPF 50+) cada 2-3 horas. Exponer la zona al sol mientras se está reabsorbiendo la lesión causaría una mancha oscura permanente (hiperpigmentación postinflamatoria).\n• No manipules las microcostras: El punto tratado se volverá oscuro y formará una costra fina y seca. Está prohibido rascarse, arrancarla o usar exfoliantes corporales. Debe caerse por sí sola para garantizar que la piel cicatrice de forma invisible.\n• Aplica una pequeña capa de crema cicatrizante pautada en la consulta 2 o 3 veces al día sobre los puntos tratados.\n• Durante las primeras 48 horas, evita las saunas, baños turcos, jacuzzis o ejercicios de alta intensidad que provoquen una vasodilatación excesiva de la piel.'
+        },
+        {
+          pregunta: '¿Los resultados son definitivos o pueden volver a salir?',
+          respuesta: 'Sí, la eliminación del punto rubí o hemangioma tratado con el aplicador VL 555 es definitiva y permanente. El vaso sanguíneo colapsado es destruido y reabsorbido por el cuerpo, por lo que esa lesión específica no puede volver a aparecer ni a llenarse de sangre.\n\nNo obstante, es importante que el paciente entienda que este tratamiento no frena la predisposición genética de su organismo a desarrollar nuevas lesiones vasculares en el futuro en otras áreas del cuerpo debido al envejecimiento cutáneo o a cambios hormonales. Si esto ocurre con los años, esos nuevos puntos rubí se pueden volver a tratar en clínica con la misma eficacia.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones de este tratamiento vascular?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Pieles recientemente bronceadas o con exposición solar intensa prevista de forma inmediata (por ejemplo, justo antes de unas vacaciones de playa).\n• Consumo de fármacos fotosensibilizantes activos que aumenten la sensibilidad de la piel a los estímulos lumínicos.\n• Sospecha clínica de malignidad: Si durante la exploración médica previa en la consulta se detecta que la lesión roja presenta bordes atípicos, sangrado espontáneo persistente o características que no correspondan a un angioma benigno, se pospondrá el láser y se derivará para estudio histológico (biopsia) por seguridad del paciente.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Tratamiento de Lesiones Vasculares Cutáneas con Luz Pulsada (IPL)", 
+          fuente: "Lasers in Medical Science (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/24584989/" 
+        }
+      ]
+    }
   },
-  'depilacion-alta-precision': {
-    nombre: 'Depilación Láser de Alta Precisión: Eliminación del vello corporal y facial',
-    imagen: imgProvisional, descripcionBreve: 'Destrucción definitiva de la raíz pilosa utilizando plataformas clínicas seguras, rápidas y eficaces para todo fototipo.', antesDespues: AD,
+  'depilacion-nordlys': {
+    nombre: 'Fotodepilación Médica de Alta Precisión (HR 600)',
+    tituloDescripcion: '¿Qué es la Fotodepilación Médica con el sistema HR 600?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Destrucción definitiva de la raíz pilosa utilizando la plataforma clínica Nordlys, segura para todo fototipo.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Nordlys IPL HR 600' },
+      { titulo: 'Tiempo', valor: 'Zonal (15-60 min)' },
+      { titulo: 'Resultados', valor: 'Destrucción folicular' },
+      { titulo: 'Sesiones', valor: '8 a 10 sesiones' }
+    ],
     detalles: {
-      descripcion: 'La fotodepilación médica cuenta con potencias inaccesibles para el sector puramente estético. Usamos plataformas de Diodo, Alejandrita o Nd:YAG que envían pulsos térmicos exactos para destruir la matriz germinativa de las células madre del pelo (>65ºC), impidiendo que vuelva a salir nunca más.',
-      ventajas: ['Resultados reales y duraderos en una fracción de sesiones frente a centros no médicos.', 'Supervisión médica estricta: prevención de quemaduras, ajuste exacto para pieles oscuras o sensibles.', 'Es el único tratamiento definitivo contra patologías como la foliculitis o vellos enquistados severos.'],
-      faqs: [{ pregunta: '¿Es compatible si tengo la piel morena o negra?', respuesta: 'Sí. Contamos con tecnologías láser (como el Nd:YAG) que "ignoran" la melanina epidérmica y van directamente al bulbo oscuro del pelo profundo, siendo 100% seguras y eficaces en fototipos altos.' }],
-      evidencia: [{ titulo: "Long-Pulsed Lasers for Effective Hair Removal", fuente: "Lasers in Surgery and Medicine", link: "#" }]
-    },
-    parametros: [{ titulo: 'Tecnología', valor: 'Láser Médico (Diodo/Alejandrita/Nd:YAG)' }, { titulo: 'Tiempo', valor: 'Zonal (15-60 min)' }, { titulo: 'Resultados', valor: 'Pérdida desde la 1ª sesión' }, { titulo: 'Duración', valor: 'Permanente' }]
+      descripcion: 'Es un procedimiento de eliminación duradera del vello facial y corporal que utiliza el aplicador de alta gama HR 600 de la plataforma médica Nordlys de Candela. A diferencia de los sistemas de depilación convencionales o comerciales, este dispositivo emite una Luz Pulsada de Banda Estrecha con un filtro de doble corte patentado.\n\nEsta tecnología de precisión dirige la energía lumínica exclusivamente hacia la melanina (el pigmento oscuro) del tallo del vello. La luz viaja a través del pelo y se transforma en un pulso térmico concentrado al llegar a la raíz, destruyendo de forma definitiva las células madre encargadas del crecimiento del folículo piloso (fototermólisis selectiva).',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se aprecian los resultados?',
+          respuesta: 'La eliminación del vello requiere atacar el folículo durante su fase de crecimiento activo (fase anágena). Como no todos los pelos se encuentran en la misma fase a la vez, se necesita un protocolo secuencial. El número medio de sesiones oscila entre 8 y 10 sesiones. Las sesiones se espacian estrictamente cada 4 o 6 semanas en el rostro, y cada 6 u 8 semanas en el cuerpo.\n\n• A los 10-14 días post-sesión: El vello tratado que se encontraba en fase activa comienza a desprenderse y caer de forma natural.\n• Progresivamente: El vello restante se vuelve visiblemente más fino, débil y tardará mucho más tiempo en salir, espaciando el crecimiento de forma drástica sesión tras sesión.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento con el aplicador HR 600?',
+          respuesta: 'No, la fotodepilación médica con Nordlys es uno de los sistemas más confortables del mercado internacional. La avanzada ingeniería de Candela permite destruir el folículo utilizando pulsos de energía ultra-cortos pero altamente efectivos, lo que evita el calentamiento doloroso de la superficie de la piel. El paciente percibe únicamente un destello lumínico y una sensación de "leve pellizco o calor instantáneo" perfectamente tolerable.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de acudir a mi sesión?',
+          respuesta: 'Para garantizar una sesión segura, eficaz y sin riesgos de quemaduras, es fundamental que sigas estas pautas clínicas en casa:\n\n• Rasurado previo: Acude a tu cita con la zona perfectamente rasurada con cuchilla de 24 a 48 horas antes. Está estrictamente prohibido arrancar el vello de raíz (con cera, pinzas o máquinas depiladoras) durante las 4 semanas previas; necesitamos que la raíz esté intacta dentro del poro para que el láser pueda actuar.\n• Aunque el aplicador HR 600 cuenta con un perfil de seguridad excelente, debes evitar la exposición solar intensa, solárium o el uso de autobronceadores en las 2 semanas previas a la sesión. El tono de tu piel debe estar lo más estabilizado posible.\n• Acude a la clínica sin desodorante, cremas, aceites corporales ni maquillaje en la zona que se va a tratar.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'Tras finalizar la sesión, es normal que la piel presente un eritema (rojez) sutil y una ligera inflamación alrededor del poro (edema perifolicular), signos médicos de que el folículo ha sido destruido con éxito y que desaparecen en pocas horas. Los cuidados domiciliarios son muy sencillos:\n\n• Fotoprotección solar (Obligatoria): Si la zona tratada está expuesta (como el rostro, brazos o piernas en verano), aplica protector solar de amplio espectro (SPF 50+) de forma estricta.\n• Aplica la crema reparadora pautada en consulta dos veces al día durante las primeras 48 horas para confortar la barrera cutánea.\n• Durante las primeras 24-48 horas, pospone el uso de saunas, spas, baños calientes y entrenamientos de alta intensidad que provoquen sudoración excesiva. No uses ropa excesivamente ajustada en las zonas corporales tratadas para evitar el roce.\n• Si necesitas retirar el vello que vaya saliendo entre una cita y otra, utiliza exclusivamente la cuchilla de rasurar. No uses métodos de arranque.'
+        },
+        {
+          pregunta: '¿Los resultados son definitivos?',
+          respuesta: 'Sí, la destrucción de los folículos pilosos completada con el sistema HR 600 de Candela es permanente. Las raíces eliminadas de forma médica no tienen la capacidad biológica de regenerarse ni volver a producir vello.\n\nSin embargo, a nivel clínico nos referimos a este tratamiento como "depilación duradera", ya que el cuerpo humano puede generar nuevos folículos pilosos a lo largo de la vida debido a cambios hormonales profundos (embarazo, menopausia, alteraciones endocrinas) o factores genéticos. Por este motivo, una vez finalizado el protocolo completo, se recomienda realizar 1 sesión de mantenimiento anual o bianual para eliminar de forma temprana cualquier vello residual nuevo que el organismo intente desarrollar.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Consumo de fármacos fotosensibilizantes activos: Medicamentos que aumentan la sensibilidad de la piel a la luz (como ciertos antibióticos orales para el acné o tratamientos retinoideos).\n• Infecciones o patologías activas en la zona: Presencia de brotes de herpes, foliculitis bacteriana infecciosa, heridas abiertas o eccemas activos el día de la cita.\n• Tatuajes en la zona de tratamiento: El láser no puede pasar por encima de un tatuaje, ya que la tinta absorbería toda la energía provocando una quemadura. El médico rodeará la zona del tatuaje manteniendo una distancia de seguridad estricta.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Evaluación del Perfil de Seguridad y Eficacia de la Depilación Médica con Sistema IPL", 
+          fuente: "Dermatologic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/22159833/" 
+        }
+      ]
+    }
   },
 
   // --- 6. TRATAMIENTOS AVANZADOS ---

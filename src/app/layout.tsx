@@ -49,14 +49,14 @@ const indiceBusquedaGlobal = [
   { nombre: 'Control y modulación del Melasma', slug: 'melasma', categoria: 'Patologías', palabrasClave: 'melasma, manchas hormonales, manchas frente, labio, cloasma' },
   { nombre: 'Cicatrices de Acné y Cicatrices Atróficas', slug: 'cicatrices-acne', categoria: 'Patologías', palabrasClave: 'marcas acne, cicatrices, atroficas, subcision' },
   { nombre: 'Cicatrices Queloides e Hipertróficas', slug: 'cicatrices-queloides', categoria: 'Patologías', palabrasClave: 'queloides, hipertroficas, abultadas' },
-  { nombre: 'Light & Bright', slug: 'light-bright', categoria: 'Láser', palabrasClave: 'luz, rejuvenecimiento laser, brillo' },
-  { nombre: 'Resurfacing Facial', slug: 'resurfacing-facial', categoria: 'Láser', palabrasClave: 'resurfacing, laser co2, renovacion' },
-  { nombre: 'Fotorrejuvenecimiento', slug: 'fotorrejuvenecimiento', categoria: 'Láser', palabrasClave: 'ipl, rejuvenecimiento luz' },
-  { nombre: 'Láser Manchas y Léntigos', slug: 'laser-manchas', categoria: 'Láser', palabrasClave: 'quitar manchas laser, sol' },
-  { nombre: 'Láser Vascular (Rojeces)', slug: 'laser-vascular', categoria: 'Láser', palabrasClave: 'venitas, rojeces laser, arañas' },
-  { nombre: 'Láser Cicatrices', slug: 'laser-cicatrices', categoria: 'Láser', palabrasClave: 'borrar cicatriz laser' },
-  { nombre: 'Láser Estrías', slug: 'laser-estrias', categoria: 'Láser', palabrasClave: 'estrias, borrar estrias' },
-  { nombre: 'Depilación Láser Alta Precisión', slug: 'depilacion-alta-precision', categoria: 'Láser', palabrasClave: 'depilacion, vello, pelo' },
+  { nombre: 'Acné Activo e Inflamatorio (VL 555)', slug: 'acne-activo-vl555', categoria: 'Láser', palabrasClave: 'acne laser, granos, nordlys' },
+  { nombre: 'Fotorejuvenecimiento Nordlys', slug: 'fotorejuvenecimiento-nordlys', categoria: 'Láser', palabrasClave: 'manchas, ipl, fotorrejuvenecimiento, luz pulsada' },
+  { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555)', slug: 'rosacea-nordlys', categoria: 'Láser', palabrasClave: 'rosacea laser, cuperosis, rojeces, vascular' },
+  { nombre: 'Rejuvenecimiento Light & Bright', slug: 'light-bright-nordlys', categoria: 'Láser', palabrasClave: 'light bright, rejuvenecimiento, frax, manchas' },
+  { nombre: 'Resurfacing Facial No Ablativo (Frax)', slug: 'resurfacing-frax', categoria: 'Láser', palabrasClave: 'resurfacing, frax 1550, arrugas, rejuvenecimiento' },
+  { nombre: 'Cicatrices de Acné y Estrías (Frax)', slug: 'cicatrices-estrias-frax', categoria: 'Láser', palabrasClave: 'cicatrices laser, estrias, frax 1550, marcas' },
+  { nombre: 'Hemangiomas y Puntos Rubí', slug: 'hemangiomas-nordlys', categoria: 'Láser', palabrasClave: 'puntos rubi, hemangiomas, lunares rojos, vascular' },
+  { nombre: 'Fotodepilación Médica (HR 600)', slug: 'depilacion-nordlys', categoria: 'Láser', palabrasClave: 'depilacion laser, vello, pelo, hr 600' },
   { nombre: 'Rejuvenecimiento manos', slug: 'rejuvenecimiento-manos', categoria: 'Avanzados', palabrasClave: 'manos' },
   { nombre: 'Hiperhidrosis', slug: 'hiperhidrosis', categoria: 'Avanzados', palabrasClave: 'sudor, axilas' },
   { nombre: 'Sonrisa Gingival', slug: 'sonrisa-gingival', categoria: 'Avanzados', palabrasClave: 'encias, sonrisa' },
@@ -154,34 +154,14 @@ const estructuraMenuTratamientos: MenuItem[] = [
   {
     nombre: '5. Láser y Plataforma Lumínica',
     items: [
-      {
-        nombre: '5.1. Rejuvenecimiento y Calidad de Piel',
-        items: [
-          { nombre: 'Light & Bright.', slug: 'light-bright' },
-          { nombre: 'Resurfacing Facial.', slug: 'resurfacing-facial' },
-          { nombre: 'Fotorrejuvenecimiento de Alta Precisión.', slug: 'fotorrejuvenecimiento' }
-        ]
-      },
-      {
-        nombre: '5.2. Láser Vascular y Pigmentario',
-        items: [
-          { nombre: 'Tratamiento de Manchas Solares y Léntigos.', slug: 'laser-manchas' },
-          { nombre: 'Eliminación de Rojeces, Cuperosis y Arañas Vasculares.', slug: 'laser-vascular' }
-        ]
-      },
-      {
-        nombre: '5.3. Cicatrices y Estrías',
-        items: [
-          { nombre: 'Remodelación de Cicatrices.', slug: 'laser-cicatrices' },
-          { nombre: 'Tratamiento de Estrías Corporales.', slug: 'laser-estrias' }
-        ]
-      },
-      {
-        nombre: '5.4. Fotodepilación Médica',
-        items: [
-          { nombre: 'Depilación Láser de Alta Precisión: Corporal y Facial.', slug: 'depilacion-alta-precision' }
-        ]
-      }
+      { nombre: 'Acné Activo e Inflamatorio (VL 555).', slug: 'acne-activo-vl555' },
+      { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', slug: 'fotorejuvenecimiento-nordlys' },
+      { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', slug: 'rosacea-nordlys' },
+      { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', slug: 'light-bright-nordlys' },
+      { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', slug: 'resurfacing-frax' },
+      { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', slug: 'cicatrices-estrias-frax' },
+      { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', slug: 'hemangiomas-nordlys' },
+      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', slug: 'depilacion-nordlys' }
     ]
   },
   {

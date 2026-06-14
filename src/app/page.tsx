@@ -122,36 +122,16 @@ const tratamientosDB: Record<string, CategoriaData> = {
     ]
   },
   'Láser y Plataforma Lumínica': {
-    tieneSubcategorias: true,
-    subcategorias: [
-      {
-        nombre: '5.1. Rejuvenecimiento y Calidad de Piel',
-        tratamientos: [
-          { nombre: 'Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright', imagen: imgProvisional },
-          { nombre: 'Resurfacing Facial.', subtitulo: 'Renovación Cutánea', slug: 'resurfacing-facial', imagen: imgProvisional },
-          { nombre: 'Fotorrejuvenecimiento de Alta Precisión.', subtitulo: 'Tono y Textura', slug: 'fotorrejuvenecimiento', imagen: img_Fotorejuvenecimiento }
-        ]
-      },
-      {
-        nombre: '5.2. Láser Vascular y Lesiones Pigmentarias',
-        tratamientos: [
-          { nombre: 'Tratamiento de Manchas Solares y Léntigos.', subtitulo: 'Eliminación de Pigmento', slug: 'laser-manchas', imagen: imgProvisional },
-          { nombre: 'Eliminación de Rojeces, Cuperosis y Arañas Vasculares.', subtitulo: 'Control Vascular', slug: 'laser-vascular', imagen: imgProvisional }
-        ]
-      },
-      {
-        nombre: '5.3. Cicatrices y Estrías',
-        tratamientos: [
-          { nombre: 'Remodelación de Cicatrices.', subtitulo: 'Alisado Dérmico', slug: 'laser-cicatrices', imagen: imgProvisional },
-          { nombre: 'Tratamiento de Estrías Corporales.', subtitulo: 'Regeneración Tisular', slug: 'laser-estrias', imagen: imgProvisional }
-        ]
-      },
-      {
-        nombre: '5.4. Fotodepilación Médica',
-        tratamientos: [
-          { nombre: 'Depilación Láser de Alta Precisión: vello corporal y facial.', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-alta-precision', imagen: imgProvisional }
-        ]
-      }
+    tieneSubcategorias: false,
+    tratamientos: [
+      { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: imgProvisional },
+      { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: img_Fotorejuvenecimiento },
+      { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', subtitulo: 'Control Vascular', slug: 'rosacea-nordlys', imagen: imgProvisional },
+      { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: imgProvisional },
+      { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: imgProvisional },
+      { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: imgProvisional },
+      { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', subtitulo: 'Eliminación Vascular', slug: 'hemangiomas-nordlys', imagen: imgProvisional },
+      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-nordlys', imagen: imgProvisional }
     ]
   },
   'Tratamientos Avanzados': {
