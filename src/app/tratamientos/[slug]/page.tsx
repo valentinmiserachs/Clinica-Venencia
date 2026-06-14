@@ -2315,51 +2315,203 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
 
   // --- 6. TRATAMIENTOS AVANZADOS ---
+  // --- 6. TRATAMIENTOS AVANZADOS ---
   'rejuvenecimiento-manos': {
     nombre: 'Rejuvenecimiento de manos',
-    imagen: imgProvisional, descripcionBreve: 'Borramos las manchas solares y el aspecto esqueletizado para que tus manos revelen tanta juventud como tu rostro.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el Rejuvenecimiento de Manos?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Borramos las manchas solares y el aspecto esqueletizado para que tus manos revelen tanta juventud como tu rostro.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Infiltración subdérmica' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Duración', valor: '12-18 meses' }
+    ],
     detalles: {
-      descripcion: 'Las manos delatan la edad real del paciente y están expuestas al sol diario. Las tratamos combinando dos terapias maestras: luz pulsada intensa (IPL) para borrar los léntigos y manchas solares marrones, y bioestimulación con hidroxiapatita cálcica inyectable para redensificar, tapar las venas marcadas y tensar la piel fina y arrugada.',
-      ventajas: ['Recuperación instantánea del acolchado juvenil del dorso de la mano.', 'Ocultación del "aspecto huesudo" y de las venas sobresalientes.', 'Borrado definitivo de la hiperpigmentación solar ("manchas de hígado").'],
-      faqs: [{ pregunta: '¿Me inhabilitan las manos tras el procedimiento?', respuesta: 'No, puedes conducir, trabajar y hacer vida normal desde el primer segundo. Podría existir un leve edema de pocas horas.' }],
-      evidencia: [{ titulo: "Hand Rejuvenation: A Review and Update", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Láser IPL + Bioestimulador inyectable' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '12-18 meses' }]
+      descripcion: 'Es un procedimiento médico-estético diseñado para restaurar el volumen perdido, disimular las estructuras anatómicas marcadas y devolver la turgencia juvenil a la piel del dorso de las manos. Las manos sufren un proceso de envejecimiento muy evidente debido a la pérdida progresiva de la grasa subcutánea, lo que cronológicamente hace que las venas, los tendones y los huesos se vuelvan excesivamente prominentes, dando un aspecto "envejecido o esquelético".\n\nEste tratamiento avanzado consiste en la infiltración subdérmica de materiales biocompatibles de última generación, principalmente ácido hialurónico o inductores de colágeno. Estos productos actúan creando un "colchón" hidrolipídico homogéneo debajo de la piel que camufla las estructuras subyacentes y estimula de forma biológica la producción de colágeno propio, devolviendo el grosor y la elasticidad perdidos a la dermis.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuánto duran los efectos?',
+          respuesta: 'Este procedimiento se realiza en una única sesión, pautando una visita de control a las 2 semanas para evaluar la simetría y el asentamiento del producto.\n\nLos resultados mecánicos de soporte y volumen son inmediatos, apreciándose unas manos rejuvenecidas y estilizadas al salir de la clínica. Además, la durabilidad de este tratamiento es muy alta debido a la baja movilidad metabólica del dorso de las manos, prolongándose los efectos entre 12 y 18 meses según las características biológicas del paciente y el material inyectable de elección.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento en el dorso de las manos?',
+          respuesta: 'No, es un tratamiento ambulatorio confortable para el paciente. Para garantizar la máxima seguridad y minimizar el dolor, el procedimiento se realiza mediante el uso de una cánula de punta roma flexible.\n\nA través de un único micropunto de entrada, la cánula se desliza suavemente por el espacio subdérmico sin cortar vasos sanguíneos ni dañar nervios. Además, los geles inyectables de gama médica premium incorporan lidocaína (anestésico local) en su propia formulación, lo que insensibiliza la zona de forma inmediata durante el procedimiento. El paciente solo percibe una leve sensación de presión o estiramiento perfectamente tolerable.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tomar antes de acudir a mi cita?',
+          respuesta: 'Para optimizar la seguridad clínica y reducir al mínimo la posibilidad de pequeños hematomas en el dorso de las manos, es fundamental seguir estas pautas previas:\n\n• Evita fármacos anticoagulantes: Interrumpe el consumo de ácido acetilsalicílico (aspirina), ibuprofeno o suplementos de omega-3 y vitamina E durante los 5-7 días anteriores a la sesión (siempre bajo validación si es medicación crónica pautada).\n\n• Retirada de accesorios: Acude a la clínica habiéndote quitado previamente todos los anillos, pulseras o relojes para permitir una desinfección y manipulación médica aséptica completa de la extremidad.\n\n• El dorso de las manos debe estar libre de eccemas, dermatitis de contacto, quemaduras domésticas o heridas abiertas el día del tratamiento.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'Al ser un procedimiento mínimamente invasivo sin incisiones ni suturas, la reincorporación a la actividad diaria es inmediata. Tras la sesión, es normal notar una ligera inflamación o sensación de pesadez en las manos que remite espontáneamente en 24-48 horas. Las pautas post-tratamiento obligatorias son:\n\n• No presiones ni masajees la zona: El producto debe asentarse de forma natural en el espacio subdérmico. Evita masajearte las manos o aplastarlas durante las primeras 48 horas.\n\n• Utiliza guantes protectores de forma obligatoria si vas a fregar, limpiar con productos químicos domésticos o manipular sustancias irritantes durante los primeros 3 días.\n\n• Pospone las saunas, baños calientes prolongados o ejercicios de fuerza de gran intensidad que involucren una presión palmar excesiva (como levantamiento de pesas) durante las primeras 48 horas.\n\n• Fotoprotección solar: Aunque es un tratamiento inyectable, si apareciera algún pequeño hematoma puntual, es indispensable aplicar protector solar SPF 50+ en el dorso para evitar la pigmentación postinflamatoria por el hierro de la sangre.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n\n• Infecciones activas locales o sistémicas: Presencia de infecciones cutáneas en las manos, procesos fúngicos o infecciones dentales activas el día de la infiltración.\n\n• Enfermedades autoinmunes o del tejido conectivo de carácter grave que se encuentren descompensadas o en fase de brote activo.\n\n• Alergia conocida o hipersensibilidad a los componentes del gel de relleno o al anestésico local (lidocaína).'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Rejuvenecimiento de Manos con Rellenos Dérmicos y Bioestimuladores", 
+          fuente: "Dermatologic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/26218731/" 
+        }
+      ]
+    }
   },
   'hiperhidrosis': {
     nombre: 'Tratamiento de la Hiperhidrosis',
-    imagen: imgProvisional, descripcionBreve: 'Frena la sudoración excesiva en axilas, manos o pies y recupera por fin tu comodidad social y laboral.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el Tratamiento de la Hiperhidrosis?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Frena la sudoración excesiva en axilas, manos o pies y recupera por fin tu comodidad social y laboral.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microinyección Intradérmica' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'A los 7-14 días' },
+      { titulo: 'Duración', valor: '6-9 meses' }
+    ],
     detalles: {
-      descripcion: 'Una solución médica transformadora para pacientes que sudan de forma incontrolable. Mediante la microinfiltración superficial de neuromoduladores en las glándulas sudoríparas hiperactivas (axilas, palmas o plantas), bloqueamos el nervio simpático que ordena producir sudor, frenando la actividad de la glándula en seco de forma completamente segura.',
-      ventajas: ['Eliminación drástica de los cercos de sudor y el olor corporal fuerte.', 'Mejora radical, inmediata y emocional de la calidad de vida y la autoestima en entornos sociales.', 'Procedimiento clínico rápido, ambulatorio y con altísima tasa de satisfacción.'],
-      faqs: [{ pregunta: '¿Sudaré más por otras partes del cuerpo para compensar?', respuesta: 'No. No existe sudoración compensatoria con este tratamiento (al contrario de lo que ocurre con algunas cirugías). Tu cuerpo termorregulará normalmente de forma general.' }],
-      evidencia: [{ titulo: "Botulinum Toxin for the Treatment of Primary Hyperhidrosis", fuente: "American Journal of Clinical Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Microinyección Dérmica Subcutánea' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'A los 7 días' }, { titulo: 'Duración', valor: '6-9 meses' }]
+      descripcion: 'Es un procedimiento médico diseñado para frenar de forma drástica y segura la sudoración excesiva (hiperhidrosis) en zonas localizadas del cuerpo, principalmente en axilas, palmas de las manos y plantas de los pies. Esta condición, que suele reactivarse con el estrés, el calor o de forma espontánea, altera significativamente la calidad de vida y la confianza del paciente.\n\nEl tratamiento consiste en la aplicación de microinyecciones intradérmicas de neuromoduladores. Este fármaco actúa bloqueando temporalmente las señales nerviosas encargadas de activar las glándulas sudoríparas ecrinas. Al interrumpir este estímulo, las glándulas dejan de producir sudor en la zona tratada, manteniendo la piel perfectamente seca y regulada sin afectar a la termorregulación global del organismo.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuánto duran los efectos?',
+          respuesta: 'Este tratamiento es sumamente eficiente y cómodo, ya que se realiza en una única sesión.\n\nLos resultados comienzan a percibirse de forma progresiva a partir del tercer o cuarto día, alcanzando su eficacia máxima de bloqueo a los 14 días posteriores a la aplicación. El control absoluto de la sudoración se mantiene estable entre 6 y 9 meses, dependiendo de la zona tratada (la tasa metabólica en las manos suele ser mayor que en las axilas).'
+        },
+        {
+          pregunta: '¿Es doloroso el procedimiento?',
+          respuesta: 'La sensibilidad varía según la zona anatómica a tratar:\n\n• En las Axilas: Es un procedimiento prácticamente indoloro. Se realiza con agujas de calibre microscópico y la molestia es mínima, describiéndose como pequeños pinchazos superficiales muy tolerables.\n\n• En Palmas de Manos y Plantas de Pies: Al ser zonas con una densidad nerviosa muy alta, la sensibilidad es mayor. Para garantizar el confort absoluto en estos casos, aplicamos una crema anestésica de alta potencia médica previa a la sesión o utilizamos sistemas de frío local intenso para insensibilizar la piel por completo antes de cada microinyección.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tomar antes de acudir a la clínica?',
+          respuesta: '• En el caso del tratamiento axilar, rasurar la zona con cuchilla 2 o 3 días antes de la cita. No acudas con el rasurado del mismo día para evitar que la piel esté irritada o presente microcortes.\n\n• Acude a la sesión con la zona limpia de desodorantes, antitranspirantes, cremas o polvos de talco.\n\n• Evita anticoagulantes: Suspende el consumo de aspirinas o antiinflamatorios (ibuprofeno) durante los 5 días previos para minimizar el riesgo de pequeños hematomas puntuales en los sitios de punción.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'El post-tratamiento es inmediato y permite la reincorporación laboral y social al salir de la consulta. Es normal presentar una leve rojez o sutil inflamación en los puntos de inyección que remite en pocas horas. Los cuidados domiciliarios esenciales durante las primeras 48 horas son:\n\n• Higiene suave: Lava la zona tratada con agua templada y jabón neutro. En el caso de las axilas, evita usar desodorantes que contengan alcohol durante las primeras 24 horas.\n\n• Evita realizar masajes, fricciones enérgicas o depilaciones en la zona tratada durante los primeros 2 días para permitir que el fármaco se asiente correctamente en el plano intradérmico.\n\n• Pospone las saunas, baños turcos, spas o entrenamientos físicos de alta intensidad durante las primeras 48 horas para prevenir la disipación local del producto por vasodilatación.'
+        },
+        {
+          pregunta: '¿Eliminar el sudor en una zona puede provocar que sude más por otra?',
+          respuesta: 'Esta es una de las dudas más frecuentes en consulta y la respuesta médica es no. El bloqueo de las glándulas sudoríparas en zonas focales (como las axilas o las manos) abarca una superficie corporal muy pequeña en comparación con el resto del cuerpo.\n\nPor lo tanto, el organismo no experimenta el fenómeno de "sudoración compensatoria". El resto de tu piel continuará realizando la función biológica de termorregulación de manera completamente normal e imperceptible.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n\n• Enfermedades neuromusculares de base: Pacientes diagnosticados con Miastenia Gravis, Síndrome de Lambert-Eaton o Esclerosis Lateral Amiotrófica (ELA).\n\n• Infecciones activas en la zona: Presencia de foliculitis, eccemas, hidradenitis supurativa activa o heridas abiertas en la región a tratar el día de la cita.\n\n• Alergia documentada a los neuromoduladores o a la albúmina humana.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia de los Neuromoduladores en la Hiperhidrosis Primaria", 
+          fuente: "American Journal of Clinical Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/15053580/" 
+        }
+      ]
+    }
   },
   'sonrisa-gingival': {
     nombre: 'Corrección de la Sonrisa Gingival',
-    imagen: imgProvisional, descripcionBreve: 'Armoniza tu sonrisa para evitar mostrar excesivas encías al reír, relajando la musculatura del labio superior.', antesDespues: AD,
+    tituloDescripcion: '¿Cómo es el tratamiento de Corrección de la Sonrisa Gingival?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Armoniza tu sonrisa para evitar mostrar excesivas encías al reír, relajando la musculatura del labio superior.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Neuromodulación selectiva' },
+      { titulo: 'Tiempo', valor: '10 min' },
+      { titulo: 'Resultados', valor: 'A los 7-14 días' },
+      { titulo: 'Duración', valor: '4-6 meses' }
+    ],
     detalles: {
-      descripcion: 'Mostrar una banda ancha de encía al sonreír estropea la estética perioral y suele deberse a un músculo elevador del labio hiperactivo (que tira demasiado fuerte hacia arriba). Con apenas un par de inyecciones microscópicas de neuromodulador bajo la nariz, limitamos la fuerza de ese ascenso. El labio frena antes, cubriendo la encía, pero permitiéndote sonreír de manera amplia y natural.',
-      ventajas: ['Corrección facial instantánea sin necesidad de pasar por costosas y dolorosas cirugías maxilofaciales o periodontales.', 'Resultados tremendamente naturales, respetando la estructura y el volumen de tu boca.', 'Impacto estético brutal que embellece radicalmente la expresión de alegría.'],
-      faqs: [{ pregunta: '¿Afectará a mi forma de hablar, comer o gesticular?', respuesta: 'Por supuesto que no. Calculamos dosis magistrales únicamente para limitar el "exceso de tracción" muscular hacia arriba; toda tu movilidad esencial quedará intacta.' }],
-      evidencia: [{ titulo: "Botulinum Toxin in the Management of Gummy Smile", fuente: "Journal of Craniofacial Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Neuromodulación selectiva' }, { titulo: 'Tiempo', valor: '10 min' }, { titulo: 'Resultados', valor: 'A los 7-10 días' }, { titulo: 'Duración', valor: '4-6 meses' }]
+      descripcion: 'La sonrisa gingival se define como aquella en la que, al sonreír, queda expuesta una cantidad desproporcionada de encía superior (generalmente más de 3 milímetros), lo que suele generar timidez, complejos o insatisfacción estética en el paciente al mostrar su rostro de forma natural.\n\nEl tratamiento médico de Corrección de la Sonrisa Gingival con neuromoduladores es un procedimiento no quirúrgico de alta precisión que armoniza la sonrisa. Consiste en la realización de microinyecciones localizadas en los músculos encargados de elevar el labio superior. Al relajar sutilmente la hiperactividad de estos músculos, conseguimos que el labio no se retraiga en exceso al sonreír, logrando que cubra la encía de manera armónica, estética y natural sin perder la expresividad del rostro.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuánto duran los efectos?',
+          respuesta: 'Este procedimiento requiere de una única sesión. Posteriormente, pautamos una visita de control obligatoria a los 14 días para evaluar la simetría muscular exacta y realizar cualquier pequeño ajuste si fuera necesario.\n\nLos resultados no son inmediatos, sino que comienzan a apreciarse de forma progresiva a partir del tercer o cuarto día, consolidándose el efecto definitivo a las dos semanas. La durabilidad del tratamiento oscila entre los 4 y 6 meses, periodo en el cual el músculo recupera paulatinamente su fuerza de contracción habitual, momento en el que se recomienda realizar una sesión de mantenimiento.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento?',
+          respuesta: 'No, es un procedimiento prácticamente indoloro. Se utilizan agujas de un calibre fino y se realizan únicamente dos o tres micropuntos de inyección muy específicos a los lados de la nariz. La molestia es mínima y dura escasos segundos.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tomar antes de mi sesión?',
+          respuesta: 'Para garantizar la máxima seguridad en la consulta y evitar la aparición de pequeños hematomas puntuales en la zona perinasal, es importante que sigas estas pautas:\n\n• Evita medicamentos antiinflamatorios: Suspende el uso de aspirina, ibuprofeno, naproxeno o suplementos como el omega-3 durante los 5 días previos a la cita (siempre que no sean tratamientos crónicos pautados por tu médico).\n\n• Cero consumo de alcohol: No ingieras bebidas alcohólicas 24 horas antes debido a su efecto vasodilatador.\n\n• La zona que rodea la nariz y los labios debe estar libre de acné quístico activo, infecciones cutáneas o brotes de herpes labial el día de la sesión.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'Al ser un tratamiento mínimamente invasivo, el tiempo de recuperación es nulo y puedes volver a trabajar o realizar tus actividades sociales inmediatamente al salir de la clínica. No obstante, para asegurar que el neuromodulador actúe de forma localizada y no se desplace a músculos vecinos, es indispensable cumplir estas pautas durante las primeras 24 horas:\n\n• Está estrictamente prohibido frotar, presionar o realizar masajes en la zona de las alas de la nariz y el labio superior. Al lavarte la cara o aplicar cremas, hazlo con toques extremadamente suaves.\n\n• Evita tumbarte o reclinar la cabeza completamente boca abajo durante las 4 horas posteriores a la infiltración.\n\n• Evita los entrenamientos deportivos intensos, el uso de saunas, spas o baños calientes prolongados durante las primeras 48 horas.\n\n• Intenta no realizar gesticulaciones excesivamente forzadas o movimientos bucales exagerados durante el primer día.'
+        },
+        {
+          pregunta: '¿La expresión de mi rostro o la forma de mis labios se verán artificiales?',
+          respuesta: 'Esta es la principal preocupación de los pacientes y la respuesta es un rotundo no, siempre que el tratamiento sea realizado por un médico especialista que domine la anatomía facial. Los neuromoduladores avanzados se dosifican de forma milimétrica para suavizar únicamente la elevación excesiva del labio, sin alterar la forma natural de tu boca, el grosor de tus labios ni la simetría del rostro. Al hablar, reír o gesticular, tu expresión seguirá siendo completamente tuya, pero con una sonrisa mucho más equilibrada y estética.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n\n• Patologías neuromusculares de base: Pacientes diagnosticados con Miastenia Gravis, Síndrome de Lambert-Eaton o Esclerosis Lateral Amiotrófica (ELA).\n\n• Infecciones activas en la zona perioral: Presencia de brotes de herpes labial activo o infecciones bacterianas abiertas el día de la cita.\n\n• Alergia documentada a los componentes del neuromodulador o a la albúmina humana.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Manejo de la Sonrisa Gingival con Neuromoduladores: Técnica y Eficacia", 
+          fuente: "Journal of Craniofacial Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/23756306/" 
+        }
+      ]
+    }
   },
   'bruxismo': {
     nombre: 'Tratamiento médico del Bruxismo',
-    imagen: imgProvisional, descripcionBreve: 'Aliviamos dolores mandibulares, evitamos fracturas dentales y afinamos tu rostro inferior relajando la musculatura de masticación.', antesDespues: AD,
+    tituloDescripcion: '¿Cómo es el Tratamiento del Bruxismo con Neuromoduladores?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Aliviamos dolores mandibulares, evitamos fracturas dentales y afinamos tu rostro inferior relajando la musculatura de masticación.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Inyección Intramuscular Profunda' },
+      { titulo: 'Tiempo', valor: '15 min' },
+      { titulo: 'Resultados', valor: 'A los 14 días' },
+      { titulo: 'Duración', valor: '6-9 meses' }
+    ],
     detalles: {
-      descripcion: 'El estrés hace que apretemos inconscientemente la mandíbula (bruxismo), lo que provoca dolores cervicofaciales severos, desgasta el esmalte dental e hipertrofia los músculos maseteros haciendo el rostro cuadrado y varonil. Inyectando relajante muscular en los maseteros, reducimos la potencia de esta contracción en un 60%, solucionando la patología dolorosa y generando un deseado afinamiento estético de las mejillas inferiores ("Efecto V-Shape").',
-      ventajas: ['Alivio de las cefaleas tensionales de origen mandibular desde los primeros días.', 'Tratamiento médico activo que protege tus dientes de roturas por fricción extrema.', 'Efecto estético hiperdemandado: feminización, suavizado y afinamiento del rostro ancho inferior.'],
-      faqs: [{ pregunta: '¿Podré seguir masticando alimentos duros como la carne o el pan?', respuesta: 'Sin problema. El músculo masetero es el músculo con mayor fuerza por centímetro cuadrado del cuerpo humano. Al reducir su potencia excesiva, seguirás masticando de forma impecable sin fatiga.' }],
-      evidencia: [{ titulo: "Botulinum Toxin Type A for the Treatment of Bruxism", fuente: "Neurological Sciences", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Inyección Intramuscular Profunda' }, { titulo: 'Tiempo', valor: '15 min' }, { titulo: 'Resultados', valor: 'A los 15 días' }, { titulo: 'Duración', valor: '6-9 meses' }]
+      descripcion: 'El bruxismo es una disfunción neuromuscular caracterizada por el hábito involuntario de apretar o rechinar los dientes, especialmente durante las horas de sueño. Esta presión constante provoca hipertrofia (desarrollo excesivo) de los músculos masticatorios, desencadenando dolores de cabeza crónicos, tensión cervical, chasquidos y dolor en la articulación temporomandibular (ATM), además de un desgaste dental severo.\n\nEl tratamiento médico avanzado con neuromoduladores consiste en realizar microinyecciones intramusculares directas y milimétricas en el músculo masetero (el principal músculo encargado de la masticación). El fármaco actúa relajando sutilmente la fuerza de contracción involuntaria de este músculo. Al disminuir esta tensión constante, se elimina la presión sobre la mandíbula y los dientes, aliviando el dolor crónico de forma drástica y devolviendo el bienestar diario al paciente sin afectar la capacidad normal de hablar o masticar alimentos.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuánto duran los efectos?',
+          respuesta: 'Este procedimiento se realiza en una única sesión. Se programa una visita de revisión obligatoria a los 14 días para evaluar la respuesta muscular exacta.\n\nLa evolución de los resultados se experimenta en dos fases:\n\n• Alivio Sintomático (Funcional): El paciente comienza a notar una liberación de la tensión mandibular y la desaparición de las cefaleas matutinas a partir del quinto o séptimo día, alcanzando el beneficio máximo a las dos semanas.\n\n• Efecto Estético (Adelgazamiento Facial): Al estar el músculo relajado, deja de ejercitarse en exceso y experimenta una atrofia secundaria controlada. Entre el primer y segundo mes, el tercio inferior del rostro se estiliza, suavizando las facciones cuadradas y logrando un óvalo facial más armónico.\n\nLa durabilidad del bloqueo neuromuscular en esta zona oscila entre los 6 y 8 meses, momento en el que el músculo recupera su fuerza de forma paulatina y se valora una sesión de mantenimiento.'
+        },
+        {
+          pregunta: '¿Es doloroso el tratamiento en los músculos maseteros?',
+          respuesta: 'No, es un procedimiento perfectamente tolerable. Al tratarse de un músculo voluminoso y profundo, las microinyecciones se realizan con agujas ultrafinas. El paciente experimenta una leve sensación de presión profunda transitoria durante el depósito del producto, pero la molestia es mínima y dura escasos segundos.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tomar antes de la sesión?',
+          respuesta: 'Para acudir a tu cita médica con total seguridad y reducir el riesgo de pequeños hematomas puntuales en la zona de la mandíbula, es fundamental seguir estas indicaciones:\n\n• Suspende antiinflamatorios: Evita consumir aspirina, ibuprofeno, naproxeno o suplementos de omega-3 durante los 5 días anteriores a la sesión (siempre bajo supervisión si es medicación pautada por patologías crónicas).\n\n• No ingieras bebidas alcohólicas 24 horas antes de acudir a la clínica para evitar la vasodilatación local.\n\n• La zona de las mejillas y la mandíbula debe estar libre de acné quístico activo o infecciones cutáneas. Asimismo, comunica al médico si presentas alguna infección dental activa en curso.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'Al ser un procedimiento médico sin cirugía ni puntos, la reincorporación a tu vida laboral o social es inmediata. Sin embargo, para asegurar que el neuromodulador se fije correctamente en las fibras del músculo masetero, debes seguir de forma estricta estas pautas durante las primeras 24-48 horas:\n\n• Está estrictamente prohibido frotar, presionar o realizar masajes en la zona de las mejillas o el ángulo mandibular. Al lavarte el rostro o aplicar cremas, hazlo con toques muy ligeros.\n\n• Evita la asistencia a saunas, spas, baños turcos o la práctica de entrenamientos deportivos de alta intensidad durante las primeras 48 horas.\n\n• Durante los primeros 2 o 3 días, intenta no consumir alimentos que requieran una masticación excesivamente enérgica o prolongada (como carnes muy duras, frutos secos rígidos o chicles) para permitir el reposo inicial del músculo.\n\n• Evita acostarte o reclinar la cabeza completamente boca abajo durante las 4 horas posteriores a la infiltración.'
+        },
+        {
+          pregunta: '¿Este tratamiento sustituye el uso de la férula de descarga?',
+          respuesta: 'A nivel médico, el tratamiento con neuromoduladores y la férula de descarga rígida son procedimientos complementarios y sinérgicos, no excluyentes.\n\nMientras que la férula de descarga es una barrera mecánica excelente que protege el esmalte dental contra el desgaste físico, el neuromodulador actúa directamente sobre el origen biológico del problema: la hiperactividad del músculo. En muchos casos de bruxismo severo donde el paciente rompe las férulas o sigue levantándose con dolor de cabeza a pesar de usarlas, los neuromoduladores son la herramienta médica definitiva para romper ese círculo de dolor y conseguir una relajación real de toda la musculatura craneomandibular.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n\n• Patologías neuromusculares diagnosticadas: Pacientes con Miastenia Gravis, Síndrome de Lambert-Eaton o Esclerosis Lateral Amiotrófica (ELA).\n\n• Infecciones activas en la zona de punción: Presencia de infecciones cutáneas superficiales o procesos infecciosos dentales severos el día de la cita.\n\n• Alergia documentada a los componentes del neuromodulador o a la albúmina humana.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Uso de Neuromoduladores para el Tratamiento del Bruxismo y la Hipertrofia Maseterina", 
+          fuente: "Neurological Sciences (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/26350325/" 
+        }
+      ]
+    }
   }
-
 };
 
 // ==========================================
