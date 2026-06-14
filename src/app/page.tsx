@@ -96,6 +96,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', subtitulo: 'Salud Vascular', slug: 'esclerosis-vascular', imagen: imgProvisional },
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: imgProvisional },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
+      { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: imgProvisional },
       { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: imgProvisional }
     ]
   },
@@ -114,9 +115,10 @@ const tratamientosDB: Record<string, CategoriaData> = {
     tratamientos: [
       { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: img_AcneIntegral },
       { nombre: 'Eliminación de léntigos / Manchas solares.', subtitulo: 'Unificación del Tono', slug: 'eliminacion-lentigos', imagen: img_Lentigos },
-      { nombre: 'Control de Rosácea / Cuperosis.', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: imgProvisional },
-      { nombre: 'Tratamiento de cicatrices de acné y atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: imgProvisional },
-      { nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: imgProvisional }
+      { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis).', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: imgProvisional },
+      { nombre: 'Control y modulación del Melasma.', subtitulo: 'Tratamiento de Manchas Crónicas', slug: 'melasma', imagen: imgProvisional },
+      { nombre: 'Cicatrices de Acné y Cicatrices Atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: imgProvisional },
+      { nombre: 'Cicatrices Queloides e Hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: imgProvisional }
     ]
   },
   'Láser y Plataforma Lumínica': {

@@ -39,14 +39,16 @@ const indiceBusquedaGlobal = [
   { nombre: 'Inductores de Colágeno Corporal', slug: 'inductores-colageno', categoria: 'Corporales', palabrasClave: 'flacidez corporal' },
   { nombre: 'Aumento de glúteos', slug: 'aumento-gluteos', categoria: 'Corporales', palabrasClave: 'gluteos, culo' },
   { nombre: 'Mesoterapia capilar', slug: 'mesoterapia-capilar', categoria: 'Capilares', palabrasClave: 'pelo, vitaminas pelo' },
+  { nombre: 'Maderoterapia Corporal', slug: 'maderoterapia', categoria: 'Corporales', palabrasClave: 'maderoterapia, celulitis, masaje, madera, drenaje' },
   { nombre: 'Láser LED capilar', slug: 'laser-led-capilar', categoria: 'Capilares', palabrasClave: 'led, fotobiologica' },
   { nombre: 'PRP Capilar', slug: 'prp-capilar', categoria: 'Capilares', palabrasClave: 'plasma pelo' },
   { nombre: 'Exosomas Capilares', slug: 'exosomas-capilar', categoria: 'Capilares', palabrasClave: 'exosomas pelo' },
   { nombre: 'Tratamiento Acné', slug: 'tratamiento-acne', categoria: 'Patologías', palabrasClave: 'acne, granos' },
   { nombre: 'Eliminación de léntigos / Manchas solares', slug: 'eliminacion-lentigos', categoria: 'Patologías', palabrasClave: 'manchas, melasma' },
-  { nombre: 'Control Rosácea', slug: 'rosacea-cuperosis', categoria: 'Patologías', palabrasClave: 'rosacea, rojeces' },
-  { nombre: 'Cicatrices de acné', slug: 'cicatrices-acne', categoria: 'Patologías', palabrasClave: 'marcas acne, cicatrices' },
-  { nombre: 'Cicatrices queloides', slug: 'cicatrices-queloides', categoria: 'Patologías', palabrasClave: 'queloides, abultadas' },
+  { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis)', slug: 'rosacea-cuperosis', categoria: 'Patologías', palabrasClave: 'rosacea, rojeces, cuperosis, vascular' },
+  { nombre: 'Control y modulación del Melasma', slug: 'melasma', categoria: 'Patologías', palabrasClave: 'melasma, manchas hormonales, manchas frente, labio, cloasma' },
+  { nombre: 'Cicatrices de Acné y Cicatrices Atróficas', slug: 'cicatrices-acne', categoria: 'Patologías', palabrasClave: 'marcas acne, cicatrices, atroficas, subcision' },
+  { nombre: 'Cicatrices Queloides e Hipertróficas', slug: 'cicatrices-queloides', categoria: 'Patologías', palabrasClave: 'queloides, hipertroficas, abultadas' },
   { nombre: 'Light & Bright', slug: 'light-bright', categoria: 'Láser', palabrasClave: 'luz, rejuvenecimiento laser, brillo' },
   { nombre: 'Resurfacing Facial', slug: 'resurfacing-facial', categoria: 'Láser', palabrasClave: 'resurfacing, laser co2, renovacion' },
   { nombre: 'Fotorrejuvenecimiento', slug: 'fotorrejuvenecimiento', categoria: 'Láser', palabrasClave: 'ipl, rejuvenecimiento luz' },
@@ -124,6 +126,7 @@ const estructuraMenuTratamientos: MenuItem[] = [
       { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', slug: 'esclerosis-vascular' },
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', slug: 'inductores-corporales' },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', slug: 'aumento-gluteos' },
+      { nombre: 'Maderoterapia Corporal.', slug: 'maderoterapia' },
       { nombre: 'Depilación Láser Médica.', slug: 'depilacion-laser' }
     ]
   },
@@ -142,9 +145,10 @@ const estructuraMenuTratamientos: MenuItem[] = [
     items: [
       { nombre: 'Tratamiento integral del Acné.', slug: 'tratamiento-acne' },
       { nombre: 'Eliminación de Léntigos / Manchas solares.', slug: 'eliminacion-lentigos' },
-      { nombre: 'Control de Rosácea / Cuperosis.', slug: 'rosacea-cuperosis' },
-      { nombre: 'Tratamiento de cicatrices de acné y atróficas.', slug: 'cicatrices-acne' },
-      { nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas.', slug: 'cicatrices-queloides' }
+      { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis).', slug: 'rosacea-cuperosis' },
+      { nombre: 'Control y modulación del Melasma.', slug: 'melasma' },
+      { nombre: 'Cicatrices de Acné y Cicatrices Atróficas.', slug: 'cicatrices-acne' },
+      { nombre: 'Cicatrices Queloides e Hipertróficas.', slug: 'cicatrices-queloides' }
     ]
   },
   {

@@ -1122,6 +1122,10 @@ const tratamientosData: Record<string, Tratamiento> = {
       ventajas: [],
       faqs: [
         {
+          pregunta: '¿En qué zonas corporales se puede realizar este tratamiento?',
+          respuesta: 'Los inductores de colágeno son extraordinariamente versátiles y están diseñados para combatir la flacidez y la pérdida de firmeza en áreas corporales críticas donde la piel tiende a descolgarse con el paso del tiempo o tras cambios bruscos de peso. Las principales zonas de aplicación clínica son:\n\n• Cara interna de los brazos: Ideal para compactar la piel de la zona del tríceps.\n• Abdomen: Muy demandado para reestructurar la piel flácida y las arrugas periumbilicales, especialmente común en el postparto o tras pérdidas notables de volumen.\n• Glúteos: Permite elevar el contorno, mejorar la firmeza cutánea y suavizar de forma drástica los hoyuelos de la celulitis flácida.\n• Cara interna de los muslos: Trata una de las zonas más complejas y propensas a la laxitud, devolviendo la tensión a la piel por encima de las rodillas.\n• Zona peri-rotuliana (rodillas): Corrige el descolgamiento y el aspecto de "piel arrugada" que se forma justo por encima de la rodilla debido a la pérdida de soporte elástico y la gravedad.\n• Escote y cuello: Redensifica la piel fina del pecho dañada por la exposición solar crónica, difuminando las arrugas en forma de abanico.'
+        },
+        {
           pregunta: '¿Cuántas sesiones se necesitan para ver resultados?',
           respuesta: 'Al tratarse de una terapia basada en una respuesta biológica del propio organismo, los resultados son progresivos y acumulativos. La síntesis de la nueva red de soporte dérmico comienza a consolidarse a partir de la cuarta o sexta semana, alcanzando su punto máximo de tensado y firmeza entre el tercer y el cuarto mes posterior a la aplicación.\n\nDependiendo de la zona corporal a tratar, del grado de flacidez basal y de la capacidad de regeneración celular de cada paciente, el protocolo médico inicial suele requerir entre 1 y 3 sesiones, espaciadas entre 4 y 8 semanas. Una vez alcanzado el resultado óptimo, los beneficios estructurales son muy duraderos, manteniéndose estables entre 12 y 24 meses según las características individuales del paciente.'
         },
@@ -1210,6 +1214,61 @@ const tratamientosData: Record<string, Tratamiento> = {
       ]
     }
   }, // <-- Y aquí termina el tratamiento de aumento de glúteos
+  'maderoterapia': {
+    nombre: 'Maderoterapia Corporal',
+    tituloDescripcion: '¿Qué es el tratamiento de Maderoterapia Corporal?',
+    imagen: imgProvisional, // Se enlazará a tu foto cuando la subas a assets
+    descripcionBreve: 'Remodela tu silueta, elimina la retención de líquidos y combate la celulitis mediante un masaje terapéutico intenso con utensilios de madera noble.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Masaje Mecánico Profundo' },
+      { titulo: 'Tiempo', valor: '45 - 60 min' },
+      { titulo: 'Resultados', valor: 'Inmediatos y progresivos' },
+      { titulo: 'Sesiones', valor: '6 a 10 sesiones' }
+    ],
+    detalles: {
+      descripcion: 'La Maderoterapia es un tratamiento corporal no invasivo de origen natural que utiliza utensilios anatómicos de madera noble diseñados específicamente para realizar un masaje terapéutico y modelador de alta intensidad.\n\nA nivel médico y fisiológico, este procedimiento actúa mediante un estímulo mecánico profundo sobre el tejido celular subcutáneo. Su diseño permite ejercer una presión controlada que reactiva la circulación sanguínea, estimula el sistema linfático para acelerar la eliminación de toxinas y líquidos retenidos, y ayuda a fragmentar los acúmulos de grasa localizada y los nódulos fibrosos causantes de la celulitis (piel de naranja). Es el tratamiento idóneo para remodelar la silueta, tonificar los tejidos y aliviar la sensación de piernas cansadas o congestionadas.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se aprecian los resultados?',
+          respuesta: 'El protocolo estándar para lograr una remodelación y un cambio estructural visible consta de un ciclo de entre 6 y 10 sesiones, las cuales se programan de forma ideal 1 o 2 veces por semana.\n\nLos resultados se aprecian en dos vertientes cronológicas:\n• Efecto Drenante Inmediato: Desde la primera sesión, el paciente experimenta una ligereza absoluta y una reducción del volumen debido a la evacuación de líquidos retenidos y la reactivación de la diuresis (ganas de orinar tras el masaje).\n• Efecto Modelador y Reductor: A partir de la cuarta o quinta sesión, la piel se aprecia visiblemente más lisa, compacta y firme, con una atenuación drástica de la celulitis y una definición de los contornos corporales (glúteos, flancos, abdomen o cartucheras).'
+        },
+        {
+          pregunta: '¿Es dolorosa la Maderoterapia? ¿Salen moratones?',
+          respuesta: 'Existe el falso mito de que la maderoterapia debe doler o dejar hematomas para ser efectiva, lo cual es clínicamente incorrecto. El tratamiento es intenso y profundo, por lo que durante las primeras sesiones se puede percibir cierta sensibilidad o agujetas en las zonas con mayor acumulación de grasa o celulitis fibrosa. Con el paso de las sesiones, a medida que el tejido se drena y la inflamación disminuye, el tratamiento se vuelve placentero y relajante.'
+        },
+        {
+          pregunta: '¿Qué precauciones debo tener en cuenta antes de mi sesión?',
+          respuesta: 'Para acudir a tu sesión corporal y optimizar los resultados del drenaje metabólico, te recomendamos seguir estas pautas:\n\n• Hidratación previa: Bebe al menos medio litro de agua antes de acudir a la clínica para facilitar la movilización de las toxinas a través del sistema linfático.\n• Digestión ligera: Evita realizar comidas copiosas o pesadas en las 2 horas previas al tratamiento, ya que las maniobras en la zona abdominal podrían resultar incómodas.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué debo hacer en casa?',
+          respuesta: 'El post-tratamiento de la maderoterapia es completamente inocuo y no interrumpe tu rutina diaria. Para prolongar y potenciar el efecto reductor y drenante logrado en la camilla, es clave que sigas estos hábitos en casa:\n\n• Aumenta la ingesta de agua: Bebe entre 1,5 y 2 litros de agua durante el resto del día para ayudar a tus riñones a filtrar y eliminar los lípidos y líquidos movilizados durante el masaje.\n• Evita el consumo excesivo de sal, azúcares refinados y alcohol en las horas posteriores, ya que favorecen la inflamación del adipocito y la retención hídrica.\n• Realiza una caminata ligera o actividad física moderada tras la sesión para activar la bomba muscular y acelerar el retorno linfático.\n• Aplica las emulsiones reafirmantes, anticelulíticas o de activación microcirculatoria pautadas en consulta mediante un suave masaje ascendente antes de dormir.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son permanentes?',
+          respuesta: 'Los resultados de la maderoterapia son excelentes y duraderos, logrando una mejora real en la arquitectura de la piel y la eliminación del edema. Sin embargo, el tejido adiposo y el sistema linfático tienen memoria biológica y están íntimamente ligados a tus hábitos de vida, tu genética y tus niveles hormonales.\n\nPara que los resultados de remodelación y firmeza se mantengan estables a largo plazo, el tratamiento debe acompañarse de una alimentación equilibrada y ejercicio regular. Asimismo, se recomienda realizar 1 o 2 sesiones de mantenimiento mensuales para evitar que los líquidos y la celulitis vuelvan a consolidarse.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones de este tratamiento corporal?',
+          respuesta: '• Embarazo: Está contraindicado realizar maniobras profundas en abdomen, flancos o espalda (se puede adaptar de forma muy suave y exclusiva para drenaje de piernas a partir del segundo trimestre, bajo autorización médica).\n• Patologías vasculares graves: Pacientes con antecedentes de trombosis venosa profunda, flebitis activa o varices severas, muy prominentes y dolorosas en la zona a tratar.\n• Procesos oncológicos activos o alteraciones del sistema linfático no controladas.\n• Infecciones o alteraciones cutáneas: Presencia de heridas abiertas, quemaduras solares, eccemas severos o infecciones bacterianas de la piel en la región que se va a masajear.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Efectos Físicos y Fisiológicos del Masaje Mecánico y de Vacío en el Tejido Subcutáneo", 
+          fuente: "Journal of Cosmetic and Laser Therapy (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/27018318/" 
+        },
+        { 
+          titulo: "Evaluación Longitudinal del Drenaje Linfático Mecánico en el Tratamiento de la Celulitis", 
+          fuente: "Aesthetic Surgery Journal (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/20442099/" 
+        }
+      ]
+    }
+  },
   'depilacion-laser': {
     nombre: 'Depilación Láser Médica',
     tituloDescripcion: '¿Qué es la Depilación Láser Médica con la plataforma Nordlys de Candela?',
@@ -1546,14 +1605,50 @@ const tratamientosData: Record<string, Tratamiento> = {
   // --- 4. PATOLOGÍAS DE LA PIEL ---
   'tratamiento-acne': {
     nombre: 'Tratamiento integral del Acné',
-    imagen: img_AcneIntegral, descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.', antesDespues: AD,
+    tituloDescripcion: '¿Qué es el Tratamiento Integral del Acné?',
+    imagen: img_AcneIntegral, 
+    descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Médico + Peelings/Láser' },
+      { titulo: 'Tiempo', valor: '45 min' },
+      { titulo: 'Resultados', valor: 'Semanas - Meses' },
+      { titulo: 'Duración', valor: 'Cura o control crónico' }
+    ],
     detalles: {
-      descripcion: 'El acné es una enfermedad, no un problema cosmético. Implementamos un protocolo clínico que suprime la secreción sebácea y destruye la bacteria (C. Acnes). Combinamos prescripción médica (retinoides orales o antibióticos), terapias lumínicas (IPL) y peelings profundos con ácido salicílico para secar y desinflamar la piel.',
-      ventajas: ['Freno clínico a brotes infecciosos y nódulos dolorosos.', 'Previene la formación de las temidas cicatrices hundidas post-acné.', 'Educación y pauta cosmecéutica para cambiar la salud de tu piel para siempre.'],
-      faqs: [{ pregunta: '¿Es normal que me salgan más granos al empezar?', respuesta: 'Sí, la fase de "purga" inicial es común al vaciar las capas profundas de los poros bloqueados. Cede rápidamente revelando piel sana.' }],
-      evidencia: [{ titulo: "Guidelines of care for the management of acne vulgaris", fuente: "Journal of the American Academy of Dermatology", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Médico + Peelings/Láser' }, { titulo: 'Tiempo', valor: '45 min' }, { titulo: 'Resultados', valor: 'Semanas-Meses' }, { titulo: 'Duración', valor: 'Cura o control crónico' }]
+      descripcion: 'Es un enfoque médico personalizado diseñado para controlar, tratar y erradicar el acné en todas sus fases (desde comedoniano hasta inflamatorio o quístico), así como para prevenir y eliminar las secuelas físicas que genera, como las manchas y las cicatrices. Al ser una patología médica cutánea multifactorial, no puede resolverse con cosméticos comerciales ni tratamientos de estética convencionales; requiere una intervención clínica dirigida.\n\nNuestro protocolo integral aborda la enfermedad desde la raíz. Combinamos la prescripción de farmacología médica sistémica y tópica de última generación con tratamientos clínicos avanzados en la camilla (como peelings químicos médicos específicos, terapia fotobiológica y láser). De este modo, regulamos la producción de sebo, eliminamos la acumulación de células muertas que obstruyen el poro, reducimos la carga bacteriana del Cutibacterium acnes y controlamos la inflamación de forma drástica y segura.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿En qué consiste el tratamiento y qué técnicas se utilizan?',
+          respuesta: 'El éxito del tratamiento radica en la combinación sinérgica de pautas domiciliarias y procedimientos médicos en la clínica, adaptados estrictamente al grado de acné y la tolerancia de tu piel:\n\n• Tratamiento Médico Domiciliario (Farmacológico): Dependiendo de la gravedad, prescribimos retinoides tópicos o por vía oral (Isotretinoína a dosis personalizadas), antibióticos orales o tópicos regulados, o activos seborreguladores potentes como el ácido azelaico y el peróxido de benzoilo.\n• Peelings Químicos Médicos: Realizamos exfoliaciones químicas controladas en la consulta utilizando ácidos de grado médico (como el ácido salicílico, pirúvico o mandélico) para limpiar el folículo en profundidad, desinflamar las lesiones activas y acelerar la renovación de la piel.\n• Terapias Lumínicas y Láser: Utilizamos plataformas avanzadas de luz para destruir la bacteria causante del acné por activación de porfirinas y disminuir la vascularización y el enrojecimiento de las marcas (eritema postinflamatorio), acelerando drásticamente la curación de la piel.'
+        },
+        {
+          pregunta: '¿Cuánto tiempo se necesita para ver resultados?',
+          respuesta: 'El tratamiento del acné es un proceso médico que requiere paciencia y una adherencia estricta, ya que la piel necesita completar varios ciclos de renovación celular para estabilizarse:\n\n• Primeras 2 - 4 semanas: Comienza a regularse el exceso de grasa y disminuye la inflamación de las lesiones existentes. En tratamientos con retinoides o peelings, puede aparecer un brote de purga transitorio; un proceso normal en el que la piel expulsa las imperfecciones internas de forma acelerada antes de sanar.\n• A los 2 - 3 meses: El brote activo se encuentra controlado en un alto porcentaje, la aparición de nuevas lesiones se reduce al mínimo y la textura de la piel se muestra visiblemente más lisa, homogénea y recuperada.\n• A partir del 4º mes: Una vez controlada la fase inflamatoria activa, nos centramos en los protocolos de mantenimiento y en la eliminación definitiva de las marcas rojas, manchas oscuras e imperfecciones residuales.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'El cuidado domiciliario es clave para consolidar los resultados de las sesiones clínicas y evitar la aparición de manchas:\n\n• Utiliza exclusivamente limpiadores suaves y cremas hidratantes reparadoras no comedogénicas pautadas por el equipo médico para restaurar la barrera cutánea.\n• Evita de forma estricta tocar, apretar o rascar los granitos o las descamaciones, ya que esto incrementa la inflamación y multiplica el riesgo de generar cicatrices permanentes o hiperpigmentaciones.\n• Evita las saunas, spas, baños turcos o ejercicio físico muy intenso durante las primeras 24-48 horas tras un peeling o sesión láser para evitar irritaciones por sudor.\n• Aplica protector solar de amplio espectro (SPF 50+) específico para pieles con tendencia acneica cada 2-3 horas. Los tratamientos médicos renuevan la piel, haciéndola más sensible a la radiación solar.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'El acné es una condición cutánea crónica con un fuerte componente hormonal y genético. El tratamiento médico es altamente eficaz para limpiar y resetear la piel, pero la estabilidad de los resultados a largo plazo depende de la constancia en las pautas de mantenimiento y de los hábitos del paciente.\n\nUna vez que el acné está completamente controlado, es fundamental no abandonar drásticamente el cuidado de la piel; se pautará una rutina cosmética médica de mantenimiento domiciliario y revisiones periódicas en la clínica. Asimismo, llevar una alimentación equilibrada, gestionar los niveles de estrés y utilizar exclusivamente productos cosméticos y de maquillaje libres de aceites (oil-free) y no comedogénicos son factores clave para evitar reactivaciones del brote a largo plazo.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Guías Clínicas para el Manejo del Acné Vulgar", 
+          fuente: "Journal of the American Academy of Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/26897386/" 
+        },
+        { 
+          titulo: "Terapias Basadas en Luz y Láser para el Tratamiento del Acné Activo", 
+          fuente: "American Journal of Clinical Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/31338767/" 
+        }
+      ]
+    }
   },
   'eliminacion-lentigos': {
     nombre: 'Eliminación de Léntigos / Manchas solares',
@@ -1598,39 +1693,225 @@ const tratamientosData: Record<string, Tratamiento> = {
     }
   },
   'rosacea-cuperosis': {
-    nombre: 'Control de Rosácea / Cuperosis',
-    imagen: imgProvisional, descripcionBreve: 'Calmamos la inflamación, eliminamos los capilares rotos y apagamos el enrojecimiento facial repentino (flushing).', antesDespues: AD,
+    nombre: 'Patología Vascular Facial (Rosácea / Cuperosis)',
+    tituloDescripcion: '¿Qué es el tratamiento de Control de Rosácea y Cuperosis?',
+    imagen: imgProvisional, // Se enlazará a la foto oficial más adelante
+    descripcionBreve: 'Calmamos la inflamación, eliminamos los capilares rotos y apagamos el enrojecimiento facial repentino (flushing).',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'IPL / Terapia Médica' },
+      { titulo: 'Tiempo', valor: '30 min' },
+      { titulo: 'Resultados', valor: 'Progresivos' },
+      { titulo: 'Duración', valor: 'Control crónico' }
+    ],
     detalles: {
-      descripcion: 'La rosácea es una patología vascular. El objetivo es frenar esa vasomodulación aberrante. Combinamos principios activos calmantes e inmunorreguladores con terapias láser (Luz Pulsada o Nd:YAG) que colapsan selectivamente las "venitas" dilatadas crónicas, suprimiendo la rojez permanente y reforzando la barrera cutánea.',
-      ventajas: ['Disminución radical del eritema de fondo y de los vasos sanguíneos visibles.', 'Fin de los vergonzosos episodios de ardor facial o enrojecimiento con cambios térmicos.', 'Piel médicamente reforzada, blanqueada y sana.'],
-      faqs: [{ pregunta: '¿Me curaré del todo?', respuesta: 'Es una condición crónica y genética, pero nuestros protocolos médicos logran blanquear la piel y estabilizarla de forma asombrosa.' }],
-      evidencia: [{ titulo: "Laser and light therapy for rosacea", fuente: "Lasers in Surgery and Medicine", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'IPL / Terapia Médica' }, { titulo: 'Tiempo', valor: '30 min' }, { titulo: 'Resultados', valor: 'Progresivos' }, { titulo: 'Duración', valor: 'Control crónico' }]
-  },  
+      descripcion: 'Es un enfoque médico especializado orientado al diagnóstico, estabilización y tratamiento integral de la rosácea (una patología inflamatoria crónica de la piel) y de la cuperosis (la manifestación vascular caracterizada por la dilatación permanente de los capilares, visible en forma de arañas vasculares o rojeces en el rostro). El objetivo principal de este tratamiento es controlar la hiperreactividad vascular, disminuir la inflamación cutánea, espaciar los brotes activos y devolver el confort a la barrera de la piel.\n\nLa rosácea no se cura con cosméticos convencionales, ya que involucra una alteración neurovascular subyacente y un fallo en la función barrera epidérmica. Mediante un protocolo clínico personalizado, combinamos fármacos seborreguladores y antiparasitarios específicos con tecnología lumínica médica avanzada para tratar tanto el componente inflamatorio (pápulas y pústulas) como el componente vascular difuso de forma segura y eficaz.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿En qué consiste el tratamiento y qué técnicas se utilizan?',
+          respuesta: 'El control eficaz de la rosácea requiere actuar de forma sinérgica sobre la inflamación y sobre la red capilar alterada del rostro:\n\n• Tratamiento Médico Domiciliario: Prescribimos terapias tópicas dirigidas a controlar los microorganismos asociados y la inflamación. En fases de brote severo, pautamos fármacos sistémicos por vía oral para frenar la cascada inflamatoria desde el interior del organismo.\n• Terapia Lumínica Médica Avanzada (IPL / Láser Vascular): Es el pilar fundamental para eliminar la cuperosis y el eritema (rojez) persistente. Aplicamos pulsos de luz médica que penetran en la dermis y son absorbidos selectivamente por la hemoglobina de los vasos sanguíneos alterados. La energía lumínica se transforma en calor, colapsando y sellando de forma segura los capilares dilatados sin dañar el tejido sano circundante.\n• Cosmética Médica Reparadora: Diseñamos una rutina domiciliaria orientada exclusivamente a restaurar la barrera cutánea mediante activos calmantes, descongestivos y reparadores no comedogénicos.'
+        },
+        {
+          pregunta: '¿Cuánto tiempo se necesita para ver resultados?',
+          respuesta: 'La rosácea es una condición de alta sensibilidad, por lo que las mejoras se aprecian de forma paulatina y respetuosa con los tiempos del tejido cutáneo:\n\n• Primeras 2 - 3 semanas: Con la terapia farmacológica adecuada, el paciente percibe una disminución drástica de la sensación de calor, ardor o tirantez, disminuyendo de forma notable el número de pápulas o lesiones inflamatorias activas.\n• Tras 2 - 3 sesiones de IPL / Láser: Los capilares visibles de la cuperosis comienzan a difuminarse y desaparecer, logrando un aclaramiento evidente de la rojez difusa de las mejillas, nariz y mentón, lo que homogeneiza el tono de la piel.\n• A medio y largo plazo: La piel se vuelve significativamente más resistente ante los estímulos cotidianos, reduciendo la frecuencia e intensidad de los brotes eritematosos.'
+        },
+        {
+          pregunta: '¿Qué hacer en casa?',
+          respuesta: '• Aplica protector solar de amplio espectro (SPF 50+) específico para pieles con tendencia al eritema o rosácea cada 2-3 horas. La radiación ultravioleta es el principal factor desencadenante de la vasodilatación cutánea y del daño vascular estructural.\n• Lava el rostro con limpiadores suaves y agua templada (evitando el agua muy fría o muy caliente). Seca la piel a toques suaves con una toalla limpia, sin frotar en ningún momento.\n• Durante las primeras 48-72 horas posteriores a la sesión de IPL o láser, pospone de forma estricta el acceso a saunas, baños turcos, spas o la práctica de ejercicio físico de muy alta intensidad que provoque ruborización extrema.\n• No introduzcas productos cosméticos nuevos en tu rutina durante la semana posterior al tratamiento sin que hayan sido supervisados y aprobados por el equipo médico.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'Al tratarse la rosácea de una patología vascular y dermatológica crónica de base genética y neurovascular, el tratamiento no proporciona una cura definitiva, sino un control absoluto y excelente de la condición.\n\nLas sesiones de IPL y láser vascular logran eliminar de manera muy exitosa las arañas vasculares y capilares dilatados existentes en ese momento, reseteando la rojez del rostro. Sin embargo, dado que el organismo mantiene la tendencia biológica a generar nuevos vasos sanguíneos debido a la disfunción interna, con el paso del tiempo pueden volver a aparecer de forma paulatina. Por este motivo, para mantener los resultados estables y duraderos a lo largo de los años, se aconseja realizar 1 o 2 sesiones médicas de mantenimiento anuales, combinadas con una adherencia estricta a los cuidados domiciliarios y la evitación de los factores desencadenantes individuales (estrés, cambios bruscos de temperatura, alcohol o ciertos alimentos).'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia: Ciertos fármacos orales están estrictamente contraindicados por motivos de seguridad fetal en estas etapas, modulando el tratamiento únicamente a pautas tópicas seguras o aplazando los procedimientos físicos.\n• Presencia de brotes de herpes labial activo o infecciones bacterianas cutáneas abiertas sobre el área facial a tratar el día de la sesión.\n• Uso de fármacos fotosensibilizantes severos: Medicaciones activas que alteren de forma temporal la respuesta cutánea ante la luz médica, lo cual obligaría a posponer el uso de plataformas lumínicas.\n• Pieles recientemente expuestas a radiación solar intensa o bronceado artificial (solárium) en las últimas 4 semanas.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Manejo Integral y Actualización Clínica de la Rosácea y el Eritema Facial", 
+          fuente: "Journal of the American Academy of Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/25890455/" 
+        },
+        { 
+          titulo: "Eficacia de la Luz Pulsada Intensa (IPL) en el Tratamiento de la Cuperosis y Rosácea Vascular", 
+          fuente: "Lasers in Surgery and Medicine (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/22159832/" 
+        }
+      ]
+    }
+  },
+  'melasma': {
+    nombre: 'Control y modulación del Melasma',
+    tituloDescripcion: '¿Cómo es el tratamiento de Control y Modulación del Melasma?',
+    imagen: imgProvisional, // Se enlazará a tu foto cuando esté lista
+    descripcionBreve: 'Enfoque médico especializado para atenuar, estabilizar y modular de forma segura las manchas crónicas y hormonales del rostro.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Despigmentación Médica Controlada' },
+      { titulo: 'Tiempo', valor: '30 - 45 min' },
+      { titulo: 'Resultados', valor: 'Graduales (3 a 4 semanas)' },
+      { titulo: 'Duración', valor: 'Control crónico' }
+    ],
+    detalles: {
+      descripcion: 'Es un enfoque médico especializado diseñado para atenuar, estabilizar y controlar el melasma. A diferencia de las manchas solares comunes, el melasma es una hiperpigmentación de carácter crónico, difuso y simétrico que aparece principalmente en el rostro (mejillas, frente, labio superior y mentón). Su origen es multifactorial, estando íntimamente ligado a factores hormonales (embarazo, anticonceptivos), predisposición genética, radiación solar y un componente vascular inflamatorio subyacente.\n\nEn el melasma, el melanocito (la célula productora de pigmento) está en un estado de hiperreactividad constante. Por ello, el objetivo médico nunca es "destruir" la mancha de forma agresiva, lo cual desencadenaría un efecto rebote devastador (hiperpigmentación postinflamatoria), sino modular su actividad. Tras un diagnóstico minucioso mediante luz de Wood para determinar si el melasma es epidérmico, dérmico o mixto, diseñamos un protocolo combinado que bloquea las enzimas responsables de la producción de melanina y reduce el componente inflamatorio desde el interior de la piel.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿En qué consiste el tratamiento y qué pautas se utilizan?',
+          respuesta: 'El abordaje del melasma es crónico y requiere combinar pautas domiciliarias de inhibición enzimática con procedimientos clínicos sumamente respetuosos con el tejido:\n\n• Terapia Farmacológica Domiciliaria (El eje central): Prescribimos tratamientos individualizados vía oral y/o vía tópica con activos despigmentantes médicos de alta potencia.\n• Peelings Químicos Médicos: Realizamos aplicaciones en consulta de soluciones y mascarillas médicas con ácidos específicos. Estos peelings no buscan una agresión profunda, sino acelerar la renovación celular superficial, calmar la inflamación y bloquear la síntesis de melanina de forma progresiva.\n• Terapias Lumínicas Reguladas: Protocolos lumínicos de bajísima emisión térmica adaptados para no activar la hiperreactividad del melanocito.'
+        },
+        {
+          pregunta: '¿Cuánto tiempo se necesita para ver resultados?',
+          respuesta: 'El melasma exige un proceso gradual de adaptación celular. Al ser una patología profunda, los cambios estéticos se aprecian siguiendo un calendario biológico muy marcado:\n\n• Primeras 3 - 4 semanas: Con la pauta farmacológica domiciliaria y el primer peeling médico, la piel experimenta un aumento de la luminosidad global y las manchas comienzan a fragmentarse y difuminarse sutilmente en sus bordes.\n• A los 2 - 3 meses: Se alcanza el periodo de mayor aclaramiento. El tono facial se homogeniza significativamente y el melasma puede llegar a ser casi imperceptible, logrando controlar el brote pigmentario.\n• Fase de estabilización y mantenimiento: Una vez aclarado, el protocolo se modifica hacia pautas de mantenimiento a largo plazo para evitar que la mancha vuelva a oscurecerse.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Al trabajar con una piel con melanocitos hiperreactivos, la preparación previa es crucial para evitar complicaciones:\n\n• Suspende activos intensos: Interrumpe el uso de tu fórmula magistral despigmentante, retinol o ácidos exfoliantes entre 3 y 5 días antes de tu cita en clínica, salvo indicación médica contraria.\n• Evita la exposición solar directa: No acudas a la sesión si has tomado el sol recientemente o si tu piel presenta quemaduras. El sol directo contraindica temporalmente los procedimientos en consulta.\n• Comunica cambios hormonales: Informa al médico si has modificado tu pauta de anticonceptivos, si estás bajo terapia hormonal o si existe sospecha de embarazo, ya que influye directamente en el comportamiento del melasma.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer en casa?',
+          respuesta: 'El compromiso del paciente en su domicilio determina por completo la estabilidad del melasma:\n\n• Fotoprotección solar de amplio espectro: Debes aplicar protector solar de amplio espectro (SPF 50+) con filtros específicos frente a la radiación UVA, UVB, luz azul (pantallas) e infrarroja cada 2 horas, todos los días del año, incluso en interiores. La luz visible y el sol son los mayores activadores del melasma.\n• Control del calor ambiental: Durante los primeros 5 días posteriores a la sesión, evita estrictamente saunas, spas, baños turcos o la cocina con calor directo intenso, ya que el calor ambiental (infrarrojo) es capaz de dilatar los vasos de la dermis y reactivar la mancha.\n• Hidratación celular: Utiliza cremas barrera no comedogénicas que contengan niacinamida, ceramidas o ácido hialurónico pautadas en consulta para mantener la piel perfectamente equilibrada.\n• Respeta la descamación: Si presentas una descamación fina en los días posteriores al peeling, déjala caer de forma natural. Está prohibido rascar o usar exfoliantes físicos.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos?',
+          respuesta: 'No, el melasma es una patología dermatológica crónica que no tiene una cura definitiva, sino un control clínico absoluto. Es fundamental gestionar esta expectativa: mediante el tratamiento médico podemos aclarar la mancha hasta hacerla invisible y devolver la homogeneidad al rostro, pero el melanocito mantiene su "memoria de hiperactividad".\n\nSi el paciente interrumpe la protección solar, se expone a cambios hormonales intensos o abandona las pautas de mantenimiento, la mancha volverá a aparecer de forma paulatina en la misma localización anatómica. Por ello, el éxito radica en un compromiso de fotoprotección estricta de por vida y en la aplicación de rutinas de mantenimiento domiciliario diseñadas por el equipo médico, especialmente durante los meses de verano.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones?',
+          respuesta: '• Embarazo y periodo de lactancia: Fármacos de primera línea están estrictamente contraindicados por motivos de seguridad fetal en estas etapas. El manejo del melasma gestacional (cloasma) se limitará estrictamente a fotoprotección absoluta y activos cosméticos totalmente seguros.\n• Infecciones activas en el rostro: Presencia de brotes de acné, herpes labial activo, infecciones bacterianas o heridas abiertas el día de la sesión en clínica.\n• Exposición solar reciente: Pieles recientemente bronceadas o expuestas a radiación ultravioleta artificial (solárium) en las últimas 4 semanas.\n• Enfermedades autoinmunes con fotosensibilidad severa (como el Lupus Eritematoso Sistémico).'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Estrategias Terapéuticas y Enfoques Actuales en el Manejo Global del Melasma", 
+          fuente: "Dermatologic Therapy (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/33155734/" 
+        },
+        { 
+          titulo: "Eficacia del Ácido Tranexámico Oral y Tópico en el Tratamiento del Melasma Crónico", 
+          fuente: "Journal of the American Academy of Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/34217743/" 
+        }
+      ]
+    }
+  },
   'cicatrices-acne': {
-    nombre: 'Tratamiento de cicatrices de acné y atróficas',
-    imagen: imgProvisional, descripcionBreve: 'Alisamos la textura y el relieve del rostro eliminando los hundimientos y marcas severas post-acné.', antesDespues: AD,
+    nombre: 'Cicatrices de Acné y Cicatrices Atróficas',
+    tituloDescripcion: '¿Qué es el tratamiento de Cicatrices de Acné y Cicatrices Atróficas?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Alisamos la textura y el relieve del rostro eliminando los hundimientos y marcas severas post-acné.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Subcisión / Láser / Rellenos' },
+      { titulo: 'Tiempo', valor: '60 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (3 a 6 meses)' },
+      { titulo: 'Duración', valor: 'Definitiva' }
+    ],
     detalles: {
-      descripcion: 'Abordaje médico de alta complejidad. Las marcas atróficas hundidas (Icepick, Boxcar) están atadas por puentes fibróticos dérmicos. Usamos subcisión (cortar esas cuerdas por debajo de la piel), combinada con rellenos de hialurónico, bioestimuladores y láser fraccionado CO2 para obligar a la piel a nivelar la superficie.',
-      ventajas: ['Cambio radical en la textura, las sombras y el tacto del rostro.', 'Levanta los hundimientos severos.', 'Recuperación de la autoestima y confianza cutánea.'],
-      faqs: [{ pregunta: '¿Quedará la piel 100% lisa como de bebé?', respuesta: 'En cicatrices severas maduras la piel mejora hasta un 70-80%, logrando una uniformidad estética espectacularmente mejorada.' }],
-      evidencia: [{ titulo: "Combination Therapy for Acne Scars", fuente: "Dermatologic Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Subcisión / Láser / Rellenos' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'A los meses' }, { titulo: 'Duración', valor: 'Definitiva' }]
+      descripcion: 'Es un enfoque médico avanzado diseñado para remodelar la textura de la piel, suavizar los hundimientos y restaurar la arquitectura cutánea dañada por procesos inflamatorios previos (como el acné severo, varicela o traumatismos). Las cicatrices atróficas se producen cuando el cuerpo, al sanar una infección o inflamación profunda, destruye el colágeno y la elastina de la dermis, generando depresiones o "hoyuelos" en la superficie de la piel.\n\nClínicamente, las clasificamos en tres tipos principales: cicatrices en picahielo (icepick), onduladas (rolling) y en furgón (boxcar). Dado que cada tipo de cicatriz afecta a una profundidad y forma distinta de la dermis, el tratamiento médico no puede ser único ni superficial; requiere una combinación de técnicas clínicas orientadas a romper las fibras que tiran de la piel hacia abajo y estimular una producción masiva de colágeno nuevo para "elevar" el tejido desde el interior.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Qué técnicas se utilizan en el tratamiento?',
+          respuesta: 'Para lograr una eliminación real y profunda de las cicatrices atróficas (hundidas), el éxito radica en un abordaje médico que combine diferentes técnicas en una misma sesión o plan de tratamiento:\n\n• Terapias Inyectables Médicas: Infiltramos de forma milimétrica Ácido Hialurónico de Baja Densidad debajo de los hundimientos para elevar la superficie de forma instantánea e hidratar el tejido. Asimismo, empleamos Inductores de Colágeno en zonas con atrofia generalizada para forzar a las células a fabricar nuevas redes de colágeno propio a largo plazo.\n• Subcisión Médica: Es una maniobra manual imprescindible mediante la cual el médico introduce una microcánula o aguja especial debajo de la cicatriz para cortar y liberar las bandas de tejido fibrótico interno que "anclan" y tiran de la piel hacia abajo.\n• Aparatología Médica: Utilizamos el Láser Fraccionado para generar microcolumnas de estimulación térmica controlada en la dermis. Este estímulo activa un proceso de curación natural que destruye y reemplaza el tejido rígido de la cicatriz por fibras de colágeno y elastina completamente nuevas, devolviendo la elasticidad y la firmeza a la piel.\n• TCA CROSS: Aplicación focalizada de peelings químicos de alta potencia (como el Ácido Tricloroacético - TCA) única y exclusivamente en el fondo de las cicatrices estrechas y profundas (en picahielo) para forzar su cierre desde la base.'
+        },
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se ven los resultados?',
+          respuesta: 'Al tratarse de una combinación de tratamientos que estimulan la regeneración celular profunda, el número de sesiones varía según la profundidad y antigüedad de las marcas, requiriendo habitualmente un protocolo de entre 3 y 5 sesiones.\n\nLos resultados combinan dos tiempos biológicos: el efecto de elevación de la piel por la subcisión y el relleno de ácido hialurónico es inmediato y visible desde el primer día. Por otro lado, la remodelación estructural definitiva (la fabricación de colágeno nuevo inducida por el láser y los activadores biológicos) se consolida de forma progresiva, alcanzando su punto óptimo entre el tercer y el sexto mes posterior a las sesiones.'
+        },
+        {
+          pregunta: '¿Es doloroso este abordaje combinado?',
+          respuesta: 'No, es un procedimiento perfectamente tolerable y seguro para el paciente. Dado que combinamos técnicas mecánicas e inyecciones profundas, antes de comenzar aplicamos crema anestésica sobre la zona a tratar y, en puntos estratégicos. Esto, sumado a los sistemas de enfriamiento cutáneo continuo que incorpora nuestra aparatología láser, reduce las molestias al mínimo.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: '• No se pueden tratar las cicatrices si el paciente presenta un brote activo e importante de acné en la misma zona, ya que los procedimientos podrían propagar la bacteria o empeorar la inflamación. Primero se estabiliza la patología activa.\n• Interrumpe el uso de cremas con retinol, ácido glicólico o salicílico en tu rutina domiciliaria entre 3 y 5 días antes de tu cita.\n• Exposición solar cero: No acudas al tratamiento con la piel recientemente bronceada, congestionada o quemada por el sol, ya que es una contraindicación temporal para el uso de tecnologías físicas.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Tras una sesión multimodal, la piel experimentará un proceso de curación normal caracterizado por enrojecimiento, sutil inflamación y la aparición de pequeños hematomas (por las infiltraciones) o microcostras finas (por el láser). En casa deberás seguir estas pautas:\n\n• Fotoprotección solar absoluta: Aplica protector solar de amplio espectro (SPF 50+) cada 2-3 horas todos los días del año. La piel en fase de regeneración es extremadamente delicada y el sol directo generaría manchas oscuras de forma inmediata.\n• Hidratación y reparación intensa: Aplica abundante crema regeneradora con activos barrera (cicatrizantes, ácido hialurónico o ceramidas) pautada en consulta durante los primeros 5-7 días.\n• Higiene delicada y sin fricción: Lava la zona con un limpiador suave y agua templada. Seca a toques sutiles con una toalla limpia, sin frotar.\n• Evita saunas, spas, piscinas o ejercicio físico de alta intensidad durante las primeras 48-72 horas para prevenir irritaciones o complicaciones infecciosas.\n• No manipules la piel: Si se forman finas costras secas, déjalas caer solas de forma natural; está prohibido rascar o usar exfoliantes físicos.'
+        },
+        {
+          pregunta: '¿De qué depende la duración de los resultados?',
+          respuesta: 'Los resultados estructurales logrados sobre el relieve de las cicatrices atróficas son permanentes y definitivos. El colágeno nuevo que fabrica tu propio organismo para reestructurar la dermis y el tejido que se eleva tras romper mecánicamente las bandas fibróticas internas no se reabsorben ni desaparecen con el tiempo; pasan a formar parte de la estructura fija de tu piel para siempre.\n\nLa única excepción es el volumen aportado por el ácido hialurónico de relleno puro, el cual se degradará de forma natural a los 9-12 meses, pero habiendo dejado ya detrás un puente de colágeno propio de alta calidad que mantendrá la zona notablemente más lisa a largo plazo.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia.\n• Acné inflamatorio activo severo en la misma zona anatómica que se va a tratar.\n• Tendencia demostrada a la cicatrización queloide o hipertrófica severa.\n• Infecciones activas en la zona: Presencia de brotes de herpes labial o infecciones bacterianas abiertas el día de la cita.\n• Consumo reciente de retinoides orales (Isotretinoína): Se evaluará minuciosamente en consulta el tiempo de seguridad transcurrido desde la última toma antes de realizar subcisiones.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Terapia Combinada para el Tratamiento de Cicatrices de Acné Atróficas", 
+          fuente: "Dermatologic Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/24719068/" 
+        },
+        { 
+          titulo: "Subcisión y Relleno Dérmico en Cicatrices de Acné: Eficacia Clínica", 
+          fuente: "Journal of Cosmetic Dermatology (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/30345631/" 
+        }
+      ]
+    }
   },
   'cicatrices-queloides': {
-    nombre: 'Tratamiento y remodelación de cicatrices queloides e hipertróficas',
-    imagen: imgProvisional, descripcionBreve: 'Aplanamos y blanqueamos cicatrices quirúrgicas abultadas y duras para hacerlas casi imperceptibles.', antesDespues: AD,
+    nombre: 'Cicatrices Queloides y Cicatrices Hipertróficas',
+    tituloDescripcion: '¿Qué técnicas se utilizan en el Tratamiento de Cicatrices Queloides e Hipertróficas?',
+    imagen: imgProvisional,
+    descripcionBreve: 'Aplanamos y blanqueamos cicatrices quirúrgicas abultadas y duras para hacerlas casi imperceptibles.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Infiltración intralesional + Láser' },
+      { titulo: 'Tiempo', valor: '20 min' },
+      { titulo: 'Resultados', valor: 'Progresivos (meses)' },
+      { titulo: 'Duración', valor: 'Definitiva tras aplanamiento' }
+    ],
     detalles: {
-      descripcion: 'Las cicatrices hipertróficas o queloides (rojas y en relieve) ocurren por una sobreproducción descontrolada de colágeno al cicatrizar. Inyectamos corticoides (triamcinolona) intralesionales para detener su crecimiento y aplanarlas. Luego, aplicamos láser vascular para borrar el color rojo o violáceo, integrándolas en el tono de la piel.',
-      ventajas: ['Aplanamiento de cicatrices de cesáreas, accidentes o cirugías previas.', 'Eliminación del escozor, picor y tirantez típicos del queloide.', 'Blanqueamiento estético y camuflaje tisular.'],
-      faqs: [{ pregunta: '¿Se operan los queloides?', respuesta: 'La cirugía pura a menudo provoca un queloide más grande. El abordaje inyectable y lumínico es la opción médica de primera línea.' }],
-      evidencia: [{ titulo: "Management of Keloids and Hypertrophic Scars", fuente: "Plastic and Reconstructive Surgery", link: "#" }]
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Infiltración intralesional + Láser' }, { titulo: 'Tiempo', valor: '20 min' }, { titulo: 'Resultados', valor: 'Lentos (meses)' }, { titulo: 'Duración', valor: 'Definitiva tras aplanamiento' }]
+      descripcion: 'El éxito en la reducción y remodelación de las cicatrices queloides e hipertróficas se basa en un abordaje médico multimodal. Al tratarse de lesiones causadas por una producción excesiva y descontrolada de colágeno, el objetivo clínico no es estimular la piel, sino aplanar el tejido, frenar la actividad celular anómala y eliminar los vasos sanguíneos que alimentan la cicatriz. Para ello, combinamos de forma sinérgica las siguientes técnicas en la consulta:\n\n• Infiltraciones Médicas Intralesionales: Inyectamos directamente en el núcleo de la cicatriz fármacos moduladores que actúan frenando de forma drástica la actividad de los fibroblastos, bloqueando la producción de colágeno anómalo y ablandando la estructura rígida de la cicatriz para lograr su aplanamiento progresivo.\n\n• Aparatología Médica Vascular (Láser Vascular / IPL Médica): Las cicatrices queloides están densamente vascularizadas, lo que provoca su color rojizo, el picor y el dolor. Utilizamos plataformas lumínicas médicas dirigidas selectivamente a la hemoglobina para colapsar y cerrar esos vasos sanguíneos aberrantes, cortando el suministro de nutrientes a la cicatriz y eliminando los síntomas molestos de forma inmediata.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cuántas sesiones se necesitan y cuándo se ven los resultados?',
+          respuesta: 'El tratamiento de las cicatrices hipertróficas y queloides es un proceso médico crónico que requiere paciencia debido a la alta resistencia de este tejido. Por lo general, se pauta un protocolo de entre 3 y 6 sesiones.\n\nLos resultados se aprecian de forma progresiva. El aplanamiento del volumen, el ablandamiento del tejido rígido y el aclaramiento del color rojizo hacia un tono similar al de la piel sana se consolidan de manera evidente a partir de la tercera o cuarta sesión.'
+        },
+        {
+          pregunta: '¿Es doloroso este abordaje combinado?',
+          respuesta: 'El tejido de un queloide es denso y rígido, por lo que la infiltración directa puede generar una sensación transitoria de presión intensa o escozor local.'
+        },
+        {
+          pregunta: '¿Qué debo tener en cuenta antes de la sesión?',
+          respuesta: 'Para acudir a la consulta con las máximas garantías de seguridad y eficacia, te recomendamos seguir estas pautas:\n\n• Sin infecciones activas: La piel perilesional debe estar completamente sana, sin presencia de foliculitis, heridas abiertas o infecciones bacterianas el día de la cita.\n• Es fundamental comunicar al médico si tienes antecedentes familiares de queloides, si la cicatriz se originó por una cirugía, una quemadura o un piercing, y si ha reaccionado de forma negativa a tratamientos previos.\n• No expongas la cicatriz a la radiación solar directa los días previos a la sesión si se van a emplear tecnologías físicas lumínicas.'
+        },
+        {
+          pregunta: 'Cuidados post-tratamiento: ¿Qué hacer después de la sesión?',
+          respuesta: 'Tras el tratamiento es habitual que la cicatriz presente una inflamación transitoria, un tono blanquecino o amoratado. Los cuidados domiciliarios esenciales son:\n\n• Lava la zona diariamente con agua templada y un jabón neutro antiséptico. Seca a toques muy suaves con una gasa estéril, sin frotar.\n• Si se forma una ampolla, una costra o una descamación, no la rompas ni la arranques bajo ningún concepto; déjala evolucionar de forma natural para evitar infecciones o reactivaciones de la cicatriz.\n• Fotoprotección solar absoluta: Si la cicatriz está en una zona expuesta (rostro, cuello, escote), aplica protector solar de amplio espectro (SPF 50+) cada 2 horas. El sol sobre una cicatriz tratada generará una mancha oscura (hiperpigmentación) permanente.'
+        },
+        {
+          pregunta: '¿Los resultados obtenidos son definitivos o puede volver a salir?',
+          respuesta: 'Los resultados sobre las cicatrices hipertróficas suelen ser definitivos y estables una vez que se logra su aplanamiento. Sin embargo, en el caso de los queloides, debido a su fuerte base genética e inmunológica, existe un riesgo inherente de recidiva (que la cicatriz vuelva a crecer con el tiempo).\n\nPara minimizar este riesgo al mínimo, en nuestra clínica no realizamos extirpaciones quirúrgicas aisladas (las cuales tienen una tasa de rebote del 80%), sino que empleamos el abordaje médico multimodal destructivo y modulador aquí descrito. Una vez aplanado el queloide, establecemos un calendario estricto de revisiones periódicas durante el primer año para detectar cualquier signo de reactivación vascular temprana y frenarlo de inmediato, logrando así un control del queloide a largo plazo en la gran mayoría de los pacientes.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: '• Embarazo y periodo de lactancia: El uso de fármacos intralesionales está contraindicado en estas etapas debido a su absorción y perfil de seguridad fetal.\n• Infecciones activas locales: Presencia de procesos infecciosos cutáneos activos en la zona a tratar el día de la cita.\n• Inmunosupresión severa o patologías sistémicas graves no controladas que comprometan la respuesta de cicatrización normal del organismo.\n• Pieles con bronceado reciente muy intenso: En el caso de que la sesión incluya el uso asociado de plataformas láser o lumínicas.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Manejo Terapéutico de Queloides y Cicatrices Hipertróficas", 
+          fuente: "Plastic and Reconstructive Surgery (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/24487441/" 
+        },
+        { 
+          titulo: "Uso de Triamcinolona Intralesional y Láser Vascular en Cicatrices Patológicas", 
+          fuente: "Dermatologic Clinics (PubMed)", 
+          link: "https://pubmed.ncbi.nlm.nih.gov/31682121/" 
+        }
+      ]
+    }
   },
-
   // --- 5. LÁSER Y PLATAFORMA LUMÍNICA ---
   'light-bright': {
     nombre: 'Light & Bright',
