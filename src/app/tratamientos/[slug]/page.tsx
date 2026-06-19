@@ -11,6 +11,11 @@ import img_Surco from '@/app/assets/images/tratamientos/surconasogeniano.jpeg';
 import img_TerapiaFotobiologica from '@/app/assets/images/tratamientos/terapia-fotobiologica.jpeg';
 import img_Labios from '@/app/assets/images/tratamientos/voluminizacion-labios.jpeg';
 import img_LimpiezaFacial from '@/app/assets/images/tratamientos/limpieza-facial.jpeg';
+import img_Alopecia from '@/app/assets/images/tratamientos/alopecia.jpeg';
+import img_Escleroterapia from '@/app/assets/images/tratamientos/escleroterapia.jpeg';
+import img_Maderoterapia from '@/app/assets/images/tratamientos/maderoterapia.jpeg';
+import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jpeg';
+import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
 
 // import imgProvisional from '@/app/assets/images/tratamientos/provisional.jpeg';
 
@@ -961,7 +966,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'microneedling': {
     nombre: 'Microneedling Médico',
     tituloDescripcion: '¿Qué es el Microneedling?',
-    imagen: imgProvisional,
+    imagen: img_Microneedling,
     descripcionBreve: 'Inducción mecánica de colágeno para difuminar cicatrices, reducir poros y transformar la textura de tu piel.',
     antesDespues: AD,
     parametros: [
@@ -1062,7 +1067,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'esclerosis-vascular': {
     nombre: 'Esclerosis Vascular',
     tituloDescripcion: '¿Qué es el tratamiento de Esclerosis Vascular?',
-    imagen: imgProvisional,
+    imagen: img_Escleroterapia,
     descripcionBreve: 'Eliminación segura y eficaz de arañas vasculares y pequeñas varices para recuperar la salud y estética de tus piernas.',
     antesDespues: AD,
     parametros: [
@@ -1217,7 +1222,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'maderoterapia': {
     nombre: 'Maderoterapia Corporal',
     tituloDescripcion: '¿Qué es el tratamiento de Maderoterapia Corporal?',
-    imagen: imgProvisional, // Se enlazará a tu foto cuando la subas a assets
+    imagen: img_Maderoterapia, // Se enlazará a tu foto cuando la subas a assets
     descripcionBreve: 'Remodela tu silueta, elimina la retención de líquidos y combate la celulitis mediante un masaje terapéutico intenso con utensilios de madera noble.',
     antesDespues: AD,
     parametros: [
@@ -1549,7 +1554,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'alopecia': {
     nombre: 'Abordaje Médico de la Alopecia y Caída Capilar',
     tituloDescripcion: '¿Qué es el Abordaje Médico de la Alopecia y Caída Capilar?',
-    imagen: imgProvisional, // Se enlazará a tu foto cuando esté disponible
+    imagen: img_Alopecia, // Se enlazará a tu foto cuando esté disponible
     descripcionBreve: 'Diagnóstico exhaustivo, tricoscopia y tratamiento médico personalizado para detener la pérdida de cabello.',
     antesDespues: AD,
     parametros: [
@@ -2216,7 +2221,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'hemangiomas-nordlys': {
     nombre: 'Hemangiomas y Puntos Rubí (VL 555)',
     tituloDescripcion: '¿Cómo es el tratamiento de Hemangiomas y Puntos Rubí con el aplicador VL 555?',
-    imagen: imgProvisional,
+    imagen: img_HemangiomasPuntosRubi,
     descripcionBreve: 'Destrucción fotoacústica y colapso de las lesiones rojizas del cuerpo de forma rápida y sin dejar cicatrices.',
     antesDespues: AD,
     parametros: [

@@ -10,7 +10,11 @@ import img_Surco from '@/app/assets/images/tratamientos/surconasogeniano.jpeg';
 import img_TerapiaFotobiologica from '@/app/assets/images/tratamientos/terapia-fotobiologica.jpeg';
 import img_Labios from '@/app/assets/images/tratamientos/voluminizacion-labios.jpeg';
 import img_LimpiezaFacial from '@/app/assets/images/tratamientos/limpieza-facial.jpeg';
-
+import img_Alopecia from '@/app/assets/images/tratamientos/alopecia.jpeg';
+import img_Escleroterapia from '@/app/assets/images/tratamientos/escleroterapia.jpeg';
+import img_Maderoterapia from '@/app/assets/images/tratamientos/maderoterapia.jpeg';
+import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jpeg';
+import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -83,7 +87,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
         nombre: '1.5. Renovación Cutánea',
         tratamientos: [
           { nombre: 'Peelings químicos médicos.', subtitulo: 'Renovación Celular', slug: 'peelings-quimicos', imagen: img_Peeling },
-          { nombre: 'Microneedling médico.', subtitulo: 'Inducción de Colágeno', slug: 'microneedling', imagen: imgProvisional },
+          { nombre: 'Microneedling médico.', subtitulo: 'Inducción de Colágeno', slug: 'microneedling', imagen: img_Microneedling },
           { nombre: 'Limpieza Facial Personalizada.', subtitulo: 'Higiene y Purificación', slug: 'limpieza-facial', imagen: img_LimpiezaFacial }
         ]
       }
@@ -93,10 +97,10 @@ const tratamientosDB: Record<string, CategoriaData> = {
     tieneSubcategorias: false,
     tratamientos: [
       { nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis).', subtitulo: 'Remodelación', slug: 'mesoterapia-lipolitica', imagen: imgProvisional },
-      { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', subtitulo: 'Salud Vascular', slug: 'esclerosis-vascular', imagen: imgProvisional },
+      { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', subtitulo: 'Salud Vascular', slug: 'esclerosis-vascular', imagen: img_Escleroterapia },
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: imgProvisional },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
-      { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: imgProvisional },
+      { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: img_Maderoterapia },
       { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: imgProvisional }
     ]
   },
@@ -107,7 +111,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: img_TerapiaFotobiologica },
       { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: imgProvisional },
       { nombre: 'Tratamiento capilar con Exosomas.', subtitulo: 'Terapia Regenerativa', slug: 'exosomas-capilar', imagen: imgProvisional },
-      { nombre: 'Abordaje médico de la Alopecia y caída capilar.', subtitulo: 'Diagnóstico Integral', slug: 'alopecia', imagen: imgProvisional }
+      { nombre: 'Abordaje médico de la Alopecia y caída capilar.', subtitulo: 'Diagnóstico Integral', slug: 'alopecia', imagen: img_Alopecia }
     ]
   },
   'Patologías de la Piel': {
@@ -130,7 +134,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: imgProvisional },
       { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: imgProvisional },
       { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: imgProvisional },
-      { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', subtitulo: 'Eliminación Vascular', slug: 'hemangiomas-nordlys', imagen: imgProvisional },
+      { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', subtitulo: 'Eliminación Vascular', slug: 'hemangiomas-nordlys', imagen: img_HemangiomasPuntosRubi },
       { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-nordlys', imagen: imgProvisional }
     ]
   },
