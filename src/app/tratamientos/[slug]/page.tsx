@@ -41,7 +41,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   "voluminizacion-labios": {
     nombre: "Voluminización y perfilado de labios",
     tituloDescripcion: "¿EN QUÉ CONSISTE EL TRATAMIENTO?",
-    imagen: "/textura-piel.webp",
+    imagen: img_Labios,
     descripcionBreve: "",
     antesDespues: { antes: "/textura-piel.webp", despues: "/textura-piel.webp" },
     parametros: [
@@ -409,7 +409,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'surco-nasogeniano': {
     nombre: 'Tratamiento de surco nasogeniano',
     tituloDescripcion: '¿Qué es el tratamiento del surco nasogeniano con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: img_Surco,
     descripcionBreve: 'Suaviza las líneas de tristeza y el rictus para un rostro más amable, fresco y descansado.',
     antesDespues: AD,
     parametros: [
@@ -605,7 +605,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-facial': {
     nombre: 'Mesoterapia facial',
     tituloDescripcion: '¿Qué es la mesoterapia facial con vitaminas y ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: img_MesoterapiaFacial,
     descripcionBreve: 'Revitaliza tu piel desde el interior con un cóctel de vitaminas, minerales y ácido hialurónico.',
     antesDespues: AD,
     parametros: [
@@ -919,7 +919,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'peelings-quimicos': {
     nombre: 'Peelings químicos médicos',
     tituloDescripcion: '¿Qué son los peelings químicos médicos?',
-    imagen: imgProvisional,
+    imagen: img_Peeling,
     descripcionBreve: 'Renovación cutánea profunda para eliminar imperfecciones, unificar el tono y revelar una piel completamente nueva.',
     antesDespues: AD,
     parametros: [
@@ -1002,7 +1002,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'limpieza-facial': {
     nombre: 'Limpieza Facial Personalizada',
-    imagen: imgProvisional, descripcionBreve: 'Higiene purificante de grado clínico. Prepara, vacía los poros y equilibra la microbiota de tu piel.', antesDespues: AD,
+    imagen: img_LimpiezaFacial, descripcionBreve: 'Higiene purificante de grado clínico. Prepara, vacía los poros y equilibra la microbiota de tu piel.', antesDespues: AD,
     detalles: {
       descripcion: 'Mucho más que una higiene tradicional en cabina. Diseñamos un protocolo personalizado (hidrodermoabrasión, peeling enzimático, extracción ultrasónica) para desincrustar la suciedad y el sebo oxidado de los poros sin agresiones manuales, estabilizando el manto lipídico protector.',
       ventajas: ['Piel oxigenada, suave y libre de comedones.', 'Minimiza la apariencia del poro dilatado.', 'Paso previo indispensable para maximizar la eficacia de láseres e infiltraciones.'],

@@ -193,7 +193,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${dmSans.variable} bg-brand-light text-brand-dark font-sans antialiased`}>
+      {/* 🛠️ AÑADIDO: flex, flex-col, min-h-screen en el body para obligar al footer a quedarse abajo */}
+      <body className={`${dmSans.variable} bg-brand-light text-brand-dark font-sans antialiased flex flex-col min-h-screen`}>
         
         {/* NAVBAR SUPERIOR FIJO */}
         <nav className="fixed top-0 w-full z-40 border-b border-brand-sand/30 bg-brand-light/90 backdrop-blur-md px-6 md:px-12 py-5 flex justify-between items-center">
@@ -266,9 +267,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/metodo" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 El Método Venencia <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Filosofía & Rigor Tecnológico</span>
               </Link>
-             {/* <Link href="/casos-reales" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
-                Casos Reales <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Resultados antes y después</span>
-              </Link> */}
               {/* ENLACE AL BLOG */}
               <Link href="/blog" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 Blog <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Divulgación Científica</span>
@@ -355,12 +353,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         </div>
 
-        {/* CONTENIDO DE LA WEB */}
-
-        {/* CONTENIDO DE LA WEB */}
-        <div className="pt-0">
+        {/* 🛠️ AÑADIDO: flex-grow para asegurar que el contenido empuje el footer hacia abajo */}
+        <main className="flex-grow pt-0">
           {children}
-        </div>
+        </main>
+
+        {/* --- INICIO FOOTER LEGAL MINIMALISTA --- */}
+        <footer className="py-10 border-t border-brand-sand/30 bg-white px-4 mt-auto">
+          <div className="max-w-4xl mx-auto flex flex-col items-center space-y-6 text-center">
+            
+            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-xs md:text-sm text-brand-dark/80 font-medium tracking-wide">
+              <Link href="/politica-privacidad" className="hover:text-brand-terra transition-colors duration-300">
+                Política de Privacidad
+              </Link>
+              <span className="text-brand-sand/60">|</span>
+              <Link href="/politica-cookies" className="hover:text-brand-terra transition-colors duration-300">
+                Política de Cookies
+              </Link>
+              <span className="text-brand-sand/60">|</span>
+              <Link href="/aviso-legal" className="hover:text-brand-terra transition-colors duration-300">
+                Aviso Legal
+              </Link>
+            </div>
+
+            <div className="w-full max-w-2xl h-px bg-brand-sand/30"></div>
+
+            <p className="text-[10px] md:text-xs text-brand-dark/50 tracking-wider uppercase">
+              Venencia © {new Date().getFullYear()}. Todos los derechos reservados.
+            </p>
+            
+          </div>
+        </footer>
+        {/* --- FIN FOOTER LEGAL --- */}
 
       </body>
     </html>
