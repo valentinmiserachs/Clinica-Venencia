@@ -15,6 +15,8 @@ import img_Escleroterapia from '@/app/assets/images/tratamientos/escleroterapia.
 import img_Maderoterapia from '@/app/assets/images/tratamientos/maderoterapia.jpeg';
 import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jpeg';
 import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
+import img_Menton from '@/app/assets/images/tratamientos/menton.jpeg';
+import img_Rinomodelacion from '@/app/assets/images/tratamientos/rinomodelacion.jpeg';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -48,10 +50,10 @@ const tratamientosDB: Record<string, CategoriaData> = {
         tratamientos: [
           { nombre: 'Voluminización y perfilado de labios.', subtitulo: 'Armonización Facial', slug: 'voluminizacion-labios', imagen: img_Labios },
           { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: imgProvisional },
-          { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: imgProvisional },
+          { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: img_Rinomodelacion },
           { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: "/vero-facial.jpeg" },
           { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: imgProvisional },
-          { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: imgProvisional },
+          { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: img_Menton },
           { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: imgProvisional },
           { nombre: 'Relleno de fosa temporal.', subtitulo: 'Rejuvenecimiento Superior', slug: 'fosa-temporal', imagen: imgProvisional },
           { nombre: 'Tratamiento de surco nasogeniano.', subtitulo: 'Suavizado de Expresión', slug: 'surco-nasogeniano', imagen: img_Surco }

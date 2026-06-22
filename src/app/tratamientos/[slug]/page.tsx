@@ -16,6 +16,8 @@ import img_Escleroterapia from '@/app/assets/images/tratamientos/escleroterapia.
 import img_Maderoterapia from '@/app/assets/images/tratamientos/maderoterapia.jpeg';
 import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jpeg';
 import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
+import img_Menton from '@/app/assets/images/tratamientos/menton.jpeg';
+import img_Rinomodelacion from '@/app/assets/images/tratamientos/rinomodelacion.jpeg';
 
 // import imgProvisional from '@/app/assets/images/tratamientos/provisional.jpeg';
 
@@ -138,7 +140,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'rinomodelacion': {
     nombre: 'Rinomodelación',
     tituloDescripcion: '¿Qué es la rinomodelación con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: img_Rinomodelacion,
     descripcionBreve: 'Abordaje estructural profundo para elevar la base nasal y suavizar el rictus superior.',
     antesDespues: AD,
     parametros: [
@@ -276,7 +278,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'correccion-menton': {
     nombre: 'Proyección y corrección de mentón',
     tituloDescripcion: '¿Qué es la proyección y corrección de mentón con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: img_Menton,
     descripcionBreve: 'Equilibra tu perfil, reduce visualmente la papada y aporta fuerza a tu estructura facial.',
     antesDespues: AD,
     parametros: [
