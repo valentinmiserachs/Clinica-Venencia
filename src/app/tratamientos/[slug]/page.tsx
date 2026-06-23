@@ -18,6 +18,8 @@ import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jp
 import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
 import img_Menton from '@/app/assets/images/tratamientos/menton.jpeg';
 import img_Rinomodelacion from '@/app/assets/images/tratamientos/rinomodelacion.jpeg';
+import img_Bruxismo from '@/app/assets/images/tratamientos/bruxismo.jpeg';
+import img_Fotodepilacion from '@/app/assets/images/tratamientos/fotodepilacion.jpeg';
 
 // import imgProvisional from '@/app/assets/images/tratamientos/provisional.jpeg';
 
@@ -186,7 +188,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'relleno-pomulos': {
     nombre: 'Proyección y relleno de pómulos',
     tituloDescripcion: '¿Qué es la proyección y relleno de pómulos con ácido hialurónico?',
-    imagen: "/vero-facial.jpeg",
+    imagen: imgProvisional,
     descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".',
     antesDespues: AD,
     parametros: [
@@ -2273,7 +2275,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'depilacion-nordlys': {
     nombre: 'Fotodepilación Médica de Alta Precisión (HR 600)',
     tituloDescripcion: '¿Qué es la Fotodepilación Médica con el sistema HR 600?',
-    imagen: imgProvisional,
+    imagen: img_Fotodepilacion,
     descripcionBreve: 'Destrucción definitiva de la raíz pilosa utilizando la plataforma clínica Nordlys, segura para todo fototipo.',
     antesDespues: AD,
     parametros: [
@@ -2472,7 +2474,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'bruxismo': {
     nombre: 'Tratamiento médico del Bruxismo',
     tituloDescripcion: '¿Cómo es el Tratamiento del Bruxismo con Neuromoduladores?',
-    imagen: imgProvisional,
+    imagen: img_Bruxismo,
     descripcionBreve: 'Aliviamos dolores mandibulares, evitamos fracturas dentales y afinamos tu rostro inferior relajando la musculatura de masticación.',
     antesDespues: AD,
     parametros: [

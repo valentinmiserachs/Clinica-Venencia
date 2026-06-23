@@ -71,7 +71,7 @@ const estructuraMenuTratamientos: MenuItem[] = [
     nombre: '1. Tratamientos Faciales',
     items: [
       {
-        nombre: '1.1. Armonización y Volúmenes',
+        nombre: '1.1. Armonización y Volúmenes:',
         items: [
           { nombre: 'Voluminización y perfilado de labios.', slug: 'voluminizacion-labios' },
           { nombre: 'Hidratación labial profunda.', slug: 'hidratacion-labial' },
