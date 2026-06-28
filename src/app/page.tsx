@@ -21,6 +21,7 @@ import img_Bruxismo from '@/app/assets/images/tratamientos/bruxismo.jpeg';
 import img_Fotodepilacion from '@/app/assets/images/tratamientos/fotodepilacion.jpeg';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
+import img_HeroRecepcion from '@/app/assets/images/recepcion-hero.jpg';
 import Link from 'next/link';
 
 interface Tratamiento {
@@ -198,15 +199,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-brand-light text-brand-dark font-sans relative">
       
-      {/* HERO SECTION */}
+     {/* HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center px-4 md:px-6 overflow-hidden">
         <Image 
-          src="/portada.jpg" 
+          src={img_HeroRecepcion}
           alt="Venencia" 
           fill 
           priority 
           sizes="100vw" 
-          className="object-cover object-center z-0 opacity-40" 
+          className="object-cover object-[45%_center] z-0 opacity-50 mix-blend-multiply scale-[1.20]" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-transparent to-brand-light z-0"></div>
         
