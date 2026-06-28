@@ -211,7 +211,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-transparent to-brand-light z-0"></div>
         
-        <div className="max-w-5xl text-center space-y-6 md:space-y-8 mt-20 z-10 relative">
+        <div className="max-w-5xl text-center space-y-6 md:space-y-8 mt-40 md:mt-56 z-10 relative">
           <span className="text-brand-terra text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em] block mb-2 md:mb-4">Medicina Estética de Autor</span>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-brand-dark leading-tight md:leading-none">
             Tu piel, <br/><span className="italic text-brand-dark/80">nuestra especialidad.</span>
