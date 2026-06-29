@@ -1,28 +1,4 @@
 "use client";
-
-// IMPORTACIONES DE IMÁGENES DE TRATAMIENTOS
-import img_Lentigos from '@/app/assets/images/tratamientos/manchas.jpeg';
-import img_Fotorejuvenecimiento from '@/app/assets/images/tratamientos/fotorejuvenecimiento.jpeg';
-import img_AcneIntegral from '@/app/assets/images/tratamientos/integral-acne.jpeg';
-import img_MesoterapiaCapilar from '@/app/assets/images/tratamientos/mesoterapia-capilar.jpeg';
-import img_MesoterapiaFacial from '@/app/assets/images/tratamientos/mesoterapia-facial.jpeg';
-import img_Peeling from '@/app/assets/images/tratamientos/peeling.jpeg';
-import img_Surco from '@/app/assets/images/tratamientos/surconasogeniano.jpeg';
-import img_TerapiaFotobiologica from '@/app/assets/images/tratamientos/terapia-fotobiologica.jpeg';
-import img_Labios from '@/app/assets/images/tratamientos/voluminizacion-labios.jpeg';
-import img_LimpiezaFacial from '@/app/assets/images/tratamientos/limpieza-facial.jpeg';
-import img_Alopecia from '@/app/assets/images/tratamientos/alopecia.jpeg';
-import img_Escleroterapia from '@/app/assets/images/tratamientos/escleroterapia.jpeg';
-import img_Maderoterapia from '@/app/assets/images/tratamientos/maderoterapia.jpeg';
-import img_Microneedling from '@/app/assets/images/tratamientos/microneedling.jpeg';
-import img_HemangiomasPuntosRubi from '@/app/assets/images/tratamientos/hemangiomaspuntosrubi.jpeg';
-import img_Menton from '@/app/assets/images/tratamientos/menton.jpeg';
-import img_Rinomodelacion from '@/app/assets/images/tratamientos/rinomodelacion.jpeg';
-import img_Bruxismo from '@/app/assets/images/tratamientos/bruxismo.jpeg';
-import img_Fotodepilacion from '@/app/assets/images/tratamientos/fotodepilacion.jpeg';
-
-// import imgProvisional from '@/app/assets/images/tratamientos/provisional.jpeg';
-
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -50,7 +26,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   "voluminizacion-labios": {
     nombre: "Voluminización y perfilado de labios",
     tituloDescripcion: "¿EN QUÉ CONSISTE EL TRATAMIENTO?",
-    imagen: img_Labios,
+    imagen: '/tratamientos/voluminizacion-labios.jpeg',
     descripcionBreve: "",
     antesDespues: { antes: "/textura-piel.webp", despues: "/textura-piel.webp" },
     parametros: [
@@ -142,7 +118,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'rinomodelacion': {
     nombre: 'Rinomodelación',
     tituloDescripcion: '¿Qué es la rinomodelación con ácido hialurónico?',
-    imagen: img_Rinomodelacion,
+    imagen: '/tratamientos/rinomodelacion.jpeg',
     descripcionBreve: 'Abordaje estructural profundo para elevar la base nasal y suavizar el rictus superior.',
     antesDespues: AD,
     parametros: [
@@ -280,7 +256,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'correccion-menton': {
     nombre: 'Proyección y corrección de mentón',
     tituloDescripcion: '¿Qué es la proyección y corrección de mentón con ácido hialurónico?',
-    imagen: img_Menton,
+    imagen: '/tratamientos/menton.jpeg',
     descripcionBreve: 'Equilibra tu perfil, reduce visualmente la papada y aporta fuerza a tu estructura facial.',
     antesDespues: AD,
     parametros: [
@@ -418,7 +394,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'surco-nasogeniano': {
     nombre: 'Tratamiento de surco nasogeniano',
     tituloDescripcion: '¿Qué es el tratamiento del surco nasogeniano con ácido hialurónico?',
-    imagen: img_Surco,
+    imagen:'/tratamientos/surconasogeniano.jpeg',
     descripcionBreve: 'Suaviza las líneas de tristeza y el rictus para un rostro más amable, fresco y descansado.',
     antesDespues: AD,
     parametros: [
@@ -614,7 +590,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-facial': {
     nombre: 'Mesoterapia facial',
     tituloDescripcion: '¿Qué es la mesoterapia facial con vitaminas y ácido hialurónico?',
-    imagen: img_MesoterapiaFacial,
+    imagen: '/tratamientos/mesoterapia-facial.jpeg',
     descripcionBreve: 'Revitaliza tu piel desde el interior con un cóctel de vitaminas, minerales y ácido hialurónico.',
     antesDespues: AD,
     parametros: [
@@ -664,7 +640,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-periocular': {
     nombre: 'Mesoterapia periocular',
     tituloDescripcion: '¿Qué es la mesoterapia periocular?',
-    imagen: img_MesoterapiaCapilar,
+    imagen: '/tratamientos/mesoterapia-periocular.jpeg',
     descripcionBreve: 'Revitaliza tu mirada, atenúa las ojeras oscuras y suaviza las finas líneas de expresión.',
     antesDespues: AD,
     parametros: [
@@ -928,7 +904,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'peelings-quimicos': {
     nombre: 'Peelings químicos médicos',
     tituloDescripcion: '¿Qué son los peelings químicos médicos?',
-    imagen: img_Peeling,
+    imagen: '/tratamientos/peeling.jpeg',
     descripcionBreve: 'Renovación cutánea profunda para eliminar imperfecciones, unificar el tono y revelar una piel completamente nueva.',
     antesDespues: AD,
     parametros: [
@@ -970,7 +946,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'microneedling': {
     nombre: 'Microneedling Médico',
     tituloDescripcion: '¿Qué es el Microneedling?',
-    imagen: img_Microneedling,
+    imagen: '/tratamientos/microneedling.jpeg',
     descripcionBreve: 'Inducción mecánica de colágeno para difuminar cicatrices, reducir poros y transformar la textura de tu piel.',
     antesDespues: AD,
     parametros: [
@@ -1011,7 +987,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   },
   'limpieza-facial': {
     nombre: 'Limpieza Facial Personalizada',
-    imagen: img_LimpiezaFacial, descripcionBreve: 'Higiene purificante de grado clínico. Prepara, vacía los poros y equilibra la microbiota de tu piel.', antesDespues: AD,
+    imagen: '/tratamientos/limpieza-facial.jpeg', descripcionBreve: 'Higiene purificante de grado clínico. Prepara, vacía los poros y equilibra la microbiota de tu piel.', antesDespues: AD,
     detalles: {
       descripcion: 'Mucho más que una higiene tradicional en cabina. Diseñamos un protocolo personalizado (hidrodermoabrasión, peeling enzimático, extracción ultrasónica) para desincrustar la suciedad y el sebo oxidado de los poros sin agresiones manuales, estabilizando el manto lipídico protector.',
       ventajas: ['Piel oxigenada, suave y libre de comedones.', 'Minimiza la apariencia del poro dilatado.', 'Paso previo indispensable para maximizar la eficacia de láseres e infiltraciones.'],
@@ -1025,7 +1001,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-lipolitica': {
     nombre: 'Mesoterapia Lipolítica Corporal',
     tituloDescripcion: '¿Qué es la mesoterapia lipolítica corporal?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/mesoterapia-lipolitica.jpeg',
     descripcionBreve: 'Reduce la grasa localizada, combate la celulitis y reafirma tu figura con nuestro cóctel médico personalizado.',
     antesDespues: AD,
     parametros: [
@@ -1071,7 +1047,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'esclerosis-vascular': {
     nombre: 'Esclerosis Vascular',
     tituloDescripcion: '¿Qué es el tratamiento de Esclerosis Vascular?',
-    imagen: img_Escleroterapia,
+    imagen: '/tratamientos/esclerosis-vascular.jpeg',
     descripcionBreve: 'Eliminación segura y eficaz de arañas vasculares y pequeñas varices para recuperar la salud y estética de tus piernas.',
     antesDespues: AD,
     parametros: [
@@ -1226,7 +1202,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'maderoterapia': {
     nombre: 'Maderoterapia Corporal',
     tituloDescripcion: '¿Qué es el tratamiento de Maderoterapia Corporal?',
-    imagen: img_Maderoterapia, // Se enlazará a tu foto cuando la subas a assets
+    imagen: '/tratamientos/maderoterapia.jpeg', // Se enlazará a tu foto cuando la subas a assets
     descripcionBreve: 'Remodela tu silueta, elimina la retención de líquidos y combate la celulitis mediante un masaje terapéutico intenso con utensilios de madera noble.',
     antesDespues: AD,
     parametros: [
@@ -1338,7 +1314,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-capilar': {
     nombre: 'Mesoterapia Capilar',
     tituloDescripcion: '¿Qué es el tratamiento de Mesoterapia Capilar?',
-    imagen: img_MesoterapiaCapilar, // Vinculada a tu foto real de la clínica
+    imagen: '/tratamientos/mesoterapia-capilar.jpeg', // Vinculada a tu foto real de la clínica
     descripcionBreve: 'Nutrición y medicación inyectada directamente en la raíz para frenar en seco la caída capilar.',
     antesDespues: AD,
     parametros: [
@@ -1393,7 +1369,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'laser-led-capilar': {
     nombre: 'Terapia fotobiológica (Láser LED capilar)',
     tituloDescripcion: '¿Qué es la Terapia Fotobiológica o Láser LED capilar?',
-    imagen: img_TerapiaFotobiologica, // Vinculada a tu foto real de la clínica
+    imagen: '/tratamientos/terapia-fotobiologica.jpeg', // Vinculada a tu foto real de la clínica
     descripcionBreve: 'Estimulación lumínica indolora para multiplicar el riego sanguíneo de tus folículos capilares.',
     antesDespues: AD,
     parametros: [
@@ -1448,7 +1424,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'prp-capilar': {
     nombre: 'Plasma Rico en Plaquetas (PRP) Capilar',
     tituloDescripcion: '¿Qué es el tratamiento de Plasma Rico en Plaquetas (PRP) Capilar?',
-    imagen: imgProvisional, // Luego lo vincularemos con su foto si dispones de ella
+    imagen: '/tratamientos/prp-capilar.jpeg', // Luego lo vincularemos con su foto si dispones de ella
     descripcionBreve: 'Reactivamos los folículos inactivos y dormidos usando los factores de crecimiento de tu propia sangre.',
     antesDespues: AD,
     parametros: [
@@ -1558,7 +1534,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'alopecia': {
     nombre: 'Abordaje Médico de la Alopecia y Caída Capilar',
     tituloDescripcion: '¿Qué es el Abordaje Médico de la Alopecia y Caída Capilar?',
-    imagen: img_Alopecia, // Se enlazará a tu foto cuando esté disponible
+    imagen: '/tratamientos/alopecia.jpeg', // Se enlazará a tu foto cuando esté disponible
     descripcionBreve: 'Diagnóstico exhaustivo, tricoscopia y tratamiento médico personalizado para detener la pérdida de cabello.',
     antesDespues: AD,
     parametros: [
@@ -1615,7 +1591,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'tratamiento-acne': {
     nombre: 'Tratamiento integral del Acné',
     tituloDescripcion: '¿Qué es el Tratamiento Integral del Acné?',
-    imagen: img_AcneIntegral, 
+    imagen: '/tratamientos/integral-acne.jpeg', 
     descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.',
     antesDespues: AD,
     parametros: [
@@ -1662,7 +1638,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'eliminacion-lentigos': {
     nombre: 'Eliminación de Léntigos / Manchas solares',
     tituloDescripcion: '¿Cómo es el tratamiento de Eliminación de Léntigos Solares (Manchas Solares)?',
-    imagen: img_Lentigos,
+    imagen: '/tratamientos/manchassolares.jpeg',
     descripcionBreve: 'Unifica tu tono borrando los daños solares acumulados y recuperando la luminosidad de tu piel de forma definitiva.',
     antesDespues: AD,
     parametros: [
@@ -1975,7 +1951,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'fotorejuvenecimiento-nordlys': {
     nombre: 'Fotorejuvenecimiento (PR 530 / CL 555)',
     tituloDescripcion: '¿Qué es el Fotorejuvenecimiento?',
-    imagen: img_Fotorejuvenecimiento,
+    imagen: '/tratamientos/fotorejuvenecimiento.jpeg',
     descripcionBreve: 'Devuelve la luz y unifica el tono de tu rostro eliminando manchas solares y capilares en una sola sesión.',
     antesDespues: AD,
     parametros: [
@@ -2225,7 +2201,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'hemangiomas-nordlys': {
     nombre: 'Hemangiomas y Puntos Rubí (VL 555)',
     tituloDescripcion: '¿Cómo es el tratamiento de Hemangiomas y Puntos Rubí con el aplicador VL 555?',
-    imagen: img_HemangiomasPuntosRubi,
+    imagen: '/tratamientos/hemangiomaspuntosrubi.jpeg',
     descripcionBreve: 'Destrucción fotoacústica y colapso de las lesiones rojizas del cuerpo de forma rápida y sin dejar cicatrices.',
     antesDespues: AD,
     parametros: [
@@ -2275,7 +2251,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'depilacion-nordlys': {
     nombre: 'Fotodepilación Médica de Alta Precisión (HR 600)',
     tituloDescripcion: '¿Qué es la Fotodepilación Médica con el sistema HR 600?',
-    imagen: img_Fotodepilacion,
+    imagen: '/tratamientos/fotodepilacion.jpeg',
     descripcionBreve: 'Destrucción definitiva de la raíz pilosa utilizando la plataforma clínica Nordlys, segura para todo fototipo.',
     antesDespues: AD,
     parametros: [
@@ -2472,9 +2448,10 @@ const tratamientosData: Record<string, Tratamiento> = {
     }
   },
   'bruxismo': {
-    nombre: 'Tratamiento médico del Bruxismo',
-    tituloDescripcion: '¿Cómo es el Tratamiento del Bruxismo con Neuromoduladores?',
-    imagen: img_Bruxismo,
+  nombre: 'Tratamiento médico del Bruxismo',
+  imagen: '/tratamientos/bruxismo.jpeg', 
+  tituloDescripcion: '¿Cómo es el Tratamiento del Bruxismo...',
+  // ... resto del código
     descripcionBreve: 'Aliviamos dolores mandibulares, evitamos fracturas dentales y afinamos tu rostro inferior relajando la musculatura de masticación.',
     antesDespues: AD,
     parametros: [

@@ -35,7 +35,7 @@ export default function ClinicaPage() {
           {/* Espacio para el retrato de la Dra. Trinidad */}
           <div className="w-full md:w-5/12 relative aspect-[3/4] bg-brand-soft shadow-lg rounded-sm overflow-hidden">
             <Image 
-              src="/textura-piel.webp" 
+              src="/foto-trini.jpg" 
               alt="Dra. Trinidad Venencia" 
               fill 
               className="object-cover" 
@@ -88,6 +88,72 @@ export default function ClinicaPage() {
                  <Image src="/textura-piel.webp" alt="Detalle Clínica 3" fill className="object-cover" />
               </div>
             </div>
+          </div>
+        </section>
+        {/* VANGUARDIA TECNOLÓGICA (CANDELA MEDICAL) */}
+        <section className="pt-10 md:pt-16">
+          <div className="text-center space-y-4 mb-16 max-w-3xl mx-auto">
+            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Tecnología Gold Standard</span>
+            <h2 className="text-3xl md:text-4xl font-serif text-brand-dark">La ciencia detrás del lujo</h2>
+            <p className="text-brand-dark/70 font-light leading-relaxed">
+              Nuestra filosofía médica exige herramientas que garanticen la máxima seguridad y eficacia. Por eso, operamos en exclusiva con plataformas de Candela Medical, el referente mundial en dermatología avanzada.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* NORDLYS */}
+            <div className="space-y-6 order-2 md:order-1">
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Plataforma Nordlys™</h3>
+              <p className="text-brand-dark/80 font-light leading-relaxed">
+                Considerada la plataforma lumínica más avanzada del mundo. Este sistema dual nos permite borrar el daño solar, tratar lesiones vasculares (rosácea, cuperosis) y estimular la regeneración de colágeno con precisión submilimétrica y sin tiempo de inactividad.
+              </p>
+              <ul className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Fotorrejuvenecimiento integral (Tecnología SWT®)
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Eliminación de rojeces y lesiones pigmentarias
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Aprobación clínica por la FDA y Marcado CE Europeo
+                </li>
+              </ul>
+            </div>
+            <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-1 md:order-2">
+               {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL NORDLYS */}
+               <Image src="/textura-piel.webp" alt="Plataforma Nordlys de Candela" fill className="object-cover mix-blend-multiply opacity-90" />
+            </div>
+
+            {/* GLACE */}
+            <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-3">
+               {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL GLACE */}
+               <Image src="/textura-piel.webp" alt="Equipo Glace Hidrodermoabrasión" fill className="object-cover mix-blend-multiply opacity-90" />
+            </div>
+            <div className="space-y-6 order-4">
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Glace™ Hydradermabrasion</h3>
+              <p className="text-brand-dark/80 font-light leading-relaxed">
+                El paso cero innegociable de cualquier protocolo médico. Más que una higiene, Glace es un sistema de hidrodermoabrasión clínica que extrae impurezas y difunde sueros terapéuticos en la dermis. Prepara el lienzo perfecto para maximizar la eficacia de nuestros inyectables y láseres.
+              </p>
+              <ul className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Purificación profunda y extracción atraumática
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Infusión de activos dermatológicos de alta pureza
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
+                  Oxigenación dérmica y efecto flash inmediato
+                </li>
+              </ul>
+            </div>
+
           </div>
         </section>
 

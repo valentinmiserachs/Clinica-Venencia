@@ -264,13 +264,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/clinica" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 La Clínica <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Quiénes Somos & Equipo</span>
               </Link>
+              
+              {/* SECCIÓN OCULTA TEMPORALMENTE 
               <Link href="/metodo" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 El Método Venencia <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Filosofía & Rigor Tecnológico</span>
               </Link>
-              {/* ENLACE AL BLOG */}
+              
               <Link href="/blog" onClick={() => setMenuAbierto(false)} className="text-xl font-serif text-brand-dark hover:text-brand-terra transition-colors block">
                 Blog <span className="text-[10px] font-sans text-brand-terra/60 block uppercase tracking-widest mt-1">Divulgación Científica</span>
               </Link>
+              */}
             </div>
 
             {/* SECCIÓN B: PORTAFOLIO DE TRATAMIENTOS */}
