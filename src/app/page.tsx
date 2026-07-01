@@ -251,32 +251,73 @@ export default function Home() {
             <h3 className="text-xl font-serif text-brand-dark mt-2">Laboratorios & Tecnología</h3>
           </div>
 
+          {/* Contenedor del Carrusel */}
           <div className="flex w-full overflow-hidden relative">
-            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-brand-light to-transparent z-10"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-brand-light to-transparent z-10"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-brand-light to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-brand-light to-transparent z-10 pointer-events-none"></div>
 
-            {/* Pista 1 */}
-            <div className="flex items-center space-x-16 md:space-x-24 animate-marquee min-w-full justify-around pr-16 md:pr-24">
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Candela</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Galderma</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Merz Aesthetics</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">SkinCeuticals</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Mesoestetic</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Fillmed</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">IS Clinical</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Cantabria Labs</h4>
+            {/* PISTA 1 (w-max evita que se aplasten) */}
+            <div className="flex shrink-0 items-center space-x-16 md:space-x-24 animate-marquee w-max pr-16 md:pr-24">
+               
+               {/* Todos unificados a h-12 w-36 y con mix-blend-multiply para borrar fondos blancos */}
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/candela.png" alt="Candela Medical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/nordlys.png" alt="Nordlys by Candela" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/glacecandela.png" alt="Glace Treatment" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/galderma.png" alt="Galderma" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/merz.png" alt="Merz Aesthetics" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/fillmed.png" alt="Fillmed" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/isclinical.png" alt="IS Clinical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/mesoestetic.png" alt="Mesoestetic" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/cantabrialabs.png" alt="Cantabria Labs" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
             </div>
 
-            {/* Pista 2 */}
-            <div className="flex items-center space-x-16 md:space-x-24 animate-marquee min-w-full justify-around pr-16 md:pr-24" aria-hidden="true">
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Candela</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Galderma</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Merz Aesthetics</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">SkinCeuticals</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Mesoestetic</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Fillmed</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">IS Clinical</h4>
-               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Cantabria Labs</h4>
+            {/* PISTA 2 (Copia exacta) */}
+            <div className="flex shrink-0 items-center space-x-16 md:space-x-24 animate-marquee w-max pr-16 md:pr-24" aria-hidden="true">
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/candela.png" alt="Candela Medical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/nordlys.png" alt="Nordlys by Candela" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/glacecandela.png" alt="Glace Treatment" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/galderma.png" alt="Galderma" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/merz.png" alt="Merz Aesthetics" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/fillmed.png" alt="Fillmed" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/isclinical.png" alt="IS Clinical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/mesoestetic.png" alt="Mesoestetic" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
+               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
+                  <Image src="/logos/cantabrialabs.png" alt="Cantabria Labs" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
+               </div>
             </div>
           </div>
         </section>
