@@ -283,27 +283,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-      {/* FOOTER */}
-      <footer className="py-12 border-t border-brand-sand/30 bg-white text-center">
-        <div className="max-w-4xl mx-auto px-4 space-y-6">
-          <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">
-            C/ Baldrich 74, Terrassa — Venencia © 2026
-          </p>
-          
-          <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
-            <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
-            <span>|</span>
-            <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
-            <span>|</span>
-            <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
-          </div>
-
-          <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">
-            Venencia © 2026. Todos los derechos reservados.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }

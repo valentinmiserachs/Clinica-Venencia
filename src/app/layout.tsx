@@ -369,33 +369,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
 
-        {/* --- INICIO FOOTER LEGAL MINIMALISTA --- */}
-        <footer className="py-10 border-t border-brand-sand/30 bg-white px-4 mt-auto">
-          <div className="max-w-4xl mx-auto flex flex-col items-center space-y-6 text-center">
-            
-            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-xs md:text-sm text-brand-dark/80 font-medium tracking-wide">
-              <Link href="/politica-privacidad" className="hover:text-brand-terra transition-colors duration-300">
-                Política de Privacidad
-              </Link>
-              <span className="text-brand-sand/60">|</span>
-              <Link href="/politica-cookies" className="hover:text-brand-terra transition-colors duration-300">
-                Política de Cookies
-              </Link>
-              <span className="text-brand-sand/60">|</span>
-              <Link href="/aviso-legal" className="hover:text-brand-terra transition-colors duration-300">
-                Aviso Legal
-              </Link>
-            </div>
-
-            <div className="w-full max-w-2xl h-px bg-brand-sand/30"></div>
-
-            <p className="text-[10px] md:text-xs text-brand-dark/50 tracking-wider uppercase">
-              Venencia © {new Date().getFullYear()}. Todos los derechos reservados.
+        {/* --- INICIO FOOTER DEFINITIVO --- */}
+        <footer className="py-12 border-t border-brand-sand/30 bg-white text-center mt-auto z-10 relative">
+          <div className="max-w-4xl mx-auto px-4 space-y-6">
+            <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">
+              C/ Baldrich 74, Terrassa — Venencia © {new Date().getFullYear()}
             </p>
             
+            <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
+              <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
+              <span>|</span>
+              <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
+              <span>|</span>
+              <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
+            </div>
+
+            <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">
+              Venencia © {new Date().getFullYear()}. Todos los derechos reservados.
+            </p>
           </div>
         </footer>
-        {/* --- FIN FOOTER LEGAL --- */}
+        {/* --- FIN FOOTER DEFINITIVO --- */}
 
       </body>
     </html>
