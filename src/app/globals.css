@@ -1,1 +1,19 @@
 @tailwind base; @tailwind components; @tailwind utilities;
+
+/* MOTOR DEL CARRUSEL DE MARCAS INFINITO */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused; /* Se frena un poco si el usuario pasa el ratón */
+}

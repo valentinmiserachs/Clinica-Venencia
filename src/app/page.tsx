@@ -242,12 +242,65 @@ export default function Home() {
         )}
       </section>
 
-      {/* FOOTER */}
-      <footer className="py-8 md:py-12 border-t border-brand-sand/30 text-center bg-white px-4">
-        <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-brand-dark/50 leading-relaxed">
-          C/ Baldrich 74, Terrassa — Venencia © 2026
-        </p>
-      </footer>
+      {/* TRUST BADGES: MARCAS COLABORADORAS (CINTA INFINITA) */}
+        <section className="py-12 border-y border-brand-sand/30 bg-brand-light overflow-hidden">
+          <div className="text-center mb-8">
+            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
+              Excelencia Médica
+            </span>
+            <h3 className="text-xl font-serif text-brand-dark mt-2">Laboratorios & Tecnología</h3>
+          </div>
+
+          <div className="flex w-full overflow-hidden relative">
+            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-brand-light to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-brand-light to-transparent z-10"></div>
+
+            {/* Pista 1 */}
+            <div className="flex items-center space-x-16 md:space-x-24 animate-marquee min-w-full justify-around pr-16 md:pr-24">
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Candela</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Galderma</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Merz Aesthetics</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">SkinCeuticals</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Mesoestetic</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Fillmed</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">IS Clinical</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Cantabria Labs</h4>
+            </div>
+
+            {/* Pista 2 */}
+            <div className="flex items-center space-x-16 md:space-x-24 animate-marquee min-w-full justify-around pr-16 md:pr-24" aria-hidden="true">
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Candela</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Galderma</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Merz Aesthetics</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">SkinCeuticals</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Mesoestetic</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Fillmed</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">IS Clinical</h4>
+               <h4 className="font-sans font-bold text-xl md:text-2xl text-brand-dark/30 tracking-widest uppercase">Cantabria Labs</h4>
+            </div>
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="py-12 border-t border-brand-sand/30 bg-white text-center">
+          <div className="max-w-4xl mx-auto px-4 space-y-6">
+            <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">
+              C/ Baldrich 74, Terrassa — Venencia © 2026
+            </p>
+            
+            <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
+              <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
+              <span>|</span>
+              <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
+              <span>|</span>
+              <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
+            </div>
+
+            <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">
+              Venencia © 2026. Todos los derechos reservados.
+            </p>
+          </div>
+        </footer>
     </main>
   );
 }
