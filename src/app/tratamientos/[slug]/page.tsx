@@ -164,7 +164,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'relleno-pomulos': {
     nombre: 'Proyección y relleno de pómulos',
     tituloDescripcion: '¿Qué es la proyección y relleno de pómulos con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/rellenopomulos.jpeg',
     descripcionBreve: 'Estructura tu rostro, combate el descolgamiento y recupera el "triángulo de la juventud".',
     antesDespues: AD,
     parametros: [
@@ -732,7 +732,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'prp-facial': {
     nombre: 'Plasma Rico en Plaquetas (PRP)',
     tituloDescripcion: '¿Qué es la terapia facial con Plasma Rico en Plaquetas (PRP)?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/prpfacial.jpeg',
     descripcionBreve: 'Bioestimulación celular y regeneración cutánea utilizando los recursos biológicos de tu propio cuerpo.',
     antesDespues: AD,
     parametros: [
@@ -818,7 +818,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'radiesse': {
     nombre: 'Hidroxiapatita de Calcio (Radiesse)',
     tituloDescripcion: '¿Qué es el tratamiento de Hidroxiapatita Cálcica?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/radiesse.jpeg',
     descripcionBreve: 'Combate la flacidez y recupera el soporte estructural de tu rostro con un efecto lifting biológico inmediato y duradero.',
     antesDespues: AD,
     parametros: [
@@ -1424,7 +1424,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'prp-capilar': {
     nombre: 'Plasma Rico en Plaquetas (PRP) Capilar',
     tituloDescripcion: '¿Qué es el tratamiento de Plasma Rico en Plaquetas (PRP) Capilar?',
-    imagen: '/tratamientos/prp-capilar.jpeg', // Luego lo vincularemos con su foto si dispones de ella
+    imagen: '/tratamientos/prpcapilar.jpeg', 
     descripcionBreve: 'Reactivamos los folículos inactivos y dormidos usando los factores de crecimiento de tu propia sangre.',
     antesDespues: AD,
     parametros: [

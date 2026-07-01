@@ -14,6 +14,3 @@
   animation: marquee 30s linear infinite;
 }
 
-.animate-marquee:hover {
-  animation-play-state: paused; /* Se frena un poco si el usuario pasa el ratón */
-}

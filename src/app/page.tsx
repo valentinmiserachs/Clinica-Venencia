@@ -33,7 +33,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
           { nombre: 'Voluminización y perfilado de labios.', subtitulo: 'Armonización Facial', slug: 'voluminizacion-labios', imagen: '/tratamientos/voluminizacion-labios.jpeg' },
           { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: imgProvisional },
           { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: '/tratamientos/rinomodelacion.jpeg' },
-          { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: imgProvisional },
+          { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: '/tratamientos/rellenopomulos.jpeg' },
           { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: imgProvisional },
           { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: '/tratamientos/menton.jpeg' },
           { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: imgProvisional },
@@ -56,14 +56,14 @@ const tratamientosDB: Record<string, CategoriaData> = {
           { nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico.', subtitulo: 'Nutrición Profunda', slug: 'mesoterapia-facial', imagen: '/tratamientos/mesoterapia-capilar.jpeg' },
           { nombre: 'Mesoterapia periocular.', subtitulo: 'Cuidado del Contorno', slug: 'mesoterapia-periocular', imagen: imgProvisional },
           { nombre: 'Bioestimulación con Polinucleótidos.', subtitulo: 'Regeneración Celular', slug: 'bioestimulacion-polinucleotidos', imagen: imgProvisional },
-          { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', subtitulo: 'Bioestimulación Autóloga', slug: 'prp-facial', imagen: imgProvisional },
+          { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', subtitulo: 'Bioestimulación Autóloga', slug: 'prp-facial', imagen: '/tratamientos/prpfacial.jpeg' },
           { nombre: 'Terapia avanzada con Exosomas.', subtitulo: 'Medicina Regenerativa', slug: 'exosomas-facial', imagen: imgProvisional }
         ]
       },
       {
         nombre: '1.4. Inductores de Colágeno (Efecto Lifting sin Cirugía)',
         tratamientos: [
-          { nombre: 'Hidroxiapatita de Calcio (Radiesse).', subtitulo: 'Firmeza y Tensión', slug: 'radiesse', imagen: imgProvisional },
+          { nombre: 'Hidroxiapatita de Calcio (Radiesse).', subtitulo: 'Firmeza y Tensión', slug: 'radiesse', imagen: '/tratamientos/radiesse.jpeg' },
           { nombre: 'Ácido Poli-L-Láctico. (Sculptra).', subtitulo: 'Lifting sin Cirugía', slug: 'sculptra', imagen: imgProvisional }
         ]
       },
@@ -93,7 +93,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
     tratamientos: [
       { nombre: 'Mesoterapia capilar avanzada.', subtitulo: 'Nutrición Folicular', slug: 'mesoterapia-capilar', imagen: '/tratamientos/mesoterapia-capilar.jpeg' },
       { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: imgProvisional },
-      { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: imgProvisional },
+      { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: '/tratamientos/prpcapilar.jpeg' },
       { nombre: 'Abordaje médico de la Alopecia y caída capilar.', subtitulo: 'Diagnóstico Integral', slug: 'alopecia', imagen: '/tratamientos/alopecia.jpeg' }
     ]
   },
@@ -243,105 +243,66 @@ export default function Home() {
       </section>
 
       {/* TRUST BADGES: MARCAS COLABORADORAS (CINTA INFINITA) */}
-        <section className="py-12 border-y border-brand-sand/30 bg-brand-light overflow-hidden">
-          <div className="text-center mb-8">
-            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
-              Excelencia Médica
-            </span>
-            <h3 className="text-xl font-serif text-brand-dark mt-2">Laboratorios & Tecnología</h3>
+<section className="py-12 border-y border-brand-sand/30 bg-brand-light overflow-hidden">
+  <div className="text-center mb-8">
+    <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
+      Excelencia Médica
+    </span>
+    <h3 className="text-xl font-serif text-brand-dark mt-2">Laboratorios & Tecnología</h3>
+  </div>
+
+  <div className="flex flex-nowrap w-full overflow-hidden relative group">
+    <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-brand-light to-transparent z-10 pointer-events-none"></div>
+    <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-brand-light to-transparent z-10 pointer-events-none"></div>
+
+    {/* PISTA 1 */}
+    <div className="flex flex-nowrap shrink-0 items-center gap-16 md:gap-24 animate-marquee group-hover:[animation-play-state:paused] min-w-full pr-16 md:pr-24">
+      <img src="/logos/candela.png" alt="Candela Medical" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/nordlys.png" alt="Nordlys by Candela" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/glacecandela.png" alt="Glace Treatment" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/galderma.png" alt="Galderma" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/merz.png" alt="Merz Aesthetics" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/fillmed.png" alt="Fillmed" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/isclinical.png" alt="IS Clinical" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/mesoestetic.png" alt="Mesoestetic" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/cantabrialabs.png" alt="Cantabria Labs" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+    </div>
+
+    {/* PISTA 2 (idéntica, para el loop infinito) */}
+    <div className="flex flex-nowrap shrink-0 items-center gap-16 md:gap-24 animate-marquee group-hover:[animation-play-state:paused] min-w-full pr-16 md:pr-24" aria-hidden="true">
+      <img src="/logos/candela.png" alt="Candela Medical" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/nordlys.png" alt="Nordlys by Candela" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/glacecandela.png" alt="Glace Treatment" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/galderma.png" alt="Galderma" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/merz.png" alt="Merz Aesthetics" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/fillmed.png" alt="Fillmed" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/isclinical.png" alt="IS Clinical" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/mesoestetic.png" alt="Mesoestetic" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="/logos/cantabrialabs.png" alt="Cantabria Labs" className="h-10 md:h-14 w-auto object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-300" />
+    </div>
+  </div>
+</section>
+
+      {/* FOOTER */}
+      <footer className="py-12 border-t border-brand-sand/30 bg-white text-center">
+        <div className="max-w-4xl mx-auto px-4 space-y-6">
+          <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">
+            C/ Baldrich 74, Terrassa — Venencia © 2026
+          </p>
+          
+          <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
+            <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
+            <span>|</span>
+            <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
+            <span>|</span>
+            <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
           </div>
 
-          {/* Contenedor del Carrusel */}
-          <div className="flex w-full overflow-hidden relative">
-            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-brand-light to-transparent z-10 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-brand-light to-transparent z-10 pointer-events-none"></div>
-
-            {/* PISTA 1 (w-max evita que se aplasten) */}
-            <div className="flex shrink-0 items-center space-x-16 md:space-x-24 animate-marquee w-max pr-16 md:pr-24">
-               
-               {/* Todos unificados a h-12 w-36 y con mix-blend-multiply para borrar fondos blancos */}
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/candela.png" alt="Candela Medical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/nordlys.png" alt="Nordlys by Candela" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/glacecandela.png" alt="Glace Treatment" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/galderma.png" alt="Galderma" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/merz.png" alt="Merz Aesthetics" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/fillmed.png" alt="Fillmed" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/isclinical.png" alt="IS Clinical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/mesoestetic.png" alt="Mesoestetic" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/cantabrialabs.png" alt="Cantabria Labs" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-            </div>
-
-            {/* PISTA 2 (Copia exacta) */}
-            <div className="flex shrink-0 items-center space-x-16 md:space-x-24 animate-marquee w-max pr-16 md:pr-24" aria-hidden="true">
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/candela.png" alt="Candela Medical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/nordlys.png" alt="Nordlys by Candela" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/glacecandela.png" alt="Glace Treatment" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/galderma.png" alt="Galderma" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/merz.png" alt="Merz Aesthetics" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/fillmed.png" alt="Fillmed" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/isclinical.png" alt="IS Clinical" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/mesoestetic.png" alt="Mesoestetic" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-               <div className="relative shrink-0 h-10 w-28 md:h-12 md:w-36 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 mix-blend-multiply">
-                  <Image src="/logos/cantabrialabs.png" alt="Cantabria Labs" fill sizes="(max-width: 768px) 15vw, 10vw" className="object-contain" />
-               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FOOTER */}
-        <footer className="py-12 border-t border-brand-sand/30 bg-white text-center">
-          <div className="max-w-4xl mx-auto px-4 space-y-6">
-            <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">
-              C/ Baldrich 74, Terrassa — Venencia © 2026
-            </p>
-            
-            <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
-              <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
-              <span>|</span>
-              <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
-              <span>|</span>
-              <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
-            </div>
-
-            <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">
-              Venencia © 2026. Todos los derechos reservados.
-            </p>
-          </div>
-        </footer>
+          <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">
+            Venencia © 2026. Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }

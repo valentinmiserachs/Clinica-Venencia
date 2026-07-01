@@ -79,13 +79,13 @@ export default function ClinicaPage() {
             {/* Tres huecos para fotos de detalle de la clínica (recepción, cabina, láser) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/textura-piel.webp" alt="Detalle Clínica 1" fill className="object-cover" />
+                 <Image src="/clinica/recepcion.jpeg" alt="Detalle Clínica 1" fill className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/textura-piel.webp" alt="Detalle Clínica 2" fill className="object-cover" />
+                 <Image src="/clinica/box2.jpeg" alt="Detalle Clínica 2" fill className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/textura-piel.webp" alt="Detalle Clínica 3" fill className="object-cover" />
+                 <Image src="/clinica/salaespera.jpeg" alt="Detalle Clínica 3" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -125,13 +125,13 @@ export default function ClinicaPage() {
             </div>
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-1 md:order-2">
                {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL NORDLYS */}
-               <Image src="/textura-piel.webp" alt="Plataforma Nordlys de Candela" fill className="object-cover mix-blend-multiply opacity-90" />
+               <Image src="/clinica/nordlys.jpeg" alt="Plataforma Nordlys de Candela" fill className="object-cover mix-blend-multiply opacity-90" />
             </div>
 
             {/* GLACE */}
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-3">
                {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL GLACE */}
-               <Image src="/textura-piel.webp" alt="Equipo Glace Hidrodermoabrasión" fill className="object-cover mix-blend-multiply opacity-90" />
+               <Image src="/clinica/glace.jpeg" alt="Equipo Glace Hidrodermoabrasión" fill className="object-cover mix-blend-multiply opacity-90" />
             </div>
             <div className="space-y-6 order-4">
               <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Glace™ Hydradermabrasion</h3>
