@@ -1309,7 +1309,62 @@ const tratamientosData: Record<string, Tratamiento> = {
       ]
     }
   },
+  // Archivo de datos de tratamientos (ej: src/data/tratamientos.ts o dentro de tu [slug]/page.tsx)
 
+'control-peso-medico': {
+    nombre: 'Control de Peso Médico',
+    tituloDescripcion: '¿Qué significa Control de Peso Médico?',
+    imagen: '/tratamientos/pesoglp1.jpeg', 
+    descripcionBreve: 'Programa clínico integral para la pérdida de grasa sostenible utilizando fármacos análogos de GLP-1 bajo estricto control médico y analítico.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tratamiento', valor: 'Fármacos Análogos GLP-1' },
+      { titulo: 'Objetivo', valor: 'Pérdida de grasa (15-20%)' },
+      { titulo: 'Seguimiento', valor: 'Médico, analítico y nutricional' },
+      { titulo: 'Resultados', valor: 'Progresivos y sostenibles' }
+    ],
+    detalles: {
+      descripcion: 'Es un programa clínico, individualizado y riguroso diseñado para el tratamiento integral del sobrepeso y la obesidad, priorizando la salud metabólica y la pérdida de grasa de forma sostenible. A diferencia de los enfoques nutricionales convencionales o las dietas restrictivas, nuestra unidad aborda la pérdida de peso como una necesidad médica, identificando las causas hormonales, genéticas y conductuales de cada paciente.\n\nEl pilar diferencial de nuestro protocolo es la incorporación y el seguimiento de tratamientos farmacológicos de última generación, específicamente los análogos de la hormona GLP-1. Estos fármacos de precisión imitan a las hormonas incretinas naturales del cuerpo, actuando directamente sobre los centros cerebrales que regulan el apetito para inducir una saciedad temprana, ralentizar el vaciado gástrico y estabilizar los niveles de glucosa en sangre, lo que elimina la ansiedad por la comida de raíz.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Cómo funciona el tratamiento y en qué consiste el programa?',
+          respuesta: 'El programa médico se divide en fases clínicas estrictas para garantizar la máxima seguridad y eficacia:\n\n• Evaluación Médica Inicial: Realizamos una analítica de sangre completa (perfil hormonal, hepático, lipídico y glucémico) y una historia clínica detallada.\n• Pauta y Titulación del Fármaco: Si eres candidato clínico, se prescribe el fármaco análogo de GLP-1 (de administración inyectable subcutánea semanal). La dosis se pauta de forma escalonada para que tu cuerpo se adapte perfectamente al medicamento.\n• Seguimiento y Reeducación: Se programan consultas periódicas para monitorizar la pérdida de peso (asegurándonos de que pierdas masa grasa y preserves la masa muscular), reajustar dosis, pautar asesoramiento nutricional y establecer pautas de ejercicio adaptadas.'
+        },
+        {
+          pregunta: '¿Cuánto peso se puede perder?',
+          respuesta: 'Clínicamente, bajo el protocolo con fármacos reguladores de GLP-1 y un cambio de hábitos supervisado, los estudios médicos demuestran una pérdida media de peso corporal que oscila entre el 15% y el 20% a lo largo del tratamiento. No obstante, el objetivo de nuestra unidad no es la rapidez extrema, sino una tasa de pérdida segura y saludable protegiendo siempre el tejido muscular.'
+        },
+        {
+          pregunta: '¿El tratamiento farmacológico tiene efectos secundarios?',
+          respuesta: 'Al tratarse de medicamentos que ralentizan el sistema digestivo para prolongar la saciedad, los efectos secundarios más frecuentes son de carácter gastrointestinal, de intensidad leve a moderada y de naturaleza transitoria.\n\nDurante las primeras semanas o al aumentar la dosis, es común experimentar náuseas sutiles, sensación de plenitud prolongada, estreñimiento o reflujo. Al estar bajo supervisión médica continua, te daremos pautas nutricionales específicas (como fraccionar las comidas o evitar alimentos grasos) y, si fuera necesario, soporte médico farmacológico sintomático para que el proceso sea completamente confortable y seguro.'
+        },
+        {
+          pregunta: '¿Qué requisitos o pautas debo cumplir antes de iniciar el programa?',
+          respuesta: 'Para garantizar el éxito terapéutico, es indispensable realizar el proceso de cribado médico previo:\n\n• Analítica de sangre reciente: Obligatorio evaluar la función tiroidea, renal, pancreática y metabólica antes de iniciar tratamiento.\n• Compromiso de cambio: El fármaco es una herramienta biológica superpotente, pero no trabaja solo. El paciente debe acudir con la disposición de aprender nuevos hábitos nutricionales y pautas de actividad física que mantengan su salud en el futuro.\n• Declaración de antecedentes: Es vital informar de cualquier historial familiar de patologías específicas (como el carcinoma medular de tiroides o pancreatitis previas) durante la primera entrevista de valoración.'
+        },
+        {
+          pregunta: '¿Qué cuidados o hábitos debo mantener durante el tratamiento?',
+          respuesta: 'Para optimizar los resultados y evitar la pérdida de masa muscular (sarcopenia), debes seguir estas pautas domiciliarias:\n\n• Prioriza la proteína: Al tener mucho menos apetito, es fundamental que las pocas calorías que ingieras sean de alta calidad. Debes asegurar un aporte proteico óptimo diario pautado en consulta.\n• Entrenamiento de fuerza (Fundamental): Para evitar la flacidez corporal y mantener activo tu metabolismo basal, es obligatorio incorporar ejercicios de fuerza o resistencia al menos 2 o 3 veces por semana.\n• Hidratación constante: Bebe entre 1,5 y 2 litros de agua al día, ya que el fármaco puede disminuir de forma inconsciente la sensación de sed.'
+        },
+        {
+          pregunta: '¿Existe "efecto rebote" al suspender el fármaco de GLP-1?',
+          respuesta: 'Médicamente, el efecto rebote ocurre cuando el fármaco se retira de forma abrupta sin haber reeducado los centros de saciedad ni haber consolidado nuevos hábitos de vida en el paciente.\n\nEn nuestra clínica, el tratamiento no se corta de golpe; realizamos una fase de mantenimiento y retirada progresiva de la dosis. El fármaco te da la ventana de oportunidad biológica para que aprendas a comer y te muevas por hábito. Si al retirar el medicamento mantienes la masa muscular ganada y los hábitos instaurados, el peso se mantendrá perfectamente estable a largo plazo.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del Control de Peso Médico?',
+          respuesta: 'Este programa y la prescripción de análogos de GLP-1 están estrictamente contraindicados en:\n\n• Embarazo o planificación del mismo (debe suspenderse el fármaco al menos 2 meses antes de buscar el embarazo).\n• Antecedentes personales o familiares directos de Carcinoma Medular de Tiroides o Síndrome de Neoplasia Endocrina Múltiple tipo 2 (NEM 2).\n• Antecedentes de Pancreatitis aguda grave.\n• Pacientes con trastornos de la conducta alimentaria (TCA) activos sin un abordaje psiquiátrico conjunto.'
+        }
+      ],
+      evidencia: [
+        { 
+          titulo: "Eficacia de los agonistas del receptor GLP-1 en el tratamiento de la obesidad", 
+          fuente: "New England Journal of Medicine (NEJM)", 
+          link: "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" 
+        }
+      ]
+    }
+  },
   // --- 3. TRATAMIENTOS CAPILARES ---
   'mesoterapia-capilar': {
     nombre: 'Mesoterapia Capilar',

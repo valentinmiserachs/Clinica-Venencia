@@ -40,6 +40,7 @@ const indiceBusquedaGlobal = [
   { nombre: 'Aumento de glúteos', slug: 'aumento-gluteos', categoria: 'Corporales', palabrasClave: 'gluteos, culo' },
   { nombre: 'Mesoterapia capilar', slug: 'mesoterapia-capilar', categoria: 'Capilares', palabrasClave: 'pelo, vitaminas pelo' },
   { nombre: 'Maderoterapia Corporal', slug: 'maderoterapia', categoria: 'Corporales', palabrasClave: 'maderoterapia, celulitis, masaje, madera, drenaje' },
+  { nombre: 'Control de Peso Médico (GLP-1)', slug: 'control-peso-medico', categoria: 'Corporales', palabrasClave: 'peso, adelgazar, obesidad, glp1, glp-1, saxenda, wegovy, ozempic, grasa, adelgazamiento' },
   { nombre: 'Láser LED capilar', slug: 'laser-led-capilar', categoria: 'Capilares', palabrasClave: 'led, fotobiologica' },
   { nombre: 'PRP Capilar', slug: 'prp-capilar', categoria: 'Capilares', palabrasClave: 'plasma pelo' },
   { nombre: 'Exosomas Capilares', slug: 'exosomas-capilar', categoria: 'Capilares', palabrasClave: 'exosomas pelo' },
@@ -127,7 +128,8 @@ const estructuraMenuTratamientos: MenuItem[] = [
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', slug: 'inductores-corporales' },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', slug: 'aumento-gluteos' },
       { nombre: 'Maderoterapia Corporal.', slug: 'maderoterapia' },
-      { nombre: 'Depilación Láser Médica.', slug: 'depilacion-laser' }
+      { nombre: 'Depilación Láser Médica.', slug: 'depilacion-laser' },
+      { nombre: 'Control de Peso Médico (GLP-1).', slug: 'control-peso-medico' }
     ]
   },
   {

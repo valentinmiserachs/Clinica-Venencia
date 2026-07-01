@@ -85,7 +85,8 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: imgProvisional },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
       { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: '/tratamientos/maderoterapia.jpeg' },
-      { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/fotodepilacion.jpeg' }
+      { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/fotodepilacion.jpeg' },
+      { nombre: 'Control de Peso Médico (GLP-1).', subtitulo: 'Pérdida de Grasa Sostenible', slug: 'control-peso-medico', imagen: '/tratamientos/pesoglp1.jpeg' }
     ]
   },
   'Tratamientos Capilares': {
