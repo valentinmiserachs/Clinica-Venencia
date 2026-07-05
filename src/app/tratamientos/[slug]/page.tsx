@@ -1257,7 +1257,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'depilacion-laser': {
     nombre: 'Depilación Láser Médica',
     tituloDescripcion: '¿Qué es la Depilación Láser Médica con la plataforma Nordlys de Candela?',
-    imagen: imgProvisional, // Luego lo vincularemos con su foto renombrada de la carpeta assets
+    imagen: '/tratamientos/corp-depilacion-laser.jpeg', // Luego lo vincularemos con su foto renombrada de la carpeta assets
     descripcionBreve: 'Eliminación permanente del vello corporal bajo estricta supervisión médica y tecnología clínica de alta potencia.',
     antesDespues: AD,
     parametros: [
@@ -1534,7 +1534,7 @@ const tratamientosData: Record<string, Tratamiento> = {
   'exosomas-capilar': {
     nombre: 'Tratamiento capilar con Exosomas',
     tituloDescripcion: '¿Qué es el tratamiento capilar con Exosomas?',
-    imagen: imgProvisional, // Pendiente de enlazar con la imagen real cuando la tengas
+    imagen: '/tratamientos/exosomas-capilar.jpeg', 
     descripcionBreve: 'La innovación definitiva en tricología. Señalización celular hiperconcentrada para multiplicar el pelo.',
     antesDespues: AD,
     parametros: [

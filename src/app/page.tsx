@@ -85,7 +85,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: imgProvisional },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
       { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: '/tratamientos/maderoterapia.jpeg' },
-      { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/fotodepilacion.jpeg' },
+      { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/corp-depilacion-laser.jpeg' },
       { nombre: 'Control de Peso Médico (GLP-1).', subtitulo: 'Pérdida de Grasa Sostenible', slug: 'control-peso-medico', imagen: '/tratamientos/pesoglp1.jpeg' }
     ]
   },
@@ -95,6 +95,7 @@ const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Mesoterapia capilar avanzada.', subtitulo: 'Nutrición Folicular', slug: 'mesoterapia-capilar', imagen: '/tratamientos/mesoterapia-capilar.jpeg' },
       { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: imgProvisional },
       { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: '/tratamientos/prpcapilar.jpeg' },
+      { nombre: 'Terapia regenerativa con Exosomas Capilares.', subtitulo: 'Regeneración Celular', slug: 'exosomas-capilar', imagen: '/tratamientos/exosomas-capilar.jpeg' },
       { nombre: 'Abordaje médico de la Alopecia y caída capilar.', subtitulo: 'Diagnóstico Integral', slug: 'alopecia', imagen: '/tratamientos/alopecia.jpeg' }
     ]
   },
