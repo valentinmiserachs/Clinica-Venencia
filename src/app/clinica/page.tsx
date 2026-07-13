@@ -25,6 +25,7 @@ export default function ClinicaPage() {
             src="/textura-piel.webp" 
             alt="Interior de Clínica Venencia" 
             fill 
+            sizes="100vw"
             className="object-cover hover:scale-105 transition-transform duration-[2s]"
           />
         </section>
@@ -38,6 +39,7 @@ export default function ClinicaPage() {
               src="/foto-trini.jpg" 
               alt="Dra. Trinidad Venencia" 
               fill 
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover" 
             />
             <div className="absolute bottom-6 left-6 text-white z-10">
@@ -79,17 +81,18 @@ export default function ClinicaPage() {
             {/* Tres huecos para fotos de detalle de la clínica (recepción, cabina, láser) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/clinica/recepcion.jpeg" alt="Detalle Clínica 1" fill className="object-cover" />
+                 <Image src="/clinica/recepcion.jpeg" alt="Detalle Clínica 1" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/clinica/box2.jpeg" alt="Detalle Clínica 2" fill className="object-cover" />
+                 <Image src="/clinica/box2.jpeg" alt="Detalle Clínica 2" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/clinica/salaespera.jpeg" alt="Detalle Clínica 3" fill className="object-cover" />
+                 <Image src="/clinica/salaespera.jpeg" alt="Detalle Clínica 3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
             </div>
           </div>
         </section>
+        
         {/* VANGUARDIA TECNOLÓGICA (CANDELA MEDICAL) */}
         <section className="pt-10 md:pt-16">
           <div className="text-center space-y-4 mb-16 max-w-3xl mx-auto">
@@ -124,14 +127,12 @@ export default function ClinicaPage() {
               </ul>
             </div>
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-1 md:order-2">
-               {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL NORDLYS */}
-               <Image src="/clinica/nordlys.jpeg" alt="Plataforma Nordlys de Candela" fill className="object-cover mix-blend-multiply opacity-90" />
+               <Image src="/clinica/nordlys.jpeg" alt="Plataforma Nordlys de Candela" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
             </div>
 
             {/* GLACE */}
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-3">
-               {/* ⚠️ REEMPLAZAR AQUÍ LA IMAGEN POR LA FOTO DEL GLACE */}
-               <Image src="/clinica/glace.jpeg" alt="Equipo Glace Hidrodermoabrasión" fill className="object-cover mix-blend-multiply opacity-90" />
+               <Image src="/clinica/glace.jpeg" alt="Equipo Glace Hidrodermoabrasión" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
             </div>
             <div className="space-y-6 order-4">
               <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Glace™ Hydradermabrasion</h3>
