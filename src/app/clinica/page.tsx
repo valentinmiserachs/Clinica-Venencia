@@ -22,7 +22,7 @@ export default function ClinicaPage() {
         {/* ESPACIO PARA FOTO GRANDE DEL EQUIPO O CLÍNICA */}
         <section className="relative w-full aspect-[16/9] md:aspect-[21/9] bg-brand-soft overflow-hidden rounded-sm shadow-xl">
           <Image 
-            src="/textura-piel.webp" 
+            src="/clinica/principal.jpeg" 
             alt="Interior de Clínica Venencia" 
             fill 
             sizes="100vw"
