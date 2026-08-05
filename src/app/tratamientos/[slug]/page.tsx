@@ -1648,7 +1648,10 @@ const tratamientosData: Record<string, Tratamiento> = {
     tituloDescripcion: '¿Qué es el Tratamiento Integral del Acné?',
     imagen: '/tratamientos/integral-acne.jpeg', 
     descripcionBreve: 'Abordaje médico exhaustivo para controlar brotes, quistes inflamatorios y purificar la glándula sebácea.',
-    antesDespues: AD,
+    antesDespues: { 
+      antes: "/casos/acne-antes.jpeg", 
+      despues: "/casos/acne-despues.jpeg"
+    },
     parametros: [
       { titulo: 'Técnica', valor: 'Médico + Peelings/Láser' },
       { titulo: 'Tiempo', valor: '45 min' },
@@ -2008,7 +2011,10 @@ const tratamientosData: Record<string, Tratamiento> = {
     tituloDescripcion: '¿Qué es el Fotorejuvenecimiento?',
     imagen: '/tratamientos/fotorejuvenecimiento.jpeg',
     descripcionBreve: 'Devuelve la luz y unifica el tono de tu rostro eliminando manchas solares y capilares en una sola sesión.',
-    antesDespues: AD,
+    antesDespues: { 
+      antes: "/casos/fotorejuvenecimiento-antes-01.jpg", 
+      despues: "/casos/fotorejuvenecimiento-despues-01.jpg"
+    },
     parametros: [
       { titulo: 'Tecnología', valor: 'IPL Banda Estrecha' },
       { titulo: 'Tiempo', valor: '30 min' },
