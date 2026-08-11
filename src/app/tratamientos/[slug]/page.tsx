@@ -107,47 +107,49 @@ export default function TratamientoPage() {
         </div>
       </section>
 
-      {/* GRID ANTES Y DESPUÉS (RESPONSIVE + LCP FIX) */}
-      <section className="py-24 bg-brand-dark text-brand-light relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 text-center space-y-12">
-          <div className="space-y-4">
-            <span className="text-brand-sand text-[10px] uppercase tracking-[0.4em] font-bold">Resultados Reales</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-brand-light">El arte del cuidado de la piel</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full max-w-5xl mx-auto">
-            {/* Tarjeta ANTES */}
-            <div className="relative aspect-[4/5] md:aspect-[3/4] bg-brand-dark/50 overflow-hidden rounded-sm shadow-xl">
-              <Image 
-                src={tratamiento.antesDespues.antes} 
-                alt="Estado Inicial" 
-                fill 
-                priority /* <-- FIX LCP */
-                sizes="(max-width: 768px) 100vw, 50vw" 
-                className="object-cover object-center hover:scale-105 transition-transform duration-1000" 
-              />
-              <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] rounded-sm backdrop-blur-md border border-white/10">
-                Antes
-              </div>
+      {/* CONDICIONAL: Solo mostrar si la foto NO es la textura provisional */}
+      {tratamiento.antesDespues && tratamiento.antesDespues.antes !== "/textura-piel.webp" && (
+        <section className="py-24 bg-brand-dark text-brand-light relative overflow-hidden">
+          <div className="max-w-6xl mx-auto px-6 text-center space-y-12">
+            <div className="space-y-4">
+              <span className="text-brand-sand text-[10px] uppercase tracking-[0.4em] font-bold">Resultados Reales</span>
+              <h2 className="text-4xl md:text-5xl font-serif text-brand-light">El arte del cuidado de la piel</h2>
             </div>
 
-            {/* Tarjeta DESPUÉS */}
-            <div className="relative aspect-[4/5] md:aspect-[3/4] bg-brand-dark/50 overflow-hidden rounded-sm shadow-xl">
-              <Image 
-                src={tratamiento.antesDespues.despues} 
-                alt="Resultado Final" 
-                fill 
-                priority /* <-- FIX LCP */
-                sizes="(max-width: 768px) 100vw, 50vw" 
-                className="object-cover object-center hover:scale-105 transition-transform duration-1000" 
-              />
-              <div className="absolute top-4 right-4 bg-brand-terra/90 text-white px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] rounded-sm backdrop-blur-md shadow-lg border border-brand-terra/50">
-                Después
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full max-w-5xl mx-auto">
+              {/* Tarjeta ANTES */}
+              <div className="relative aspect-[4/5] md:aspect-[3/4] bg-brand-dark/50 overflow-hidden rounded-sm shadow-xl">
+                <Image 
+                  src={tratamiento.antesDespues.antes} 
+                  alt="Estado Inicial" 
+                  fill 
+                  priority /* <-- FIX LCP */
+                  sizes="(max-width: 768px) 100vw, 50vw" 
+                  className="object-cover object-center hover:scale-105 transition-transform duration-1000" 
+                />
+                <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] rounded-sm backdrop-blur-md border border-white/10">
+                  Antes
+                </div>
+              </div>
+
+              {/* Tarjeta DESPUÉS */}
+              <div className="relative aspect-[4/5] md:aspect-[3/4] bg-brand-dark/50 overflow-hidden rounded-sm shadow-xl">
+                <Image 
+                  src={tratamiento.antesDespues.despues} 
+                  alt="Resultado Final" 
+                  fill 
+                  priority /* <-- FIX LCP */
+                  sizes="(max-width: 768px) 100vw, 50vw" 
+                  className="object-cover object-center hover:scale-105 transition-transform duration-1000" 
+                />
+                <div className="absolute top-4 right-4 bg-brand-terra/90 text-white px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] rounded-sm backdrop-blur-md shadow-lg border border-brand-terra/50">
+                  Después
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CALL TO ACTION */}
       <section className="bg-brand-sand/10 py-16 border-t border-brand-sand/30">
