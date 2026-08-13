@@ -214,7 +214,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'marcaje-mandibular': {
     nombre: 'Marcaje mandibular',
     tituloDescripcion: '¿Qué es el marcaje mandibular con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/marcaje-mandibular.jpeg',
     descripcionBreve: 'Define tu contorno facial, tensa el cuello y proyecta seguridad con una mandíbula estructurada.',
     antesDespues: AD,
     parametros: [
@@ -1851,7 +1851,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'cicatrices-acne': {
     nombre: 'Cicatrices de Acné y Cicatrices Atróficas',
     tituloDescripcion: '¿Qué es el tratamiento de Cicatrices de Acné y Cicatrices Atróficas?',
-    imagen: imgProvisional,
+    imagen:'/tratamientos/cicatrices-acne-cicatrices-atroficas.jpeg',
     descripcionBreve: 'Alisamos la textura y el relieve del rostro eliminando los hundimientos y marcas severas post-acné.',
     antesDespues: AD,
     parametros: [
@@ -2069,7 +2069,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'rosacea-nordlys': {
     nombre: 'Rosácea, Cuperosis y Rojeces (VL 555)',
     tituloDescripcion: '¿Qué es el tratamiento de Rosácea y Cuperosis con el sistema VL 555 de Nordlys?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg',
     descripcionBreve: 'Colapsamos de forma selectiva la red capilar dilatada para apagar el enrojecimiento crónico facial.',
     antesDespues: AD,
     parametros: [
@@ -2418,7 +2418,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'hiperhidrosis': {
     nombre: 'Tratamiento de la Hiperhidrosis',
     tituloDescripcion: '¿Qué es el Tratamiento de la Hiperhidrosis?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/hyperhidrosis.jpeg',
     descripcionBreve: 'Frena la sudoración excesiva en axilas, manos o pies y recupera por fin tu comodidad social y laboral.',
     antesDespues: AD,
     parametros: [
@@ -2834,9 +2834,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tratamientos: [
       { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: '/tratamientos/integral-acne.jpeg' },
       { nombre: 'Eliminación de léntigos / Manchas solares.', subtitulo: 'Unificación del Tono', slug: 'eliminacion-lentigos', imagen: '/tratamientos/manchassolares.jpeg' },
-      { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis).', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: imgProvisional },
+      { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis).', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg' },
       { nombre: 'Control y modulación del Melasma.', subtitulo: 'Tratamiento de Manchas Crónicas', slug: 'melasma', imagen: imgProvisional},
-      { nombre: 'Cicatrices de Acné y Cicatrices Atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: imgProvisional },
+      { nombre: 'Cicatrices de Acné y Cicatrices Atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: '/tratamientos/cicatrices-acne-cicatrices-atroficas.jpeg', },
       { nombre: 'Cicatrices Queloides e Hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: imgProvisional }
     ]
   },
@@ -2857,7 +2857,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tieneSubcategorias: false,
     tratamientos: [
       { nombre: 'Rejuvenecimiento de manos.', subtitulo: 'Cuidado Integral', slug: 'rejuvenecimiento-manos', imagen: imgProvisional },
-      { nombre: 'Tratamiento de la Hiperhidrosis.', subtitulo: 'Control de Sudoración', slug: 'hiperhidrosis', imagen: imgProvisional },
+      { nombre: 'Tratamiento de la Hiperhidrosis.', subtitulo: 'Control de Sudoración', slug: 'hiperhidrosis', imagen: '/tratamientos/hyperhidrosis.jpeg' },
       { nombre: 'Corrección de la Sonrisa Gingival.', subtitulo: 'Armonización Dental', slug: 'sonrisa-gingival', imagen: imgProvisional },
       { nombre: 'Tratamiento médico del Bruxismo.', subtitulo: 'Salud y Bienestar', slug: 'bruxismo', imagen: '/tratamientos/bruxismo.jpeg' }
     ]

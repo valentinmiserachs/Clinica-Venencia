@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { DM_Sans } from 'next/font/google';
@@ -136,6 +137,87 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         <main className="flex-grow pt-0">{children}</main>
+
+     {/* SECCIÓN PARTNERS Y AUTORIDAD CLÍNICA (CARRUSEL INFINITO DE IMÁGENES) */}
+      <section className="bg-brand-light py-12 border-t border-brand-sand/20 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
+          <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold">
+            Excelencia Médica
+          </span>
+          <h3 className="text-sm font-serif text-brand-dark/70 mt-2 uppercase tracking-widest">
+            Laboratorios & Tecnología
+          </h3>
+        </div>
+
+        {/* CSS Inyectado para la animación infinita */}
+        <style>{`
+          @keyframes scroll-infinite {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll-infinite {
+            animation: scroll-infinite 40s linear infinite;
+            width: max-content;
+          }
+          .animate-scroll-infinite:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="relative w-full overflow-hidden flex">
+          <div className="animate-scroll-infinite flex items-center gap-16 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 pl-16">
+            
+            {/* TANDA 1: Mapeo exacto de tu carpeta /public/logos/ */}
+            {[
+              { src: "/logos/candela.png", alt: "Candela" },
+              { src: "/logos/nordlys.png", alt: "Nordlys" },
+              { src: "/logos/glacecandela.png", alt: "Glace Candela" },
+              { src: "/logos/merz.png", alt: "Merz Aesthetics" },
+              { src: "/logos/galderma.png", alt: "Galderma" },
+              { src: "/logos/fillmed.png", alt: "Fillmed" },
+              { src: "/logos/mesoestetic.png", alt: "Mesoestetic" },
+              { src: "/logos/cantabrialabs.png", alt: "Cantabria Labs" },
+              { src: "/logos/skinceuticals2.png", alt: "SkinCeuticals" },
+              { src: "/logos/isclinical.png", alt: "IS Clinical" },
+              { src: "/logos/proxn.png", alt: "Pro XN" }
+            ].map((logo, index) => (
+              <div key={`tanda1-${index}`} className="flex-shrink-0 flex items-center justify-center h-10 md:h-12">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  loading="lazy"
+                  className="h-full w-auto object-contain max-w-[140px] md:max-w-[180px]" 
+                />
+              </div>
+            ))}
+
+            {/* TANDA 2: Clon exacto para que el bucle no dé saltos */}
+            {[
+              { src: "/logos/candela.png", alt: "Candela" },
+              { src: "/logos/nordlys.png", alt: "Nordlys" },
+              { src: "/logos/glacecandela.png", alt: "Glace Candela" },
+              { src: "/logos/merz.png", alt: "Merz Aesthetics" },
+              { src: "/logos/galderma.png", alt: "Galderma" },
+              { src: "/logos/fillmed.png", alt: "Fillmed" },
+              { src: "/logos/mesoestetic.png", alt: "Mesoestetic" },
+              { src: "/logos/cantabrialabs.png", alt: "Cantabria Labs" },
+              { src: "/logos/skinceuticals2.png", alt: "SkinCeuticals" },
+              { src: "/logos/isclinical.png", alt: "IS Clinical" },
+              { src: "/logos/proxn.png", alt: "Pro XN" }
+            ].map((logo, index) => (
+              <div key={`tanda2-${index}`} className="flex-shrink-0 flex items-center justify-center h-10 md:h-12">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  loading="lazy"
+                  className="h-full w-auto object-contain max-w-[140px] md:max-w-[180px]" 
+                />
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
 
         <footer className="py-12 border-t border-brand-sand/30 bg-white text-center mt-auto z-10 relative">
           <div className="max-w-4xl mx-auto px-4 space-y-6">
