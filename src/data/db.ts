@@ -306,7 +306,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'relleno-ojeras': {
     nombre: 'Relleno de ojeras',
     tituloDescripcion: '¿Qué es el relleno de ojeras con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/relleno-ojeras.jpg',
     descripcionBreve: 'Recupera la luz de tu mirada. Eliminamos el hundimiento y el aspecto de cansancio crónico.',
     antesDespues: AD,
     parametros: [
@@ -2767,7 +2767,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
           { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: '/tratamientos/rellenopomulos.jpeg' },
           { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: '/tratamientos/marcaje-mandibular.jpeg' },
           { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: '/tratamientos/menton.jpeg' },
-          { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: imgProvisional },
+          { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: '/tratamientos/relleno-ojeras.jpg' },
           { nombre: 'Relleno de fosa temporal.', subtitulo: 'Rejuvenecimiento Superior', slug: 'fosa-temporal', imagen: imgProvisional },
           { nombre: 'Tratamiento de surco nasogeniano.', subtitulo: 'Suavizado de Expresión', slug: 'surco-nasogeniano', imagen: '/tratamientos/surconasogeniano.jpeg' }
         ]
