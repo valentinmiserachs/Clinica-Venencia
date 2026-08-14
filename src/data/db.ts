@@ -446,7 +446,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'arrugas-expresion': {
     nombre: 'Tratamiento de arrugas de expresión',
     tituloDescripcion: '¿Qué es el tratamiento de arrugas de expresión (Neuromodulación)?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/arrugas-expresion.jpeg',
     descripcionBreve: 'Relaja la musculatura facial para suavizar arrugas, despejar la mirada y prevenir el envejecimiento.',
     antesDespues: {
       antes: "/casos/botox-antes.jpg",
@@ -499,7 +499,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'codigo-barras': {
     nombre: 'Corrección código de barras',
     tituloDescripcion: '¿Qué es la corrección del "código de barras"?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/codigo-barras.jpeg',
     descripcionBreve: 'Suaviza las arrugas periorales y rejuvenece tu sonrisa sin añadir volumen artificial al labio.',
     antesDespues: AD,
     parametros: [
@@ -545,7 +545,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'bandas-platismales': {
     nombre: 'Tratamiento de bandas platismales',
     tituloDescripcion: '¿Qué es el tratamiento de bandas platismales?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/bandas-plastismasles.jpeg',
     descripcionBreve: 'Rejuvenece el cuello, redefine el ángulo mandibular y elimina las cuerdas verticales.',
     antesDespues: AD,
     parametros: [
@@ -867,7 +867,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'sculptra': {
     nombre: 'Ácido Poli-L-Láctico (Sculptra)',
     tituloDescripcion: '¿Qué es el tratamiento de Ácido Poli-L-Láctico?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/sculptra.jpeg',
     descripcionBreve: 'Restituye la arquitectura interna de tu rostro estimulando tu propio colágeno para combatir la flacidez severa.',
     antesDespues: AD,
     parametros: [
@@ -1745,7 +1745,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'rosacea-cuperosis': {
     nombre: 'Patología Vascular Facial (Rosácea / Cuperosis)',
     tituloDescripcion: '¿Qué es el tratamiento de Control de Rosácea y Cuperosis?',
-    imagen: imgProvisional, // Se enlazará a la foto oficial más adelante
+    imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg', // Se enlazará a la foto oficial más adelante
     descripcionBreve: 'Calmamos la inflamación, eliminamos los capilares rotos y apagamos el enrojecimiento facial repentino (flushing).',
     antesDespues: AD,
     parametros: [
@@ -2372,7 +2372,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'rejuvenecimiento-manos': {
     nombre: 'Rejuvenecimiento de manos',
     tituloDescripcion: '¿Qué es el Rejuvenecimiento de Manos?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/rejuvenecimiento-manos.jpeg',
     descripcionBreve: 'Borramos las manchas solares y el aspecto esqueletizado para que tus manos revelen tanta juventud como tu rostro.',
     antesDespues: AD,
     parametros: [
@@ -2468,7 +2468,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'sonrisa-gingival': {
     nombre: 'Corrección de la Sonrisa Gingival',
     tituloDescripcion: '¿Cómo es el tratamiento de Corrección de la Sonrisa Gingival?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/sonrisa-gingival.jpeg',
     descripcionBreve: 'Armoniza tu sonrisa para evitar mostrar excesivas encías al reír, relajando la musculatura del labio superior.',
     antesDespues: AD,
     parametros: [
@@ -2765,7 +2765,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
           { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: imgProvisional },
           { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: '/tratamientos/rinomodelacion.jpeg' },
           { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: '/tratamientos/rellenopomulos.jpeg' },
-          { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: imgProvisional },
+          { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: '/tratamientos/marcaje-mandibular.jpeg' },
           { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: '/tratamientos/menton.jpeg' },
           { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: imgProvisional },
           { nombre: 'Relleno de fosa temporal.', subtitulo: 'Rejuvenecimiento Superior', slug: 'fosa-temporal', imagen: imgProvisional },
@@ -2775,9 +2775,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
       {
         nombre: '1.2. Tratamiento de Arrugas y Líneas de Expresión',
         tratamientos: [
-          { nombre: 'Tratamiento de arrugas de expresión.', subtitulo: 'Tercio Superior', slug: 'arrugas-expresion', imagen: imgProvisional },
-          { nombre: 'Corrección del "código de barras" (Arrugas periorales).', subtitulo: 'Rejuvenecimiento Perioral', slug: 'codigo-barras', imagen: imgProvisional },
-          { nombre: 'Tratamiento de bandas platismales (Anillos de Venus / Cuello).', subtitulo: 'Armonización de Cuello', slug: 'bandas-platismales', imagen: imgProvisional }
+          { nombre: 'Tratamiento de arrugas de expresión.', subtitulo: 'Tercio Superior', slug: 'arrugas-expresion', imagen: '/tratamientos/arrugas-expresion.jpeg' },
+          { nombre: 'Corrección del "código de barras" (Arrugas periorales).', subtitulo: 'Rejuvenecimiento Perioral', slug: 'codigo-barras', imagen:'/tratamientos/codigo-barras.jpeg' },
+          { nombre: 'Tratamiento de bandas platismales (Anillos de Venus / Cuello).', subtitulo: 'Armonización de Cuello', slug: 'bandas-platismales', imagen: '/tratamientos/bandas-plastismasles.jpeg' }
         ]
       },
       {
@@ -2794,7 +2794,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
         nombre: '1.4. Inductores de Colágeno (Efecto Lifting sin Cirugía)',
         tratamientos: [
           { nombre: 'Hidroxiapatita de Calcio (Radiesse).', subtitulo: 'Firmeza y Tensión', slug: 'radiesse', imagen: '/tratamientos/radiesse.jpeg' },
-          { nombre: 'Ácido Poli-L-Láctico. (Sculptra).', subtitulo: 'Lifting sin Cirugía', slug: 'sculptra', imagen: imgProvisional }
+          { nombre: 'Ácido Poli-L-Láctico. (Sculptra).', subtitulo: 'Lifting sin Cirugía', slug: 'sculptra', imagen: '/tratamientos/sculptra.jpeg' }
         ]
       },
       {
@@ -2823,7 +2823,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tieneSubcategorias: false,
     tratamientos: [
       { nombre: 'Mesoterapia capilar avanzada.', subtitulo: 'Nutrición Folicular', slug: 'mesoterapia-capilar', imagen: '/tratamientos/mesoterapia-capilar.jpeg' },
-      { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: imgProvisional },
+      { nombre: 'Terapia fotobiológica (Láser LED capilar).', subtitulo: 'Estimulación Lumínica', slug: 'laser-led-capilar', imagen: '/tratamientos/terapia-fotobiologica.jpeg' },
       { nombre: 'Plasma Rico en Plaquetas (PRP) Capilar.', subtitulo: 'Regeneración Folicular', slug: 'prp-capilar', imagen: '/tratamientos/prpcapilar.jpeg' },
       { nombre: 'Terapia regenerativa con Exosomas Capilares.', subtitulo: 'Regeneración Celular', slug: 'exosomas-capilar', imagen: '/tratamientos/exosomas-capilar.jpeg' },
       { nombre: 'Abordaje médico de la Alopecia y caída capilar.', subtitulo: 'Diagnóstico Integral', slug: 'alopecia', imagen: '/tratamientos/alopecia.jpeg' }
@@ -2845,7 +2845,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tratamientos: [
       { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: imgProvisional },
       { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: '/tratamientos/fotorejuvenecimiento.jpeg' },
-      { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', subtitulo: 'Control Vascular', slug: 'rosacea-nordlys', imagen: imgProvisional },
+      { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', subtitulo: 'Control Vascular', slug: 'rosacea-nordlys', imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg' },
       { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: imgProvisional },
       { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: imgProvisional },
       { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: imgProvisional },
@@ -2856,9 +2856,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
   'Tratamientos Avanzados': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Rejuvenecimiento de manos.', subtitulo: 'Cuidado Integral', slug: 'rejuvenecimiento-manos', imagen: imgProvisional },
+      { nombre: 'Rejuvenecimiento de manos.', subtitulo: 'Cuidado Integral', slug: 'rejuvenecimiento-manos', imagen: '/tratamientos/rejuvenecimiento-manos.jpeg'},
       { nombre: 'Tratamiento de la Hiperhidrosis.', subtitulo: 'Control de Sudoración', slug: 'hiperhidrosis', imagen: '/tratamientos/hyperhidrosis.jpeg' },
-      { nombre: 'Corrección de la Sonrisa Gingival.', subtitulo: 'Armonización Dental', slug: 'sonrisa-gingival', imagen: imgProvisional },
+      { nombre: 'Corrección de la Sonrisa Gingival.', subtitulo: 'Armonización Dental', slug: 'sonrisa-gingival', imagen: '/tratamientos/sonrisa-gingival.jpeg' },
       { nombre: 'Tratamiento médico del Bruxismo.', subtitulo: 'Salud y Bienestar', slug: 'bruxismo', imagen: '/tratamientos/bruxismo.jpeg' }
     ]
   }
