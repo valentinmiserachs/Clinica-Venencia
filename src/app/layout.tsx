@@ -30,6 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="es" className="scroll-smooth">
+      <head>
+        {/* VALIDACIÓN DOMINIO META ADS */}
+        <meta name="facebook-domain-verification" content="z14o5fuguo72gkxp7iryw0nf485kcz" />
+      </head>
       <body className={`${dmSans.variable} bg-brand-light text-brand-dark font-sans antialiased flex flex-col min-h-screen`}>
         
         {/* NAVBAR SUPERIOR FIJO */}
