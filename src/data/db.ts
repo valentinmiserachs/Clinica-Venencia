@@ -76,7 +76,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'hidratacion-labial': {
     nombre: 'Hidratación labial profunda',
     tituloDescripcion: '¿Qué es la hidratación labial profunda?',
-    imagen: imgProvisional, 
+    imagen: '/tratamientos/hidratacion-labios-profunda.jpg', 
     descripcionBreve: 'Recupera la jugosidad y suavidad de tus labios sin añadir volumen extra.', 
     antesDespues: AD,
     parametros: [
@@ -352,7 +352,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'fosa-temporal': {
     nombre: 'Relleno de fosa temporal',
     tituloDescripcion: '¿Qué es el relleno de la fosa temporal con ácido hialurónico?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/fosa-temporal.jpg',
     descripcionBreve: 'Rejuvenece el tercio superior y eleva la cola de la ceja restaurando el volumen de las sienes.',
     antesDespues: AD,
     parametros: [
@@ -647,7 +647,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-periocular': {
     nombre: 'Mesoterapia periocular',
     tituloDescripcion: '¿Qué es la mesoterapia periocular?',
-    imagen: '/tratamientos/mesoterapia-periocular.jpeg',
+    imagen: '/tratamientos/mesoterapia-periocular.jpg',
     descripcionBreve: 'Revitaliza tu mirada, atenúa las ojeras oscuras y suaviza las finas líneas de expresión.',
     antesDespues: AD,
     parametros: [
@@ -693,7 +693,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'bioestimulacion-polinucleotidos': {
     nombre: 'Bioestimulación con polinucleótidos',
     tituloDescripcion: '¿Qué es la bioestimulación con polinucleótidos?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/polinucleotidos.jpg',
     descripcionBreve: 'Regenera tu piel desde el interior restaurando la firmeza y elasticidad con tecnología celular avanzada.',
     antesDespues: AD,
     parametros: [
@@ -1100,7 +1100,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'inductores-corporales': { 
     nombre: 'Inductores de Colágeno Corporal',
     tituloDescripcion: '¿Qué es el tratamiento con inductores de colágeno corporal?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/inductores-colageno.jpg',
     descripcionBreve: 'Combate la flacidez y recupera la densidad de la piel de tu cuerpo mediante una estimulación celular profunda y duradera.',
     antesDespues: AD,
     parametros: [
@@ -1796,7 +1796,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'melasma': {
     nombre: 'Control y modulación del Melasma',
     tituloDescripcion: '¿Cómo es el tratamiento de Control y Modulación del Melasma?',
-    imagen: imgProvisional, // Se enlazará a tu foto cuando esté lista
+    imagen: '/tratamientos/melasma.jpg', // Se enlazará a tu foto cuando esté lista
     descripcionBreve: 'Enfoque médico especializado para atenuar, estabilizar y modular de forma segura las manchas crónicas y hormonales del rostro.',
     antesDespues: AD,
     parametros: [
@@ -1910,7 +1910,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'cicatrices-queloides': {
     nombre: 'Cicatrices Queloides y Cicatrices Hipertróficas',
     tituloDescripcion: '¿Qué técnicas se utilizan en el Tratamiento de Cicatrices Queloides e Hipertróficas?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/cicatriz-queloide.jpg',
     descripcionBreve: 'Aplanamos y blanqueamos cicatrices quirúrgicas abultadas y duras para hacerlas casi imperceptibles.',
     antesDespues: AD,
     parametros: [
@@ -2762,13 +2762,13 @@ export const tratamientosDB: Record<string, CategoriaData> = {
         nombre: '1.1. Armonización y Volúmenes',
         tratamientos: [
           { nombre: 'Voluminización y perfilado de labios.', subtitulo: 'Armonización Facial', slug: 'voluminizacion-labios', imagen: '/tratamientos/voluminizacion-labios.jpeg' },
-          { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: imgProvisional },
+          { nombre: 'Hidratación labial profunda.', subtitulo: 'Cuidado y Prevención', slug: 'hidratacion-labial', imagen: '/tratamientos/hidratacion-labios-profunda.jpg' },
           { nombre: 'Rinomodelación.', subtitulo: 'Perfilado sin Cirugía', slug: 'rinomodelacion', imagen: '/tratamientos/rinomodelacion.jpeg' },
           { nombre: 'Proyección y relleno de pómulos.', subtitulo: 'Estructura Facial', slug: 'relleno-pomulos', imagen: '/tratamientos/rellenopomulos.jpeg' },
           { nombre: 'Marcaje mandibular.', subtitulo: 'Definición del Óvalo', slug: 'marcaje-mandibular', imagen: '/tratamientos/marcaje-mandibular.jpeg' },
           { nombre: 'Proyección y corrección de mentón.', subtitulo: 'Equilibrio de Perfil', slug: 'correccion-menton', imagen: '/tratamientos/menton.jpeg' },
           { nombre: 'Relleno de ojeras.', subtitulo: 'Mirada Descansada', slug: 'relleno-ojeras', imagen: '/tratamientos/relleno-ojeras.jpg' },
-          { nombre: 'Relleno de fosa temporal.', subtitulo: 'Rejuvenecimiento Superior', slug: 'fosa-temporal', imagen: imgProvisional },
+          { nombre: 'Relleno de fosa temporal.', subtitulo: 'Rejuvenecimiento Superior', slug: 'fosa-temporal', imagen: '/tratamientos/fosa-temporal.jpg' },
           { nombre: 'Tratamiento de surco nasogeniano.', subtitulo: 'Suavizado de Expresión', slug: 'surco-nasogeniano', imagen: '/tratamientos/surconasogeniano.jpeg' }
         ]
       },
@@ -2783,9 +2783,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
       {
         nombre: '1.3. Calidad de Piel y Regeneración Celular',
         tratamientos: [
-          { nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico.', subtitulo: 'Nutrición Profunda', slug: 'mesoterapia-facial', imagen: '/tratamientos/mesoterapia-capilar.jpeg' },
-          { nombre: 'Mesoterapia periocular.', subtitulo: 'Cuidado del Contorno', slug: 'mesoterapia-periocular', imagen: imgProvisional },
-          { nombre: 'Bioestimulación con Polinucleótidos.', subtitulo: 'Regeneración Celular', slug: 'bioestimulacion-polinucleotidos', imagen: imgProvisional },
+          { nombre: 'Mesoterapia facial con vitaminas y ácido hialurónico.', subtitulo: 'Nutrición Profunda', slug: 'mesoterapia-facial', imagen: '/tratamientos/mesoterapia-facial.jpeg' },
+          { nombre: 'Mesoterapia periocular.', subtitulo: 'Cuidado del Contorno', slug: 'mesoterapia-periocular', imagen: '/tratamientos/mesoterapia-periocular.jpg' },
+          { nombre: 'Bioestimulación con Polinucleótidos.', subtitulo: 'Regeneración Celular', slug: 'bioestimulacion-polinucleotidos', imagen: '/tratamientos/polinucleotidos.jpg' },
           { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', subtitulo: 'Bioestimulación Autóloga', slug: 'prp-facial', imagen: '/tratamientos/prpfacial.jpeg' },
           { nombre: 'Terapia avanzada con Exosomas.', subtitulo: 'Medicina Regenerativa', slug: 'exosomas-facial', imagen: imgProvisional }
         ]
@@ -2812,7 +2812,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tratamientos: [
       { nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis).', subtitulo: 'Remodelación', slug: 'mesoterapia-lipolitica', imagen: imgProvisional },
       { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', subtitulo: 'Salud Vascular', slug: 'esclerosis-vascular', imagen: '/tratamientos/esclerosis-vascular.jpeg' },
-      { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: imgProvisional },
+      { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: '/tratamientos/inductores-colageno.jpg' },
       { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
       { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: '/tratamientos/maderoterapia.jpeg' },
       { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/corp-depilacion-laser.jpeg' },
@@ -2835,9 +2835,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Tratamiento integral del Acné.', subtitulo: 'Control Médico', slug: 'tratamiento-acne', imagen: '/tratamientos/integral-acne.jpeg' },
       { nombre: 'Eliminación de léntigos / Manchas solares.', subtitulo: 'Unificación del Tono', slug: 'eliminacion-lentigos', imagen: '/tratamientos/manchassolares.jpeg' },
       { nombre: 'Patología Vascular Facial (Rosácea / Cuperosis).', subtitulo: 'Estabilización Vascular', slug: 'rosacea-cuperosis', imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg' },
-      { nombre: 'Control y modulación del Melasma.', subtitulo: 'Tratamiento de Manchas Crónicas', slug: 'melasma', imagen: imgProvisional},
+      { nombre: 'Control y modulación del Melasma.', subtitulo: 'Tratamiento de Manchas Crónicas', slug: 'melasma', imagen: '/tratamientos/melasma.jpg'},
       { nombre: 'Cicatrices de Acné y Cicatrices Atróficas.', subtitulo: 'Alisado de la Piel', slug: 'cicatrices-acne', imagen: '/tratamientos/cicatrices-acne-cicatrices-atroficas.jpeg', },
-      { nombre: 'Cicatrices Queloides e Hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: imgProvisional }
+      { nombre: 'Cicatrices Queloides e Hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: '/tratamientos/cicatriz-queloide.jpg' }
     ]
   },
   'Láser y Plataforma Lumínica': {
