@@ -781,7 +781,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'exosomas-facial': {
     nombre: 'Terapia avanzada con exosomas',
     tituloDescripcion: '¿Qué es la terapia avanzada con exosomas?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/terapia-avanzada-exosomas.jpg',
     descripcionBreve: 'La vanguardia de la medicina regenerativa: reprogramación celular para una piel joven, firme y unificada.',
     antesDespues: AD,
     parametros: [
@@ -1008,7 +1008,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'mesoterapia-lipolitica': {
     nombre: 'Mesoterapia Lipolítica Corporal',
     tituloDescripcion: '¿Qué es la mesoterapia lipolítica corporal?',
-    imagen: '/tratamientos/mesoterapia-lipolitica.jpeg',
+    imagen: '/tratamientos/mesoterapia-lipolítica-corporal.jpg',
     descripcionBreve: 'Reduce la grasa localizada, combate la celulitis y reafirma tu figura con nuestro cóctel médico personalizado.',
     antesDespues: AD,
     parametros: [
@@ -1150,7 +1150,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'aumento-gluteos': {
     nombre: 'Aumento de glúteos con Ácido Hialurónico',
     tituloDescripcion: '¿Qué es la remodelación y aumento de glúteos con ácido hialurónico?',
-    imagen: imgProvisional, // Cambia esto por la variable de la foto si ya la tienes
+    imagen: '/tratamientos/aumento-gluteos.jpg', // Cambia esto por la variable de la foto si ya la tienes
     descripcionBreve: 'Tratamiento médico-estético corporal diseñado para proyectar, elevar, dar volumen y corregir imperfecciones como los hip dips de forma inmediata y sin cirugía.',
     antesDespues: AD,
     parametros: [
@@ -2787,7 +2787,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
           { nombre: 'Mesoterapia periocular.', subtitulo: 'Cuidado del Contorno', slug: 'mesoterapia-periocular', imagen: '/tratamientos/mesoterapia-periocular.jpg' },
           { nombre: 'Bioestimulación con Polinucleótidos.', subtitulo: 'Regeneración Celular', slug: 'bioestimulacion-polinucleotidos', imagen: '/tratamientos/polinucleotidos.jpg' },
           { nombre: 'Plasma Rico en Plaquetas (PRP) Facial.', subtitulo: 'Bioestimulación Autóloga', slug: 'prp-facial', imagen: '/tratamientos/prpfacial.jpeg' },
-          { nombre: 'Terapia avanzada con Exosomas.', subtitulo: 'Medicina Regenerativa', slug: 'exosomas-facial', imagen: imgProvisional }
+          { nombre: 'Terapia avanzada con Exosomas.', subtitulo: 'Medicina Regenerativa', slug: 'exosomas-facial', imagen: '/tratamientos/terapia-avanzada-exosomas.jpg' }
         ]
       },
       {
@@ -2810,10 +2810,10 @@ export const tratamientosDB: Record<string, CategoriaData> = {
   'Tratamientos Corporales': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis).', subtitulo: 'Remodelación', slug: 'mesoterapia-lipolitica', imagen: imgProvisional },
+      { nombre: 'Mesoterapia Lipolítica (Grasa Localizada y Celulitis).', subtitulo: 'Remodelación', slug: 'mesoterapia-lipolitica', imagen: '/tratamientos/mesoterapia-lipolítica-corporal.jpg' },
       { nombre: 'Esclerosis Vascular (Eliminación de varices y arañas vasculares).', subtitulo: 'Salud Vascular', slug: 'esclerosis-vascular', imagen: '/tratamientos/esclerosis-vascular.jpeg' },
       { nombre: 'Inductores de colágeno corporal (Firmeza y flacidez).', subtitulo: 'Firmeza Corporal', slug: 'inductores-corporales', imagen: '/tratamientos/inductores-colageno.jpg' },
-      { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: imgProvisional },
+      { nombre: 'Remodelación y aumento de glúteos con ácido hialurónico.', subtitulo: 'Armonización Corporal', slug: 'aumento-gluteos', imagen: '/tratamientos/aumento-gluteos.jpg' },
       { nombre: 'Maderoterapia Corporal.', subtitulo: 'Remodelación y Drenaje', slug: 'maderoterapia', imagen: '/tratamientos/maderoterapia.jpeg' },
       { nombre: 'Depilación Láser Médica.', subtitulo: 'Láser de Alta Potencia', slug: 'depilacion-laser', imagen: '/tratamientos/corp-depilacion-laser.jpeg' },
       { nombre: 'Control de Peso Médico (GLP-1).', subtitulo: 'Pérdida de Grasa Sostenible', slug: 'control-peso-medico', imagen: '/tratamientos/pesoglp1.jpeg' }
