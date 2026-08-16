@@ -1966,7 +1966,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'acne-activo-vl555': {
     nombre: 'Acné Activo e Inflamatorio (VL 555)',
     tituloDescripcion: '¿Qué es el tratamiento de Acné Activo con el sistema VL 555 de Nordlys?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/laser-acne-activo.jpeg',
     descripcionBreve: 'Frena el brote inflamatorio, destruye la bacteria del acné y reduce las rojeces post-lesionales en tiempo récord.',
     antesDespues: AD,
     parametros: [
@@ -2016,7 +2016,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'fotorejuvenecimiento-nordlys': {
     nombre: 'Fotorejuvenecimiento (PR 530 / CL 555)',
     tituloDescripcion: '¿Qué es el Fotorejuvenecimiento?',
-    imagen: '/tratamientos/fotorejuvenecimiento.jpeg',
+    imagen: '/tratamientos/laser-fotorejuvenecimiento.jpeg',
     descripcionBreve: 'Devuelve la luz y unifica el tono de tu rostro eliminando manchas solares y capilares en una sola sesión.',
     antesDespues: { 
       antes: "/casos/fotorejuvenecimiento-antes-01.jpg", 
@@ -2119,7 +2119,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'light-bright-nordlys': {
     nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright',
     tituloDescripcion: '¿Qué es el Tratamiento Light & Bright?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/laser-fotorejuvenecimiento-global.jpeg',
     descripcionBreve: 'Fusión sinérgica para renovar el tono, borrar manchas y remodelar la firmeza de la piel de una sola vez.',
     antesDespues: AD,
     parametros: [
@@ -2219,7 +2219,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
   'cicatrices-estrias-frax': {
     nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550)',
     tituloDescripcion: '¿Qué es el tratamiento de Cicatrices y Estrías con el sistema Frax 1550 de Candela?',
-    imagen: imgProvisional,
+    imagen: '/tratamientos/laser-cicatrices-acne.jpeg',
     descripcionBreve: 'Micro-estimulación térmica para romper el tejido fibrótico dañado y obligar a tu cuerpo a generar piel nueva y lisa.',
     antesDespues: AD,
     parametros: [
@@ -2843,12 +2843,12 @@ export const tratamientosDB: Record<string, CategoriaData> = {
   'Láser y Plataforma Lumínica': {
     tieneSubcategorias: false,
     tratamientos: [
-      { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: imgProvisional },
-      { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: '/tratamientos/fotorejuvenecimiento.jpeg' },
+      { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: '/tratamientos/laser-acne-activo.jpeg' },
+      { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: '/tratamientos/laser-fotorejuvenecimiento.jpeg' },
       { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', subtitulo: 'Control Vascular', slug: 'rosacea-nordlys', imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg' },
-      { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: imgProvisional },
-      { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: imgProvisional },
-      { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: imgProvisional },
+      { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: '/tratamientos/laser-fotorejuvenecimiento-global.jpeg'},
+      { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: '/tratamientos/laser-resurfacing-facial.jpeg' },
+      { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: '/tratamientos/laser-cicatrices-acne.jpeg' },
       { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', subtitulo: 'Eliminación Vascular', slug: 'hemangiomas-nordlys', imagen: '/tratamientos/hemangiomaspuntosrubi.jpeg' },
       { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-nordlys', imagen: '/tratamientos/fotodepilacion.jpeg' }
     ]
