@@ -1003,6 +1003,92 @@ export const tratamientosData: Record<string, Tratamiento> = {
     },
     parametros: [{ titulo: 'Técnica', valor: 'Aparatología Clínica / Cosmecéutica' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '1 - 2 meses' }]
   },
+  'glace-hidrodermoabrasion': {
+      nombre: 'Glacē: Hidrodermoabrasión Médica y Glass Skin',
+      tituloDescripcion: 'Limpia, exfolia, desintoxica e hidrata en profundidad',
+      imagen: '/tratamientos/tratamiento-glace.jpg',
+      descripcionBreve: 'Consigue una piel luminosa, fresca y renovada en una sola sesión con la tecnología Glacē™ de Candela Medical.',
+      antesDespues: AD,
+      parametros: [
+        { titulo: 'Técnica', valor: 'Hidrodermoabrasión Glacē™' },
+        { titulo: 'Tiempo', valor: '60 min' },
+        { titulo: 'Resultados', valor: 'Inmediatos (Flash)' },
+        { titulo: 'Recuperación', valor: 'Cero inactividad' }
+      ],
+      detalles: {
+        descripcion: 'En Clínica Venencia incorporamos la tecnología Glacē™ de Candela Medical, el estándar de excelencia en hidrodermoabrasión avanzada. Este protocolo médico-estético combina en un solo tratamiento la microdermoabrasión de precisión con diamantes, la infusión de activos de alta eficacia, el masaje desintoxicante (doble cupping) y la terapia LED con mascarilla hidratante.\n\nEl resultado es el efecto "Glass Skin": una piel visiblemente más suave, uniforme, profundamente limpia y con una luminosidad natural sin necesidad de reposo ni tiempos de inactividad.',
+        ventajas: [],
+        faqs: [
+          {
+            pregunta: '¿Cómo es el tratamiento Glacē?',
+            respuesta: 'El tratamiento Glacē™ actúa en 4 etapas:\n1. Exfoliación con diamantes de uso individual (DiamondGlacē): Adaptamos el nivel de dermoabrasión para retirar células muertas.\n2. Hidro-extracción e Infusión (GlacēVac™): Limpiamos el poro en profundidad mientras infundimos serums ricos en antioxidantes.\n3. Drenaje Linfático y Esculpido (GlacēMassage™): Masaje de doble ventosa para estimular el drenaje y definir contornos.\n4. Fototerapia LED & Mascarilla: Luz LED y nutrición intensiva para calmar y regenerar.'
+          },
+          {
+            pregunta: '¿Para qué tipos de piel está indicado?',
+            respuesta: 'Es apto para todo tipo de pieles, incluyendo las más sensibles o reactivas. Se personaliza al 100% gracias a puntas de diamante de diferente abrasión y succión regulable.'
+          },
+          {
+            pregunta: '¿Cuánto dura la sesión y qué se siente?',
+            respuesta: 'Dura unos 60 minutos. Es indolora y agradable; sentirás un suave efecto de succión y frescor constante.'
+          },
+          {
+            pregunta: '¿Requiere tiempo de baja o cuidados?',
+            respuesta: 'No. Tiene "zero downtime" (cero tiempo de inactividad). Puedes maquillarte y seguir con tu vida inmediatamente. Ideal previo a un evento ("efecto flash").'
+          },
+          {
+            pregunta: '¿Cuántas sesiones se recomiendan?',
+            respuesta: 'Efectos evidentes desde la primera sesión. Como mantenimiento antienvejecimiento, recomendamos realizarlo cada 2 a 4 semanas.'
+          },
+          {
+            pregunta: '¿Se puede combinar con otros tratamientos?',
+            respuesta: 'Sí, es la preparación ideal antes de neuromoduladores, ácido hialurónico, hilos o láser, garantizando un tejido limpio y permeable.'
+          }
+        ]
+      }
+    },
+    'protocolo-proxn': {
+      nombre: 'Protocolo PROXN®: Terapia Antioxidante',
+      tituloDescripcion: 'Terapia Antioxidante y Antiinflamatoria Avanzada',
+      imagen: '/tratamientos/tratamiento-proxn.jpg',
+      descripcionBreve: 'Restaura, calma y fortalece la barrera cutánea en pieles sensibles, con acné o patología inflamatoria.',
+      antesDespues: AD,
+      parametros: [
+        { titulo: 'Técnica', valor: 'Terapia con Xanthohumol' },
+        { titulo: 'Sesiones', valor: '3 a 6 (según pauta)' },
+        { titulo: 'Resultados', valor: 'Desde la 1ª sesión' },
+        { titulo: 'Descamación', valor: 'Ninguna' }
+      ],
+      detalles: {
+        descripcion: 'El Protocolo PROXN es un tratamiento médico-estético formulado a base de Xanthohumol, un complejo antioxidante de última generación hasta 30 veces más potente que la Vitamina C.\n\nEste protocolo está especialmente diseñado para tratar y calmar las pieles más vulnerables, reactivas o comprometidas: pieles con acné (activo o inflamatorio), rosácea, dermatitis, hiperpigmentación postinflamatoria o barrera cutánea dañada. Combate el estrés oxidativo, frena la inflamación crónica y devuelve la salud a tu piel.',
+        ventajas: [],
+        faqs: [
+          {
+            pregunta: '¿En qué consiste el tratamiento PROXN® en cabina?',
+            respuesta: 'Es una terapia facial profesional que aplica fórmulas de alta concentración de Xanthohumol combinadas con complejos calmantes. Incluye limpieza, exfoliación enzimática suave, infusión de activos y mascarilla reparadora.'
+          },
+          {
+            pregunta: '¿Cómo actúa el Xanthohumol en tu piel?',
+            respuesta: 'Actúa en tres niveles:\n1. Acción Antiinflamatoria: Inhibe citoquinas proinflamatorias, reduciendo enrojecimiento e hinchazón.\n2. Máxima Protección: Neutraliza radicales libres (30x más potente que Vit. C).\n3. Reparación de Barrera: Fortalece el manto hidrolipídico.'
+          },
+          {
+            pregunta: '¿Para qué pieles está indicado?',
+            respuesta: 'Ideal para:\n- Acné: Regula sebo y acelera cicatrización.\n- Rosácea/Cuperosis: Reduce reactividad y rojeces.\n- Pieles sensibles/atópicas: Repara barrera y reduce ardor.\n- Prevención Inflammaging: Combate envejecimiento microcelular.\n- Post-procedimiento: Acelera recuperación tras láser o peelings.'
+          },
+          {
+            pregunta: '¿Cuántas sesiones se necesitan?',
+            respuesta: 'Mejoría desde la primera sesión. Para acné o rosácea, pautamos de 3 a 6 sesiones (cada 3-4 semanas) para lograr estabilización duradera.'
+          },
+          {
+            pregunta: '¿Tiene algún efecto secundario o descamación?',
+            respuesta: 'No. PROXN® no es un peeling químico agresivo. No causa pelado, ni fotosensibilidad, permitiendo su uso todo el año.'
+          },
+          {
+            pregunta: '¿Puedo combinar PROXN® con mis tratamientos habituales?',
+            respuesta: 'Sí, es un excelente complemento pre/post procedimientos médicos (láser, infiltraciones) para preparar la piel o acelerar su recuperación.'
+          }
+        ]
+      }
+    },
 
   // --- 2. TRATAMIENTOS CORPORALES ---
   'mesoterapia-lipolitica': {
@@ -2664,7 +2750,7 @@ export const estructuraMenuTratamientos: MenuItem[] = [
         items: [
           { nombre: 'Tratamiento de arrugas de expresión.', slug: 'arrugas-expresion' },
           { nombre: 'Corrección del "código de barras" (Arrugas periorales).', slug: 'codigo-barras' },
-          { nombre: 'Tratamiento de bandas platismales (Anillos de Venus / Cuello).', slug: 'bandas-platismales' }
+          { nombre: 'Tratamiento de bandas platismales (Cuello).', slug: 'bandas-platismales' }
         ]
       },
       {
@@ -2685,8 +2771,10 @@ export const estructuraMenuTratamientos: MenuItem[] = [
         ]
       },
       {
-        nombre: '1.5. Renovación Cutánea:',
+        nombre: '1.5. RENOVACIÓN CUTÁNEA:',
         items: [
+          { nombre: 'Glacē™: Hidrodermoabrasión y Glass Skin', slug: 'glace-hidrodermoabrasion' },
+          { nombre: 'Protocolo PROXN®: Terapia Antioxidante', slug: 'protocolo-proxn' },
           { nombre: 'Peelings químicos médicos.', slug: 'peelings-quimicos' },
           { nombre: 'Microneedling médico.', slug: 'microneedling' },
           { nombre: 'Limpieza Facial Personalizada.', slug: 'limpieza-facial' }
@@ -2802,7 +2890,9 @@ export const tratamientosDB: Record<string, CategoriaData> = {
         tratamientos: [
           { nombre: 'Peelings químicos médicos.', subtitulo: 'Renovación Celular', slug: 'peelings-quimicos', imagen: '/tratamientos/peeling.jpeg' },
           { nombre: 'Microneedling médico.', subtitulo: 'Inducción de Colágeno', slug: 'microneedling', imagen: '/tratamientos/microneedling.jpeg' },
-          { nombre: 'Limpieza Facial Personalizada.', subtitulo: 'Higiene y Purificación', slug: 'limpieza-facial', imagen: '/tratamientos/limpieza-facial.jpeg' }
+          { nombre: 'Limpieza Facial Personalizada.', subtitulo: 'Higiene y Purificación', slug: 'limpieza-facial', imagen: '/tratamientos/limpieza-facial.jpeg' },
+          { nombre: 'Glacē: Hidrodermoabrasión Médica', subtitulo: 'Efecto Glass Skin', slug: 'glace-hidrodermoabrasion', imagen: '/tratamientos/tratamiento-glace.jpg' },
+          { nombre: 'Protocolo PROXN®', subtitulo: 'Terapia Antioxidante', slug: 'protocolo-proxn', imagen: '/tratamientos/tratamiento-proxn.jpg' }
         ]
       }
     ]
