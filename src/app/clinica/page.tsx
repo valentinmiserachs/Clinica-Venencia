@@ -69,6 +69,45 @@ export default function ClinicaPage() {
           </div>
         </section>
 
+        {/* LA NUTRICIONISTA (NORA GAJA) */}
+        <section className="flex flex-col md:flex-row-reverse items-center gap-16 lg:gap-24 pt-16 mt-16 border-t border-brand-sand/30">
+          
+          {/* Foto Nora */}
+          <div className="w-full md:w-5/12 relative aspect-[3/4] bg-brand-soft shadow-lg rounded-sm overflow-hidden">
+            <Image 
+              src="/foto-nutricionista.jpg" 
+              alt="Nora Gaja - Nutricionista Clínica Venencia" 
+              fill 
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover" 
+            />
+            <div className="absolute bottom-6 right-6 text-white z-10 text-right">
+              <span className="block font-serif text-2xl">Nora Gaja</span>
+              <span className="block text-[10px] uppercase tracking-widest mt-1 opacity-80">Dietista-Nutricionista Clínica</span>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+
+          {/* Texto Editorial */}
+          <div className="w-full md:w-7/12 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-serif text-brand-dark leading-snug">
+              &quot;El verdadero éxito antienvejecimiento no nace de la restricción, sino del equilibrio metabólico y la preservación muscular.&quot;
+            </h2>
+            
+            <div className="space-y-6 text-brand-dark/80 font-light leading-relaxed">
+              <p>
+                Nora Gaja es dietista-nutricionista especializada en nutrición clínica, respaldada por años de experiencia tanto en el ámbito hospitalario como en consulta privada. Su metodología huye de las pautas estandarizadas para centrarse en un enfoque rigurosamente científico y un acompañamiento adaptado a las necesidades y el estilo de vida de cada paciente.
+              </p>
+              <p>
+                En Clínica Venencia, Nora es la pieza fundamental para la optimización de la composición corporal. Lidera el abordaje nutricional de nuestro programa de Control de Peso Médico, trabajando en estrecha sinergia con los tratamientos farmacológicos de análogos de GLP-1.
+              </p>
+              <p>
+                Su labor trasciende la pérdida de peso tradicional: diseña estrategias individualizadas orientadas a favorecer una pérdida de grasa sostenida, preservar la masa muscular y optimizar la salud metabólica, garantizando resultados duraderos y un envejecimiento verdaderamente saludable.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* EL ESPACIO (LA CLÍNICA) */}
         <section className="bg-brand-sand/10 p-10 md:p-20 border border-brand-sand/30 rounded-sm">
           <div className="max-w-3xl mx-auto text-center space-y-8">
