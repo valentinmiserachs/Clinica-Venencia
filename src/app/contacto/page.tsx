@@ -11,11 +11,8 @@ export default function Contacto() {
           <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
             Ubicación y Contacto
           </span>
-          <h1 className="text-4xl md:text-6xl font-serif text-brand-dark">
-            Experimenta <span className="italic">Venencia</span>
-          </h1>
           <p className="max-w-2xl mx-auto text-brand-dark/80 font-light text-sm md:text-base">
-            Tu viaje hacia el equilibrio natural comienza aquí. Visítanos en nuestro espacio clínico diseñado para tu privacidad y confort.
+            Visítanos en nuestra clínica de Terrassa para una primera valoración médica gratuita. Solicita tu cita o información a través de nuestros canales de contacto.
           </p>
         </div>
 
@@ -48,7 +45,7 @@ export default function Contacto() {
             {/* Horarios */}
             <div>
               <h3 className="text-xs uppercase tracking-widest text-brand-terra mb-2">Horario</h3>
-              <p className="font-serif text-lg text-brand-dark">Agenda de Autor</p>
+              <p className="font-serif text-lg text-brand-dark">9:00-20:00hs</p>
               <p className="font-light text-sm text-brand-dark/70 mt-1">Atención exclusiva bajo cita previa para garantizar la máxima privacidad.</p>
             </div>
 

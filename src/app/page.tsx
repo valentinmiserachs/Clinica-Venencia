@@ -40,10 +40,10 @@ export default function Home() {
         <Image src={'/recepcion-hero.jpg'} alt="Venencia" fill priority sizes="100vw" className="object-cover object-[45%_center] z-0 opacity-50 mix-blend-multiply scale-[1.20]" />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-transparent to-brand-light z-0"></div>
         <div className="max-w-5xl text-center space-y-6 md:space-y-8 mt-40 md:mt-56 z-10 relative">
-          <span className="text-brand-terra text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em] block mb-2 md:mb-4">Medicina Estética de Autor</span>
+          <span className="text-brand-terra text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em] block mb-2 md:mb-4">Medicina Estética y Dermoestética Avanzada</span>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-brand-dark leading-tight md:leading-none">Tu piel, <br/><span className="italic text-brand-dark/80">nuestra especialidad.</span></h1>
           <p className="max-w-xl mx-auto text-brand-dark font-sans text-base md:text-xl font-light leading-relaxed mt-4 md:mt-6 px-4 md:px-0">
-            Combinamos experiencia, ciencia y sensibilidad para crear rutinas que respeten su equilibrio natural.
+            Trabajamos para mejorar la salud y la calidad de tu piel. Diagnosticamos y tratamos el tejido desde su origen para recuperar su estructura, luminosidad y frescura natural.
           </p>
         </div>
       </section>
