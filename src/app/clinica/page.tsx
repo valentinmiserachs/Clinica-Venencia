@@ -7,11 +7,11 @@ export default function ClinicaPage() {
     <main className="min-h-screen bg-brand-light text-brand-dark font-sans pt-32 pb-24 px-6 md:px-12">
       <div className="max-w-6xl mx-auto space-y-24">
         
-        {/* HERO EDITORIAL */}
+       {/* HERO EDITORIAL */}
         <section className="text-center space-y-6 max-w-4xl mx-auto">
-          <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Sobre Nosotros</span>
-          <h1 className="text-5xl md:text-7xl font-serif text-brand-dark leading-tight">
-            Elevamos la medicina estética a la categoría de arte.
+          {/* Mantenemos el diseño minimalista pero usamos etiqueta H1 para no hundir el SEO local */}
+          <h1 className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
+            Sobre Nosotros
           </h1>
           <div className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed pt-4 space-y-4">
             <p>
