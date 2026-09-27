@@ -31,6 +31,7 @@ export default function ClinicaPage() {
             alt="Interior de Clínica Venencia" 
             fill 
             sizes="100vw"
+            priority
             className="object-cover hover:scale-105 transition-transform duration-[2s]"
           />
         </section>
@@ -127,10 +128,10 @@ export default function ClinicaPage() {
                  <Image src="/clinica/recepcion.jpeg" alt="Detalle Clínica 1" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/clinica/box2.jpeg" alt="Detalle Clínica 2" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                 <Image src="/clinica/sala-espera.jpeg" alt="Detalle Clínica 2" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
-                 <Image src="/clinica/salaespera.jpeg" alt="Detalle Clínica 3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                 <Image src="/clinica/box3.jpeg" alt="Detalle Clínica 3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
             </div>
           </div>
