@@ -10,7 +10,7 @@ export default function ClinicaPage() {
        {/* HERO EDITORIAL */}
         <section className="text-center space-y-6 max-w-4xl mx-auto">
           {/* Mantenemos el diseño minimalista pero usamos etiqueta H1 para no hundir el SEO local */}
-          <h1 className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">
+          <h1 className="text-brand-terra text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold block">
             Sobre Nosotros
           </h1>
           <div className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed pt-4 space-y-4">
@@ -179,6 +179,23 @@ export default function ClinicaPage() {
                 <p>-Luminosidad y textura: Aporta hidratación profunda, mejorando el tono y la suavidad de forma inmediata.</p>
                 <p>-Acondicionamiento cutáneo: Mejora la permeabilidad y receptividad de la piel para potenciar los protocolos posteriores.</p>
               </div>
+            </div>
+
+            {/* FIRE-XEL CO2 */}
+            <div className="space-y-6 order-6 md:order-5">
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Láser CO2 Fraccionado y Quirúrgico (FIRE-Xel™️)</h3>
+              <p className="text-brand-dark/80 font-light leading-relaxed">
+                Sistema de referencia en regeneración y cirugía dermatológica menor. Permite actuar con máxima precisión tanto en la superficie como en capas profundas de la piel:
+              </p>
+              <div className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <p>Cirugía menor benigna: Eliminación de fibromas, verrugas, xantelasmas, nevos benignos y queratosis sin necesidad de puntos.</p>
+                <p>Renovación cutánea: Tratamiento del fotoenvejecimiento y disminución de arrugas, líneas de expresión, poros dilatados y textura irregular, mejorando la calidad global de la piel.</p>
+                <p>Corrección de cicatrices: Abordaje de cicatrices de acné y cicatrices quirúrgicas.</p>
+                <p>Firmeza y densidad: Activa la producción profunda de colágeno y elastina para recuperar la estructura del tejido.</p>
+              </div>
+            </div>
+            <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-5 md:order-6">
+               <Image src="/clinica/CO2.jpg" alt="Láser CO2 FIRE-Xel" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
             </div>
 
           </div>
