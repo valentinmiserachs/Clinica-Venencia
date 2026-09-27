@@ -13,9 +13,14 @@ export default function ClinicaPage() {
           <h1 className="text-5xl md:text-7xl font-serif text-brand-dark leading-tight">
             Elevamos la medicina estética a la categoría de arte.
           </h1>
-          <p className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed pt-4">
-            No creemos en la belleza estandarizada. En Clínica Venencia defendemos el lujo silencioso: resultados imperceptibles que devuelven la luz, la salud y la estructura natural a tu rostro.
-          </p>
+          <div className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed pt-4 space-y-4">
+            <p>
+              No creemos en la belleza estandarizada ni en los cambios drásticos. En Clínica Venencia entendemos la medicina estética como un medio para cuidar la salud de tu piel, preservar su estructura y acompañar el paso del tiempo con armonía.
+            </p>
+            <p>
+              Nuestro objetivo es sencillo: conseguir resultados sutiles e imperceptibles que devuelvan la luz y la frescura a tu rostro, respetando siempre tu esencia y tu expresión natural.
+            </p>
+          </div>
           <div className="w-16 h-[1px] bg-brand-sand mx-auto mt-8"></div>
         </section>
 
@@ -57,13 +62,13 @@ export default function ClinicaPage() {
             
             <div className="space-y-6 text-brand-dark/80 font-light leading-relaxed">
               <p>
-                La Dra. Trinidad Venencia es el alma clínica de nuestro centro. Especializada en Medicina Estética Avanzada y Regenerativa, ha forjado su trayectoria combinando el máximo rigor dermatológico con un profundo sentido de la proporción y la anatomía humana.
+                La Dra. Trinidad Venencia es la Directora Médica de nuestra clínica. Especializada en Medicina Estética Avanzada y Regenerativa, su forma de trabajar prioriza siempre la naturalidad y el respeto por tus rasgos.
               </p>
               <p>
-                Alejada de las tendencias de sobrecorrección y volúmenes artificiales que inundan el sector, la doctora ha creado un espacio clínico seguro en Terrassa. Aquí, cada abordaje se realiza bajo la lupa de la ecografía facial, asegurando que cada infiltración de neuromoduladores o inductores de colágeno se coloque en el plano anatómico exacto.
+                Su prioridad es acompañarte para recuperar la salud, la calidad y la vitalidad de tu piel a través de un diagnóstico preciso y protocolos combinados adaptados a la necesidad de cada paciente.
               </p>
               <p>
-                Su obsesión por la calidad de la piel la ha llevado a incorporar las plataformas lumínicas (láseres) y las terapias biológicas (exosomas y PRP) más exclusivas del mundo.
+                Un enfoque ético y honesto para que te reconozcas frente al espejo, sintiéndote en tu mejor versión.
               </p>
             </div>
           </div>
@@ -96,7 +101,7 @@ export default function ClinicaPage() {
             
             <div className="space-y-6 text-brand-dark/80 font-light leading-relaxed">
               <p>
-                Nora Gaja es dietista-nutricionista especializada en nutrición clínica, respaldada por años de experiencia tanto en el ámbito hospitalario como en consulta privada. Su metodología huye de las pautas estandarizadas para centrarse en un enfoque rigurosamente científico y un acompañamiento adaptado a las necesidades y el estilo de vida de cada paciente.
+                Nora Gaja es dietista-nutricionista especializada en nutrición clínica, respaldada tanto en el ámbito hospitalario como en consulta privada. Su metodología huye de las pautas estandarizadas para centrarse en un enfoque rigurosamente científico y un acompañamiento adaptado a las necesidades y el estilo de vida de cada paciente.
               </p>
               <p>
                 En Clínica Venencia, Nora es la pieza fundamental para la optimización de la composición corporal. Lidera el abordaje nutricional de nuestro programa de Control de Peso Médico, trabajando en estrecha sinergia con los tratamientos farmacológicos de análogos de GLP-1.
@@ -111,13 +116,12 @@ export default function ClinicaPage() {
         {/* EL ESPACIO (LA CLÍNICA) */}
         <section className="bg-brand-sand/10 p-10 md:p-20 border border-brand-sand/30 rounded-sm">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Nuestro Santuario</span>
-            <h3 className="text-3xl md:text-4xl font-serif text-brand-dark">Un refugio de calma clínica en Terrassa</h3>
+            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Nuestras instalaciones</span>
+            <h3 className="text-3xl md:text-4xl font-serif text-brand-dark">Un espacio en Terrassa diseñado para garantizar tu privacidad, comodidad y tranquilidad durante todo tu proceso.</h3>
             <p className="text-brand-dark/70 font-light leading-relaxed">
               Hemos diseñado nuestra clínica para que cruzar sus puertas sea el inicio de tu tratamiento. Un ambiente cálido, minimalista y orgánico, donde los aromas, la luz y la absoluta privacidad reemplazan la frialdad de las salas de espera tradicionales. 
             </p>
             
-            {/* Tres huecos para fotos de detalle de la clínica (recepción, cabina, láser) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="relative aspect-square bg-brand-soft overflow-hidden shadow-sm">
                  <Image src="/clinica/recepcion.jpeg" alt="Detalle Clínica 1" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
@@ -135,10 +139,10 @@ export default function ClinicaPage() {
         {/* VANGUARDIA TECNOLÓGICA (CANDELA MEDICAL) */}
         <section className="pt-10 md:pt-16">
           <div className="text-center space-y-4 mb-16 max-w-3xl mx-auto">
-            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Tecnología Gold Standard</span>
-            <h2 className="text-3xl md:text-4xl font-serif text-brand-dark">La ciencia detrás del lujo</h2>
+            <span className="text-brand-terra text-[10px] uppercase tracking-[0.4em] font-bold block">Tecnología y Seguridad Médica</span>
+            <h2 className="text-3xl md:text-4xl font-serif text-brand-dark">Eficiencia avalada por la ciencia</h2>
             <p className="text-brand-dark/70 font-light leading-relaxed">
-              Nuestra filosofía médica exige herramientas que garanticen la máxima seguridad y eficacia. Por eso, operamos en exclusiva con plataformas de Candela Medical, el referente mundial en dermatología avanzada.
+              En Clínica Venencia seleccionamos cada equipo bajo criterios de máxima seguridad, eficacia y evidencia científica. Por ello, apostamos por las plataformas médica de Candela Medical, referentes a nivel internacional en dermatología y medicina estética.
             </p>
           </div>
 
@@ -146,24 +150,16 @@ export default function ClinicaPage() {
             
             {/* NORDLYS */}
             <div className="space-y-6 order-2 md:order-1">
-              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Plataforma Nordlys™</h3>
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Plataforma Nordlys™️</h3>
               <p className="text-brand-dark/80 font-light leading-relaxed">
-                Considerada la plataforma lumínica más avanzada del mundo. Este sistema dual nos permite borrar el daño solar, tratar lesiones vasculares (rosácea, cuperosis) y estimular la regeneración de colágeno con precisión submilimétrica y sin tiempo de inactividad.
+                Sistema multiláser y de luz pulsada de banda estrecha diseñado para el tratamiento integral de la calidad de la piel:
               </p>
-              <ul className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Fotorrejuvenecimiento integral (Tecnología SWT®)
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Eliminación de rojeces y lesiones pigmentarias
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Aprobación clínica por la FDA y Marcado CE Europeo
-                </li>
-              </ul>
+              <div className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <p>-Fotodaño y manchas: Unifica el tono y atenúa las lesiones pigmentarias.</p>
+                <p>-Vascular: Trata el componente vascular en pieles con rosácea, cuperosis o rojeces.</p>
+                <p>-Estructura y textura: Estimula la síntesis de colágeno para recuperar la firmeza.</p>
+                <p>-Garantía médica: Equipamiento con certificación FDA y Marcado CE Europeo.</p>
+              </div>
             </div>
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-1 md:order-2">
                <Image src="/clinica/nordlys.jpeg" alt="Plataforma Nordlys de Candela" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
@@ -174,24 +170,15 @@ export default function ClinicaPage() {
                <Image src="/clinica/glace.jpeg" alt="Equipo Glace Hidrodermoabrasión" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
             </div>
             <div className="space-y-6 order-4">
-              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Glace™ Hydradermabrasion</h3>
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Candela Glacē™️</h3>
               <p className="text-brand-dark/80 font-light leading-relaxed">
-                El paso cero innegociable de cualquier protocolo médico. Más que una higiene, Glace es un sistema de hidrodermoabrasión clínica que extrae impurezas y difunde sueros terapéuticos en la dermis. Prepara el lienzo perfecto para maximizar la eficacia de nuestros inyectables y láseres.
+                Sistema de hidrodermoabrasión médica diseñado para optimizar la salud de la piel y preparar el tejido antes de otros procedimientos médicos:
               </p>
-              <ul className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Purificación profunda y extracción atraumática
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Infusión de activos dermatológicos de alta pureza
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-brand-terra rounded-full"></span> 
-                  Oxigenación dérmica y efecto flash inmediato
-                </li>
-              </ul>
+              <div className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <p>-Limpieza y exfoliación: Realiza una renovación celular suave y una extracción de impurezas sin agredir el tejido.</p>
+                <p>-Luminosidad y textura: Aporta hidratación profunda, mejorando el tono y la suavidad de forma inmediata.</p>
+                <p>-Acondicionamiento cutáneo: Mejora la permeabilidad y receptividad de la piel para potenciar los protocolos posteriores.</p>
+              </div>
             </div>
 
           </div>
