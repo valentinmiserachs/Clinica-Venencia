@@ -2816,7 +2816,7 @@ export const estructuraMenuTratamientos: MenuItem[] = [
     ]
   },
   {
-    nombre: '5. Láser y Plataforma Lumínica',
+    nombre: '5. Plataformas Médicas y Láser',
     items: [
       { nombre: 'Acné Activo e Inflamatorio (VL 555).', slug: 'acne-activo-vl555' },
       { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', slug: 'fotorejuvenecimiento-nordlys' },
@@ -2930,7 +2930,7 @@ export const tratamientosDB: Record<string, CategoriaData> = {
       { nombre: 'Cicatrices Queloides e Hipertróficas.', subtitulo: 'Remodelación Cutánea', slug: 'cicatrices-queloides', imagen: '/tratamientos/cicatriz-queloide.jpg' }
     ]
   },
-  'Láser y Plataforma Lumínica': {
+  'Plataformas Médicas y Láser': {
     tieneSubcategorias: false,
     tratamientos: [
       { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: '/tratamientos/laser-acne-activo.jpeg' },
