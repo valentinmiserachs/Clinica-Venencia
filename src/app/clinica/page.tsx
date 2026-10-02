@@ -198,7 +198,22 @@ export default function ClinicaPage() {
             <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-5 md:order-6">
                <Image src="/clinica/CO2.jpg" alt="Láser CO2 FIRE-Xel" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
             </div>
-
+            {/* ULTRAFORMER HIFU */}
+            <div className="relative aspect-square md:aspect-[4/5] bg-brand-soft shadow-sm overflow-hidden order-7">
+               <Image src="/clinica/hifu.jpg" alt="Equipo Ultraformer HIFU" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover mix-blend-multiply opacity-90" />
+            </div>
+            <div className="space-y-6 order-8">
+              <h3 className="text-2xl font-serif text-brand-dark border-b border-brand-sand/30 pb-4">Ultrasonidos Focalizados de Alta Intensidad (Ultraformer)</h3>
+              <p className="text-brand-dark/80 font-light leading-relaxed">
+                Sistema médico de referencia internacional para el tensado cutáneo y la remodelación tisular sin cirugía:
+              </p>
+              <div className="space-y-3 text-sm font-light text-brand-dark/70 pt-2">
+                <p>- Sostén y arquitectura facial: Actúa sobre el plano SMAS (capa muscular superficial) provocando la contracción de los tejidos para redefinir el óvalo facial, la papada y el cuello.</p>
+                <p>- Neocolagénesis profunda: Genera micropuntos de coagulación térmica en la dermis para estimular la producción natural de colágeno y elastina a largo plazo.</p>
+                <p>- Compactación sin tiempo de baja: Aporta firmeza, densidad y prevención de la flacidez respetando la capa externa de la piel y permitiendo una reincorporación inmediata.</p>
+                <p>- Garantía médica: Equipamiento de alta precisión médica con certificación FDA y Marcado CE Europeo.</p>
+              </div>
+            </div>
           </div>
         </section>
 

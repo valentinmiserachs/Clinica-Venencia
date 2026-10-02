@@ -992,17 +992,165 @@ export const tratamientosData: Record<string, Tratamiento> = {
       ]
     }
   },
-  'limpieza-facial': {
-    nombre: 'Limpieza Facial Personalizada',
-    imagen: '/tratamientos/limpieza-facial.jpeg', descripcionBreve: 'Higiene purificante de grado clínico. Prepara, vacía los poros y equilibra la microbiota de tu piel.', antesDespues: AD,
-    detalles: {
-      descripcion: 'Mucho más que una higiene tradicional en cabina. Diseñamos un protocolo personalizado (hidrodermoabrasión, peeling enzimático, extracción ultrasónica) para desincrustar la suciedad y el sebo oxidado de los poros sin agresiones manuales, estabilizando el manto lipídico protector.',
-      ventajas: ['Piel oxigenada, suave y libre de comedones.', 'Minimiza la apariencia del poro dilatado.', 'Paso previo indispensable para maximizar la eficacia de láseres e infiltraciones.'],
-      faqs: [{ pregunta: '¿Saldré con la cara irritada o marcada?', respuesta: 'No. Nuestros protocolos finalizan con activos calmantes que dejan la piel perfecta inmediatamente.' }],
-      evidencia: []
-    },
-    parametros: [{ titulo: 'Técnica', valor: 'Aparatología Clínica / Cosmecéutica' }, { titulo: 'Tiempo', valor: '60 min' }, { titulo: 'Resultados', valor: 'Inmediatos' }, { titulo: 'Duración', valor: '1 - 2 meses' }]
-  },
+ 'higiene-facial-glow': {
+    nombre: 'Higiene Facial Glow',
+    tituloDescripcion: 'Aportar luz inmediata, limpiar impurezas superficiales y mantener el rostro fresco.',
+    imagen: '/tratamientos/higiene-glow.jpg',
+    descripcionBreve: 'Aporta luz inmediata, limpia impurezas superficiales y mantiene el rostro fresco.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Microdermoabrasión' },
+      { titulo: 'Sesiones', valor: 'Mantenimiento mensual' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Recuperación', valor: 'Ninguna' }
+    ],
+    detalles: {
+      descripcion: 'Indicado para: Pieles que presentan tono apagado que buscan un mantenimiento mensual para conservar la vitalidad y la frescura natural del rostro.',
+      ventajas: [
+        'Doble limpieza purificante',
+        'Microdermoabrasión con punta de diamante',
+        'Tónico equilibrante e hidratación profunda',
+        'Mascarilla antioxidante',
+        'Sérum concentrado y protección solar alta'
+      ],
+      faqs: [
+        {
+          pregunta: '¿Puedo reservar este tratamiento si no sé si es el adecuado para mi piel?',
+          respuesta: 'Sí, totalmente. La elección final del protocolo depende del estado de tu piel el día de la cita. En la clínica evaluamos tu piel antes de comenzar para confirmarte si este es el tratamiento idóneo o si requiere otro enfoque.'
+        },
+        {
+          pregunta: '¿Es dolorosa la microdermoabrasión con punta de diamante?',
+          respuesta: 'No, es un proceso totalmente indoloro. Se siente como un suave masaje de succión que retira las células muertas sin agredir la piel.'
+        },
+        {
+          pregunta: '¿Puedo hacérmelo antes de un evento?',
+          respuesta: 'Sí, es un tratamiento ideal para realizar 24 a 48 horas antes de un evento, ya que deja la piel luminosa, suave y sin tiempo de recuperación.'
+        }
+      ],
+      evidencia: []
+    }
+  },
+  'limpieza-facial-renovadora': {
+    nombre: 'Limpieza Facial Renovadora',
+    tituloDescripcion: 'Restaurar los niveles de hidratación, eliminar células muertas, suavizar la textura de la piel y devolverle una sensación de calma y confort inmediato.',
+    imagen: '/tratamientos/limpieza-renovadora.jpg',
+    descripcionBreve: 'Restaura los niveles de hidratación, elimina células muertas y devuelve una sensación de calma y confort inmediato.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Punta de diamante + Enzimático' },
+      { titulo: 'Sesiones', valor: 'Cada 4 a 6 semanas' },
+      { titulo: 'Resultados', valor: 'Inmediatos' },
+      { titulo: 'Recuperación', valor: 'Ninguna' }
+    ],
+    detalles: {
+      descripcion: 'Indicado para: Pieles secas, deshidratadas o apagadas que necesitan renovar la textura cutánea, devolver el confort a la piel y recuperar un aspecto jugoso y descansado.',
+      ventajas: [
+        'Doble limpieza preparatoria',
+        'Renovación dual: Punta de diamante + Peeling enzimático',
+        'Tónico equilibrante',
+        'Mascarilla descongestiva y desinflamante',
+        'Mascarilla antioxidante',
+        'Hidratación profunda y protección solar alta'
+      ],
+      faqs: [
+        {
+          pregunta: '¿En qué se diferencia de la Higiene Facial Glow?',
+          respuesta: 'Mientras que la opción Glow es un mantenimiento express para aportar luminosidad inmediata, la Limpieza Renovadora es un protocolo más completo (75 min) que suma un peeling enzimático a la punta de diamante y doble mascarilla para tratar la deshidratación y devolver el confort a la piel.'
+        },
+        {
+          pregunta: '¿Qué diferencia al peeling enzimático de un peeling químico tradicional?',
+          respuesta: 'El peeling enzimático trabaja de forma suave disolviendo los enlaces de las células muertas en superficie, sin causar pelado ni irritación posterior.'
+        },
+        {
+          pregunta: '¿Cada cuánto tiempo se recomienda realizarlo?',
+          respuesta: 'Lo ideal es realizarlo cada 4 a 6 semanas para acompañar el ciclo de renovación celular natural y preservar la salud y la hidratación de la barrera cutánea.'
+        }
+      ],
+      evidencia: []
+    }
+  },
+  'higiene-facial-profunda-detox': {
+    nombre: 'Higiene Facial Profunda Detox',
+    tituloDescripcion: 'Limpiar el poro de impurezas, equilibrar la producción de grasa y purificar la piel mediante extracción y fototerapia.',
+    imagen: '/tratamientos/higiene-detox.jpg',
+    descripcionBreve: 'Limpia el poro, equilibra la producción de grasa y purifica la piel mediante extracción y fototerapia.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Extracción, Peeling y LED' },
+      { titulo: 'Sesiones', valor: 'Según valoración' },
+      { titulo: 'Resultados', valor: 'Piel purificada' },
+      { titulo: 'Recuperación', valor: 'Ligera rojez (horas)' }
+    ],
+    detalles: {
+      descripcion: 'Indicado para: Pieles mixtas, grasas o con tendencia a la acumulación de puntos negros, comedones, quistes de milium, poros obstruidos o textura irregular que requieren una limpieza minuciosa y acción bactericida.',
+      ventajas: [
+        'Doble limpieza purificante',
+        'Preparación de la piel con vaporizador',
+        'Microdermoabrasión con punta de diamante',
+        'Peeling químico adaptado (enzimático o salicílico)',
+        'Extracción minuciosa de comedones, impurezas y quistes de milium',
+        'Tónico equilibrante',
+        'Mascarilla descongestiva/desinflamante',
+        'Mascarilla antioxidante',
+        'Hidratación profunda',
+        'Fototerapia LED (Terapia de luz reparadora/bactericida)',
+        'Protección solar alta'
+      ],
+      faqs: [
+        {
+          pregunta: '¿Saldré con la piel roja tras la extracción?',
+          respuesta: 'Aplicamos mascarillas descongestivas y fototerapia LED al final de la sesión para calmar la piel. Si aparece alguna ligera rojez por la extracción manual, suele remitir en pocas horas.'
+        },
+        {
+          pregunta: '¿Para qué sirve la Fototerapia LED al final de la sesión?',
+          respuesta: 'Emitimos luz específica para acelerar la recuperación de la piel tras la extracción y ejercer un efecto purificante y bactericida que ayuda a prevenir nuevos brotes.'
+        },
+        {
+          pregunta: '¿Qué cuidados debo seguir las primeras 24 horas?',
+          respuesta: 'Evita la exposición solar directa, el uso de retinoides o ácidos en casa, saunas, ejercicio intenso y maquillaje pesado durante el primer día.'
+        }
+      ],
+      evidencia: []
+    }
+  },
+  'protocolo-venencia-glow': {
+    nombre: 'Protocolo Venencia Glow & Regeneración',
+    tituloDescripcion: 'Inducir la renovación celular, estimular la síntesis de colágeno y rejuvenecer de forma integral el rostro, con foco en el contorno de ojos y labios.',
+    imagen: '/tratamientos/venencia-glow.jpg',
+    descripcionBreve: 'Rejuvenecimiento integral del rostro, con foco en el contorno de ojos y labios, mediante infusión de vitaminas y micropunción.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Técnica', valor: 'Dermapen, Peeling y LED' },
+      { titulo: 'Sesiones', valor: 'Pauta acumulativa' },
+      { titulo: 'Resultados', valor: 'Efecto buena cara inmediato' },
+      { titulo: 'Recuperación', valor: 'Ligero rubor (24-48h)' }
+    ],
+    detalles: {
+      descripcion: 'Indicado para: Pieles maduras o con primeros signos de envejecimiento que buscan un tratamiento completo de firmeza, nutrición vitamínica y cuidado de zonas delicadas en una sola sesión.',
+      ventajas: [
+        'Higiene y Renovación: Doble limpieza, vaporizador, microdermoabrasión, peeling médico adaptado (enzimático/salicílico) y extracciones.',
+        'Tratamiento Específico Periocular y Labial: Exfoliación e hidratación labial + Parches de relleno e hidratación para líneas de expresión en el contorno de ojos.',
+        'Revitalización Celular: Infusión de complejo vitamínico mediante Dermapen (microneedling).',
+        'Calma y Reparación: Mascarilla descongestiva, mascarilla antioxidante y fototerapia LED.',
+        'Finalización: Hidratación profunda y protección solar alta.'
+      ],
+      faqs: [
+        {
+          pregunta: '¿Tiene tiempo de recuperación el uso de Dermapen?',
+          respuesta: 'Al tratarse de una infusión de vitaminas con micro agujas finas, puede aparecer un ligero rubor que remite en 24-48 horas. La fototerapia LED y las mascarillas al final de la sesión reducen notablemente la rojez.'
+        },
+        {
+          pregunta: '¿Con cuánta antelación debo agendarlo si tengo un evento?',
+          respuesta: 'Recomendamos realizar este protocolo entre 5 y 7 días antes del evento para permitir que la piel absorba completamente la nutrición vitamínica y luzca su máximo punto de firmeza y luminosidad.'
+        },
+        {
+          pregunta: '¿Cuándo comenzaré a notar los resultados en la calidad de la piel?',
+          respuesta: 'El efecto "buena cara", la hidratación profunda y la luminosidad son inmediatos tras la sesión. En cuanto a la firmeza, una sola sesión aporta un primer estímulo de colágeno e infusión de activos, pero para obtener cambios estructurales en la densidad de la piel se requiere un protocolo acumulativo de varias sesiones pautadas en consulta.'
+        }
+      ],
+      evidencia: []
+    }
+  },
   'glace-hidrodermoabrasion': {
       nombre: 'Glacē: Hidrodermoabrasión Médica y Glass Skin',
       tituloDescripcion: 'Limpia, exfolia, desintoxica e hidrata en profundidad',
@@ -1089,6 +1237,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
         ]
       }
     },
+    
 
   // --- 2. TRATAMIENTOS CORPORALES ---
   'mesoterapia-lipolitica': {
@@ -2100,7 +2249,7 @@ export const tratamientosData: Record<string, Tratamiento> = {
     }
   },
   'fotorejuvenecimiento-nordlys': {
-    nombre: 'Fotorejuvenecimiento (PR 530 / CL 555)',
+    nombre: 'Fotorejuvenecimiento (PR 530 / VL 555)',
     tituloDescripcion: '¿Qué es el Fotorejuvenecimiento?',
     imagen: '/tratamientos/laser-fotorejuvenecimiento.jpeg',
     descripcionBreve: 'Devuelve la luz y unifica el tono de tu rostro eliminando manchas solares y capilares en una sola sesión.',
@@ -2452,6 +2601,50 @@ export const tratamientosData: Record<string, Tratamiento> = {
       ]
     }
   },
+'tensado-cutaneo-hifu': {
+    nombre: 'Tensado Cutáneo y Flacidez (Ultraformer - HIFU)',
+    tituloDescripcion: '¿Qué es el Tensado Cutáneo con HIFU y qué tecnología se utiliza?',
+    imagen: '/clinica/hifu.jpg',
+    descripcionBreve: 'Tratamiento médico no invasivo diseñado para combatir la flacidez, reafirmar los tejidos y redefinir el óvalo facial sin cirugía.',
+    antesDespues: AD,
+    parametros: [
+      { titulo: 'Tecnología', valor: 'Ultraformer III / MPT (HIFU)' },
+      { titulo: 'Tiempo', valor: '45-75 min según la zona' },
+      { titulo: 'Resultados', valor: 'Inmediatos (10-20%) y progresivos' },
+      { titulo: 'Sesiones', valor: '1 a 2 sesiones al año' }
+    ],
+    detalles: {
+      descripcion: 'El Tensado Cutáneo mediante HIFU (High-Intensity Focused Ultrasound) es un tratamiento médico no invasivo diseñado para combatir la flacidez, reafirmar los tejidos y redefinir el óvalo facial sin necesidad de cirugía ni tiempo de baja. Esta plataforma emite ondas de ultrasonido de alta intensidad que alcanzan el plano SMAS (Sistema Músculo-Aponuerótico Superficial) provocando un tensado profundo y duradero.\n\nEn nuestra clínica utilizamos Ultraformer, la plataforma médica de ultrasonidos focalizados de última generación. Su tecnología trabaja mediante micropuntos de coagulación térmica precisos a diferentes profundidades fijas (1.5 mm, 3.0 mm y 4.5 mm), generando una respuesta biológica inmediata y una remodelación tisular progresiva:\n\n- Plano SMAS (4.5 mm): Genera la contracción y el anclaje del tejido muscular y facial, redefiniendo la línea mandibular, la papada y el cuello.\n- Dermis Profunda y Superficial (3.0 mm y 1.5 mm): Estimula la síntesis de colágeno y elastina, densificando la piel, mejorando la elasticidad y suavizando arrugas finas en rostro, periocular y escote.\n\nLa precisión de Ultraformer permite concentrar la energía térmica en la profundidad exacta deseada sin lesionar la epidermis ni los tejidos adyacentes, lo que garantiza máxima seguridad, confort y una reincorporación inmediata a tu rutina.',
+      ventajas: [],
+      faqs: [
+        {
+          pregunta: '¿Es doloroso el tratamiento con Ultraformer?',
+          respuesta: 'Se perciben pequeños impulsos térmicos o cosquilleo en profundidad, especialmente en zonas de relieve óseo como la línea mandibular. Es una molestia tolerable y transitoria que adaptamos según la sensibilidad de cada paciente ajustando los parámetros de la sesión.'
+        },
+        {
+          pregunta: '¿Cuándo se aprecian los resultados y cuánto duran?',
+          respuesta: 'Se observa un efecto de compactación inicial ligero por la contracción térmica inmediata del colágeno. Sin embargo, el resultado real y la reestructuración del tejido se consolidan entre los 2 y 3 meses posteriores a medida que el organismo genera nuevo colágeno. Sus efectos suelen mantenerse entre 12 y 18 meses.'
+        },
+        {
+          pregunta: '¿Requiere tiempo de recuperación o baja médica?',
+          respuesta: 'No. Al respetar la capa superficial de la piel, no se producen pelados ni heridas. Puedes reincorporarte a tus actividades diarias inmediatamente. En algunos casos puede aparecer un ligero rubor o una discreta molestia al tacto similar a "agujetas" musculares que remite en pocos días.'
+        },
+        {
+          pregunta: '¿En qué zonas se puede realizar el tratamiento?',
+          respuesta: 'Está indicado para el tercio inferior del rostro (definición del óvalo y surcos nasogenianos), zona submentoniana (papada), cuello, escote y elevación del arco de la ceja.'
+        },
+        {
+          pregunta: '¿Se puede combinar con otros tratamientos estéticos?',
+          respuesta: 'Sí, es totalmente combinable. Funciona de manera sinérgica con tratamientos de calidad de piel (como la higiene facial o inductores de colágeno) o plataformas médicas lumínicas, pautando el intervalo adecuado entre sesiones según el plan médico personalizado.'
+        },
+        {
+          pregunta: '¿Cuáles son las contraindicaciones del tratamiento?',
+          respuesta: 'Está contraindicado en caso de embarazo o lactancia, infecciones activas o heridas en la zona a tratar, marcapasos o dispositivos electrónicos implantados, o parálisis facial previa en la zona de tratamiento.'
+        }
+      ],
+      evidencia: []
+    }
+  },
 
   // --- 6. TRATAMIENTOS AVANZADOS ---
   // --- 6. TRATAMIENTOS AVANZADOS ---
@@ -2692,7 +2885,10 @@ export const indiceBusquedaGlobal = [
   { nombre: 'Sculptra', slug: 'sculptra', categoria: 'Faciales', palabrasClave: 'colageno, acido polilactico' },
   { nombre: 'Peelings químicos médicos', slug: 'peelings-quimicos', categoria: 'Faciales', palabrasClave: 'peeling, renovacion' },
   { nombre: 'Microneedling médico', slug: 'microneedling', categoria: 'Faciales', palabrasClave: 'dermapen, marcas' },
-  { nombre: 'Limpieza Facial Personalizada', slug: 'limpieza-facial', categoria: 'Faciales', palabrasClave: 'limpieza, higiene' },
+  { nombre: 'Higiene Facial Glow', slug: 'higiene-facial-glow', categoria: 'Faciales', palabrasClave: 'limpieza, glow, luminosidad, express, brillo' },
+  { nombre: 'Limpieza Facial Renovadora', slug: 'limpieza-facial-renovadora', categoria: 'Faciales', palabrasClave: 'limpieza, hidratacion, renovadora, peeling enzimatico, piel seca' },
+  { nombre: 'Higiene Facial Profunda Detox', slug: 'higiene-facial-profunda-detox', categoria: 'Faciales', palabrasClave: 'limpieza profunda, detox, extraccion, puntos negros, poros, granos, comedones' },
+  { nombre: 'Protocolo Venencia Glow & Regeneración', slug: 'protocolo-venencia-glow', categoria: 'Faciales', palabrasClave: 'venencia glow, dermapen, vitaminas, rejuvenecimiento, microneedling, ojeras' },
   { nombre: 'Mesoterapia Lipolítica', slug: 'mesoterapia-lipolitica', categoria: 'Corporales', palabrasClave: 'grasa, celulitis' },
   { nombre: 'Esclerosis Vascular', slug: 'esclerosis-vascular', categoria: 'Corporales', palabrasClave: 'varices, arañas' },
   { nombre: 'Inductores de Colágeno Corporal', slug: 'inductores-corporales', categoria: 'Corporales', palabrasClave: 'flacidez corporal' },
@@ -2718,6 +2914,7 @@ export const indiceBusquedaGlobal = [
   { nombre: 'Cicatrices de Acné y Estrías (Frax)', slug: 'cicatrices-estrias-frax', categoria: 'Láser', palabrasClave: 'cicatrices laser, estrias, frax 1550, marcas' },
   { nombre: 'Hemangiomas y Puntos Rubí', slug: 'hemangiomas-nordlys', categoria: 'Láser', palabrasClave: 'puntos rubi, hemangiomas, lunares rojos, vascular' },
   { nombre: 'Fotodepilación Médica (HR 600)', slug: 'depilacion-nordlys', categoria: 'Láser', palabrasClave: 'depilacion laser, vello, pelo, hr 600' },
+  { nombre: 'Tensado Cutáneo y Flacidez (Ultraformer - HIFU)', slug: 'tensado-cutaneo-hifu', categoria: 'Láser', palabrasClave: 'hifu, ultraformer, flacidez, tensado, lifting sin cirugia, smas, papada, cuello, arrugas' },
   { nombre: 'Rejuvenecimiento manos', slug: 'rejuvenecimiento-manos', categoria: 'Avanzados', palabrasClave: 'manos' },
   { nombre: 'Hiperhidrosis', slug: 'hiperhidrosis', categoria: 'Avanzados', palabrasClave: 'sudor, axilas' },
   { nombre: 'Sonrisa Gingival', slug: 'sonrisa-gingival', categoria: 'Avanzados', palabrasClave: 'encias, sonrisa' },
@@ -2777,7 +2974,10 @@ export const estructuraMenuTratamientos: MenuItem[] = [
           { nombre: 'Protocolo PROXN®: Terapia Antioxidante', slug: 'protocolo-proxn' },
           { nombre: 'Peelings químicos médicos.', slug: 'peelings-quimicos' },
           { nombre: 'Microneedling médico.', slug: 'microneedling' },
-          { nombre: 'Limpieza Facial Personalizada.', slug: 'limpieza-facial' }
+          { nombre: 'Higiene Facial Glow', slug: 'higiene-facial-glow' },
+          { nombre: 'Limpieza Facial Renovadora', slug: 'limpieza-facial-renovadora' },
+          { nombre: 'Higiene Facial Profunda Detox', slug: 'higiene-facial-profunda-detox' },
+          { nombre: 'Protocolo Venencia Glow & Regeneración', slug: 'protocolo-venencia-glow' },
         ]
       }
     ]
@@ -2825,7 +3025,8 @@ export const estructuraMenuTratamientos: MenuItem[] = [
       { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', slug: 'resurfacing-frax' },
       { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', slug: 'cicatrices-estrias-frax' },
       { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', slug: 'hemangiomas-nordlys' },
-      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', slug: 'depilacion-nordlys' }
+      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', slug: 'depilacion-nordlys' },
+      { nombre: 'Tensado Cutáneo y Flacidez (Ultraformer - HIFU)', slug: 'tensado-cutaneo-hifu' },
     ]
   },
   {
@@ -2890,7 +3091,10 @@ export const tratamientosDB: Record<string, CategoriaData> = {
         tratamientos: [
           { nombre: 'Peelings químicos médicos.', subtitulo: 'Renovación Celular', slug: 'peelings-quimicos', imagen: '/tratamientos/peeling.jpeg' },
           { nombre: 'Microneedling médico.', subtitulo: 'Inducción de Colágeno', slug: 'microneedling', imagen: '/tratamientos/microneedling.jpeg' },
-          { nombre: 'Limpieza Facial Personalizada.', subtitulo: 'Higiene y Purificación', slug: 'limpieza-facial', imagen: '/tratamientos/limpieza-facial.jpeg' },
+          { nombre: 'Higiene Facial Glow', subtitulo: 'Mantenimiento Express', slug: 'higiene-facial-glow', imagen: '/tratamientos/higiene-glow.jpg' },
+          { nombre: 'Limpieza Facial Renovadora', subtitulo: 'Hidratación Profunda', slug: 'limpieza-facial-renovadora', imagen: '/tratamientos/limpieza-renovadora.jpg' },
+          { nombre: 'Higiene Facial Profunda Detox', subtitulo: 'Limpieza Clínica', slug: 'higiene-facial-profunda-detox', imagen: '/tratamientos/higiene-detox.jpg' },
+          { nombre: 'Protocolo Venencia Glow & Regeneración', subtitulo: 'El Tratamiento Estrella', slug: 'protocolo-venencia-glow', imagen: '/tratamientos/venencia-glow.jpg' },
           { nombre: 'Glacē: Hidrodermoabrasión Médica', subtitulo: 'Efecto Glass Skin', slug: 'glace-hidrodermoabrasion', imagen: '/tratamientos/tratamiento-glace.jpg' },
           { nombre: 'Protocolo PROXN®', subtitulo: 'Terapia Antioxidante', slug: 'protocolo-proxn', imagen: '/tratamientos/tratamiento-proxn.jpg' }
         ]
@@ -2934,13 +3138,14 @@ export const tratamientosDB: Record<string, CategoriaData> = {
     tieneSubcategorias: false,
     tratamientos: [
       { nombre: 'Acné Activo e Inflamatorio (VL 555).', subtitulo: 'Control Bacteriano', slug: 'acne-activo-vl555', imagen: '/tratamientos/laser-acne-activo.jpeg' },
-      { nombre: 'Fotorejuvenecimiento (PR 530 / CL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: '/tratamientos/laser-fotorejuvenecimiento.jpeg' },
+      { nombre: 'Fotorejuvenecimiento (PR 530 / VL 555).', subtitulo: 'Unificación del Tono', slug: 'fotorejuvenecimiento-nordlys', imagen: '/tratamientos/laser-fotorejuvenecimiento.jpeg' },
       { nombre: 'Rosácea, Cuperosis y Rojeces (VL 555).', subtitulo: 'Control Vascular', slug: 'rosacea-nordlys', imagen: '/tratamientos/rosacea-cuperosis-rojeces.jpeg' },
       { nombre: 'Rejuvenecimiento Global - Protocolo Light & Bright.', subtitulo: 'Luminosidad Extrema', slug: 'light-bright-nordlys', imagen: '/tratamientos/laser-fotorejuvenecimiento-global.jpeg'},
       { nombre: 'Resurfacing Facial No Ablativo (Láser Frax).', subtitulo: 'Renovación Celular', slug: 'resurfacing-frax', imagen: '/tratamientos/laser-resurfacing-facial.jpeg' },
       { nombre: 'Cicatrices de Acné, Atróficas y Estrías (Láser Frax 1550).', subtitulo: 'Alisado Dérmico', slug: 'cicatrices-estrias-frax', imagen: '/tratamientos/laser-cicatrices-acne.jpeg' },
       { nombre: 'Hemangiomas y Puntos Rubí (VL 555).', subtitulo: 'Eliminación Vascular', slug: 'hemangiomas-nordlys', imagen: '/tratamientos/hemangiomaspuntosrubi.jpeg' },
-      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-nordlys', imagen: '/tratamientos/fotodepilacion.jpeg' }
+      { nombre: 'Fotodepilación Médica de Alta Precisión (HR 600).', subtitulo: 'Eliminación Definitiva', slug: 'depilacion-nordlys', imagen: '/tratamientos/fotodepilacion.jpeg' },
+      { nombre: 'Tensado Cutáneo y Flacidez (Ultraformer - HIFU).', subtitulo: 'Lifting sin Cirugía', slug: 'tensado-cutaneo-hifu', imagen: '/clinica/hifu.jpg' },
     ]
   },
   'Tratamientos Avanzados': {
