@@ -42,7 +42,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             VENENCIA
           </Link>
           
-          <div className="flex items-center space-x-6 md:space-x-8">
+          <div className="flex items-center space-x-5 md:space-x-8">
+            
+            {/* Buscador (Solo Desktop) */}
             <div className="relative hidden md:block">
               <div className="flex items-center border-b border-brand-dark/20 pb-1 focus-within:border-brand-terra transition-colors">
                 <span className="text-brand-dark/40 mr-2">⌕</span>
@@ -60,7 +62,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               )}
             </div>
 
-            <button onClick={() => setMenuAbierto(true)} className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] font-bold hover:text-brand-terra transition-colors">
+            {/* Botón de Reserva Directa (Visible siempre) */}
+            <Link href="/reserva" className="hidden sm:flex items-center justify-center bg-brand-dark text-white px-5 py-2.5 text-[10px] uppercase tracking-[0.2em] hover:bg-brand-terra transition-colors duration-300">
+              Reservar Cita
+            </Link>
+
+            {/* Menú Hamburguesa */}
+            <button onClick={() => setMenuAbierto(true)} className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] font-bold hover:text-brand-terra transition-colors ml-2">
               <span className="hidden md:block">Menú</span>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
@@ -227,11 +235,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-4xl mx-auto px-4 space-y-6">
             <p className="text-[10px] md:text-[11px] uppercase tracking-[0.4em] text-brand-dark/50 font-bold">C/ Baldrich 74, Terrassa — Venencia © {new Date().getFullYear()}</p>
             <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs font-light text-brand-dark/60 border-y border-brand-sand/20 py-4">
-              <Link href="/privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
+              <Link href="/politica-privacidad" className="hover:text-brand-terra transition-colors">Política de Privacidad</Link>
               <span>|</span>
-              <Link href="/cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
+              <Link href="/politica-cookies" className="hover:text-brand-terra transition-colors">Política de Cookies</Link>
               <span>|</span>
-              <Link href="/legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
+              <Link href="/aviso-legal" className="hover:text-brand-terra transition-colors">Aviso Legal</Link>
             </div>
             <p className="text-[9px] uppercase tracking-[0.2em] text-brand-dark/40">Venencia © {new Date().getFullYear()}. Todos los derechos reservados.</p>
           </div>
